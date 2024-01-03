@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/authLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F46236"
+tools:context=".PantallasPrincipales.Fragment_Ingresar">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintRegistro"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@drawable/view_bg"
+    android:backgroundTint="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHeight_percent=".566"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imgVNiño">
+
+
+    <EditText
+        android:id="@+id/idEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="@string/correo_electronico"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/idPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/idPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView83"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEmail"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtBtnRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresar"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtBtnRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Registrate aqui"
+        android:textColor="#008EFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensaje"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="@id/constraintRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBtnRegistro"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageButton
+            android:id="@+id/ibtnfacebook"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:elevation="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/logofacebook"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="267dp" />
+
+        <ImageButton
+            android:id="@+id/iBtnGoogle"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:elevation="5dp"
+            android:padding="14dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/logogoogle"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="267dp" />
+
+        <ImageButton
+            android:id="@+id/iBtnTwitter"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:elevation="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/logotwitter"
+            tools:layout_editor_absoluteX="216dp"
+            tools:layout_editor_absoluteY="267dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/olvido_su_contrase_a"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/btnIngresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPass"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="@font/linotteregular"
+        android:text="Ingresar"
+        android:textColor="@color/white"
+        android:textScaleX="1.05"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:cornerRadius="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView83"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent=".8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<ImageView
+    android:id="@+id/imgLogo"
+    android:layout_width="301dp"
+    android:layout_height="47dp"
+    android:layout_marginTop="50dp"
+    android:src="@drawable/imagenlogo"
+    app:layout_constraintBottom_toTopOf="@+id/textView81"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/ubuntutitle"
+        android:text="Aprendiendo el aimara y quechua"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgVNiño"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+<ImageView
+    android:id="@+id/imgVNiño"
+    android:layout_width="276dp"
+    android:layout_height="231dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/saludo"
+    app:layout_constraintBottom_toTopOf="@id/constraintRegistro"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView81" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PantallasPrincipales.FragmentDiccionario">
+    <Button
+        android:id="@+id/btnAgregarPalabra"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/colorGreen"
+        android:text="Nueva Palabra"
+        app:cornerRadius="5dp"
+        android:textSize="10sp"/>
+    <EditText
+        android:id="@+id/edFilter"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:hint="Escribe la palabra buscada"
+        android:fontFamily="@font/linottesemibold"
+        android:textColorHint="#716666"
+        android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDiccionario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

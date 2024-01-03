@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout36"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaseColores.FragmentColores6">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView59"
+        style="@style/estiloDeTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escribe la respuesta correcta"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView57"
+        style="@style/textoGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uka laphipaxa ch’uxñakiwa"
+        android:textColor="#009688"
+        app:layout_constraintBottom_toTopOf="@+id/txtOHoja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView27"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="254dp"
+        android:layout_height="221dp"
+        android:src="@mipmap/hoja"
+        app:layout_constraintBottom_toTopOf="@+id/textView57"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView59"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/txtOHoja"
+        style="@style/textoGuia"
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/strokedelgado"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnHoja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView57"
+        app:layout_constraintVertical_bias="0.5"
+        tools:text="La hoja es verde" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnHoja"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/linottebold"
+        android:text="hoja"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRama"
+        app:layout_constraintEnd_toStartOf="@+id/btnLa"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOHoja"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCafe"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/linottebold"
+        android:text="cafe"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnEs"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerde"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLa"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/linottebold"
+        android:text="La"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnHoja"
+        app:layout_constraintTop_toBottomOf="@+id/txtOHoja"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEs"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/linottebold"
+        android:text="es"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar6"
+        app:layout_constraintEnd_toStartOf="@+id/btnCafe"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRama"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVerde"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/linottebold"
+        android:text="verde"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCafe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnRama"
+        app:layout_constraintTop_toBottomOf="@+id/btnLa"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRama"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/linottebold"
+        android:text="rama"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEs"
+        app:layout_constraintEnd_toStartOf="@+id/btnVerde"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHoja"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnComprobar6"
+        style="@style/estiloBotonComprobar"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCafe"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

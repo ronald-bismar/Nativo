@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout56"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaseVerbos.FragmentVerbos10">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnComer1"
+        style="@style/textoGuia"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottesemibold"
+        android:text="comer"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMaqasi"
+        app:layout_constraintTop_toBottomOf="@+id/btnDormir"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMaqasi"
+        style="@style/textoGuia"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottesemibold"
+        android:text="manq'asi"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnComer1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLuraña1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView101"
+        style="@style/textoGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="14dp"
+        android:text="Selecciona los pares correctos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnYatiqaña"
+        style="@style/textoGuia"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottesemibold"
+        android:text="yatiqaña"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnIkiña2"
+        app:layout_constraintEnd_toStartOf="@+id/btnHacer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView101"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnHacer"
+        style="@style/textoGuia"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottesemibold"
+        android:text="hacer"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:clickable="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnEstudiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnYatiqaña"
+        app:layout_constraintTop_toBottomOf="@+id/textView101"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLuraña1"
+        style="@style/textoGuia"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottesemibold"
+        android:text="luraña"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMaqasi"
+        app:layout_constraintEnd_toStartOf="@+id/btnDormir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIkiña2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDormir"
+        style="@style/textoGuia"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottesemibold"
+        android:text="dormir"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:clickable="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnComer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnLuraña1"
+        app:layout_constraintTop_toBottomOf="@+id/btnEstudiar"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnIkiña2"
+        style="@style/textoGuia"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottesemibold"
+        android:text="ikiña"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLuraña1"
+        app:layout_constraintEnd_toStartOf="@+id/btnEstudiar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnYatiqaña"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEstudiar"
+        style="@style/textoGuia"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottesemibold"
+        android:text="estudiar"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:clickable="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnDormir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnIkiña2"
+        app:layout_constraintTop_toBottomOf="@+id/btnHacer"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

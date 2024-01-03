@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuechuaNumeros.FragmentNumeros4Q">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView65"
+        style="@style/estiloDeTexto"
+        android:layout_width="263dp"
+        android:layout_height="99dp"
+        android:text="Como se escribe\n\ncuatro?"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/llPhisqa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/llPhisqa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/llPacalqu"
+        app:layout_constraintEnd_toStartOf="@+id/llSuqta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView65"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/txtN1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bordesredondeados"
+            android:backgroundTint="#FFC107"
+            android:fontFamily="@font/linotteheavy"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="#C842FA"
+            android:textSize="110sp" />
+
+        <TextView
+            style="@style/estiloDeTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Phichqa" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPusi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textView85"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/llPacalqu"
+        app:layout_constraintTop_toBottomOf="@+id/llSuqta"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/txtQimsa"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bordesredondeados"
+            android:backgroundTint="#FFC107"
+            android:fontFamily="@font/linotteheavy"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="#FF5722"
+            android:textSize="110sp" />
+
+        <TextView
+            style="@style/estiloDeTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tawa" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPacalqu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textView85"
+        app:layout_constraintEnd_toStartOf="@+id/llPusi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llPhisqa"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/txtKimsaqallqu1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bordesredondeados"
+            android:backgroundTint="#FFC107"
+            android:fontFamily="@font/linotteheavy"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="#5A5950"
+            android:textSize="110sp" />
+
+        <TextView
+            style="@style/estiloDeTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Qanchis" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSuqta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/llPusi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/llPhisqa"
+        app:layout_constraintTop_toBottomOf="@+id/textView65"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/txtPaya"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bordesredondeados"
+            android:backgroundTint="#FFC107"
+            android:fontFamily="@font/linotteheavy"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="#03A9F4"
+            android:textSize="110sp" />
+
+        <TextView
+            style="@style/estiloDeTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="suqta" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/reef"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#009688"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llPusi"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

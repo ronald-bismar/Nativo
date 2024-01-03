@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuechuaAnimales.FragmentAnimales1Q">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/linottebold"
+        android:text="Condor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView36"
+        style="@style/textoGuia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color1"
+        android:paddingTop="10dp"
+        android:text="ARASTRA LA PALABRA CORECTA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="252dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="79dp"
+        android:src="@mipmap/condor"
+        app:layout_constraintEnd_toEndOf="@+id/textView82"
+        app:layout_constraintStart_toStartOf="@+id/textView82"
+        app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtMallku"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Apu"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/txtChiñi"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtKatari"
+        app:layout_constraintTop_toBottomOf="@+id/txtChiñi" />
+
+    <TextView
+        android:id="@+id/txtKatari"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:text="Katari"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toStartOf="@+id/txtSuri"
+        app:layout_constraintTop_toBottomOf="@+id/txtSuri" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtSuri"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="suri"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar9"
+        app:layout_constraintEnd_toStartOf="@+id/txtChiñi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/txtContPalabra2"
+        app:layout_constraintTop_toBottomOf="@+id/txtContPalabra2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtChiñi"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="chiñi"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar9"
+        app:layout_constraintEnd_toEndOf="@+id/txtContPalabra2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtSuri"
+        app:layout_constraintTop_toBottomOf="@+id/txtContPalabra2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtContPalabra2"
+        style="@style/textoGuia"
+        android:layout_width="189dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/strokedelgado"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtSuri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnComprobar9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="@color/color2"
+        android:fontFamily="@font/linottebold"
+        android:text="COMPROBAR"
+        android:textSize="20dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtMallku"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/txtKatari"
+        app:layout_constraintTop_toBottomOf="@+id/txtSuri" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

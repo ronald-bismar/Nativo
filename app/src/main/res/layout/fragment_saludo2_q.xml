@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuechuaSaludos.FragmentSaludo2Q">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="46dp"
+        android:fontFamily="@font/arista"
+        android:text="COMO SE ESCRIBE BUEN DIA?"
+        android:textColor="#0C0C0C"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="238dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="86dp"
+        android:src="@mipmap/buenosdias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <Button
+        android:id="@+id/uru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#ABD9FF"
+        android:fontFamily="@font/arista"
+        android:text="Allin p'anqa"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#2C2B2B"
+        android:textSize="24sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/aroma2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <Button
+        android:id="@+id/aroma2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#ABD9FF"
+        android:fontFamily="@font/arista"
+        android:text="Allin p'unchaw"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#2C2B2B"
+        android:textSize="24sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/aroma"
+        app:layout_constraintEnd_toEndOf="@+id/uru"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="@+id/uru"
+        app:layout_constraintTop_toBottomOf="@+id/uru" />
+
+    <Button
+        android:id="@+id/aroma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#ABD9FF"
+        android:fontFamily="@font/arista"
+        android:text="allin sukha"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#2C2B2B"
+        android:textSize="24sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/aroma3"
+        app:layout_constraintEnd_toEndOf="@+id/aroma2"
+        app:layout_constraintStart_toStartOf="@+id/aroma2"
+        app:layout_constraintTop_toBottomOf="@+id/aroma2" />
+
+    <Button
+        android:id="@+id/aroma3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#ABD9FF"
+        android:fontFamily="@font/arista"
+        android:text="sumaq tuta"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#2C2B2B"
+        android:textSize="24sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/aroma"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/aroma"
+        app:layout_constraintTop_toBottomOf="@+id/aroma" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@color/color1"
+        android:fontFamily="@font/linottebold"
+        android:padding="10dp"
+        android:text="SELECCION MULTIPLE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

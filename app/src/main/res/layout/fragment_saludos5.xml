@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaseSaludos.FragmentSaludos5">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btnrespuesta"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#09AF10"
+        android:fontFamily="@font/linottebold"
+        android:text="COMPROBAR"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAroma"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="351dp"
+        android:layout_height="223dp"
+        android:background="@drawable/bordesredondeados"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@mipmap/tarde" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnJaypu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/textView16"
+            style="@style/textoGuia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="aski"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/etJaypu"
+            style="@style/textoGuia"
+            android:layout_width="228dp"
+            android:layout_height="48dp"
+            android:width="150dp"
+            android:background="@drawable/strokedelgado"
+            android:ems="10"
+            android:gravity="center"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottebold"
+        android:text="ESCRITURA:"
+        android:textColor="#2196F3"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottebold"
+        android:text="Como se escribe buenas tardes?"
+        android:textColor="#0C0C0C"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnJaypu"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_yellow"
+        android:fontFamily="@font/linottesemibold"
+        android:gravity="center"
+        android:text="jayp'ukipan"
+        android:textAllCaps="false"
+        android:textColor="#202D73"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnrespuesta"
+        app:layout_constraintEnd_toStartOf="@+id/btnAroma"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAroma"
+        android:layout_width="156dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background_yellow"
+        android:fontFamily="@font/linottesemibold"
+        android:gravity="center"
+        android:text="aromakipan"
+        android:textAllCaps="false"
+        android:textColor="#202D73"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnrespuesta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnJaypu"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

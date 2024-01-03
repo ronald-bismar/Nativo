@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Definición de la sombra más gruesa y difuminada en la parte inferior -->
+    <item>
+        <shape android:shape="rectangle">
+           <solid android:color="#A12937"/>
+            <corners android:radius="12dp" /> <!-- Radio de las esquinas del botón -->
+        </shape>
+    </item>
+
+    <!-- Definición del fondo del botón -->
+    <item
+        android:left="6dp"
+        android:bottom="6dp"> <!-- Deja el desplazamiento inferior en 4dp para que se vea la sombra inferior -->
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorRojo" /> <!-- Color de fondo del botón -->
+            <corners android:radius="12dp" /> <!-- Radio de las esquinas del botón -->
+        </shape>
+    </item>
+</layer-list>

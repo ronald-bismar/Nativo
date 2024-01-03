@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout46"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".PantallasPrincipales.FragmentRegular">
+
+    <TextView
+        android:id="@+id/txtPuntaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/linottebold"
+        android:text="TU PUNTAJE ES:"
+        android:textColor="#818487"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtmostrardatoR1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtmostrardatoR1"
+        android:layout_width="128dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textColorHighlight="#FF9800"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/gifMedalla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPuntaje"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifMedalla"
+        android:layout_width="296dp"
+        android:layout_height="285dp"
+        android:layout_gravity="center"
+        android:src="@drawable/medalladorada"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmostrardatoR1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ubuntutitle"
+        android:text="BUEN TRABAJO"
+        android:textColor="#FF5722"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSigueAprendiendo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifMedalla"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtSigueAprendiendo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/ubuntutitle"
+        android:text="SIGUE APRENDIENDO"
+        android:textColor="#FF5722"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="217dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ubuntutitle"
+        android:text="por 6 medallas lograras subir de nivel estrella"
+        android:textAlignment="center"
+        android:textColor="#3C4043"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSigueAprendiendo"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#FFC107"
+        android:fontFamily="sans-serif-black"
+        android:onClick="volverMenu"
+        android:text="IR AL MENU"
+        android:textSize="15sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

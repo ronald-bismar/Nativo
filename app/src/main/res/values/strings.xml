@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Nativo</string>
+    <string name="seccion_1">SECCION 1</string>
+    <string name="seccion_2">SECCION 2</string>
+    <string name="traduce_tus_palabras">Traduce tus palabras</string>
+    <string name="lecciones">Lecciones</string>
+    <string name="diccionario">Diccionario</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selecciona_la_imagen_correcta">SELECCIONA LA IMAGEN CORRECTA</string>
+    <string name="estamos_escarbando">Estamos escarbando</string>
+    <string name="menorque"><![CDATA[<]]></string>
+    <string name="mayorque"><![CDATA[>]]></string>
+    <string name="title_activity_conversa">Conversa</string>
+    <string name="navigation_drawer_abrir">Open navigation drawer</string>
+    <string name="navigation_drawer_cerrar">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="complete_la_oracion">COMPLETE LA ORACION:</string>
+    <string name="yuqa_yoqa_nuruk_pan_urukiipan">yuqa: yoqa\nurukïpan: urukiipan</string>
+    <!--ClaveValor del usuario-->
+    <string name="prefs_file">com.example.aymarswi.PREFERENCE_FILE_KEY</string>
+    <string name="correo_electronico">Correo electronico</string>
+    <!--ClaveValor del usuario en facebook-->
+    <string name="facebook_app_id">1234</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+    <string name="prefFacebook_file">com.example.aymarswi.PREFERENCE_FACEBOOK_KEY</string>
+    <string name="olvido_su_contrase_a">Olvido su contraseña?</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout45"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".PantallasPrincipales.FragmentBien">
+
+    <TextView
+        android:id="@+id/txtPuntaje"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/linottebold"
+        android:text="TU PUNTAJE ES:"
+        android:textAlignment="center"
+        android:textColor="#323437"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtmostrardato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtmostrardato"
+        android:layout_width="129dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textColorHighlight="#FF9800"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/trofeogif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPuntaje"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/trofeogif"
+        android:layout_width="377dp"
+        android:layout_height="355dp"
+        android:layout_gravity="center"
+        android:src="@drawable/trofeo"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmostrardato"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ubuntutitle"
+        android:text="FELICIDADES!"
+        android:textColor="#009688"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPuntajePerfecto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trofeogif"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtPuntajePerfecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ubuntutitle"
+        android:text="puntaje perfecto"
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ubuntutitle"
+        android:text="te faltan solo 4 trofeos para conseguir tu estrella"
+        android:textAlignment="center"
+        android:textColor="#3C4043"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnIrMenu1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPuntajePerfecto"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnIrMenu1"
+        android:layout_width="218dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#FFC107"
+        android:fontFamily="sans-serif-black"
+        android:onClick="volverMenu"
+        android:text="IR AL MENU"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout60"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaseNumeros.FragmentNumeros8">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPusi3"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFD65D"
+        android:text="pusi"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnKimsa3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnPaya3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout18"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPaya3"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFD65D"
+        android:text="paya"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSuqta3"
+        app:layout_constraintEnd_toStartOf="@+id/btnPusi3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout18"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnKimsa3"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFD65D"
+        android:text="kimsa"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSuqta3"
+        app:layout_constraintTop_toBottomOf="@+id/btnPusi3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnPusi3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView38"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/txtCompletar"
+            style="@style/textoGuia"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="416dp"
+            tools:text="pusi" />
+
+        <TextView
+            android:id="@+id/textView116"
+            style="@style/textoGuia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lapis ukanakampi "
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="431dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView117"
+        style="@style/textoGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completa la oracion: "
+        app:layout_constraintBottom_toTopOf="@+id/imageView41"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/lapiz"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView39"
+        app:layout_constraintTop_toBottomOf="@+id/imageView41"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/lapiz"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout18"
+        app:layout_constraintEnd_toStartOf="@+id/imageView38"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView42"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/lapiz"
+        app:layout_constraintBottom_toTopOf="@+id/imageView38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView42"
+        app:layout_constraintTop_toBottomOf="@+id/textView117"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/lapiz"
+        app:layout_constraintBottom_toTopOf="@+id/imageView39"
+        app:layout_constraintEnd_toStartOf="@+id/imageView41"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView117"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSuqta3"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFD65D"
+        android:text="suqta"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar13"
+        app:layout_constraintEnd_toStartOf="@+id/btnKimsa3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPaya3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnComprobar13"
+        style="@style/estiloBotonComprobar"
+        android:layout_width="161dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKimsa3"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

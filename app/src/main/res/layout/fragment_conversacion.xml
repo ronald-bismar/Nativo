@@ -1,0 +1,137 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373434"
+    android:orientation="vertical"
+    tools:context=".Chat.FragmentConversacion">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista"
+        android:layout_width="412dp"
+        android:layout_height="0dp"
+        android:background="#373434"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/otro_fondo"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Escribe aqui"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColorHint="#74252020"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/iBtnSend"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/enviar" />
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/llNuevosBotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:rowCount="3"
+            android:columnCount="2"
+            />
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEscritura"
+                android:layout_width="124dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/poppins_medium"
+                android:text="ESCRITURA" />
+
+            <ImageButton
+                android:id="@+id/btnDiccionario"
+                android:layout_width="124dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/diccionario" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBotones"
+                android:layout_width="124dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Botones"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/otro_fondo"
+        android:gravity="end"
+        android:backgroundTint="#212B61"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

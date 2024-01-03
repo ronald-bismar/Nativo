@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallasPrincipales.MainPrincipalActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Objetos.FragmentObjetos9">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/borderverdeclaro"
+        android:backgroundTint="@color/color1"
+        android:src="@drawable/cuaderno1"
+        app:layout_constraintEnd_toEndOf="@+id/btnPapa1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnPapa1"
+        app:layout_constraintTop_toBottomOf="@+id/btnPapa1" />
+
+    <ImageView
+        android:id="@+id/imageView47"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/borderverdeclaro"
+        android:backgroundTint="@color/color1"
+        android:src="@drawable/goma"
+        app:layout_constraintEnd_toEndOf="@+id/btnCebada"
+        app:layout_constraintStart_toStartOf="@+id/btnCebada"
+        app:layout_constraintTop_toBottomOf="@+id/btnCebada" />
+
+    <TextView
+        android:id="@+id/textView119"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color1"
+        android:paddingTop="5dp"
+        android:text="ELIGE LA PALABRA CORECTA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        style="@style/textoGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/botonverde"
+        android:backgroundTint="@color/color1"
+        android:padding="10dp"
+        android:text="Cuaderno"
+        android:textColor="@color/color1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView119"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/borderverdeclaro"
+        android:backgroundTint="@color/color1"
+        android:src="@drawable/lapiz1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="43dp"
+        android:background="@drawable/borderverdeclaro"
+        android:backgroundTint="@color/color1"
+        android:src="@drawable/pizarra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPapa1"
+        android:layout_width="156dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/botonverde"
+        android:backgroundTint="@color/color1"
+        android:fontFamily="@font/linottebold"
+        android:gravity="center"
+        android:text="pirqa  qillqana"
+        android:textAllCaps="false"
+        android:textColor="@color/color1"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView44"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView44"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPapa2"
+        android:layout_width="156dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/botonverde"
+        android:backgroundTint="@color/color1"
+        android:fontFamily="@font/linottebold"
+        android:gravity="center"
+        android:text="Qillana p'anqa"
+        android:textAllCaps="false"
+        android:textColor="@color/color1"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView46"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="@+id/imageView46"
+        app:layout_constraintTop_toBottomOf="@+id/imageView46" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCebada"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/botonverde"
+        android:backgroundTint="@color/color1"
+        android:fontFamily="@font/linottebold"
+        android:gravity="center"
+        android:text="Qillqana"
+        android:textAllCaps="false"
+        android:textColor="@color/color1"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCebada2"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/botonverde"
+        android:backgroundTint="@color/color1"
+        android:fontFamily="@font/linottebold"
+        android:gravity="center"
+        android:text="Qillqa khituña"
+        android:textAllCaps="false"
+        android:textColor="@color/color1"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView47"
+        app:layout_constraintStart_toStartOf="@+id/imageView47"
+        app:layout_constraintTop_toBottomOf="@+id/imageView47" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnPapa1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/etPapa"
+            style="@style/textoGuia"
+            android:layout_width="259dp"
+            android:layout_height="51dp"
+            android:width="150dp"
+            android:background="@drawable/strokedelgado"
+            android:ems="10"
+            android:gravity="center"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnComp3"
+        style="@style/estiloBotonComprobar"
+        android:layout_width="145dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCebada2"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

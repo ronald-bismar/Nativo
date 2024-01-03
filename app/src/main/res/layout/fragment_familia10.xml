@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaseFamilia.FragmentFamilia10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Familia.fami10">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:paddingTop="5dp"
+            android:text="Elige la palabra correcta"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="30dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnJila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/color2"
+            android:text="Jila"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnAchachila"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnKullaka4"
+            app:layout_constraintTop_toBottomOf="@+id/etContenPalabra"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/etContenPalabra"
+            android:layout_width="409dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            style="@style/textoGuia"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/btnJila"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView117"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageButton
+            android:id="@+id/btnAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_lock_silent_mode_off"
+            app:layout_constraintBottom_toTopOf="@+id/etContenPalabra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnPapa"
+            app:layout_constraintTop_toBottomOf="@+id/textView111"
+            app:layout_constraintVertical_bias="0.582" />
+
+        <Button
+            android:id="@+id/btnKullaka4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/color2"
+            android:text="Kullaka"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnJilaku"
+            app:layout_constraintEnd_toStartOf="@+id/btnJila"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etContenPalabra"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnAchachila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/color2"
+            android:text="Achachila"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnComprobar17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnJilaku"
+            app:layout_constraintTop_toBottomOf="@+id/btnJila"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnJilaku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/color2"
+            android:text="Jilaku"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnAchachila"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnKullaka4"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView117"
+            android:layout_width="103dp"
+            android:layout_height="27dp"
+            android:text="Primo"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/etContenPalabra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.301"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPapa"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnComprobar17"
+            style="@style/estiloBotonComprobar"
+            android:layout_width="162dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAchachila"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/btnPapa"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="100dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/textView117"
+            app:layout_constraintEnd_toStartOf="@+id/btnAudio"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView111"
+            app:layout_constraintVertical_bias="0.5"
+            android:src="@drawable/sobrino" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

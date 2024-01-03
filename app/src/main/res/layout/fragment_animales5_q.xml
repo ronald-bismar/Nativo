@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuechuaAnimales.FragmentAnimales5Q">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="271dp"
+        android:layout_height="284dp"
+        android:src="@mipmap/mariposa"
+        app:layout_constraintBottom_toTopOf="@+id/txtCPalabra3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtPilpintu"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_yellow"
+        android:fontFamily="@font/linotteregular"
+        android:text="pilpintu"
+        android:textAllCaps="false"
+        android:textColor="#393636"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtJampatu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtAchaku"
+        app:layout_constraintTop_toBottomOf="@+id/txtCPalabra3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtJampatu"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_yellow"
+        android:fontFamily="@font/linotteregular"
+        android:text="Hammppatu"
+        android:textAllCaps="false"
+        android:textColor="#393636"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtPhisi"
+        app:layout_constraintTop_toBottomOf="@+id/txtPilpintu"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView39"
+        style="@style/textoGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona la respuesta correcta"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/txtCPalabra3"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:width="200dp"
+        android:background="@drawable/strokedelgado"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/txtPilpintu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtPhisi"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_yellow"
+        android:fontFamily="@font/linotteregular"
+        android:text="Mishi"
+        android:textAllCaps="false"
+        android:textColor="#393636"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar10"
+        app:layout_constraintEnd_toStartOf="@+id/txtJampatu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAchaku"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnComprobar10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1597FF"
+        android:fontFamily="@font/linottebold"
+        android:text="COMPROBAR"
+        android:textSize="20dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtJampatu"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtAchaku"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_yellow"
+        android:fontFamily="@font/linotteregular"
+        android:text="Junk´ucha"
+        android:textAllCaps="false"
+        android:textColor="#393636"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPhisi"
+        app:layout_constraintEnd_toStartOf="@+id/txtPilpintu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCPalabra3"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

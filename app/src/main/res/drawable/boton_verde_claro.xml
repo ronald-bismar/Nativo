@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Definición de la sombra más gruesa y difuminada en la parte inferior -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#416A70"
+                android:endColor="#00000000"
+                android:angle="90"
+                />   <!-- Color transparente -->
+            <!-- Color de la sombra más oscuro (negro con transparencia) -->
+            <!-- Ángulo del degradado, 90 para vertical -->
+            <corners android:radius="10dp" /> <!-- Radio de las esquinas del botón -->
+        </shape>
+    </item>
+
+    <!-- Definición del fondo del botón -->
+    <item
+        android:bottom="4dp"> <!-- Deja el desplazamiento inferior en 4dp para que se vea la sombra inferior -->
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color3" /> <!-- Color de fondo del botón -->
+            <corners android:radius="10dp" /> <!-- Radio de las esquinas del botón -->
+        </shape>
+    </item>
+</layer-list>

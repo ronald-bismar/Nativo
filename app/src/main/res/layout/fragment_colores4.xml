@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout34"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaseColores.FragmentColores4">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/txtComoSeDice"
+        style="@style/estiloDeTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="118dp"
+        android:text="Como se dice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView55"
+        style="@style/estiloDeTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="176dp"
+        android:text="café"
+        android:textColor="#672C15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtComoSeDice" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnArumi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="#F66503"
+        android:fontFamily="@font/linottebold"
+        android:text="arumi"
+        android:textAllCaps="false"
+        android:textColor="#F4E2E2"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnChiyara"
+        app:layout_constraintEnd_toStartOf="@+id/btnChiqi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChumpi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="#672C15"
+        android:fontFamily="@font/linottebold"
+        android:text="ch'umpi"
+        android:textAllCaps="false"
+        android:textColor="#EDE7E7"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView68"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnChiyara"
+        app:layout_constraintTop_toBottomOf="@+id/btnChiqi"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChiyara"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/linottebold"
+        android:text="ch'iyara"
+        android:textAllCaps="false"
+        android:textColor="#C5BDBD"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView68"
+        app:layout_constraintEnd_toStartOf="@+id/btnChumpi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnArumi"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChiqi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="#808080"
+        android:fontFamily="@font/linottebold"
+        android:text="ch'iqi/uqi"
+        android:textAllCaps="false"
+        android:textColor="#F4EFEF"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnChumpi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnArumi"
+        app:layout_constraintTop_toBottomOf="@+id/textView55"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView68"
+        style="@style/estiloTextoAlternativo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ch'iqi/uqi: ch'eqe/oqe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChumpi"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

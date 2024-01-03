@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopaisaje"
+    android:orientation="vertical"
+    tools:context=".PantallasPrincipales.FragmentAvatar2">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/linottesemibold"
+        android:text="Selecciona un Personaje"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnIzquierda"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/esquinaredondassuaves"
+            android:backgroundTint="#E6D6D6"
+            android:elevation="30dp"
+            android:fontFamily="@font/ubuntutitle"
+            android:text="@string/menorque"
+            android:textColor="#C6BDBD"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@id/contAvatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/contAvatar" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/contAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/bordesredondos"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDerecha"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/esquinaredondassuaves"
+            android:backgroundTint="#E6D6D6"
+            android:elevation="30dp"
+            android:fontFamily="@font/ubuntutitle"
+            android:text="@string/mayorque"
+            android:textColor="#C6BDBD"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@id/contAvatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/contAvatar"
+            app:layout_constraintTop_toTopOf="@id/contAvatar" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/esquinasredonnormal"
+        android:backgroundTint="#FF3D00"
+        android:fontFamily="@font/linottesemibold"
+        android:padding="10dp"
+        android:text="Elegir avatar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

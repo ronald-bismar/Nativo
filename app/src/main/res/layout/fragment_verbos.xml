@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout25"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaseVerbos.FragmentVerbos">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="202dp"
+        android:layout_height="234dp"
+        android:src="@mipmap/caminando"
+        app:layout_constraintBottom_toTopOf="@+id/btnMirar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtQueSignifica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottebold"
+        android:text="Que significa: "
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView42"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottebold"
+        android:text="sarnaqaña"
+        android:textColor="#FF5722"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQueSignifica"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMirar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botonverdeconfondo"
+        android:text="mirar"
+        android:textAllCaps="false"
+        android:textColor="#009688"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCaminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCaminar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botonverdeconfondo"
+        android:text="caminar"
+        android:textAllCaps="false"
+        android:textColor="#009688"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMirar"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnComer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botonverdeconfondo"
+        android:text="comer"
+        android:textAllCaps="false"
+        android:textColor="#009688"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCaminar"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

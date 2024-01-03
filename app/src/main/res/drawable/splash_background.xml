@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:opacity="opaque"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/colorRojo"/>
+
+    <item>
+
+        <bitmap android:src="@mipmap/nativ1"
+            android:gravity="center"
+            android:tileModeY="disabled"/>
+        <transition android:opacity="opaque"/>
+    </item>
+
+</layer-list>

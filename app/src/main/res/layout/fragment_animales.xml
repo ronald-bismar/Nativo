@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPrincipalActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaseAnimales.FragmentAnimales">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottebold"
+        android:text="Condor"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMallku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView36"
+        style="@style/textoGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completa la opcion correcta"
+        app:layout_constraintBottom_toTopOf="@+id/textView82"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="252dp"
+        android:layout_height="236dp"
+        android:src="@mipmap/condor"
+        app:layout_constraintBottom_toTopOf="@+id/txtContPalabra2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMallku"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtMallku"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:text="Mallku"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtKatari"
+        app:layout_constraintTop_toBottomOf="@+id/textView82"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtKatari"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:text="Katari"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@+id/imageView17"
+        app:layout_constraintEnd_toStartOf="@+id/txtMallku"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView82"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtSuri"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:text="suri"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar9"
+        app:layout_constraintEnd_toStartOf="@+id/txtChiñi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContPalabra2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtChiñi"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:text="chiñi"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtSuri"
+        app:layout_constraintTop_toBottomOf="@+id/txtContPalabra2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtContPalabra2"
+        android:layout_width="189dp"
+        android:layout_height="43dp"
+        style="@style/textoGuia"
+        android:gravity="center"
+        android:background="@drawable/strokedelgado"
+        app:layout_constraintBottom_toTopOf="@+id/txtSuri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnComprobar9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1597FF"
+        android:fontFamily="@font/linottebold"
+        android:text="COMPROBAR"
+        android:textSize="20dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSuri"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

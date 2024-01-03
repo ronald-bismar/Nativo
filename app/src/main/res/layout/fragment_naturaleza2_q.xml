@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuechuaNaturaleza.FragmentNaturaleza2Q">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView119"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color1"
+        android:paddingTop="5dp"
+        android:text="ELIGE LA PALABRA CORECTA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        style="@style/textoGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Papata turpun"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="374dp"
+        android:layout_height="279dp"
+        android:src="@mipmap/escarbandopapa"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView119"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPapa1"
+        android:layout_width="156dp"
+        android:layout_height="50dp"
+        android:background="@drawable/botonazulconfondo"
+        android:fontFamily="@font/linottebold"
+        android:gravity="center"
+        android:text="papa"
+        android:textAllCaps="false"
+        android:textColor="#3F51B5"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComp3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCebada"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCebada"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botonazulconfondo"
+        android:fontFamily="@font/linottebold"
+        android:gravity="center"
+        android:text="cebada"
+        android:textAllCaps="false"
+        android:textColor="#3F51B5"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComp3"
+        app:layout_constraintEnd_toStartOf="@+id/btnPapa1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnPapa1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/textView16"
+            style="@style/textoGuia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/estamos_escarbando"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/etPapa"
+            style="@style/textoGuia"
+            android:layout_width="96dp"
+            android:layout_height="51dp"
+            android:width="150dp"
+            android:background="@drawable/strokedelgado"
+            android:ems="10"
+            android:gravity="center"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnComp3"
+        style="@style/estiloBotonComprobar"
+        android:layout_width="145dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPapa1"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

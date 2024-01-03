@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuechuaSaludos.FragmentSaludo4Q">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="205dp"
+        android:layout_height="286dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnnoches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@mipmap/hermanom" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btndias"
+        android:layout_width="310dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/botonverdeconfondo"
+        android:fontFamily="@font/linottebold"
+        android:text="  Buenos  dias hermano mayor"
+        android:textAllCaps="false"
+        android:textColor="#00776C"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnnoches" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btndias2"
+        android:layout_width="310dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/botonverdeconfondo"
+        android:fontFamily="@font/linottebold"
+        android:text="Buenos tardes hermano mayor"
+        android:textAllCaps="false"
+        android:textColor="#00776C"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndias" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/arista"
+        android:text="Allin p'unchaw wata uqha"
+        android:textColor="#2B2727"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView130"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnnoches"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="310dp"
+        android:layout_height="78dp"
+        android:background="@drawable/botonverdeconfondo"
+        android:fontFamily="@font/linottebold"
+        android:text="Buenas noches hermano mayor"
+        android:textAllCaps="false"
+        android:textColor="#00776C"
+        android:textSize="30sp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btndias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView130"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color1"
+        android:padding="5dp"
+        android:text="SELECCIONA LA OPCION CORRECTA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

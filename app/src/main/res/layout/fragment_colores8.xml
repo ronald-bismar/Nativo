@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView111"
+        style="@style/textoGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completa la palabra"
+        app:layout_constraintBottom_toTopOf="@+id/btnTiwula3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/txtPChuqña"
+        android:layout_width="380dp"
+        android:layout_height="53dp"
+        android:background="@drawable/strokedelgado"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView107"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView107"
+        style="@style/textoGuia"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="#4CAF50"
+        android:gravity="center"
+        android:text="chuqña"
+        app:layout_constraintBottom_toTopOf="@+id/txtPChuqña"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTiwula3"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/btnTiwula3"
+        style="@style/textoGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chuqña"
+        app:layout_constraintBottom_toTopOf="@+id/textView107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView111"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnComprobar7"
+        style="@style/estiloBotonComprobar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="283dp"
+        android:layout_height="182dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPChuqña"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnU"
+            style="@style/textoGuia"
+            android:layout_width="39dp"
+            android:layout_height="47dp"
+            android:background="@drawable/button_background"
+            android:text="u"
+            app:layout_constraintBottom_toTopOf="@+id/btnN"
+            app:layout_constraintEnd_toStartOf="@+id/btnH"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnH"
+            style="@style/textoGuia"
+            android:layout_width="39dp"
+            android:layout_height="47dp"
+            android:background="@drawable/button_background"
+            android:text="h"
+            app:layout_constraintBottom_toTopOf="@+id/btnC"
+            app:layout_constraintEnd_toStartOf="@+id/btnQ"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnU"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnQ"
+            style="@style/textoGuia"
+            android:layout_width="39dp"
+            android:layout_height="47dp"
+            android:background="@drawable/button_background"
+            android:text="q"
+            app:layout_constraintBottom_toTopOf="@+id/btnA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnH"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnN"
+            style="@style/textoGuia"
+            android:layout_width="39dp"
+            android:layout_height="47dp"
+            android:background="@drawable/button_background"
+            android:text="ñ"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnC"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnU"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnC"
+            style="@style/textoGuia"
+            android:layout_width="39dp"
+            android:layout_height="47dp"
+            android:background="@drawable/button_background"
+            android:text="c"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnA"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnN"
+            app:layout_constraintTop_toBottomOf="@+id/btnH"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnA"
+            style="@style/textoGuia"
+            android:layout_width="39dp"
+            android:layout_height="47dp"
+            android:background="@drawable/button_background"
+            android:text="a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnC"
+            app:layout_constraintTop_toBottomOf="@+id/btnQ"
+            app:layout_constraintVertical_bias="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallasPrincipales.ContenedorPantallasPrincipales"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DAFFFB"
+        tools:context=".PantallasPrincipales.FragmentMenuDeLeccionesQ">
+
+        <LinearLayout
+            android:id="@+id/view"
+            class="androidx.appcompat.widget.ActionMenuView"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="#176B87"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/linottebold"
+                android:paddingTop="5dp"
+                android:text="SELECCIONA UNA CLASE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="279dp"
+            android:fontFamily="@font/linottebold"
+            android:text="@string/seccion_1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <ImageButton
+            android:id="@+id/imgBtnFamilia"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="28dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/imgBtnNaturaleza"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:srcCompat="@drawable/iconofamilia" />
+
+        <ImageButton
+            android:id="@+id/imgBtnNaturaleza"
+            android:layout_width="160dp"
+            android:layout_height="151dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="43dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgBtnFamilia"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:srcCompat="@drawable/icononaturaleza1" />
+
+        <ImageButton
+            android:id="@+id/imgBtnSaludos"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="50dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/imgBtnAnimales"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnFamilia"
+            app:srcCompat="@drawable/iconosaludos" />
+
+        <ImageButton
+            android:id="@+id/imgBtnAnimales"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="51dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgBtnSaludos"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnNaturaleza"
+            app:srcCompat="@drawable/iconoanimales" />
+
+        <TextView
+            android:id="@+id/textView76"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="275dp"
+            android:fontFamily="@font/linottebold"
+            android:text="@string/seccion_2"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnSaludos" />
+
+        <ImageButton
+            android:id="@+id/imgBtnVerbos"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="19dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/imgBtnColores"
+            app:layout_constraintHorizontal_bias="0.239"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView76"
+            app:srcCompat="@drawable/iconoverbos" />
+
+        <ImageButton
+            android:id="@+id/imgBtnColores"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="51dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgBtnVerbos"
+            app:layout_constraintTop_toBottomOf="@+id/textView76"
+            app:srcCompat="@drawable/iconocolores" />
+
+        <ImageButton
+            android:id="@+id/imgBtnNumeros"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="51dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/imgBtnObjetos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnVerbos"
+            app:srcCompat="@drawable/icononumeros" />
+
+        <ImageButton
+            android:id="@+id/imgBtnObjetos"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="50dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgBtnNumeros"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnColores"
+            app:srcCompat="@drawable/iconoobjetos" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

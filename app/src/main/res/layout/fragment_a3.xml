@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="301dp"
+    android:layout_height="406dp"
+    tools:context=".Avatars.FragmentA1"
+    android:orientation="vertical"
+    android:background="@drawable/bordesredondos"
+    android:backgroundTint="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/inti"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inti"
+        android:fontFamily="@font/linottesemibold"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_margin="2dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/linotteregular"
+        android:textAlignment="center"
+        android:text="&quot;La imaginación es más importante que el conocimiento. El conocimiento es limitado, mientras que la imaginación no tiene límites&quot;"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/cronusround"
+        android:text="Significado: Inti: resplandeciente, brillante"
+        android:textSize="15sp"
+        android:layout_marginBottom="2dp"/>
+
+</LinearLayout>

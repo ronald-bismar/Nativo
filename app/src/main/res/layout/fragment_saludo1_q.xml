@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuechuaSaludos.FragmentSaludo1Q">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/btnmam"
+        android:layout_width="168dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bordesrodondeadosceleste"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/btnmam2"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintStart_toEndOf="@+id/btnhermanom"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:srcCompat="@mipmap/saludo5"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnhermanom3"
+        android:layout_width="168dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bordesrodondeadosceleste"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/btnmam"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/btnhermanom"
+        app:layout_constraintTop_toBottomOf="@+id/btnmam"
+        app:srcCompat="@mipmap/saludo5"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnhermanom"
+        android:layout_width="168dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bordesrodondeadosceleste"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/btnhermanom2"
+        app:layout_constraintEnd_toStartOf="@+id/btnmam"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:srcCompat="@mipmap/hermanomayor"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnhermanom2"
+        android:layout_width="168dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bordesrodondeadosceleste"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btnmam"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnhermanom"
+        app:layout_constraintTop_toBottomOf="@+id/btnhermanom"
+        app:srcCompat="@mipmap/hermanomayor"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="265dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="73dp"
+        android:fontFamily="@font/arista"
+        android:text="Allin p'anqa mama"
+        android:textAlignment="center"
+        android:textColor="@color/color1"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView129" />
+
+    <TextView
+        android:id="@+id/textView129"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color1"
+        android:paddingTop="8dp"
+        android:text="SELECCIONE LA IMAGEN CORECTA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="4dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

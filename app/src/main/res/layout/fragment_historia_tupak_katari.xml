@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Historias.FragmentHistoriaTupakKatari"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llDifuminado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnHist"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_gravity="right"
+                android:layout_marginStart="60dp"
+                android:backgroundTint="#673AB7"
+                android:text="Avanzar a la leccion"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"
+                android:textSize="9sp"
+
+                app:cornerRadius="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conociendo nuestra historia"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#009688"
+                android:fontFamily="@font/linotteregular"
+                android:layout_marginStart="20dp"
+                android:gravity="left"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tupak Katari"
+            android:textSize="35dp"
+            android:fontFamily="@font/linotteregular"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+           android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/tupakkatari" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/maskView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bordesdifuminados"
+        app:layout_constraintTop_toBottomOf="@+id/llDifuminado"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llDifuminado">
+
+        <TextView
+            android:id="@+id/txtDeslizable"
+            android:layout_width="match_parent"
+            android:layout_height="2100dp"
+            android:gravity="center_horizontal"
+            android:padding="30dp"
+            android:text="Julián Apaza Nina, más conocido como Túpac Katari, Túpaj Katari, o simplemente Katari (nacido en Ayo Ayo un 9 de enero de 1750, hasta el 15 de noviembre de 1781) fue un caudillo de origen aimara, hijo de un minero en las minas de Potosí.\n\n
+&quot;Los aimaras vieron admirados que dos hermosos y enormes mallkus (cóndor) bajaron a Sullkawi en Sica Sica, y se posaron en las montañas cercanas, uno de los cóndores representaba a la Nación aimara y otro a la Nación Quechua. La madre de Tupac Katari, Marcela Nina, salió con la wawa (su hijo) para mostrarle a la Pachamama, y su padre Nicolás Apaza señaló a una enorme serpiente que levantaba la cabeza.\n\n Admirados pero sin miedo vieron que la serpiente saludaba al niño, entonces supieron que Julián sería importante para los pueblos aimara y quechua&quot;.\n\n Luego de quedar huérfano en su adolescencia comenzó a servir como ayudante de cura, convirtiéndose en campanero gracias a su tío Manuel, curaca de una comunidad vecina a Ayo Ayo, llegando a ser campanero oficial de la iglesia del poblado. Posteriormente trabajó dos años como peón en la mina de San Cristóbal, de Oruro, al principio como barretero y luego acarreando trozos de mineral. \n\nAllí conoció el sufrimiento de otros indígenas y comenzó a proclamar la necesidad de rebelarse. \n\nSe trasladó a Sica Sica donde trabajó como panadero y donde vio un hermoso aguayo hecho con la habilidad de los antiguos y cuando preguntó quien lo había hecho le mostraron a una joven muy bella llamada Bartolina Sisa a la cual amaría toda su vida y con la cual se casó,.En 1772, ya casados, tuvieron el primero de sus cuatro hijos :tres varones y una niña. \n\nMás tarde fue comerciante trajinante minorista hasta La Paz, estudiando la forma de pensar de los indígenas, mestizos y cholos, observando especialmente su descontento creciente ante la explotación colonial. \n\nFue apoyado en su lucha por su esposa, Bartolina Sisa y su hermana menor Gregoria Apaza. \n\nAdoptó el seudónimo de Túpac Katari en homenaje al cacique-Inca rebelde Túpac Amaru II (1738-1781) que se levantó en Cuzco y Tomás Katari (1740-1781), cacique de Chayanta."
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

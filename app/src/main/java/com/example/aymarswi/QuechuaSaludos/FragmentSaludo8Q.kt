@@ -1,0 +1,69 @@
+package com.example.aymarswi.QuechuaSaludos
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
+import com.example.aymarswi.R
+import com.example.aymarswi.Saludos.FragmentSaludos9
+import com.example.aymarswi.Util.Utils
+
+class FragmentSaludo8Q : Fragment() {
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val rootView: View = inflater.inflate(R.layout.fragment_saludo8_q, container, false)
+        //Acceder a los valores enviado desde el anterior fragment
+        var puntaje = requireArguments().getInt("valorp")
+        var contador = requireArguments().getInt("valorc")
+        val btnAudio = rootView.findViewById<ImageButton>(R.id.btnAudio)
+        val btnBDTN = rootView.findViewById<ImageButton>(R.id.btnBDTN)
+        val btnBDP = rootView.findViewById<ImageButton>(R.id.btnBDP)
+        val btnBNMama = rootView.findViewById<ImageButton>(R.id.btnBNMama)
+        val btnBTProf = rootView.findViewById<ImageButton>(R.id.btnBTProf)
+        val args = Bundle()
+        args.putInt("valorc", ++contador)
+        btnBDTN.setOnClickListener {
+            args.putInt("valorp", puntaje)
+            Utils().respuestaIncorrecta(
+                requireContext() as AppCompatActivity,
+                R.id.fragmentContainerView3,
+                FragmentSaludos9(),
+                args
+            )
+        }
+        btnBDP.setOnClickListener {
+            args.putInt("valorp", puntaje)
+            Utils().respuestaIncorrecta(
+                requireContext() as AppCompatActivity,
+                R.id.fragmentContainerView3,
+                FragmentSaludo9Q(),
+                args
+            )
+        }
+        btnBNMama.setOnClickListener {
+            args.putInt("valorp", puntaje)
+            Utils().respuestaIncorrecta(
+                requireContext() as AppCompatActivity,
+                R.id.fragmentContainerView3,
+                FragmentSaludo9Q(),
+                args
+            )
+        }
+        btnBTProf.setOnClickListener {
+            args.putInt("valorp", ++puntaje)
+            Utils().respuestaCorrecta(
+                requireContext() as AppCompatActivity,
+                R.id.fragmentContainerView3,
+                FragmentSaludo9Q(),
+                args
+            )
+        }
+        return rootView
+    }
+}

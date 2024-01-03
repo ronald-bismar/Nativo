@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaseColores.FragmentColores9">
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/palabra3"
+        style="@style/textoGuia"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="kellu"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/layout"
+        app:layout_constraintEnd_toStartOf="@+id/palabra4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/palabra1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/palabra1"
+        style="@style/textoGuia"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="janq'u"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/palabra3"
+        app:layout_constraintEnd_toStartOf="@+id/palabra2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView93"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/palabra2"
+        style="@style/textoGuia"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="wila"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/palabra4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/palabra1"
+        app:layout_constraintTop_toBottomOf="@+id/textView93"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="#673AB7"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinuar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/palabra3"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/l1"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="j"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l2"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="a"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l3"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="n"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l4"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="q'"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l5"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="u"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/l6"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="u"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l7"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="r"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l8"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="p"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l9"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="l"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l10"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="t"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/l11"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="q'"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l12"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="u"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l13"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="l"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l14"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="l"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l15"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="u"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/l16"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="e"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l17"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="e"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l18"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="i"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l19"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="l"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l20"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="l"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/l21"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="k"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l22"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="w"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l23"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="i"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l24"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="l"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/l25"
+                style="@style/textoGuia"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="2dp"
+                android:clickable="true"
+                android:text="a"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView93"
+        style="@style/textoGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encuentra las palabras:"
+        app:layout_constraintBottom_toTopOf="@+id/palabra1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/palabra4"
+        style="@style/textoGuia"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="uq'e"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/palabra3"
+        app:layout_constraintTop_toBottomOf="@+id/palabra2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinuar"
+        style="@style/estiloBotonComprobar"
+        android:layout_width="136dp"
+        android:layout_height="39dp"
+        android:text="Continuar"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

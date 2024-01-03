@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuechuaColores.FragmentColores4Q">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView140"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="ELIGE EL COLOR CORRECTO"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView55"
+        style="@style/estiloDeTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="176dp"
+        android:text="café"
+        android:textColor="#672C15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView140" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnArumi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="#F66503"
+        android:fontFamily="@font/linottebold"
+        android:text="willapi"
+        android:textAllCaps="false"
+        android:textColor="#F4E2E2"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnChiyara"
+        app:layout_constraintEnd_toStartOf="@+id/btnChiqi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChumpi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="#672C15"
+        android:fontFamily="@font/linottebold"
+        android:text="k'awsay"
+        android:textAllCaps="false"
+        android:textColor="#EDE7E7"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnChiyara"
+        app:layout_constraintTop_toBottomOf="@+id/btnChiqi" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChiyara"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/linottebold"
+        android:text="Yana"
+        android:textAllCaps="false"
+        android:textColor="#C5BDBD"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnChumpi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnArumi" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChiqi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="#F806D0"
+        android:fontFamily="@font/linottebold"
+        android:text="llamkha"
+        android:textAllCaps="false"
+        android:textColor="#F4EFEF"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnChumpi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnArumi"
+        app:layout_constraintTop_toBottomOf="@+id/textView55"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

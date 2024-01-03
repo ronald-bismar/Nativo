@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#526D82"
+    tools:context=".FragmentsGuias.FragmentGuiaDiccionario">
+
+    <TextView
+        android:id="@+id/textView94"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="38dp"
+        android:fontFamily="@font/linottebold"
+        android:text="Bienvenido a la seccion diccionario!"
+        android:textAlignment="center"
+        android:textColor="@color/color4"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="262dp"
+        android:layout_height="316dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/esquinasredondas"
+        android:backgroundTint="#27374D"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView96"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView94">
+
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="182dp"
+            android:layout_height="213dp"
+            android:src="@drawable/imagendiccionario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="253dp"
+        android:layout_height="307dp"
+        android:layout_marginTop="100dp"
+        android:elevation="20dp"
+        android:src="@drawable/gatito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout5" />
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/linotteregular"
+        android:text="Busca las palabras que necesitas conocer"
+        android:textColor="@color/white"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEmpezarDiccionario"
+        android:layout_width="148dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/button_background_lightblue"
+        android:backgroundTint="@color/color2"
+        android:elevation="5dp"
+        android:fontFamily="@font/linottebold"
+        android:text="Empezar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView40" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

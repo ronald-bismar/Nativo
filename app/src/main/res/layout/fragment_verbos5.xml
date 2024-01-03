@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout29"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaseVerbos.FragmentVerbos5">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottebold"
+        android:text="mirar"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnQillqaña"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:background="@drawable/botonazul"
+        android:text="qillqaña"
+        android:textAllCaps="false"
+        android:textColor="#2196F3"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUñchukiyaña"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUñchukiyaña"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:background="@drawable/botonazul"
+        android:text="uñch'ukiyaña "
+        android:textAllCaps="false"
+        android:textColor="#2196F3"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnQillqaña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLuraña"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLuraña"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:background="@drawable/botonazul"
+        android:text="luraña"
+        android:textAllCaps="false"
+        android:textColor="#2196F3"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUñchukiyaña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView32"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="198dp"
+        android:layout_height="192dp"
+        android:src="@mipmap/vision"
+        app:layout_constraintBottom_toTopOf="@+id/btnLuraña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView48"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

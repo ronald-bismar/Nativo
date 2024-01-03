@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NuevosArchivos.PerfilEmergente.FragmentoPersonaje">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="#FFFFFF"
+        android:paddingBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtNombrePersonaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="130dp"
+            android:paddingRight="130dp"
+            android:fontFamily="@font/linotteregular"
+            android:text="Killa"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/mObtenidas"
+            android:layout_width="250dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:src="@drawable/estre" />
+
+        <TextView
+            android:id="@+id/txtNivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Nivel: Avanzada"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtNivelEstrella"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Nivel Estrella: 5 estrellas"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtTrofeosObtenidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Trofeos obtenidos: 4 Trofeos"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtMedallasDoradas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Medallas Doradas: 3 medallas"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtMedallasPlateadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Medallas Plateadas: 5 medallas"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgPersonaje1"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:background="@drawable/borde_redondoblanco"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/ll"
+        app:layout_constraintTop_toTopOf="@id/ll"
+        app:layout_constraintStart_toStartOf="@id/ll"
+        app:layout_constraintEnd_toEndOf="@id/ll"/>
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Confirmar"
+        android:backgroundTint="#00BCD4"
+        android:textColor="@color/colorWhite"
+        app:cornerRadius="5dp"
+        android:textAllCaps="false"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/ll"
+        app:layout_constraintEnd_toEndOf="@id/ll"
+        app:layout_constraintTop_toBottomOf="@id/ll"
+        app:layout_constraintBottom_toBottomOf="@id/ll"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

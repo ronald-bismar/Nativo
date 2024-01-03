@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ClaseFamilia.FragmentFamilia9"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="800dp">
+
+            <TextView
+                android:id="@+id/textView111"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:paddingTop="5dp"
+                android:text="Escribe la palabra correcta"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnPapa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <ImageButton
+                android:id="@+id/btnAudio"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/iconosonido"
+                app:layout_constraintBottom_toTopOf="@+id/etContenPalabra"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnPapa"
+                app:layout_constraintTop_toBottomOf="@+id/textView111"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <LinearLayout
+                android:id="@+id/etContenPalabra"
+                style="@style/textoGuia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/strokedelgado"
+                android:clickable="true"
+                android:ems="10"
+                android:focusable="true"
+                android:gravity="center"
+                android:minHeight="50dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView117"
+                app:layout_constraintVertical_bias="0.5"
+                android:orientation="horizontal" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnComprobar16"
+                style="@style/estiloBotonComprobar"
+                android:layout_width="145dp"
+                android:layout_height="44dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <ImageView
+                android:id="@+id/btnPapa"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/white"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nieto"
+                app:layout_constraintBottom_toTopOf="@+id/textView117"
+                app:layout_constraintEnd_toStartOf="@+id/btnAudio"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView111"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <TextView
+                android:id="@+id/textView117"
+                style="@style/textoGuia"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:text="Allchhi (Nieto)"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toTopOf="@+id/etContenPalabra"
+                app:layout_constraintTop_toBottomOf="@+id/btnPapa"
+                app:layout_constraintVertical_bias="0.5"
+                tools:layout_editor_absoluteX="69dp" />
+
+            <LinearLayout
+                android:id="@+id/constraintLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/btnComprobar16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etContenPalabra"
+                app:layout_constraintVertical_bias="0.5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

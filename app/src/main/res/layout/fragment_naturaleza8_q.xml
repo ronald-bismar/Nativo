@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuechuaNaturaleza.FragmentNaturaleza8Q">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView126"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color1"
+        android:paddingTop="5dp"
+        android:text="ESCRIBE LA PALABRA CORECTA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="195dp"
+        android:layout_height="204dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtResp2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@mipmap/arbol" />
+
+    <Button
+        android:id="@+id/btnComp2"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3B6F9A"
+        android:fontFamily="@font/linottebold"
+        android:text="Comprobar"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResp2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/txtResp2"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:background="@drawable/strokedelgado"
+        android:ems="10"
+        android:fontFamily="@font/linottesemibold"
+        android:gravity="center"
+        android:inputType="textNoSuggestions"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComp2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.5"
+        tools:text="ali" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/linotteheavy"
+        android:gravity="center"
+        android:text="COMO SE ESCRIBE ARBOL"
+        android:textColor="#0C0C0C"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView126" />
+</androidx.constraintlayout.widget.ConstraintLayout>

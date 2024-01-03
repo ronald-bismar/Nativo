@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallasPrincipales.MainPrincipalActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Saludos.FragmentSaludos8">
+
+        <!-- TODO: Update blank fragment layout -->
+        <ImageButton
+            android:id="@+id/btnBNMama"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerCrop"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnBTProf"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBDTN"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="MissingConstraints"
+            android:src="@drawable/buenasnochesmama" />
+
+        <ImageButton
+            android:id="@+id/btnBTProf"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/colorWhite"
+            android:scaleType="centerCrop"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnBNMama"
+            app:layout_constraintTop_toBottomOf="@+id/btnBDP"
+            app:layout_constraintVertical_bias="0.5"
+            android:src="@drawable/buentardesprofesora" />
+
+        <ImageButton
+            android:id="@+id/btnBDTN"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerCrop"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/btnBNMama"
+            app:layout_constraintEnd_toStartOf="@+id/btnBDP"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView102"
+            app:layout_constraintVertical_bias="0.5"
+            android:src="@drawable/buenosdtn" />
+
+        <ImageButton
+            android:id="@+id/btnBDP"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerCrop"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/btnBTProf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnBDTN"
+            app:layout_constraintTop_toBottomOf="@+id/textView102"
+            app:layout_constraintVertical_bias="0.5"
+            android:src="@drawable/buendiapapa" />
+
+
+        <TextView
+            android:id="@+id/textView102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="50dp"
+            android:background="@color/color1"
+            android:text="Aski jayp'u kipan yatichiri"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnBDTN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAudio"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color1"
+            android:paddingTop="5dp"
+            android:text="Elige la imagen correcta"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <ImageButton
+            android:id="@+id/btnAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@android:drawable/ic_lock_silent_mode_off"
+            app:layout_constraintBottom_toTopOf="@+id/textView102"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView111"
+            app:layout_constraintVertical_bias="0.5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

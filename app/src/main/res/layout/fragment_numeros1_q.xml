@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuechuaNumeros.FragmentNumeros1Q">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView58"
+        style="@style/textoGuia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Coloca los números en forma ordenada"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtN1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="@color/color4"
+        android:fontFamily="@font/linotteheavy"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#034578"
+        android:textSize="110sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtN2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <TextView
+        android:id="@+id/txtCPalabra3"
+        style="@style/textoGuia"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/strokedelgado"
+        android:clickable="true"
+        android:focusable="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/txtCPalabra4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtN3" />
+
+    <TextView
+        android:id="@+id/txtCPalabra1"
+        style="@style/textoGuia"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/strokedelgado"
+        android:clickable="true"
+        android:focusable="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/txtCPalabra2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtN1" />
+
+    <TextView
+        android:id="@+id/txtCPalabra4"
+        style="@style/textoGuia"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/strokedelgado"
+        android:clickable="true"
+        android:focusable="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtCPalabra3"
+        app:layout_constraintTop_toBottomOf="@+id/txtN4" />
+
+    <TextView
+        android:id="@+id/txtN4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="@color/color4"
+        android:fontFamily="@font/linotteheavy"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="#FF5722"
+        android:textSize="110sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtN3"
+        app:layout_constraintTop_toBottomOf="@+id/txtCPalabra2" />
+
+    <TextView
+        android:id="@+id/txtN3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="@color/color4"
+        android:fontFamily="@font/linotteheavy"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="#109715"
+        android:textSize="110sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCPalabra3"
+        app:layout_constraintEnd_toStartOf="@+id/txtN4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCPalabra1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtCPalabra2"
+        style="@style/textoGuia"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/strokedelgado"
+        android:clickable="true"
+        android:focusable="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtCPalabra1"
+        app:layout_constraintTop_toBottomOf="@+id/txtN2" />
+
+    <TextView
+        android:id="@+id/txtN2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bordesredondeados"
+        android:backgroundTint="@color/color4"
+        android:fontFamily="@font/linotteheavy"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="#EC1404"
+        android:textSize="110sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtN1"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <TextView
+        android:id="@+id/txtQimsa"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/color2"
+        android:text="Kimsa"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtMaya"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCPalabra3" />
+
+    <TextView
+        android:id="@+id/txtPaya"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="49dp"
+        android:backgroundTint="@color/color2"
+        android:text="Iskay"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtPusi"
+        app:layout_constraintTop_toBottomOf="@+id/txtMaya" />
+
+    <TextView
+        android:id="@+id/txtMaya"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/color2"
+        android:text="Uk/Juk"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtQimsa"
+        app:layout_constraintTop_toBottomOf="@+id/txtCPalabra4" />
+
+    <TextView
+        android:id="@+id/txtPusi"
+        style="@style/estiloBotonDeslizar"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="49dp"
+        android:backgroundTint="@color/color2"
+        android:text="Tawa"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtPaya"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQimsa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

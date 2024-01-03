@@ -1,0 +1,390 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Historias.FragmentHistoriaPaginas"
+    android:id="@+id/llPrincipal"
+    android:background="#ECFAFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_yellow"
+        android:backgroundTint="@color/color2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/linottesemibold"
+            android:text="Inas Ukhamächi"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Talvez sera así"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vistaEnAymara"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/ScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/linottesemibold"
+                    android:padding="16dp"
+                    android:text="DISPONIBLE:
+\n\nVAN A SER CONVENCIDOS
+\nJta. Alarcón Sosa Aarón - Silencio
+\n\nNO HE VISTO A MI ABUELO
+\nKka. Jessica Fresia García Condori
+\n\nHASTA QUE NOS ENCONTREMOS DE NUEVO
+\nJta. Adolfo Emerson Aramayo García
+\n\nCUATRO VIDAS
+\nKka. María Huaylla Alave
+\n\nLO SIENTO EN EL TRABAJO
+\nKka. Jessica Fresia García Condori
+\n\nDOS HERMANAS SIRIAS
+\nJta. Francisco Gustavo Pazzarelli
+\n\nUN SUEÑO
+\nJta. Miguel Cory Hillary Solle
+\n\nYO LO RECUERDO
+\nJta. Elijah Reynolds Ajata Rivera
+\n\n"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="16dp"
+                    android:text="
+TUMPASIRIW SE VA
+Alarcón Sosa Aarón - Silencio\n
+(Mercado agrícola de Ch)\n
+Cada año, cuando llega la Temporada de Lluvias, el Campo Espiritual es
+achachil
+Voy a visitar a mi abuela ¿Por qué voy? tumpasiri,
+Voy a escuchar Sr. Manuku, ¿dónde está? Tal vez estés curado,
+tal vez cantarás, comerás caliente ¿Qué sería? ¿Por qué es
+sarthxa? Tumpasiri, voy a hacer preguntas.
+Señora Kanticha, ¿dónde está? Tal vez llores por tus hijos,
+podrías mudarte a Suiza ¿Qué pasaría si? ¿Por qué es
+sarthxa? Voy a visitarlo, Sr. Isaac,
+¡dónde estás! ¿Quizás eres agricultor, eres un frijol de soja, Anitumasti? Tal
+vez
+si te ries de el como seria? ¿Qué es la sarthxa? tumpasiri,
+Recuerdo el sarapunth.\n\n
+NO HE VISTO A MI ABUELO\n
+Kka. Jessica Fresia García Condori\n
+(Mercado Ariqa)\n
+No fui a ver a mi abuelo porque tenía una enfermedad grave. Tal vez
+lamentablemente, tal vez no. Quería ir a ver a mi abuelo.
+Fui a ver el primer mes. Y mi abuelo sin manos
+quiere olerme, no quiere abrazarme. Tal vez es una sonrisa
+sasktwa. Tal vez me equivoque, tal vez me equivoque.\n\n
+HASTA QUE NOS VOLVAMOS A VER\n
+Adolfo Emerson Aramayo García\n
+(Mercado agrícola de Ch)\n
+Mi padre se llamaba Rojelio. Su muerte es el quinto año consecutivo.
+Era muy fuerte, y se olvidó de muchas cosas.
+Setenta y siete años.
+Mi padre es cuestión de tiempo y dónde está.
+El se olvido. Fue una gran pérdida. Por eso sus hijos
+todavía veíamos a mi padre, pero un día mi padre se fue de casa
+salida. Nadie sabía dónde estaba. Él está en casa
+nunca regresa Todos estábamos muy tristes en la casa. Diez
+y después de cinco días busqué a mi padre, y estaba muerto.
+Mi padre se había ido.
+¡Ahora, en dónde está! No sé. mi hermana –mi padre
+está en el cielo– dijo. No sé. Tal vez eres khayankchi.
+El abuelo de la hija de mi hermana del cielo para todos tal vez
+viendo la luz. No sé, tal vez de vuelta, con él esta noche.
+sabemos soñar. Tal vez un día iremos, aquí tal vez
+Pude reunirme con mi padre.\n\n
+VIDA TAWAQ\n
+Kka. María Huaylla Alave\n
+(Mercado Ariqa)\n
+Salí de Arica, hace casi diez años. Entonces el
+las compañeras, las aricanas, pueden haber tenido hijos, pueden no
+ahi donde estan! No sé.
+Recuerdo esa vida en el futuro. Sí, que la vida es muy, muy
+queridamente amado. La vida no es así ahora; si tienes un hijo,
+chachañixta es un personaje. Así que la danza se olvida. Tal vez
+Anathan deben estar bailando, en Arica.\n\n
+IRNAQÄWIN LLAKISTHA\n
+Kka. Jessica Fresia García Condori\n
+(Ariqa Marka)\n
+Alwatax phaytwa, ukat nayax irnaqir sarxtwa. Jisk’a imillaj wawa
+utar irptwa, jilïr wawanakax utajan yatiqapxi. Ur paqar llakisisktwa;
+wawanakax inas jan manq’apkchiti, wawanakax inas jan
+qillqapkchiti, wawanakax qillqat inas jan lurapkchiti, jilïr imillax
+ullañ inas jan amtaskchiti ukata ¿Jumanakax kunjams urux
+lurasipkta?\n\n
+DOS HERMANAS SIRIOSAS\n
+Jta. Francisco Gustavo Pazzarelli\n
+(Mercado de Córdoba)\n
+Mi abuela era Selva. Los primeros años, con su madre y su padre.
+Siria llegó a Córdoba. que eran muy amables
+dijo, sin embargo, que nunca habían regresado a Siria.
+Dijeron que estaban preocupados. Mi abuela extrañaba su lugar.
+Con lágrimas en los ojos, recordó: “Mi hermana podría tener un bebé”, “Mis
+amigos
+tal vez trabajen”, “¡Mi hermano puede estar casado con alguien!”
+él dijo.
+Un día, su hermana lo llamó del chile. Se llamaba Tota.
+Mi abuela estaba feliz. Hablaron mucho.
+La hermana de mi abuela tenía dos hijos. Desde ese día
+las hermanas hablaban chile con mucha fluidez.\n\n
+UN SUEÑO\n
+Miguel Cory Hillary Solle\n
+(Mercado agrícola de Ch)\n
+Tuve un sueño de infancia en el país de mi padre. Diez
+los toros me siguieron. tenia unos cuernos muy grandes
+Sus cuerpos eran peludos, sus ojos rojos. Soy
+Huí al mar, porque los toros me seguían. Qutat
+caídas de montaña. Había muchas rocas; entre las rocas
+de repente me resbalé, en un agujero.
+En el interior, aparecí en un agujero. Había arena adentro, uno
+el mar es abundante en agua. En el mar, había un tío dorado. Soy
+Estaba mirando con asombro. Así termina mi sueño. Cuyo
+el unkalla dorado aparece en el dicho del tiempo ancestral. Tal vez eso es lo
+que estás soñando
+declaraciones. Tal vez el público esté soñando lo mismo. Tal vez
+y aparece el proverbio dorado unkallan.\n\n
+LO RECUERDO\n
+Jta. Elijah Reynolds Ajata Rivera\n
+(Marca de nivel alto)\n
+Pasé mis primeros años con el Ojo. es un tipo muy agradable
+él era un hombre. Un día se va de mi país y su padre se va a trabajar a otro
+lado
+luego. No he sabido nada desde entonces.
+Ahora donde quiera que estés; tal vez un esposo, tal vez un hijo, tal vez
+más distante el marcador. No sé. Tal vez esté funcionando, tal vez no
+no funciona Tal vez tenga dinero, tal vez no; solía vivir en la pobreza.
+Pensando en ello, puede que haya hecho mal, puede que haya hecho mal
+Entiendo. Somos humanos, y probablemente sepamos cómo hacerlo.
+¡Kunachiya!
+Siempre habrá recuerdos. En la morada de los ojos
+Había muchos de ellos. Ahora tal vez solo su papá y su mamá entran en
+pánico.
+si están vivos, sus hijos pueden casarse. Los niños
+cuando nos casamos, vamos a otra casa, a veces a nuestros padres
+podemos quedarnos en casa.
+Nay y yo queríamos casarnos. No es así,
+tal vez te equivoques
+Cuando me escuchas decir esto, puedes estar enojado, puedes estar riendo,
+y usted podría ser como ¡Qué!\n\n\n
+Quién escribió el artículo
+los hermanos y hermanas
+Felicidades"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#90000000" />
+
+    <LinearLayout
+        android:id="@+id/vistaEnCastellano"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/ScrollView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/linottesemibold"
+                    android:padding="16dp"
+                    android:text="UTJIRI\n\nTUMPASIRIW SARTXA
+                \nJta. Alarcón Sosa Aarón - Amuki
+                \n\nACHACHILAJARUX JANIW UÑJANXTTI
+                \nKka. Jessica Fresia García Condori
+                \n\nMAYAMP JIKISIÑKAMA
+                \nJta. Adolfo Emersón Aramayo García
+                \n\nTAWAQ JAKÄWI
+                \nKka. María Huaylla Alave
+                \n\nIRNAQÄWIN LLAKISTHA
+                \nKka. Jessica Fresia García Condori
+                \n\nPÄ SIRIA KULLAKANAKA
+                \nJta. Francisco Gustavo Pazzarelli
+                \n\nMÄ SAMKA
+                \nJta. Miguel Kori Hilari Solle
+                \n\nJUPAT AMTASTHA
+                \nJta. Elias Reynaldo Ajata Rivera
+                \n\n"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="16dp"
+                    android:text="
+TUMPASIRIW SARTXA
+Alarcón Sosa Aarón - Amuki\n
+(Ch’uqi Yapu Marka)\n
+Sapa mara, Jallu Pachax purinxi ukjax, Ajayun Pamparuw achachil
+awichanakar tumpasir sarthxa ¿Kunatakis sarthxa? Tumpasiri,
+ist’asiriw sarthxa ¡Tata Manuku, kawkinkxstaya! Inas qullasxsta,
+inas jayllissta, t’imphu manq’t’assta ¿Kunjamäspasa? ¿Kunatakis
+sarthxa? Tumpasiri, jiskht’asiriw sarthxa.
+¡Mama Kanticha, kawkinkxstaya! Inas jachassta wawanakamlayku,
+inas sarxaraksta, Suiza markaru ¿Kunjamäspasa? ¿Kunatakis
+sarthxa? Tumpasiri, qhumantasiriw sarthxa ¡Tata Isaku,
+kawkinkxstaya! Inas yapuchsta, jupha sataraksta ¿Anitumasti? Inas
+jupamp larussta ¿Kunjamäspasa? ¿Kunatakis sarthxa? Tumpasiri,
+amtasiriw sarapunthxa.\n\n
+ACHACHILAJARUX JANIW UÑJANXTTI\n
+Kka. Jessica Fresia García Condori\n
+(Ariqa Marka)\n
+Janiw achachilajar uñjir sarxtti, ñanqha usuw utji ukata. Inas
+llakischi, inas janiraki. Achachilajarux walpin unjir sarañ munayätha.
+Nayrïr phaxsix uñjir sarttwa. Ukat achachilajax janiw amparanak
+q’apt’añ munkituti, janiw qhumantayasiñ munkituti. Inas jasq’archi
+sasktwa. Inas jan wali amuyaskstha, inas pantjasstha.\n\n
+MAYAMP JIKISIÑKAMA\n
+Adolfo Emersón Aramayo García\n
+(Ch’uqi Yapu Marka)\n
+Awkijax Rojelio satänawa. Jupan jiwatapax phisqha maraw mäkipxi.
+Jupax ancha ch’amanïnawa, ukhamarus walja yänak armasïna.
+Paqallq tunk paqallqun maranïnawa ukata.
+Awkijax pachampit kawkha chiqans jiqxatasina ukampit
+armasxänwa. Anchaw chhaqhtxäna. Ukalaykukiw wawanakapax
+tatajar wali uñjapxayätha, ukampirus mä urux awkijax utajat
+mistuwiyi. Janiw khitis kawkinkän ukx yatkänati. Jupax utar
+janipuniw kutinkiti. Taqinix utjäwin sinti llakitäpxayäthwa. Tunka
+phisqhan uruw awkijar thaqhtapxtha, ukhamarus jiwatäxänwa.
+Awkijax sarxataynawa.
+¡Jichhax kawkinkchiya! Janiw yatkthti. Kullakajax –awkisax
+alaxpachankxiwa– sänawa. Janiw yatkthti. Inas khayankchi.
+Kullakajan phuchhapan achachilapax alaxpachat taqinir inas
+uñjaniskchi. Nayax janiw yatxthti, inas kutinchi, jupamp arumax
+samkasiñ yatthwa. Inas mä urux nänakax sarapxstha, akham inas
+awkijamp mayamp jikisiñ atipxstha.\n\n
+TAWAQ JAKÄWI\n
+Kka. María Huaylla Alave\n
+(Ariqa Marka)\n
+Nayax sarxtwa Arica markata, ñä tunka maräxaniwa. Ukatx uka
+warmi masinakax, Arican utjirinakax, inas wawanïxapxchi, inas jan
+kuna ¡Jupanakax kawkinkchiya! Janiw yatktti.
+Qhaphin uka jakasiñ amtasiraktwa. Jisa, uka jakasiña wali, wali
+munatächiya. Jichhaxa jakasiñax janiw ukhamäkiti; wawanïxta,
+chachanïxta ukhamawa. Ukhamax thuqhuñax armatäxiwa. Inas
+Anatan jupanakax thuqhuskapxchi, Arica markana.\n\n
+IRNAQÄWIN LLAKISTHA\n
+Kka. Jessica Fresia García Condori\n
+(Ariqa Marka)\n
+Alwatax phaytwa, ukat nayax irnaqir sarxtwa. Jisk’a imillaj wawa
+utar irptwa, jilïr wawanakax utajan yatiqapxi. Ur paqar llakisisktwa;
+wawanakax inas jan manq’apkchiti, wawanakax inas jan
+qillqapkchiti, wawanakax qillqat inas jan lurapkchiti, jilïr imillax
+ullañ inas jan amtaskchiti ukata ¿Jumanakax kunjams urux
+lurasipkta?\n\n
+PÄ SIRIA KULLAKANAKA\n
+Jta. Francisco Gustavo Pazzarelli\n
+(Córdova Marka)\n
+Awichajax Selva satänwa. Nayra maranakax, taykapamp tatapampix
+Siriat Cordobaruw jutapxatayna. Wali suma jaqïpxänwa sasaw
+sapxäna, ukampirus, jupanakax Siriarux janipuniw kutipkataynati.
+Llakitäpxiwa sapxänwa. Awichajax utjäwipat walpun amtasitayna.
+Jachasaw amtasitayna: “Kullakajax inas wawanïchi”, “Masinakajax
+inas irnaqapxchi”, “Jilajax inas jaqichaschi ¡Khitimpikïchiya!”
+sataynawa.
+Mä urux, kullakapax chililiritw jawsatayna. Jupax Tota satänwa.
+Awichajax kusisitaynawa. Jupanakax wal aruskipapxatayna.
+Awichajan kullakapax pä wawanïtaynawa. Ukürutpach uka
+kullakanakax walpun chililirit aruskipañ yatipxatayna.\n\n
+MÄ SAMKA\n
+Miguel Kori Hilari Solle\n
+(Ch’uqi Yapu Marka)\n
+Nayax wawäkasinx tatajan markapan mä samka samkayäta. Tunka
+urqu wakanakaw nayar arktapxitäna. Wali jach’a waxraninakänwa
+Janchinakapax chupikänwa, nayranakapax wilänwa. Nayax
+qutatuqiruw jaltha, urqu wakanakax arktanipxitu ukata. Qutat
+qullur jalkataraktha. Walja qalanakaw utjäna; qala taypiruw
+akatjam liwranttawaytha, mä p’iyaru.
+Manqhäna, mä putun uñsttha. Uka manqhänxa ch’allaw utjäna, mä
+qutaw walja umanïna. Qutanxa, mä quri unkallaw tuyuskäna. Nayax
+wali muspharataw uñch’ukiskayäta. Ukhamaw samkajax tukuyi. Uka
+quri unkallax achachil pacha säwin uñsti. Inas ukat samksta ukham
+sawinaka. Inas markachir jaqinakax uka pachpa samkapxchi. Inas
+ukat uka quri unkallan säwipax uñstchi.\n\n
+JUPAT AMTASTHA\n
+Jta. Elias Reynaldo Ajata Rivera\n
+(“Altu” Pata Marka)\n
+Nayra maranakax Nayrampiw sarnaqayätha. Jupax wali suma
+jaqïnwa. Mä urux markajat sarxi, tatapaw yaqha chiqar irnaqir sarxi
+ukata. Ukürutpachx janiw kuns yatxtti.
+Jichhax kawkinkxchiya; inas chachanïxchi, inas wawanïxchi, inas
+juk’amp jaya markar sarxchi. Janiw yatxtti. Inas irnaqaskchi, inas jan
+irnaqkchiti. Inas qullqinïxchi, inas janiraki; nayrax pisinakw jakasïna.
+Akhamanak lup’isax, nayax inas jan wal lurstha, inas jan wal
+amuyxstha. Jaqïstanxaya, ukat inas ukham lurañ yat’stan
+¡Kunächiya!
+Ukhamarus amtasiñax utjakipiniwa. Nayran utjäwipanx
+waljanïpxänwa. Jichhax inas tatapamp mamapampik panin
+jakxapxchi, inas wawanakapax jaqichasxapxchi. Wawanakax
+jaqichasisax yaqha utaruxay sarañ yatstanxa, yaqhipax tayk awkin
+utapan inas qhiparapxarakstan.
+Nayramp nayampix jaqichasiñ munapxayätha. Janiw ukhamäxiti,
+inas pantjasipxstha.
+Nayar akham arsur ist’asax, inas jumax thithxsta, inas larusiraksta,
+ukhamarus jumanakax inas ukhamäpxaraksta ¡Kunächiya!
+\n\n\n
+Khithinakatï qillqt’awiyapki
+uka jilata kullakanaruw
+jallallt’ata"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

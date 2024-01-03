@@ -1,0 +1,33 @@
+package com.example.aymarswi.QuechuaColores
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import com.example.aymarswi.QuechuaVerbos.FragmentVerbos1Q
+import com.example.aymarswi.R
+import com.example.aymarswi.Util.Utils
+
+class FragmentColores0Q : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val rootView: View = inflater.inflate(R.layout.fragment_colores0_q, container, false)
+        val btn = rootView.findViewById<Button>(R.id.btnCont)
+        val args = Bundle()
+        btn.setOnClickListener {
+            args
+            Utils().pasarDeFragment(
+                requireActivity() as AppCompatActivity,
+                R.id.fragmentContainerView3,
+                FragmentColores1Q()
+            )
+        }
+
+        return rootView
+    }
+}

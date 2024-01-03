@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A52C23"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".FragmentsGuias.FragmentGuiaLecciones">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPalabras"
+        android:layout_width="wrap_content"
+        android:layout_height="573dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/esquinasredondas"
+        android:backgroundTint="#7A1D1D"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEmpezarLecciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/textView94"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginBottom="58dp"
+            android:fontFamily="@font/linottebold"
+            android:text="Conozcamos las palabras de la lección familia"
+            android:textAlignment="center"
+            android:textColor="@color/color4"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView44"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="225dp"
+            android:layout_height="277dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="107dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/polluelo3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView94" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEmpezarLecciones"
+        android:layout_width="148dp"
+        android:layout_height="43dp"
+        android:background="@drawable/button_background_lightblue"
+        android:backgroundTint="@color/color2"
+        android:elevation="5dp"
+        android:fontFamily="@font/linottebold"
+        android:text="Siguiente"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+</LinearLayout>
