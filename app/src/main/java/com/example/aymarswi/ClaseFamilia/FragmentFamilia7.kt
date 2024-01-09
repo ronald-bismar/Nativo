@@ -18,13 +18,14 @@ class FragmentFamilia7 : Fragment() {
     private lateinit var btnKullaka: Button
     private lateinit var btnComprobar: Button
     private lateinit var etPalabra: TextView
+    private lateinit var rootView: View
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView: View = inflater.inflate(R.layout.fragment_familia7, container, false)
+        rootView = inflater.inflate(R.layout.fragment_familia7, container, false)
 
         iniciarComponentes()
 
@@ -42,11 +43,11 @@ class FragmentFamilia7 : Fragment() {
     }
 
     private fun iniciarComponentes() {
-        btnTayka = requireView().findViewById(R.id.btnTayka)
-        btnTiwula = requireView().findViewById(R.id.btnTiwula)
-        btnIpa = requireView().findViewById(R.id.btnIpa)
-        btnKullaka = requireView().findViewById(R.id.btnKullaka)
-        etPalabra = requireView().findViewById(R.id.etPalabra)
-        btnComprobar = requireView().findViewById(R.id.appCompatButton8)
+        btnTayka = rootView.findViewById(R.id.btnTayka)
+        btnTiwula = rootView.findViewById(R.id.btnTiwula)
+        btnIpa = rootView.findViewById(R.id.btnIpa)
+        btnKullaka = rootView.findViewById(R.id.btnKullaka)
+        etPalabra = rootView.findViewById(R.id.etPalabra)
+        btnComprobar = rootView.findViewById(R.id.appCompatButton8)
     }
 }

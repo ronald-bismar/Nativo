@@ -17,11 +17,12 @@ class FragmentFamilia6 : Fragment() {
     private lateinit var btnUrukipan: Button
     private lateinit var btnArsuña: Button
     private lateinit var btnComprobar: Button
+    private lateinit var rootView: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        val rootView: View = inflater.inflate(R.layout.fragment_familia6, container, false)
+        rootView = inflater.inflate(R.layout.fragment_familia6, container, false)
         iniciarComponentes()
 
         opcionMultipleDePalabras().palabraVerdadera(
@@ -37,10 +38,10 @@ class FragmentFamilia6 : Fragment() {
     }
 
     private fun iniciarComponentes() {
-        btnSarañani = requireView().findViewById(R.id.btnsarañani)
-        btnUrukipan = requireView().findViewById(R.id.btnurukipan)
-        btnArsuña = requireView().findViewById(R.id.btnparlaña)
-        txtPalabra = requireView().findViewById(R.id.txtpalabra)
-        btnComprobar = requireView().findViewById(R.id.btnCmpb)
+        btnSarañani = rootView.findViewById(R.id.btnsarañani)
+        btnUrukipan = rootView.findViewById(R.id.btnurukipan)
+        btnArsuña = rootView.findViewById(R.id.btnparlaña)
+        txtPalabra = rootView.findViewById(R.id.txtpalabra)
+        btnComprobar = rootView.findViewById(R.id.btnCmpb)
     }
 }

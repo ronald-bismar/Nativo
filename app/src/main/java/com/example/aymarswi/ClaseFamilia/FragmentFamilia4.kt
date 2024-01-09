@@ -15,8 +15,6 @@ class FragmentFamilia4 : Fragment() {
     private lateinit var obText: EditText
     private lateinit var btnComprobar: Button
     private lateinit var rootView: View
-    private lateinit var palabra: String
-    private var correcto: Boolean = false
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

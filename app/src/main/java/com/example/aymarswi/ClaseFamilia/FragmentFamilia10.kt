@@ -12,22 +12,25 @@ import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
 class FragmentFamilia10 : Fragment() {
+    private lateinit var btnKullaka4: Button
+    private lateinit var btnJila : Button
+    private lateinit var  btnJilaku: Button
+    private lateinit var btnAchachila: Button
+    private lateinit var etPalabra3: TextView
+    private lateinit var btnComprobar: Button
+    private lateinit var rootView: View
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        val rootView: View = inflater.inflate(R.layout.fragment_familia10, container, false)
+        rootView = inflater.inflate(R.layout.fragment_familia10, container, false)
+        initComponents()
         var puntaje = requireArguments().getInt("valorp")
-        var contador = requireArguments().getInt("valorc")
-        val btnKullaka4 = rootView.findViewById<Button>(R.id.btnKullaka4)
-        val btnJila = rootView.findViewById<Button>(R.id.btnJila)
-        val btnJilaku = rootView.findViewById<Button>(R.id.btnJilaku)
-        val btnAchachila = rootView.findViewById<Button>(R.id.btnAchachila)
-        val etPalabra3 = rootView.findViewById<TextView>(R.id.etContenPalabra)
-        val btnComprobar = rootView.findViewById<Button>(R.id.btnComprobar17)
         val args = Bundle()
+        var contador = requireArguments().getInt("valorc")
         args.putInt("valorc", ++contador)
+
         btnKullaka4.setOnClickListener {
                 etPalabra3.text = btnKullaka4.text.toString()
         }
@@ -78,4 +81,13 @@ class FragmentFamilia10 : Fragment() {
             }
         }
         return rootView  }
+
+    private fun initComponents() {
+        btnKullaka4 = rootView.findViewById(R.id.btnKullaka4)
+        btnJila = rootView.findViewById(R.id.btnJila)
+        btnJilaku = rootView.findViewById(R.id.btnJilaku)
+        btnAchachila = rootView.findViewById(R.id.btnAchachila)
+        etPalabra3 = rootView.findViewById(R.id.etContenPalabra)
+        btnComprobar = rootView.findViewById(R.id.btnComprobar17)
+    }
 }

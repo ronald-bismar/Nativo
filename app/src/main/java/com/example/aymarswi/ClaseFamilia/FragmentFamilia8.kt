@@ -18,12 +18,13 @@ class FragmentFamilia8 : Fragment() {
     private lateinit var btnIpa: Button
     private lateinit var btnComprobar: Button
     private lateinit var etPalabra: TextView
+    private lateinit var rootView: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView: View = inflater.inflate(R.layout.fragment_familia8, container, false)
+        rootView = inflater.inflate(R.layout.fragment_familia8, container, false)
         iniciarComponentes()
 
         opcionMultipleDePalabras().palabraVerdadera(
@@ -40,11 +41,11 @@ class FragmentFamilia8 : Fragment() {
     }
 
     private fun iniciarComponentes() {
-        btnTiwula3 = requireView().findViewById(R.id.btnTiwula3)
-        btnKullaka2 = requireView().findViewById(R.id.btnKullaka2)
-        btnJila1 = requireView().findViewById(R.id.btnJila1)
-        btnIpa = requireView().findViewById(R.id.btnIpa)
-        etPalabra = requireView().findViewById(R.id.etContenPalabra)
-        btnComprobar = requireView().findViewById(R.id.btnComprobar15)
+        btnTiwula3 = rootView.findViewById(R.id.btnTiwula3)
+        btnKullaka2 = rootView.findViewById(R.id.btnKullaka2)
+        btnJila1 = rootView.findViewById(R.id.btnJila1)
+        btnIpa = rootView.findViewById(R.id.btnIpa)
+        etPalabra = rootView.findViewById(R.id.etContenPalabra)
+        btnComprobar = rootView.findViewById(R.id.btnComprobar15)
     }
 }

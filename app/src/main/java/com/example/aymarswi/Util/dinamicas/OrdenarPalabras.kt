@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
 
-class OrdenarPalabras() : Actividad(AppCompatActivity(), AppCompatActivity(), R.id.fragmentContainerView3) {
+class OrdenarPalabras : Actividad(AppCompatActivity(), AppCompatActivity(), R.id.fragmentContainerView3) {
     private lateinit var contenedorPalabras: LinearLayout
     private lateinit var contenedorOracion: LinearLayout
 
