@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
 class FragmentFamilia7 : Fragment() {
@@ -37,7 +35,7 @@ class FragmentFamilia7 : Fragment() {
             btnKullaka,
             palabraCorrecta = btnKullaka.text.toString(),
             palabraElegida = etPalabra,
-            botonComprobar = btnComprobar, activity = requireActivity() as AppCompatActivity
+            botonComprobar = btnComprobar
         )
 
         return rootView

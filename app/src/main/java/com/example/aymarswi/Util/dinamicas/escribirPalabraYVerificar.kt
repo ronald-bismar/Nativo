@@ -7,10 +7,10 @@ import com.example.aymarswi.Util.Actividad
 
 class escribirPalabraYVerificar : Actividad(AppCompatActivity(), AppCompatActivity(), R.id.fragmentContainerView3) {
 
-    fun verificarPalabra(vararg palabrasCorrectas: String, palabraEscrita: EditText, activity: AppCompatActivity) {
+    fun verificarPalabra(vararg palabrasCorrectas: String, palabraEscrita: EditText) {
         for (palabraCorrecta in palabrasCorrectas) {
             correcto = palabraCorrecta.equals(palabraEscrita.text.toString(), ignoreCase = true)
         }
-        respuesta(activity)
+        getInstance().respuesta()
     }
 }

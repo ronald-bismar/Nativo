@@ -6,22 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
 class FragmentFamilia5 : Fragment() {
     private lateinit var btnYuxcha: Button
     private lateinit var btnAllchhi: Button
     private lateinit var btnTullqa: Button
+    private lateinit var rootView: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        val rootView: View = inflater.inflate(R.layout.fragment_familia5, container, false)
+        rootView = inflater.inflate(R.layout.fragment_familia5, container, false)
         iniciarComponentes()
 
         opcionMultipleDePalabras().palabraVerdadera(
@@ -29,15 +28,14 @@ class FragmentFamilia5 : Fragment() {
             btnYuxcha,
             btnAllchhi,
             btnTullqa,
-            activity = requireActivity() as AppCompatActivity
         )
 
         return rootView
     }
 
     private fun iniciarComponentes() {
-        btnYuxcha = requireView().findViewById(R.id.btnY)
-        btnAllchhi = requireView().findViewById(R.id.btnAlch)
-        btnTullqa = requireView().findViewById(R.id.btnTull)
+        btnYuxcha = rootView.findViewById(R.id.btnY)
+        btnAllchhi = rootView.findViewById(R.id.btnAlch)
+        btnTullqa = rootView.findViewById(R.id.btnTull)
     }
 }

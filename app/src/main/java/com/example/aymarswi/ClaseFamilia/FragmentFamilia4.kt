@@ -7,15 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
 class FragmentFamilia4 : Fragment() {
 
     private lateinit var obText: EditText
     private lateinit var btnComprobar: Button
+    private lateinit var rootView: View
     private lateinit var palabra: String
     private var correcto: Boolean = false
 
@@ -23,7 +22,7 @@ class FragmentFamilia4 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val rootView: View = inflater.inflate(R.layout.fragment_familia4, container, false)
+        rootView = inflater.inflate(R.layout.fragment_familia4, container, false)
         iniciarComponentes()
 
         opcionMultipleDePalabras().palabraVerdadera(
@@ -35,14 +34,14 @@ class FragmentFamilia4 : Fragment() {
             "buenos días hermano",
             "buen día hermana",
             "buenos días hermana",
-            palabraElegida = obText, botonComprobar =  btnComprobar, activity = requireActivity() as AppCompatActivity
+            palabraElegida = obText, botonComprobar =  btnComprobar
         )
 
         return rootView
     }
 
     private fun iniciarComponentes() {
-        btnComprobar = requireView().findViewById(R.id.btnCpb)
-        obText = requireView().findViewById(R.id.txtTexto)
+        btnComprobar = rootView.findViewById(R.id.btnCpb)
+        obText = rootView.findViewById(R.id.txtTexto)
     }
 }

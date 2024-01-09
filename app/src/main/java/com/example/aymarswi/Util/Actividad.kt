@@ -1,5 +1,6 @@
 package com.example.aymarswi.Util
 
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.Context
 import android.media.MediaPlayer
@@ -27,11 +28,12 @@ import com.example.aymarswi.PantallasPrincipales.FragmentRegular
 import com.example.aymarswi.PantallasPrincipales.FragmentRegular2
 import com.example.aymarswi.PantallasPrincipales.FragmentRegular3
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.dinamicas.OrdenarPalabras
-import com.example.aymarswi.Util.dinamicas.escribirPalabraYVerificar
-import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
-open class Actividad(activity: AppCompatActivity, context: AppCompatActivity, containerFragment: Int) {
+open class Actividad protected constructor(
+    activity: AppCompatActivity,
+    context: AppCompatActivity,
+    containerFragment: Int
+) {
 
 
     var activity: AppCompatActivity
@@ -39,7 +41,7 @@ open class Actividad(activity: AppCompatActivity, context: AppCompatActivity, co
     lateinit var rootView: View
     var containerFragment: Int = 0
     private lateinit var nextFragment: Fragment
-    var posicionDeLaRutaDeFragments = 1
+    var posicionDeLaRutaDeFragments = 0
     var correcto: Boolean = false
     var puntaje = 0
     var rutaDeFragments: List<Fragment> = listOf(
@@ -54,12 +56,30 @@ open class Actividad(activity: AppCompatActivity, context: AppCompatActivity, co
         FragmentFamilia9(),
         FragmentFamilia10()
     )
-    lateinit var escribirPalabraYVerificar: escribirPalabraYVerificar
-    lateinit var opcionMultipleDePalabras: opcionMultipleDePalabras
-    lateinit var ordenarPalabras: OrdenarPalabras
+    companion object{
+        @SuppressLint("StaticFieldLeak")
+        private var instance: Actividad? = null
+
+        fun getInstance(activity: AppCompatActivity, context: AppCompatActivity, containerFragment: Int):Actividad{
+            if(instance == null){
+                instance = Actividad(activity, context, containerFragment)
+            }
+            return instance as Actividad
+        }
+
+        fun getInstance(): Actividad {
+            return instance as Actividad
+        }
+        fun setContext(activity: AppCompatActivity, context: Context, containerFragment: Int){
+            instance?.activity = activity
+            instance?.context = context
+            instance?.containerFragment = containerFragment
+        }
+    }
+
     init {
-        this.activity = activity as AppCompatActivity
-        this.context = context as AppCompatActivity
+        this.activity = activity
+        this.context = context
         this.containerFragment = containerFragment
     }
 
@@ -76,14 +96,14 @@ open class Actividad(activity: AppCompatActivity, context: AppCompatActivity, co
 
     fun sonido() {
         MediaPlayer.create(
-            context,
+            instance?.context,
             if (correcto) R.raw.sonidorespuestacorrecta1 else R.raw.respuestaincorrecta1
         ).start()
     }
 
-    fun showAlertDialog() {
+    private fun showAlertDialog() {
         val view = View.inflate(
-            context,
+            instance?.context,
             if (correcto) R.layout.dialog_correcto else R.layout.dialog_incorrecto,
             null
         )
@@ -92,14 +112,14 @@ open class Actividad(activity: AppCompatActivity, context: AppCompatActivity, co
     }
 
     fun viewInflate(view: View) {
-        val builder = AlertDialog.Builder(context).setView(view)
+        val builder = AlertDialog.Builder(instance?.context).setView(view)
         val dialog = builder.create()
         dialog.show()
         dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
         dialog.setCancelable(false)
         dialog.findViewById<Button>(R.id.btnConfirmar)?.setOnClickListener {
             dialog.dismiss()
-            if (posicionDeLaRutaDeFragments <= rutaDeFragments.size) pasarDeFragment()
+            if (posicionDeLaRutaDeFragments <= instance?.rutaDeFragments!!.size) pasarDeFragment()
             else determinarPuntajeFinal()
         }
     }
@@ -114,16 +134,16 @@ open class Actividad(activity: AppCompatActivity, context: AppCompatActivity, co
     }
 
     fun pasarDeFragment() {
-        val fragmentManager: FragmentManager = activity.supportFragmentManager
+        val fragmentManager: FragmentManager = instance?.activity!!.supportFragmentManager
         val transaction: FragmentTransaction = fragmentManager.beginTransaction()
-        transaction.replace(R.id.fragmentContainerView3, nextFragment).addToBackStack(null).commit()
+        instance?.nextFragment?.let { transaction.replace(R.id.fragmentContainerView3, it).addToBackStack(null).commit() }
     }
 
 
     fun editTextVacio() {
-        val alertDialogBuilder = AlertDialog.Builder(context)
+        val alertDialogBuilder = AlertDialog.Builder(instance?.context)
         alertDialogBuilder.setView(
-            LayoutInflater.from(context).inflate(R.layout.menllenarcampo, null)
+            LayoutInflater.from(instance?.context).inflate(R.layout.menllenarcampo, null)
         )
         val alertDialog = alertDialogBuilder.create()
         val ventana = alertDialog.window
@@ -133,15 +153,17 @@ open class Actividad(activity: AppCompatActivity, context: AppCompatActivity, co
         alertDialog.show()
     }
 
-    fun respuesta(activity: AppCompatActivity) {
-        nextFragment = rutaDeFragments[posicionDeLaRutaDeFragments++]
+    fun respuesta() {
+        posicionDeLaRutaDeFragments+= 1
+        nextFragment = instance!!.rutaDeFragments[posicionDeLaRutaDeFragments]
         if (correcto) respuestaCorrecta()
         else respuestaIncorrecta()
     }
 
-    fun respuesta(correcto: Boolean, activity: AppCompatActivity) {
+    fun respuesta(correcto: Boolean) {
         this.correcto = correcto
-        nextFragment = rutaDeFragments[posicionDeLaRutaDeFragments++]
+        posicionDeLaRutaDeFragments+= 1
+        nextFragment = instance!!.rutaDeFragments[posicionDeLaRutaDeFragments]
         if (correcto) respuestaCorrecta()
         else respuestaIncorrecta()
     }

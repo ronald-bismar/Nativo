@@ -31,14 +31,11 @@ import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
 
 class ActivityContenedor : AppCompatActivity() {
-    companion object{
-        lateinit var actividad: Actividad
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contenedor)
-        actividad = Actividad(this, this, R.id.fragmentContainerView3)
+        Actividad.getInstance(this, this, R.id.fragmentContainerView3)
 
         when (intent.extras?.getInt("valor")) {
             1 -> {

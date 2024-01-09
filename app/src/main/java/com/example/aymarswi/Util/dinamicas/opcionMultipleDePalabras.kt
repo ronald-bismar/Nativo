@@ -13,13 +13,12 @@ class opcionMultipleDePalabras : Actividad(AppCompatActivity(), AppCompatActivit
 
     fun palabraVerdadera(
         palabraCorrecta: String,
-        vararg botones: Button,
-        activity: AppCompatActivity
+        vararg botones: Button
     ) {
         for (palabraBoton in botones) {
             palabraBoton.setOnClickListener {
                 correcto = palabraBoton.text.toString() == palabraCorrecta
-                respuesta(activity)
+                getInstance().respuesta()
             }
         }
     }
@@ -29,16 +28,15 @@ class opcionMultipleDePalabras : Actividad(AppCompatActivity(), AppCompatActivit
 
     fun palabraVerdadera(
         imgButtonCorrecto: ImageButton,
-        vararg imageButtonsIncorrectos: ImageButton, activity: AppCompatActivity
-    ) {
+        vararg imageButtonsIncorrectos: ImageButton) {
         imgButtonCorrecto.setOnClickListener {
             correcto = true
-            respuesta(activity)
+            getInstance().respuesta()
         }
         for (imageButton in imageButtonsIncorrectos) {
             imageButton.setOnClickListener {
                 correcto = false
-                respuesta(activity)
+                getInstance().respuesta()
             }
         }
     }
@@ -48,28 +46,25 @@ class opcionMultipleDePalabras : Actividad(AppCompatActivity(), AppCompatActivit
     fun palabraVerdadera(
         palabraCorrecta: String,
         palabraElegida: String,
-        botonComprobar: Button,
-        activity: AppCompatActivity
+        botonComprobar: Button
     ) {
         botonComprobar.setOnClickListener {
             correcto = palabraCorrecta.equals(palabraElegida, ignoreCase = true)
-            respuesta(activity)
+            getInstance().respuesta()
         }
     }
 
     fun palabraVerdadera(
         vararg palabrasCorrectas: String,
         palabraElegida: EditText,
-        botonComprobar: Button,
-        activity: AppCompatActivity
-    ) {
+        botonComprobar: Button) {
         botonComprobar.setOnClickListener {
             for (palabra in palabrasCorrectas) {
                 if (palabra.equals(palabraElegida.text.toString(), ignoreCase = true)) {
-                    respuesta(true, activity)
+                    getInstance().respuesta(true)
                 }
             }
-            respuesta(false, activity)
+            getInstance().respuesta(false)
         }
     }
 
@@ -77,16 +72,14 @@ class opcionMultipleDePalabras : Actividad(AppCompatActivity(), AppCompatActivit
         vararg botones: Button,
         palabraCorrecta: String,
         palabraElegida: TextView,
-        botonComprobar: Button,
-        activity: AppCompatActivity
-    ) {
+        botonComprobar: Button) {
         for (boton in botones) {
             boton.setOnClickListener { palabraElegida.text = boton.text }
         }
         botonComprobar.setOnClickListener {
             if (palabraCorrecta.equals(palabraElegida.text.toString(), ignoreCase = true))
-                respuesta(true, activity)
-            respuesta(false, activity)
+                getInstance().respuesta(true)
+            getInstance().respuesta(false)
         }
     }
 }

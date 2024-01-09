@@ -6,9 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.aymarswi.PantallasPrincipales.ActivityContenedor.Companion.actividad
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
 
@@ -27,9 +25,9 @@ class FragmentFamilia1 : Fragment() {
 
         initComponentes()
 
-        Log.d("Contexto","posicion actual: ${actividad.posicionDeLaRutaDeFragments}")
-        btnPapa.setOnClickListener { actividad.respuesta(true, requireActivity() as AppCompatActivity) }
-        btnHermano.setOnClickListener { actividad.respuesta(false, requireActivity() as AppCompatActivity) }
+        Log.d("Contexto","posicion actual: ${Actividad.getInstance().posicionDeLaRutaDeFragments}")
+        btnPapa.setOnClickListener { Actividad.getInstance().respuesta(true) }
+        btnHermano.setOnClickListener { Actividad.getInstance().respuesta(false) }
 
         return rootView
     }

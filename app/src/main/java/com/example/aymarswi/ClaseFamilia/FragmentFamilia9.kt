@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
-import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.OrdenarPalabras
 
 class FragmentFamilia9 : Fragment() {
