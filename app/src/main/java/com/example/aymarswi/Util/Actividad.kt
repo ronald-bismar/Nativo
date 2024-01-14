@@ -4,10 +4,12 @@ import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.Context
 import android.media.MediaPlayer
+import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -44,6 +46,7 @@ open class Actividad protected constructor(
     var posicionDeLaRutaDeFragments = 0
     var correcto: Boolean = false
     var puntaje = 0
+    private var palabraCorrecta = ""
     var rutaDeFragments: List<Fragment> = listOf(
         FragmentFamilia1(),
         FragmentFamilia2(),
@@ -83,13 +86,10 @@ open class Actividad protected constructor(
         this.containerFragment = containerFragment
     }
 
-    fun respuestaCorrecta() {
-        ++puntaje
-        sonido()
-        showAlertDialog()
+    fun setPalabraCorrecta(palabraCorrecta: String){
+        this.palabraCorrecta = palabraCorrecta
     }
-
-    fun respuestaIncorrecta() {
+    fun mostrarAlertDialog() {
         sonido()
         showAlertDialog()
     }
@@ -97,24 +97,25 @@ open class Actividad protected constructor(
     fun sonido() {
         MediaPlayer.create(
             instance?.context,
-            if (correcto) R.raw.sonidorespuestacorrecta1 else R.raw.respuestaincorrecta1
+            if (instance!!.correcto) R.raw.sonidorespuestacorrecta1 else R.raw.respuestaincorrecta1
         ).start()
     }
 
     private fun showAlertDialog() {
         val view = View.inflate(
             instance?.context,
-            if (correcto) R.layout.dialog_correcto else R.layout.dialog_incorrecto,
+            if (instance!!.correcto) R.layout.dialog_correcto else R.layout.dialog_incorrecto,
             null
         )
+        view.findViewById<TextView>(R.id.txtRespCorrecta).text = palabraCorrecta
 
         viewInflate(view)
     }
 
     fun viewInflate(view: View) {
-        val builder = AlertDialog.Builder(instance?.context).setView(view)
-        val dialog = builder.create()
-        dialog.show()
+            val builder = AlertDialog.Builder(instance?.context).setView(view)
+            val dialog = builder.create()
+            dialog.show()
         dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
         dialog.setCancelable(false)
         dialog.findViewById<Button>(R.id.btnConfirmar)?.setOnClickListener {
@@ -154,17 +155,17 @@ open class Actividad protected constructor(
     }
 
     fun respuesta() {
-        posicionDeLaRutaDeFragments+= 1
+        posicionDeLaRutaDeFragments += 1
         nextFragment = instance!!.rutaDeFragments[posicionDeLaRutaDeFragments]
-        if (correcto) respuestaCorrecta()
-        else respuestaIncorrecta()
+        instance!!.puntaje += if(instance!!.correcto) 1 else 0
+        mostrarAlertDialog()
     }
 
     fun respuesta(correcto: Boolean) {
         this.correcto = correcto
-        posicionDeLaRutaDeFragments+= 1
+        posicionDeLaRutaDeFragments += 1
         nextFragment = instance!!.rutaDeFragments[posicionDeLaRutaDeFragments]
-        if (correcto) respuestaCorrecta()
-        else respuestaIncorrecta()
+        instance!!.puntaje += if(correcto) 1 else 0
+        mostrarAlertDialog()
     }
 }

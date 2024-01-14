@@ -35,9 +35,4 @@ class FragmentFamilia2 : Fragment() {
         btnTayka = rootView.findViewById(R.id.btnTayka)
         btnKullaka = rootView.findViewById(R.id.btnKullaka)
     }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        Log.d("Contexto","posicion actual: ${Actividad.getInstance().posicionDeLaRutaDeFragments}")
-    }
 }

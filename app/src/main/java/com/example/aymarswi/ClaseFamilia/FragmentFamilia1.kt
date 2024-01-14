@@ -26,6 +26,7 @@ class FragmentFamilia1 : Fragment() {
         initComponentes()
 
         Log.d("Contexto","posicion actual: ${Actividad.getInstance().posicionDeLaRutaDeFragments}")
+        Actividad.getInstance().setPalabraCorrecta("Papá")
         btnPapa.setOnClickListener { Actividad.getInstance().respuesta(true) }
         btnHermano.setOnClickListener { Actividad.getInstance().respuesta(false) }
 

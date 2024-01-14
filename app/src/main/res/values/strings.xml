@@ -35,4 +35,5 @@
     <string name="facebook_client_token">56789</string>
     <string name="prefFacebook_file">com.example.aymarswi.PREFERENCE_FACEBOOK_KEY</string>
     <string name="olvido_su_contrase_a">Olvido su contraseña?</string>
+    <string name="correcto">Correcto</string>
 </resources>

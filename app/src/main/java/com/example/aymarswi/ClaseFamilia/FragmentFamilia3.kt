@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
@@ -24,7 +25,7 @@ class FragmentFamilia3 : Fragment() {
     ): View? {
         rootView = inflater.inflate(R.layout.fragment_familia3, container, false)
         iniciarComponentes()
-        Log.d("Contexto","posicion actual: ${Actividad.getInstance().posicionDeLaRutaDeFragments}")
+        Actividad.setContext(requireActivity() as AppCompatActivity, requireContext(), R.id.fragmentContainerView3)
 
         opcionMultipleDePalabras().palabraVerdadera(
             "jila",

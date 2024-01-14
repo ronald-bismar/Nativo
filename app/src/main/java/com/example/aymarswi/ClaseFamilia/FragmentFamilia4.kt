@@ -26,12 +26,6 @@ class FragmentFamilia4 : Fragment() {
         opcionMultipleDePalabras().palabraVerdadera(
             "buen dia hermano",
             "buenos dias hermano",
-            "buen dia hermana",
-            "buenos dias hermana",
-            "buen día hermano",
-            "buenos días hermano",
-            "buen día hermana",
-            "buenos días hermana",
             palabraElegida = obText, botonComprobar =  btnComprobar
         )
 

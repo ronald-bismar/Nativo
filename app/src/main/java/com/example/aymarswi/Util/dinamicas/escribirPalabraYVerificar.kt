@@ -9,7 +9,7 @@ class escribirPalabraYVerificar : Actividad(AppCompatActivity(), AppCompatActivi
 
     fun verificarPalabra(vararg palabrasCorrectas: String, palabraEscrita: EditText) {
         for (palabraCorrecta in palabrasCorrectas) {
-            correcto = palabraCorrecta.equals(palabraEscrita.text.toString(), ignoreCase = true)
+            getInstance().correcto = palabraCorrecta.equals(palabraEscrita.text.toString(), ignoreCase = true)
         }
         getInstance().respuesta()
     }
