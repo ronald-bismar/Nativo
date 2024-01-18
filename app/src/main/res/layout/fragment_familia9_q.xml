@@ -2,7 +2,6 @@
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainPrincipalActivity"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -71,7 +70,7 @@
             android:ems="10"
             android:focusable="true"
             android:textAlignment="center"
-            android:textSize="50dp"
+            android:textSize="50sp"
             app:layout_constraintBottom_toTopOf="@+id/btnAlchhi"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

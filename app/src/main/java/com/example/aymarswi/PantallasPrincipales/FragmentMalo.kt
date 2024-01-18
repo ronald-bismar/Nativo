@@ -23,13 +23,13 @@ class FragmentMalo : Fragment() {
         val rootView: View = inflater.inflate(R.layout.fragment_malo, container, false)
         Toast.makeText(
             requireContext(),
-            "Longitud ${Actividad.getInstance().rutaDeFragments.size}",
+            "Longitud ${Actividad.getInstanceActividad().rutaDeFragments.size}",
             Toast.LENGTH_SHORT
         ).show()
         val mPuntaje = rootView.findViewById<TextView>(R.id.mostrardatosM1)
-        mPuntaje.text = "${Actividad.getInstance().puntaje}/10"
+        mPuntaje.text = "${Actividad.getInstanceActividad().puntaje}/10"
 
-        Datos().actualizarPuntaje(requireContext(), Actividad.getInstance().puntaje, getString(R.string.prefs_file))
+        Datos().actualizarPuntaje(requireContext(), Actividad.getInstanceActividad().puntaje, getString(R.string.prefs_file))
 
         return rootView
     }

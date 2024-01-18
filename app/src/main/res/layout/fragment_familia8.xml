@@ -10,7 +10,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".Familia.fami8">
 
         <!-- TODO: Update blank fragment layout -->
@@ -47,7 +47,7 @@
             android:text="Elige la palabra correcta"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="30sp"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -60,7 +60,7 @@
             android:text="Tiwula/Ipu"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textSize="30dp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/btnIpa"
             app:layout_constraintEnd_toStartOf="@+id/btnKullaka2"
             app:layout_constraintHorizontal_bias="0.5"
@@ -79,7 +79,7 @@
             android:text="Kullaka"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textSize="30dp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/btnIpa"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -98,7 +98,7 @@
             android:text="Ipa/Laqusi"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textSize="30dp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/btnComprobar15"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -117,7 +117,7 @@
             android:text="Jila"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textSize="30dp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/btnComprobar15"
             app:layout_constraintEnd_toStartOf="@+id/btnIpa"
             app:layout_constraintHorizontal_bias="0.5"
@@ -151,7 +151,7 @@
             android:layout_marginEnd="155dp"
             android:text="Hermano"
             android:textAlignment="center"
-            android:textSize="20dp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/etContenPalabra"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -166,8 +166,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:ems="10"
-            android:inputType="text"
-            android:textAlignment="center"
+            android:gravity="center"
             app:layout_constraintBottom_toTopOf="@+id/btnTiwula3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

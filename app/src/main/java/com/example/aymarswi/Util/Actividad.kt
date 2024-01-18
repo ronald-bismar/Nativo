@@ -61,16 +61,16 @@ open class Actividad protected constructor(
     )
     companion object{
         @SuppressLint("StaticFieldLeak")
-        private var instance: Actividad? = null
+        public var instance: Actividad? = null
 
-        fun getInstance(activity: AppCompatActivity, context: AppCompatActivity, containerFragment: Int):Actividad{
+        fun getInstance(activity: AppCompatActivity, context: AppCompatActivity, containerFragment: Int): Actividad{
             if(instance == null){
                 instance = Actividad(activity, context, containerFragment)
             }
             return instance as Actividad
         }
 
-        fun getInstance(): Actividad {
+        fun getInstanceActividad(): Actividad {
             return instance as Actividad
         }
         fun setContext(activity: AppCompatActivity, context: Context, containerFragment: Int){
@@ -117,6 +117,7 @@ open class Actividad protected constructor(
             val dialog = builder.create()
             dialog.show()
         dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+        dialog.window?.attributes?.windowAnimations = R.style.DialogAnimation
         dialog.setCancelable(false)
         dialog.findViewById<Button>(R.id.btnConfirmar)?.setOnClickListener {
             dialog.dismiss()

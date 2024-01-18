@@ -44,6 +44,6 @@ class FragmentFamilia3 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.d("Contexto","posicion actual: ${Actividad.getInstance().posicionDeLaRutaDeFragments}")
+        Log.d("Contexto","posicion actual: ${Actividad.getInstanceActividad().posicionDeLaRutaDeFragments}")
     }
 }

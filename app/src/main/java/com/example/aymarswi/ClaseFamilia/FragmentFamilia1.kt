@@ -25,10 +25,10 @@ class FragmentFamilia1 : Fragment() {
 
         initComponentes()
 
-        Log.d("Contexto","posicion actual: ${Actividad.getInstance().posicionDeLaRutaDeFragments}")
-        Actividad.getInstance().setPalabraCorrecta("Papá")
-        btnPapa.setOnClickListener { Actividad.getInstance().respuesta(true) }
-        btnHermano.setOnClickListener { Actividad.getInstance().respuesta(false) }
+        Log.d("Contexto","posicion actual: ${Actividad.getInstanceActividad().posicionDeLaRutaDeFragments}")
+        Actividad.getInstanceActividad().setPalabraCorrecta("Papá")
+        btnPapa.setOnClickListener { Actividad.getInstanceActividad().respuesta(true) }
+        btnHermano.setOnClickListener { Actividad.getInstanceActividad().respuesta(false) }
 
         return rootView
     }

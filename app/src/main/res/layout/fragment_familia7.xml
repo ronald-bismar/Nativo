@@ -185,6 +185,7 @@
             android:background="@drawable/strokedelgado"
             android:layout_marginHorizontal="20dp"
             style="@style/textoGuia"
+            android:gravity="center"
             android:clickable="true"
 
             android:textAlignment="center"

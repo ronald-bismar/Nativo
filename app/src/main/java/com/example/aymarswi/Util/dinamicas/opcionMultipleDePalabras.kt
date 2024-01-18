@@ -17,12 +17,12 @@ class opcionMultipleDePalabras :
         palabraCorrecta: String,
         vararg botones: Button
     ) {
-        getInstance().setPalabraCorrecta(palabraCorrecta)
+        getInstanceActividad().setPalabraCorrecta(palabraCorrecta)
         for (palabraBoton in botones) {
             palabraBoton.setOnClickListener {
-                getInstance().correcto = palabraBoton.text.toString() == palabraCorrecta
+                getInstanceActividad().correcto = palabraBoton.text.toString() == palabraCorrecta
                 Log.d("fragment2", "correcto: ${palabraBoton.text.toString() == palabraCorrecta}")
-                getInstance().respuesta()
+                getInstanceActividad().respuesta()
             }
         }
     }
@@ -34,15 +34,15 @@ class opcionMultipleDePalabras :
         respuestaCorrecta: ImageButton,
         vararg imageButtonsIncorrectos: ImageButton
     ) {
-        getInstance().setPalabraCorrecta("Papá")
+        getInstanceActividad().setPalabraCorrecta("Papá")
         respuestaCorrecta.setOnClickListener {
-            getInstance().correcto = true
-            getInstance().respuesta()
+            getInstanceActividad().correcto = true
+            getInstanceActividad().respuesta()
         }
         for (imageButton in imageButtonsIncorrectos) {
             imageButton.setOnClickListener {
-                getInstance().correcto = false
-                getInstance().respuesta()
+                getInstanceActividad().correcto = false
+                getInstanceActividad().respuesta()
             }
         }
     }
@@ -54,10 +54,10 @@ class opcionMultipleDePalabras :
         palabraElegida: String,
         botonComprobar: Button
     ) {
-        getInstance().setPalabraCorrecta(palabraCorrecta)
+        getInstanceActividad().setPalabraCorrecta(palabraCorrecta)
         botonComprobar.setOnClickListener {
-            getInstance().correcto = palabraCorrecta.equals(palabraElegida, ignoreCase = true)
-            getInstance().respuesta()
+            getInstanceActividad().correcto = palabraCorrecta.equals(palabraElegida, ignoreCase = true)
+            getInstanceActividad().respuesta()
         }
     }
 
@@ -66,17 +66,17 @@ class opcionMultipleDePalabras :
         palabraElegida: EditText,
         botonComprobar: Button
     ) {
-        getInstance().setPalabraCorrecta(palabrasCorrectas[0])
+        getInstanceActividad().setPalabraCorrecta(palabrasCorrectas[0])
         botonComprobar.setOnClickListener {
             for (palabra in palabrasCorrectas) {
                 Log.d("fragment3","palabras comparadas ${palabra.trim()}, ${palabraElegida.text.toString().trim()} respuesta: ${palabra.trim().equals(palabraElegida.text.toString().trim(), ignoreCase = true)}")
                 if (palabra.trim().equals(palabraElegida.text.toString().trim(), ignoreCase = true)) {
-                    getInstance().correcto = true
+                    getInstanceActividad().correcto = true
                     break
                 }else
-                    getInstance().correcto = false
+                    getInstanceActividad().correcto = false
             }
-            getInstance().respuesta()
+            getInstanceActividad().respuesta()
         }
     }
 
@@ -86,12 +86,12 @@ class opcionMultipleDePalabras :
         palabraElegida: TextView,
         botonComprobar: Button
     ) {
-        getInstance().setPalabraCorrecta(palabraCorrecta)
+        getInstanceActividad().setPalabraCorrecta(palabraCorrecta)
         for (boton in botones) {
             boton.setOnClickListener { palabraElegida.text = boton.text }
         }
         botonComprobar.setOnClickListener {
-                getInstance().respuesta(palabraCorrecta.equals(palabraElegida.text.toString(), ignoreCase = true))
+                getInstanceActividad().respuesta(palabraCorrecta.equals(palabraElegida.text.toString(), ignoreCase = true))
         }
     }
 }
