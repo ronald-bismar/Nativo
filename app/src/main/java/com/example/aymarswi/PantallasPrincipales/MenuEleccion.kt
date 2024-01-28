@@ -103,6 +103,7 @@ class MenuEleccion : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val boton = findViewById<Button>(R.id.btnLecciones)
         funcionImagenPerfil(imgPersonaje, imgPersonajeR, nomPersonaje)
+
         boton.setOnClickListener {
             val intent: Intent = (Intent(this, ContenedorPantallasPrincipales::class.java))
             intent.putExtra("valor", 30)

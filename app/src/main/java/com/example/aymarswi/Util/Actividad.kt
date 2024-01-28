@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.Context
 import android.media.MediaPlayer
-import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -61,7 +60,7 @@ open class Actividad protected constructor(
     )
     companion object{
         @SuppressLint("StaticFieldLeak")
-        public var instance: Actividad? = null
+        var instance: Actividad? = null
 
         fun getInstance(activity: AppCompatActivity, context: AppCompatActivity, containerFragment: Int): Actividad{
             if(instance == null){
@@ -121,7 +120,10 @@ open class Actividad protected constructor(
         dialog.setCancelable(false)
         dialog.findViewById<Button>(R.id.btnConfirmar)?.setOnClickListener {
             dialog.dismiss()
-            if (posicionDeLaRutaDeFragments <= instance?.rutaDeFragments!!.size) pasarDeFragment()
+            if (posicionDeLaRutaDeFragments < instance?.rutaDeFragments!!.size){
+                nextFragment = instance!!.rutaDeFragments[posicionDeLaRutaDeFragments]
+                pasarDeFragment()
+            }
             else determinarPuntajeFinal()
         }
     }
@@ -138,7 +140,7 @@ open class Actividad protected constructor(
     fun pasarDeFragment() {
         val fragmentManager: FragmentManager = instance?.activity!!.supportFragmentManager
         val transaction: FragmentTransaction = fragmentManager.beginTransaction()
-        instance?.nextFragment?.let { transaction.replace(R.id.fragmentContainerView3, it).addToBackStack(null).commit() }
+        instance?.nextFragment?.let { transaction.replace(R.id.fragmentContainerView3, it).commit() }
     }
 
 
@@ -157,7 +159,6 @@ open class Actividad protected constructor(
 
     fun respuesta() {
         posicionDeLaRutaDeFragments += 1
-        nextFragment = instance!!.rutaDeFragments[posicionDeLaRutaDeFragments]
         instance!!.puntaje += if(instance!!.correcto) 1 else 0
         mostrarAlertDialog()
     }
@@ -165,8 +166,7 @@ open class Actividad protected constructor(
     fun respuesta(correcto: Boolean) {
         this.correcto = correcto
         posicionDeLaRutaDeFragments += 1
-        nextFragment = instance!!.rutaDeFragments[posicionDeLaRutaDeFragments]
-        instance!!.puntaje += if(correcto) 1 else 0
+        instance!!.puntaje += if(instance!!.correcto) 1 else 0
         mostrarAlertDialog()
     }
 }

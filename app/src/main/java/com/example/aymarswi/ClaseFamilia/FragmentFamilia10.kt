@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
+import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
 class FragmentFamilia10 : Fragment() {
     private lateinit var btnKullaka4: Button
@@ -26,60 +27,15 @@ class FragmentFamilia10 : Fragment() {
 
         rootView = inflater.inflate(R.layout.fragment_familia10, container, false)
         initComponents()
-        var puntaje = requireArguments().getInt("valorp")
-        val args = Bundle()
-        var contador = requireArguments().getInt("valorc")
-        args.putInt("valorc", ++contador)
-
-        btnKullaka4.setOnClickListener {
-                etPalabra3.text = btnKullaka4.text.toString()
-        }
-        btnJila.setOnClickListener {
-                etPalabra3.text = btnJila.text.toString()
-        }
-        btnJilaku.setOnClickListener {
-                etPalabra3.text = btnJilaku.text.toString()
-        }
-        btnAchachila.setOnClickListener {
-                etPalabra3.text = btnAchachila.text.toString()
-        }
-        etPalabra3.setOnClickListener {
-            etPalabra3.text = ""
-        }
-
-        btnComprobar.setOnClickListener {
-
-            if (etPalabra3.text.toString() == btnJilaku.text.toString()) {
-                puntaje++
-                if(contador == 10){
-                    Utils().sonidoCorrecto(requireContext())
-                    Utils().alertDialogCorrectDeterminaResultado(requireContext(), puntaje,requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
-                }
-                else {
-                    args.putInt("valorp", ++puntaje)
-                Utils().respuestaCorrecta(
-                    requireActivity() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
-                    FragmentFamilia9(),
-                    args
-                )
-                }
-            } else {
-                if(contador == 10){
-                    Utils().sonidoCorrecto(requireContext())
-                    Utils().alertDialogCorrectDeterminaResultado(requireContext(), puntaje,requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
-                }
-                else {
-                    args.putInt("valorp", puntaje)
-                    Utils().respuestaCorrecta(
-                        requireActivity() as AppCompatActivity,
-                        R.id.fragmentContainerView3,
-                        FragmentFamilia9(),
-                        args
-                    )
-                }
-            }
-        }
+        opcionMultipleDePalabras().palabraVerdadera(
+            btnKullaka4,
+            btnJila,
+            btnJilaku,
+            btnAchachila,
+            palabraCorrecta = btnJilaku.text.toString(),
+            palabraElegida = etPalabra3,
+            botonComprobar = btnComprobar
+        )
         return rootView  }
 
     private fun initComponents() {

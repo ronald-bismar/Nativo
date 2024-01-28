@@ -69,11 +69,21 @@ class opcionMultipleDePalabras :
         getInstanceActividad().setPalabraCorrecta(palabrasCorrectas[0])
         botonComprobar.setOnClickListener {
             for (palabra in palabrasCorrectas) {
-                Log.d("fragment3","palabras comparadas ${palabra.trim()}, ${palabraElegida.text.toString().trim()} respuesta: ${palabra.trim().equals(palabraElegida.text.toString().trim(), ignoreCase = true)}")
-                if (palabra.trim().equals(palabraElegida.text.toString().trim(), ignoreCase = true)) {
+                Log.d(
+                    "fragment3",
+                    "palabras comparadas ${palabra.trim()}, ${
+                        palabraElegida.text.toString().trim()
+                    } respuesta: ${
+                        palabra.trim()
+                            .equals(palabraElegida.text.toString().trim(), ignoreCase = true)
+                    }"
+                )
+                if (palabra.trim()
+                        .equals(palabraElegida.text.toString().trim(), ignoreCase = true)
+                ) {
                     getInstanceActividad().correcto = true
                     break
-                }else
+                } else
                     getInstanceActividad().correcto = false
             }
             getInstanceActividad().respuesta()
@@ -91,7 +101,12 @@ class opcionMultipleDePalabras :
             boton.setOnClickListener { palabraElegida.text = boton.text }
         }
         botonComprobar.setOnClickListener {
-                getInstanceActividad().respuesta(palabraCorrecta.equals(palabraElegida.text.toString(), ignoreCase = true))
+            getInstanceActividad().respuesta(
+                palabraCorrecta.equals(
+                    palabraElegida.text.toString(),
+                    ignoreCase = true
+                )
+            )
         }
     }
 }

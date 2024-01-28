@@ -2,6 +2,7 @@ package com.example.aymarswi.PantallasPrincipales
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import com.example.aymarswi.ClaseFamilia.PalabrasDeLaLeccion
@@ -15,10 +16,8 @@ class ContenedorPantallasPrincipales : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contenedor_pantallas_principales)
-        val bundle = intent.extras
-        val valor = bundle?.getInt("valor")
 
-        when (valor) {
+        when (intent.extras?.getInt("valor")) {
             1 -> {
                 supportFragmentManager.commit {
                     add<FragmentPrimeraPantalla>(R.id.ContenedorP_Principales)
@@ -48,7 +47,7 @@ class ContenedorPantallasPrincipales : AppCompatActivity() {
             }
             30-> {
                 supportFragmentManager.commit {
-                    val fragment = FragmentGuiaLecciones.newInstance(30)
+                    val fragment = FragmentMenuDeLeccionesA()
                     add(R.id.ContenedorP_Principales, fragment)
                     setReorderingAllowed(true)
                 }

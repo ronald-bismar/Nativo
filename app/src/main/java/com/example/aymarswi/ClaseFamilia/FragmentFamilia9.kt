@@ -26,7 +26,7 @@ class FragmentFamilia9 : Fragment() {
 
         initComponents()
 
-        OrdenarPalabras().initDynamic("Allchhi", contenedorPalabras, contenedorOracionRespuesta)
+        OrdenarPalabras(contenedorPalabras, contenedorOracionRespuesta, btnComprobar).initDynamic("Allchhi", )
             return rootView
         }
 

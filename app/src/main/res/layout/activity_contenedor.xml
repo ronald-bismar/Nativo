@@ -8,11 +8,12 @@
 
 
 
-    <androidx.fragment.app.FragmentContainerView
+    <LinearLayout
         android:id="@+id/fragmentContainerView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:animateLayoutChanges="true"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
