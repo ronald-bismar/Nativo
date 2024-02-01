@@ -11,36 +11,32 @@ import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
+import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
 
 class FragmentNaturaleza8 : Fragment() {
+    private lateinit var obText: EditText
+    private lateinit var btnComprobar: Button
+    private lateinit var rootView: View
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        val rootView: View = inflater.inflate(R.layout.fragment_naturaleza8, container, false)
-        var puntaje = requireArguments().getInt("valorp")
-        var contador = requireArguments().getInt("valorc")
-        Log.d("Valor", "Puntaje recibido $puntaje")
-        Log.d("Valor", "Contador recibido $contador")
-        val btnComprobar = rootView.findViewById<Button>(R.id.btnComp2)
-        val obText = rootView.findViewById<EditText>(R.id.txtResp2)
-        val args = Bundle()
-        args.putInt("valorc", ++contador)
-        btnComprobar.setOnClickListener{
-            if(obText.text.isNotEmpty()) {
-                if (((((obText.text).toString()).trim()).lowercase()) == ("ali") || ((((obText.text).toString()).trim()).lowercase()) == "alli") {
-                    args.putInt("valorp", ++puntaje)
-                    Utils().respuestaCorrecta(requireContext() as AppCompatActivity, R.id.fragmentContainerView3, FragmentNaturaleza9(), args)
-                } else {
-                    args.putInt("valorp", puntaje)
-                    Utils().respuestaIncorrecta(requireContext() as AppCompatActivity, R.id.fragmentContainerView3, FragmentNaturaleza9(), args)
-                }
-            }else{
-                Utils().mostrarMensajeETextVacio(requireContext() as AppCompatActivity)
-            }
-        }
-        return rootView   }
+        rootView = inflater.inflate(R.layout.fragment_naturaleza8, container, false)
+        initComponents()
+
+        opcionMultipleDePalabras().palabraVerdadera(
+            "ali",
+            palabraElegida = obText,
+            botonComprobar = btnComprobar,
+        )
+        return rootView
+    }
+
+    private fun initComponents() {
+        btnComprobar = rootView.findViewById(R.id.btnComp2)
+        obText = rootView.findViewById(R.id.txtResp2)
+    }
 
 }

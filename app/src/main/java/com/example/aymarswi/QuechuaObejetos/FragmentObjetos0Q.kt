@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.QuechuaSaludos.FragmentSaludo1Q
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -21,7 +20,7 @@ class FragmentObjetos0Q : Fragment() {
         btn.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentObjetos1Q()
             )
         }

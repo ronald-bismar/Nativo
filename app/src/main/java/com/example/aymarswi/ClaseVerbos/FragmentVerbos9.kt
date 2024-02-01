@@ -45,7 +45,7 @@ class FragmentVerbos9 : Fragment() {
             txtComprobar1,
             txtComprobar2, "yatiqaña",
             "luraña",
-            btnComprobar, R.id.fragmentContainerView3,FragmentVerbos10(), args,
+            btnComprobar, R.id.contenedorDeFragments,FragmentVerbos10(), args,
             puntaje
         )
 

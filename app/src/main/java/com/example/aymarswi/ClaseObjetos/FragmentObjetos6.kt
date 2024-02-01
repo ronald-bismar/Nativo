@@ -56,7 +56,7 @@ class FragmentObjetos6 : Fragment() {
                 args.putInt("valorp", ++puntaje)
                 Utils().respuestaCorrecta(
                     requireActivity() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentObjetos7(),
                     args
                 )
@@ -64,7 +64,7 @@ class FragmentObjetos6 : Fragment() {
                 args.putInt("valorp", puntaje)
                 Utils().respuestaIncorrecta(
                     requireActivity() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentObjetos7(),
                     args
                 )

@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
@@ -40,7 +39,7 @@ class FragmentNumeros6 : Fragment() {
         val args = Bundle()
         args.putInt("valorc", ++contador)
         args.putInt("valorp", ++puntaje)
-        Utils().encontrar5Pares(requireActivity() as AppCompatActivity, requireContext() as AppCompatActivity,btnPusi1,btnPhisqa1,btnKimsa1,btbMaya1,btnPaya1,btnPusi2,btnPhisqa2,btnKimsa2,btbMaya2,btnPaya2,R.id.fragmentContainerView3,FragmentNumeros7(),args)
+        Utils().encontrar5Pares(requireActivity() as AppCompatActivity, requireContext() as AppCompatActivity,btnPusi1,btnPhisqa1,btnKimsa1,btbMaya1,btnPaya1,btnPusi2,btnPhisqa2,btnKimsa2,btbMaya2,btnPaya2,R.id.contenedorDeFragments,FragmentNumeros7(),args)
 
         return view
     }

@@ -53,7 +53,7 @@ class FragmentFamilia8Q : Fragment() {
                 args.putInt("valorp", ++puntaje)
                 Utils().respuestaCorrecta(
                     requireActivity() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentFamilia3Q(),
                     args
                 )
@@ -61,7 +61,7 @@ class FragmentFamilia8Q : Fragment() {
                 args.putInt("valorp", puntaje)
                 Utils().respuestaIncorrecta(
                     requireActivity() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentFamilia3Q(),
                     args
                 )

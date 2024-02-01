@@ -32,7 +32,7 @@ class FragmentSaludo8Q : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentSaludos9(),
                 args
             )
@@ -41,7 +41,7 @@ class FragmentSaludo8Q : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentSaludo9Q(),
                 args
             )
@@ -50,7 +50,7 @@ class FragmentSaludo8Q : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentSaludo9Q(),
                 args
             )
@@ -59,7 +59,7 @@ class FragmentSaludo8Q : Fragment() {
             args.putInt("valorp", ++puntaje)
             Utils().respuestaCorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentSaludo9Q(),
                 args
             )

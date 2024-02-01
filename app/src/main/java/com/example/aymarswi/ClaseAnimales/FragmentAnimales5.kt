@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseColores.FragmentColores7
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -40,7 +39,7 @@ class FragmentAnimales5 : Fragment() {
             btnComprobar,
             requireActivity() as AppCompatActivity,
             FragmentAnimales6(),
-            R.id.fragmentContainerView3,
+            R.id.contenedorDeFragments,
             args, puntaje,
             1)
         return rootView  }

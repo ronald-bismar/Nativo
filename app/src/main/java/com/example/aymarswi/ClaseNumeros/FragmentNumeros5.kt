@@ -30,7 +30,7 @@ class FragmentNumeros5 : Fragment() {
 
             Utils().respuestaCorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNumeros6(),
                 args
             )
@@ -39,7 +39,7 @@ class FragmentNumeros5 : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNumeros6(),
                 args
             )

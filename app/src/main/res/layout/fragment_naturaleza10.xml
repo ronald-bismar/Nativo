@@ -1,124 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout33"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClaseColores.FragmentColores3">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="start"
+    tools:context=".ClaseNaturaleza.FragmentNaturaleza10">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imageView26"
-        android:layout_width="287dp"
-        android:layout_height="266dp"
-        android:src="@mipmap/regandoplanta"
-        app:layout_constraintBottom_toTopOf="@+id/txtORegar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView54"
-        app:layout_constraintVertical_bias="0.5" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnUmampi"
-        style="@style/estiloDeTexto"
-        android:layout_width="180dp"
-        android:layout_height="55dp"
-        android:text="Umampi"
-        app:layout_constraintBottom_toTopOf="@+id/btnComprobar18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnJawira1"
-        app:layout_constraintTop_toBottomOf="@+id/btnKhunu"
-        app:layout_constraintVertical_bias="0.5" />
+            <TextView
+                android:id="@+id/textView111"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="5dp"
+                android:text="Escribe la oracion correcta"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnKhunu"
-        style="@style/estiloDeTexto"
-        android:layout_width="180dp"
-        android:layout_height="55dp"
-        android:text="khunu"
-        app:layout_constraintBottom_toTopOf="@+id/btnUmampi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnWaraña"
-        app:layout_constraintTop_toBottomOf="@+id/txtORegar"
-        app:layout_constraintVertical_bias="0.5" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:minHeight="100dp"
+                android:orientation="horizontal">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnJawira1"
-        style="@style/estiloDeTexto"
-        android:layout_width="180dp"
-        android:layout_height="55dp"
-        android:text="jawira"
-        app:layout_constraintBottom_toTopOf="@+id/btnComprobar18"
-        app:layout_constraintEnd_toStartOf="@+id/btnUmampi"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnWaraña"
-        app:layout_constraintVertical_bias="0.5" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="100dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
-    <TextView
-        android:id="@+id/textView54"
-        style="@style/estiloDeTexto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Regar la planta"
-        app:layout_constraintBottom_toTopOf="@+id/imageView26"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+                    <ImageView
+                        android:id="@+id/btnPapa"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:adjustViewBounds="true"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/regandoplanta" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnWaraña"
-        style="@style/estiloDeTexto"
-        android:layout_width="180dp"
-        android:layout_height="55dp"
-        android:text="waraña"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/btnJawira1"
-        app:layout_constraintEnd_toStartOf="@+id/btnKhunu"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtORegar"
-        app:layout_constraintVertical_bias="0.5" />
+                </LinearLayout>
 
-    <TextView
-        android:id="@+id/txtORegar"
-        style="@style/textoGuia"
-        android:layout_width="387dp"
-        android:layout_height="55dp"
-        android:background="@drawable/strokedelgado"
-        android:clickable="true"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textColor="#131313"
-        app:layout_constraintBottom_toTopOf="@+id/btnKhunu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView26"
-        app:layout_constraintVertical_bias="0.5"
-        tools:text="Umampi waraña" />
+                <ImageButton
+                    android:id="@+id/btnAudio"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/iconosonido" />
+            </LinearLayout>
 
-    <Button
-        android:id="@+id/btnComprobar18"
-        style="@style/estiloDeTexto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#F44336"
-        android:text="COMPROBAR"
-        android:textSize="25dp"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnUmampi"
-        app:layout_constraintVertical_bias="0.5" />
+            <LinearLayout
+                android:id="@+id/etContenPalabra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/strokedelgado"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:orientation="horizontal" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/constraintLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:minHeight="200dp"
+                app:flexWrap="wrap"
+                app:justifyContent="space_evenly"
+                app:alignItems="center"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnComprobar16"
+                android:layout_width="145dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="30dp"
+                style="@style/estiloBotonComprobar"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

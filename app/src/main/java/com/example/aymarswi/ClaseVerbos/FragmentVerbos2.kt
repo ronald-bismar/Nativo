@@ -33,7 +33,7 @@ class FragmentVerbos2 : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerbos3(),
                 args
             )
@@ -42,7 +42,7 @@ class FragmentVerbos2 : Fragment() {
             args.putInt("valorp", ++puntaje)
             Utils().respuestaCorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerbos3(),
                 args
             )
@@ -51,7 +51,7 @@ class FragmentVerbos2 : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerbos3(),
                 args
             )

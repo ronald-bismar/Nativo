@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseColores.FragmentColores9
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -39,7 +38,7 @@ class FragmentColores8Q : Fragment() {
             btnComprobar,
             requireActivity() as AppCompatActivity,
             FragmentColores9Q(),
-            R.id.fragmentContainerView3,
+            R.id.contenedorDeFragments,
             args, puntaje,6
         )
         return rootView

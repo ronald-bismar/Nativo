@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.Chat.FragmentConversacion
 import com.example.aymarswi.Historias.FragmentHistorias
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
@@ -23,7 +22,7 @@ class FragmentGuiaHistorias : Fragment() {
 
         botonEmpezar.setOnClickListener {
             Utils().pasarDeFragment(requireActivity() as
-                    AppCompatActivity,R.id.fragmentContainerView3, FragmentHistorias())
+                    AppCompatActivity,R.id.contenedorDeFragments, FragmentHistorias())
         }
         return rootView
     }

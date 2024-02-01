@@ -1,15 +1,12 @@
 package com.example.aymarswi.QuechuaNumeros
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseNumeros.FragmentNumeros2
-import com.example.aymarswi.ClaseNumeros.FragmentNumeros3
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -58,7 +55,7 @@ class FragmentNumeros1Q : Fragment() {
             txtPaya.text.toString(),
             txtQimsa.text.toString(),
             txtPusi.text.toString(),
-            R.id.fragmentContainerView3,
+            R.id.contenedorDeFragments,
             FragmentNumeros2Q(), args, puntaje)
 
         return rootView

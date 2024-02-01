@@ -8,19 +8,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.QuechuaFamilia.FragmentFamilia1Q
-import com.example.aymarswi.QuechuaFamilia.Fragmentfam11
-import com.example.aymarswi.QuechuaFamilia.Fragmentfam12
-import com.example.aymarswi.QuechuaFamilia.Fragmentfam13
-import com.example.aymarswi.QuechuaFamilia.Fragmentfam14
-import com.example.aymarswi.QuechuaFamilia.Fragmentfam15
-import com.example.aymarswi.QuechuaFamilia.Fragmentfam16
-import com.example.aymarswi.QuechuaFamilia.Fragmentfam17
-import com.example.aymarswi.QuechuaFamilia.Fragmentfam18
-import com.example.aymarswi.QuechuaFamilia.Fragmentfam19
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
-import com.example.aymarswi.databinding.FragmentNatu13Binding
 
 class FragmentNaturaleza0Q : Fragment() {
     override fun onCreateView(
@@ -44,7 +33,7 @@ class FragmentNaturaleza0Q : Fragment() {
         btn.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNaturaleza1Q()
             )
         }
@@ -52,7 +41,7 @@ class FragmentNaturaleza0Q : Fragment() {
         btn1.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNatu11()
             )
         }
@@ -60,42 +49,42 @@ class FragmentNaturaleza0Q : Fragment() {
         btn2.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNatu12()
             )
         }
         btn3.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNatu13()
             )
         }
         btn4.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNatu14()
             )
         }
         btn5.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNatu15()
             )
         }
         btn6.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNatu16()
             )
         }
         btn7.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNatu17()
             )
         }
@@ -103,14 +92,14 @@ class FragmentNaturaleza0Q : Fragment() {
         btn8.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNatu18()
             )
         }
         btn9.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNatu19()
             )
         }

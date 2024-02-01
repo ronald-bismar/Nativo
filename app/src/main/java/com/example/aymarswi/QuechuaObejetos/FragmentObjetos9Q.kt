@@ -50,13 +50,13 @@ class FragmentObjetos9Q : Fragment() {
             if (etPapa.text.toString() == btnPapa3.text.toString()) {
                 args.putInt("valorp", ++puntaje)
                 Utils().respuestaCorrecta(
-                    requireContext() as AppCompatActivity, R.id.fragmentContainerView3,
+                    requireContext() as AppCompatActivity, R.id.contenedorDeFragments,
                     FragmentObjetos10Q(), args
                 )
             } else {
                 args.putInt("valorp", puntaje)
                 Utils().respuestaIncorrecta(
-                    requireContext() as AppCompatActivity, R.id.fragmentContainerView3,
+                    requireContext() as AppCompatActivity, R.id.contenedorDeFragments,
                     FragmentObjetos10Q(), args
                 )
             }

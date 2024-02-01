@@ -31,7 +31,7 @@ class FragmentColores2 : Fragment() {
             args.putInt("valorp", ++puntaje)
             Utils().respuestaCorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentColores3(),
                 args
             )
@@ -40,7 +40,7 @@ class FragmentColores2 : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentColores3(),
                 args
             )
@@ -49,7 +49,7 @@ class FragmentColores2 : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentColores3(),
                 args
             )
@@ -58,7 +58,7 @@ class FragmentColores2 : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentColores3(),
                 args
             )

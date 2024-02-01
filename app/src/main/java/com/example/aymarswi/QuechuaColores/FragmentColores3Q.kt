@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseColores.FragmentColores4
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -46,7 +45,7 @@ class FragmentColores3Q : Fragment() {
                 args.putInt("valorp", ++puntaje)
                 Utils().respuestaCorrecta(
                     requireContext() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentColores4Q(),
                     args
                 )
@@ -54,7 +53,7 @@ class FragmentColores3Q : Fragment() {
                 args.putInt("valorp", puntaje)
                 Utils().respuestaIncorrecta(
                     requireContext() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentColores4Q(),
                     args
                 )

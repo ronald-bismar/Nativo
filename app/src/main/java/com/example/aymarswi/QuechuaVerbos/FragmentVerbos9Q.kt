@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseVerbos.FragmentVerbos10
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -46,7 +45,7 @@ class FragmentVerbos9Q : Fragment() {
             txtComprobar1,
             txtComprobar2, "yatiqaña",
             "luraña",
-            btnComprobar, R.id.fragmentContainerView3, FragmentVerbos10Q(), args,
+            btnComprobar, R.id.contenedorDeFragments, FragmentVerbos10Q(), args,
             puntaje
         )
 

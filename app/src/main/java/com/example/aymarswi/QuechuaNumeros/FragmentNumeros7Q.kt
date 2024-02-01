@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseNumeros.FragmentNumeros8
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -43,7 +42,7 @@ class FragmentNumeros7Q : Fragment() {
                 args.putInt("valorp", ++puntaje)
                 Utils().respuestaCorrecta(
                     requireActivity() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentNumeros8Q(),
                     args
                 )
@@ -51,7 +50,7 @@ class FragmentNumeros7Q : Fragment() {
                 args.putInt("valorp", puntaje)
                 Utils().respuestaIncorrecta(
                     requireActivity() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentNumeros8Q(),
                     args
                 )

@@ -30,7 +30,7 @@ class FragmentHistoriaTupakKatari : Fragment() {
         btnHist.setOnClickListener {
             val fragment = FragmentFamilia1()
             val transaccion: FragmentTransaction = requireActivity().supportFragmentManager
-                .beginTransaction().replace(R.id.fragmentContainerView3,fragment)
+                .beginTransaction().replace(R.id.contenedorDeFragments,fragment)
             transaccion.commit()
         }
         return rootView

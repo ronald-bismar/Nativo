@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza9
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -33,11 +32,11 @@ class FragmentNaturaleza8Q : Fragment() {
                 if (((((obText.text).toString()).trim()).lowercase()) == ("sach'a") || ((((obText.text).toString()).trim()).lowercase()) == "alli") {
                     args.putInt("valorp", ++puntaje)
                     Utils().respuestaCorrecta(requireContext() as AppCompatActivity,
-                        R.id.fragmentContainerView3, FragmentNaturaleza9Q(), args)
+                        R.id.contenedorDeFragments, FragmentNaturaleza9Q(), args)
                 } else {
                     args.putInt("valorp", puntaje)
                     Utils().respuestaIncorrecta(requireContext() as AppCompatActivity,
-                        R.id.fragmentContainerView3, FragmentNaturaleza9Q(), args)
+                        R.id.contenedorDeFragments, FragmentNaturaleza9Q(), args)
                 }
             }else{
                 Utils().mostrarMensajeETextVacio(requireContext() as AppCompatActivity)

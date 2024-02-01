@@ -75,13 +75,13 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/btnDiccionario"
-            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintEnd_toStartOf="@+id/imagenReferencia"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view"
             app:layout_constraintVertical_bias="0.5" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imagenReferencia"
             android:layout_width="90dp"
             android:layout_height="88dp"
             android:layout_marginStart="27dp"
@@ -124,7 +124,7 @@
             app:layout_constraintBottom_toTopOf="@+id/imageView6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btnDiccionario"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imagenReferencia"
             app:layout_constraintVertical_bias="0.5"
             app:srcCompat="@mipmap/diccionario1" />
 

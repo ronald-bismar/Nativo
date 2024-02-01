@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseAnimales.FragmentAnimales10
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -31,10 +30,10 @@ class FragmentAnimales9Q : Fragment() {
         btnComprobar.setOnClickListener {
             if(etWallpa.text.toString().trim() == txtValido.text.toString() || etWallpa.text.toString() == "P'isqu wallpa yura"){
                 args.putInt("valorp", ++puntaje)
-                Utils().respuestaCorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3, FragmentAnimales10Q(), args)
+                Utils().respuestaCorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments, FragmentAnimales10Q(), args)
             }else{
                 args.putInt("valorp", puntaje)
-                Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3, FragmentAnimales10Q(), args)
+                Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments, FragmentAnimales10Q(), args)
             }
         }
         return rootView

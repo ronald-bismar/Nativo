@@ -1,7 +1,6 @@
 package com.example.aymarswi.ClaseFamilia
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,7 +23,7 @@ class FragmentFamilia2 : Fragment() {
         rootView = inflater.inflate(R.layout.fragment_familia2, container, false)
 
         iniciarComponentes()
-        Actividad.setContext(requireActivity() as AppCompatActivity, requireContext(), R.id.fragmentContainerView3)
+        Actividad.setContext(requireActivity() as AppCompatActivity, requireContext(), R.id.contenedorDeFragments)
 
         opcionMultipleDePalabras().palabraVerdadera(btnTayka.text.toString(), btnTayka, btnKullaka)
 

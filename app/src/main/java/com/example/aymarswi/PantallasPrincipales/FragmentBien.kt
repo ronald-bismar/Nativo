@@ -31,7 +31,7 @@ class FragmentBien : Fragment() {
         val gifImageView = rootView.findViewById<GifImageView>(R.id.trofeogif)
 
         val gifDrawable = GifDrawable(resources, R.drawable.trofeo)
-        gifDrawable.loopCount = 2
+        gifDrawable.loopCount = 1
         gifImageView.setImageDrawable(gifDrawable)
 
         Datos().actualizarPuntaje(requireContext(), Actividad.getInstanceActividad().puntaje, getString(R.string.prefs_file))

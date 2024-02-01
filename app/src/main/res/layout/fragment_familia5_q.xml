@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
@@ -33,14 +33,14 @@
         android:text="COMO SE DICE NUERA?"
         android:textColor="#0E0E0E"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintBottom_toTopOf="@+id/imagenReferencia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView109" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imagenReferencia"
         android:layout_width="227dp"
         android:layout_height="324dp"
         android:layout_marginTop="16dp"
@@ -49,7 +49,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
         app:srcCompat="@mipmap/nuera" />
 
     <Button
@@ -71,7 +71,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnAlch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/imagenReferencia" />
 
     <Button
         android:id="@+id/btnTull"
@@ -112,7 +112,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnY" />
 
     <ImageButton
-        android:id="@+id/btnsonido"
+        android:id="@+id/btnSonido"
         android:layout_width="81dp"
         android:layout_height="79dp"
         android:layout_marginStart="-60dp"
@@ -121,7 +121,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imagenReferencia"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/iconosonido" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
@@ -35,19 +34,19 @@ class FragmentNumeros9 : Fragment() {
         }
         btnPhisqa3.setOnClickListener {
             args.putInt("valorp", ++puntaje)
-            Utils().respuestaCorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,FragmentNumeros10(), args)
+            Utils().respuestaCorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,FragmentNumeros10(), args)
         }
         btnQimsa.setOnClickListener {
             args.putInt("valorp", puntaje)
-            Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,FragmentNumeros10(), args)
+            Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,FragmentNumeros10(), args)
         }
         btnSuqta4.setOnClickListener {
             args.putInt("valorp", puntaje)
-            Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,FragmentNumeros10(), args)
+            Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,FragmentNumeros10(), args)
         }
         btnMaya.setOnClickListener {
             args.putInt("valorp", puntaje)
-            Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,FragmentNumeros10(), args)
+            Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,FragmentNumeros10(), args)
         }
 
         return rootView

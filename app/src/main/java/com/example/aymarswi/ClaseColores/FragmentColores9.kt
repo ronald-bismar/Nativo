@@ -58,7 +58,7 @@ class FragmentColores9 : Fragment() {
                 requireContext(),
                 rootView,palabra1,
                 palabra2,palabra3,
-                palabra4, btnContinuar,'u', requireActivity() as AppCompatActivity, R.id.fragmentContainerView3, FragmentColores10(), args)
+                palabra4, btnContinuar,'u', requireActivity() as AppCompatActivity, R.id.contenedorDeFragments, FragmentColores10(), args)
         return rootView
     }
 

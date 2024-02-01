@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNatu11
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -37,7 +36,7 @@ class FragmentFamilia0Q : Fragment() {
         btn.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentFamilia1Q()
             )
         }
@@ -45,7 +44,7 @@ class FragmentFamilia0Q : Fragment() {
         btn1.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 Fragmentfam11()
             )
         }
@@ -53,42 +52,42 @@ class FragmentFamilia0Q : Fragment() {
         btn2.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 Fragmentfam12()
             )
         }
         btn3.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 Fragmentfam13()
             )
         }
         btn4.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 Fragmentfam14()
             )
         }
         btn5.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 Fragmentfam15()
             )
         }
         btn6.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 Fragmentfam16()
             )
         }
         btn7.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 Fragmentfam17()
             )
         }
@@ -96,14 +95,14 @@ class FragmentFamilia0Q : Fragment() {
         btn8.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 Fragmentfam18()
             )
         }
         btn9.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 Fragmentfam19()
             )
         }

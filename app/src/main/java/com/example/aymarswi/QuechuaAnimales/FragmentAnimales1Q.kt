@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseAnimales.FragmentAnimales2
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -43,7 +42,7 @@ class FragmentAnimales1Q : Fragment() {
             txtSuri,
             txtChini, txtContPalabra2,
             "Apu",
-            btnComprobar, R.id.fragmentContainerView3, FragmentAnimales2Q(), args,
+            btnComprobar, R.id.contenedorDeFragments, FragmentAnimales2Q(), args,
             puntaje
         )
 

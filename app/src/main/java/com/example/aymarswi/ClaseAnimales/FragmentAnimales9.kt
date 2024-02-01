@@ -31,10 +31,10 @@ class FragmentAnimales9 : Fragment() {
         btnComprobar.setOnClickListener {
             if(etWallpa.text.toString().trim() == txtValido.text.toString() || etWallpa.text.toString() == "wallpaxa siwara manqi"){
                 args.putInt("valorp", ++puntaje)
-                Utils().respuestaCorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3, FragmentAnimales10(), args)
+                Utils().respuestaCorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments, FragmentAnimales10(), args)
             }else{
                 args.putInt("valorp", puntaje)
-                Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3, FragmentAnimales10(), args)
+                Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments, FragmentAnimales10(), args)
             }
         }
         return rootView

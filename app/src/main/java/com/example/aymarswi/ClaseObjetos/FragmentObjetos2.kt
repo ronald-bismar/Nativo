@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.QuechuaObejetos.FragmentObjetos3Q
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -35,7 +34,7 @@ class FragmentObjetos2 : Fragment() {
 
             Utils().respuestaCorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentObjetos3(),
                 args
             )
@@ -44,7 +43,7 @@ class FragmentObjetos2 : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentObjetos3(),
                 args
             )
@@ -53,7 +52,7 @@ class FragmentObjetos2 : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentObjetos3(),
                 args
             )
@@ -62,7 +61,7 @@ class FragmentObjetos2 : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentObjetos3(),
                 args
             )

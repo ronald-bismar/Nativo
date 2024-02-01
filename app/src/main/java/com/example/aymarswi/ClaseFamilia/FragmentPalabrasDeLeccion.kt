@@ -29,7 +29,7 @@ class FragmentPalabrasDeLeccion : Fragment() {
         val btnIrALeccion = view.findViewById<Button>(R.id.btnIrALaLeccion)
 
         btnIrALeccion.setOnClickListener {
-            Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3, FragmentFamilia1())
+            Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments, FragmentFamilia1())
         }
 
         // Crear el adaptador personalizado para el ViewPager

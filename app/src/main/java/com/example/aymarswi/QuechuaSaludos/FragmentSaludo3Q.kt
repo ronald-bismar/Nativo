@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseSaludos.FragmentSaludos4
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -42,12 +41,12 @@ class FragmentSaludo3Q : Fragment() {
         btnComprobar.setOnClickListener {
             if(txtPalabra.text.toString() ==  btnaromakipan.text.toString()) {
                 args.putInt("valorp", ++puntaje)
-                Utils().respuestaCorrecta(requireContext() as AppCompatActivity,R.id.fragmentContainerView3,
+                Utils().respuestaCorrecta(requireContext() as AppCompatActivity,R.id.contenedorDeFragments,
                     FragmentSaludo4Q(),args)
             }
             else {
                 args.putInt("valorp", puntaje)
-                Utils().respuestaIncorrecta(requireContext() as AppCompatActivity,R.id.fragmentContainerView3,
+                Utils().respuestaIncorrecta(requireContext() as AppCompatActivity,R.id.contenedorDeFragments,
                     FragmentSaludo4Q(),args)
             }
         }

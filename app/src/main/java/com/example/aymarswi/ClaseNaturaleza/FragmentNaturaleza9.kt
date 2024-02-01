@@ -1,69 +1,41 @@
 package com.example.aymarswi.ClaseNaturaleza
 
-import android.media.MediaPlayer
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
-import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Utils
+import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
 class FragmentNaturaleza9 : Fragment() {
+    private lateinit var btnPanqa: Button
+    private lateinit var btnAli: Button
+    private lateinit var btnChuqi1: Button
+    private lateinit var btnKhunu: Button
+    private lateinit var imgVSonido: ImageView
+    private lateinit var rootView: View
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        val rootView: View = inflater.inflate(R.layout.fragment_naturaleza9, container, false)
-        val btnPanqa = rootView.findViewById<Button>(R.id.btnPanqa)
-        val btnAli = rootView.findViewById<Button>(R.id.btnAli1)
-        val btnChuqi1 = rootView.findViewById<Button>(R.id.btnChuqi1)
-        val btnKhunu = rootView.findViewById<Button>(R.id.btnKhunu1)
-        val imgVSonido = rootView.findViewById<ImageView>(R.id.imgVSonido)
-        var puntaje = requireArguments().getInt("valorp")
-        var contador = requireArguments().getInt("valorc")
-        Log.d("Valor", "Puntaje recibido $puntaje")
-        Log.d("Valor", "Contador recibido $contador")
-        val args = Bundle()
-        args.putInt("valorc", contador)
-        imgVSonido.setOnClickListener {
-            val audio = MediaPlayer.create(requireContext(), R.raw.vozphisqa)
-            audio.start()
-        }
-        btnChuqi1.setOnClickListener {
-            args.putInt("valorp", ++puntaje)
-            Utils().respuestaCorrecta(
-                requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
-                FragmentNaturaleza10(), args
-            )
-        }
-        btnPanqa.setOnClickListener {
-            args.putInt("valorp", puntaje)
-            Utils().respuestaIncorrecta(
-                requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
-                FragmentNaturaleza10(), args
-            )
-        }
-        btnAli.setOnClickListener {
-            args.putInt("valorp", puntaje)
-            Utils().respuestaIncorrecta(
-                requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
-                FragmentNaturaleza10(), args
-            )
-        }
-        btnKhunu.setOnClickListener {
-            args.putInt("valorp", puntaje)
-            Utils().respuestaIncorrecta(
-                requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
-                FragmentNaturaleza10(), args
-            )
-        }
+
+        rootView = inflater.inflate(R.layout.fragment_naturaleza9, container, false)
+        initComponents()
+
+        opcionMultipleDePalabras().palabraVerdadera(btnChuqi1.text.toString(), btnPanqa, btnAli, btnChuqi1, btnKhunu)
 
         return rootView
+    }
+
+    private fun initComponents() {
+        btnPanqa = rootView.findViewById(R.id.btnPanqa)
+        btnAli = rootView.findViewById(R.id.btnAli1)
+        btnChuqi1 = rootView.findViewById(R.id.btnChuqi1)
+        btnKhunu = rootView.findViewById(R.id.btnKhunu1)
+        imgVSonido = rootView.findViewById(R.id.imgVSonido)
     }
 }

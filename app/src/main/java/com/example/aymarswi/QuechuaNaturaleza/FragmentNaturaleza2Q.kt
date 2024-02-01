@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza3
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -41,13 +40,13 @@ class FragmentNaturaleza2Q : Fragment() {
             if (etPapa.text.toString() == btnPapa1.text.toString()) {
                 args.putInt("valorp", ++puntaje)
                 Utils().respuestaCorrecta(
-                    requireContext() as AppCompatActivity, R.id.fragmentContainerView3,
+                    requireContext() as AppCompatActivity, R.id.contenedorDeFragments,
                     FragmentNaturaleza3Q(), args
                 )
             } else {
                 args.putInt("valorp", puntaje)
                 Utils().respuestaIncorrecta(
-                    requireContext() as AppCompatActivity, R.id.fragmentContainerView3,
+                    requireContext() as AppCompatActivity, R.id.contenedorDeFragments,
                     FragmentNaturaleza3Q(), args
                 )
             }

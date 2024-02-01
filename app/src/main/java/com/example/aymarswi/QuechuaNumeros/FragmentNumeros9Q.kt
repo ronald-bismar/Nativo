@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseNumeros.FragmentNumeros10
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -35,22 +34,22 @@ class FragmentNumeros9Q : Fragment() {
         }
         btnPhisqa3.setOnClickListener {
             args.putInt("valorp", ++puntaje)
-            Utils().respuestaCorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+            Utils().respuestaCorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentNumeros10Q(), args)
         }
         btnQimsa.setOnClickListener {
             args.putInt("valorp", puntaje)
-            Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+            Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentNumeros10Q(), args)
         }
         btnSuqta4.setOnClickListener {
             args.putInt("valorp", puntaje)
-            Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+            Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentNumeros10Q(), args)
         }
         btnMaya.setOnClickListener {
             args.putInt("valorp", puntaje)
-            Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+            Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentNumeros10Q(), args)
         }
 

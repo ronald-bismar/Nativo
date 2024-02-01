@@ -41,12 +41,12 @@ class FragmentSaludos3 : Fragment() {
         btnComprobar.setOnClickListener {
             if(txtPalabra.text.toString() ==  btnaromakipan.text.toString()) {
                 args.putInt("valorp", ++puntaje)
-                Utils().respuestaCorrecta(requireContext() as AppCompatActivity,R.id.fragmentContainerView3,
+                Utils().respuestaCorrecta(requireContext() as AppCompatActivity,R.id.contenedorDeFragments,
                     FragmentSaludos4(),args)
             }
             else {
                 args.putInt("valorp", puntaje)
-                Utils().respuestaIncorrecta(requireContext() as AppCompatActivity,R.id.fragmentContainerView3,
+                Utils().respuestaIncorrecta(requireContext() as AppCompatActivity,R.id.contenedorDeFragments,
                     FragmentSaludos4(),args)
             }
         }

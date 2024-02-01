@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNaturaleza0Q
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -21,7 +20,7 @@ class FragmentVerb13 : Fragment() {
         btn.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerbos0Q()
             )
         }

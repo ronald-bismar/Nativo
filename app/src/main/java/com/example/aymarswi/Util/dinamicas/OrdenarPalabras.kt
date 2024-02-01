@@ -17,7 +17,7 @@ class OrdenarPalabras(
     contenedorOracionRespuesta: LinearLayout,
     botonComprobar: Button
 ) :
-    Actividad(AppCompatActivity(), AppCompatActivity(), R.id.fragmentContainerView3) {
+    Actividad(AppCompatActivity(), AppCompatActivity(), R.id.contenedorDeFragments) {
 
     private var contenedorPalabras: FlexboxLayout
     private var contenedorOracionRespuesta: LinearLayout
@@ -43,7 +43,7 @@ class OrdenarPalabras(
     }
 
     private fun crearBotonesEnContenedor(oracionDividida: List<String>) {
-        for (i in if(esOracion()) oracionDividida.indices else 1 until oracionDividida.size-1)
+        for (i in if (esOracion()) oracionDividida.indices else 1 until oracionDividida.size - 1)
             contenedorPalabras.addView(crearButtonTexto(oracionDividida[i]))
     }
 
@@ -95,9 +95,8 @@ class OrdenarPalabras(
 
     private fun joinText(): String {
         var oracionUnida = ""
-        for (i in 0..contenedorOracionRespuesta.childCount) {
+        for (i in 0 until contenedorOracionRespuesta.childCount)
             oracionUnida += (contenedorPalabras.getChildAt(i) as TextView).text.toString() + if (esOracion()) " " else ""
-        }
 
         return oracionUnida.trim()
     }

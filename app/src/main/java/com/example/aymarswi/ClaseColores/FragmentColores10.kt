@@ -45,7 +45,7 @@ class FragmentColores10 : Fragment() {
             txtLarama,
             txtChiqi, txtContPalabra,
             "ch'umpi",
-            btnComprobar, R.id.fragmentContainerView3,
+            btnComprobar, R.id.contenedorDeFragments,
             args,
             puntaje
         )

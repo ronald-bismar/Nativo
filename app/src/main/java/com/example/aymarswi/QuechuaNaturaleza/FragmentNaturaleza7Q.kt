@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza8
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -37,7 +36,7 @@ class FragmentNaturaleza7Q : Fragment() {
             args.putInt("valorp", ++puntaje)
             Utils().respuestaCorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNaturaleza8Q(),
                 args
             )
@@ -47,7 +46,7 @@ class FragmentNaturaleza7Q : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNaturaleza8Q(),
                 args
             )
@@ -56,7 +55,7 @@ class FragmentNaturaleza7Q : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNaturaleza8Q(),
                 args
             )
@@ -65,7 +64,7 @@ class FragmentNaturaleza7Q : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNaturaleza8Q(),
                 args
             )

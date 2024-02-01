@@ -10,39 +10,28 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
+import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
 class FragmentNaturaleza5 : Fragment() {
+
+    private lateinit var btnSembrar: Button
+    private lateinit var btnRegarPlanta: Button
+    private lateinit var rootView: View
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView: View = inflater.inflate(R.layout.fragment_naturaleza5, container, false)
-        var puntaje = requireArguments().getInt("valorp")
-        var contador = requireArguments().getInt("valorc")
-        Log.d("Valor", "Puntaje recibido $puntaje")
-        Log.d("Valor", "Contador recibido $contador")
-        val btnSembrar = rootView.findViewById<Button>(R.id.btnSembrar);
-        val btnRegarPlanta = rootView.findViewById<Button>(R.id.btnRegarPlanta)
-        val args = Bundle()
-        args.putInt("valorc", ++contador)
-        btnSembrar.setOnClickListener {
-            args.putInt("valorp", puntaje)
-            Utils().respuestaIncorrecta(
-                requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
-                FragmentNaturaleza6(),
-                args
-            )
-        }
-        btnRegarPlanta.setOnClickListener {
-            args.putInt("valorp", ++puntaje)
-            Utils().respuestaCorrecta(
-                requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
-                FragmentNaturaleza6(),
-                args
-            )
-        }
+        rootView = inflater.inflate(R.layout.fragment_naturaleza5, container, false)
+
+        initComponents()
+        opcionMultipleDePalabras().palabraVerdadera(btnRegarPlanta.text.toString(), btnSembrar, btnRegarPlanta)
+
         return rootView
+    }
+
+    private fun initComponents() {
+        btnSembrar = rootView.findViewById(R.id.btnSembrar);
+        btnRegarPlanta = rootView.findViewById(R.id.btnRegarPlanta)
     }
 }

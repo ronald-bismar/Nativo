@@ -11,46 +11,35 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
+import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
 class FragmentNaturaleza2 : Fragment() {
+
+    private lateinit var btnCebada: Button
+    private lateinit var btnPapa1: Button
+    private lateinit var btnComp: Button
+    private lateinit var etPapa: TextView
+    private lateinit var rootView: View
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        val rootView: View = inflater.inflate(R.layout.fragment_naturaleza2, container, false)
-        val btnCebada = rootView.findViewById<Button>(R.id.btnCebada)
-        val btnPapa1 = rootView.findViewById<Button>(R.id.btnPapa1)
-        val etPapa = rootView.findViewById<TextView>(R.id.etPapa)
-        val btnComp = rootView.findViewById<Button>(R.id.btnComp3)
-        var puntaje = requireArguments().getInt("valorp")
-        var contador = requireArguments().getInt("valorc")
-        Log.d("Valor", "Puntaje recibido $puntaje")
-        Log.d("Valor", "Contador recibido $contador")
-        val args = Bundle()
-        args.putInt("valorc", ++contador)
+       rootView = inflater.inflate(R.layout.fragment_naturaleza2, container, false)
+        initComponents()
+        opcionMultipleDePalabras().palabraVerdadera(
+            btnCebada,
+            btnPapa1,
+            palabraCorrecta = btnPapa1.text.toString(),
+            palabraElegida = etPapa,
+            botonComprobar = btnComp,
+        )
 
-        btnCebada.setOnClickListener {
-            etPapa.text = btnCebada.text.toString()
-        }
-        btnPapa1.setOnClickListener {
-            etPapa.text = btnPapa1.text.toString()
-        }
-        btnComp.setOnClickListener {
-            if (etPapa.text.toString() == btnPapa1.text.toString()) {
-                args.putInt("valorp", ++puntaje)
-                Utils().respuestaCorrecta(
-                    requireContext() as AppCompatActivity, R.id.fragmentContainerView3,
-                    FragmentNaturaleza3(), args
-                )
-            } else {
-                args.putInt("valorp", puntaje)
-                Utils().respuestaIncorrecta(
-                    requireContext() as AppCompatActivity, R.id.fragmentContainerView3,
-                    FragmentNaturaleza3(), args
-                )
-            }
-        }
         return rootView
+    }
+    private fun initComponents() {
+        btnCebada = rootView.findViewById(R.id.btnCebada)
+        btnPapa1 = rootView.findViewById(R.id.btnPapa1)
+        btnComp = rootView.findViewById(R.id.btnComp3)
+        etPapa = rootView.findViewById(R.id.etPapa)
     }
 }

@@ -8,10 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza10
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -40,28 +38,28 @@ class FragmentSaludos9 : Fragment() {
         btnBuenDia.setOnClickListener {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
-                requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+                requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentSaludos10(), args
             )
         }
         btnBien.setOnClickListener {
             args.putInt("valorp", ++puntaje)
             Utils().respuestaCorrecta(
-                requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+                requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentSaludos10(), args
             )
         }
         btnMal.setOnClickListener {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
-                requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+                requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentSaludos10(), args
             )
         }
         btnCEstas.setOnClickListener {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
-                requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+                requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentSaludos10(), args
             )
         }

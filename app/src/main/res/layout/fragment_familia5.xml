@@ -1,108 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClaseFamilia.FragmentFamilia5">
+    tools:context=".ClaseFamilia.FragmentFamilia5"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="10dp">
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="55dp"
         android:layout_marginBottom="23dp"
         android:fontFamily="@font/arista"
         android:text="COMO SE DICE NUERA?"
         android:textColor="#0E0E0E"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:textSize="34sp"/>
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="227dp"
-        android:layout_height="324dp"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:srcCompat="@mipmap/nuera" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginHorizontal="40dp">
 
-    <Button
-        android:id="@+id/btnY"
-        android:layout_width="200dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="106dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#ABD9FF"
-        android:fontFamily="@font/arista"
-        android:text="Yuxch'a"
-        android:textAllCaps="false"
-        android:textColor="#2C2B2B"
-        android:textSize="24sp"
-        app:cornerRadius="13dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAlch"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        <ImageView
+            android:id="@+id/imagenReferencia"
+            android:layout_width="match_parent"
+            android:layout_height="324dp"
+            android:src="@mipmap/nuera" />
 
-    <Button
-        android:id="@+id/btnTull"
-        android:layout_width="200dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="106dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginBottom="132dp"
-        android:backgroundTint="#ABD9FF"
-        android:fontFamily="@font/arista"
-        android:text="Tullqa"
-        android:textAllCaps="false"
-        android:textColor="#2C2B2B"
-        android:textSize="24sp"
-        app:cornerRadius="13dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAlch" />
+        <ImageButton
+            android:id="@+id/btnSonido"
+            android:layout_width="81dp"
+            android:layout_height="79dp"
+            android:layout_marginStart="-60dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/sonidoactivo" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/btnAlch"
-        android:layout_width="200dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="106dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="#ABD9FF"
-        android:fontFamily="@font/arista"
-        android:text="Allchhi"
-        android:textAllCaps="false"
-        android:textColor="#2C2B2B"
-        android:textSize="24sp"
-        app:cornerRadius="13dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnTull"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnY" />
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:flexDirection="column"
+        app:alignItems="center"
+        android:layout_marginHorizontal="40dp"
+        app:justifyContent="space_evenly"
+        >
+        <Button
+            android:id="@+id/btnY"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:minWidth="200dp"
+            android:backgroundTint="#ABD9FF"
+            android:fontFamily="@font/arista"
+            android:text="Yuxch'a"
+            android:textAllCaps="false"
+            android:textColor="#2C2B2B"
+            android:layout_marginVertical="5dp"
+            android:textSize="24sp" />
 
-    <ImageButton
-        android:id="@+id/btnsonido"
-        android:layout_width="81dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="-60dp"
-        android:layout_marginBottom="400dp"
-        android:background="@null"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/iconosonido" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btnTull"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:backgroundTint="#ABD9FF"
+            android:fontFamily="@font/arista"
+            android:text="Tullqa"
+            android:textAllCaps="false"
+            android:textColor="#2C2B2B"
+            android:layout_marginVertical="5dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnAlch"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:backgroundTint="#ABD9FF"
+            android:fontFamily="@font/arista"
+            android:text="Allchhi"
+            android:textAllCaps="false"
+            android:textColor="#2C2B2B"
+            android:layout_marginVertical="5dp"
+            android:textSize="24sp" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+
+</LinearLayout>

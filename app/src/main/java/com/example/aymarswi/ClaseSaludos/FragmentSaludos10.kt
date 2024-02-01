@@ -9,7 +9,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
@@ -39,10 +38,10 @@ class FragmentSaludos10 : Fragment() {
         btnBDias.setOnClickListener {
             if(contador == 10){
                 Utils().sonidoIncorrecto(requireContext())
-                Utils().alertDialogIncorrectDeterminaResultado(requireContext(), puntaje, requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
+                Utils().alertDialogIncorrectDeterminaResultado(requireContext(), puntaje, requireActivity() as AppCompatActivity, R.id.contenedorDeFragments)
             }else{
                 args.putInt("valorp", puntaje)
-                Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+                Utils().respuestaIncorrecta(requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                     FragmentSaludos8(), args)
             }
 
@@ -55,12 +54,12 @@ class FragmentSaludos10 : Fragment() {
                     requireContext(),
                     puntaje,
                     requireActivity() as AppCompatActivity,
-                    R.id.fragmentContainerView3
+                    R.id.contenedorDeFragments
                 )
             } else {
                 args.putInt("valorp", ++puntaje)
                 Utils().respuestaCorrecta(
-                    requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+                    requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                     FragmentSaludos8(), args
                 )
             }
@@ -68,11 +67,11 @@ class FragmentSaludos10 : Fragment() {
         btnBNoches.setOnClickListener {
             if(contador == 10){
                 Utils().sonidoIncorrecto(requireContext())
-                Utils().alertDialogIncorrectDeterminaResultado(requireContext(), puntaje, requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
+                Utils().alertDialogIncorrectDeterminaResultado(requireContext(), puntaje, requireActivity() as AppCompatActivity, R.id.contenedorDeFragments)
             }else {
                 args.putInt("valorp", puntaje)
                 Utils().respuestaIncorrecta(
-                    requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+                    requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                     FragmentSaludos8(), args
                 )
             }

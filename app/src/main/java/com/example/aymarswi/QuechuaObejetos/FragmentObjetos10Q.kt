@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNaturaleza8Q
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -51,12 +50,12 @@ class FragmentObjetos10Q : Fragment() {
                     Utils().sonidoCorrecto(requireContext())
                     Utils().alertDialogCorrectDeterminaResultado(
                         requireContext(), puntaje,
-                        requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
+                        requireActivity() as AppCompatActivity, R.id.contenedorDeFragments)
                 }else {
                     Utils().sonidoCorrecto(requireContext())
                     Utils().alertDialogCorrectDeterminaResultado(
                         requireContext(), puntaje,
-                        requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
+                        requireActivity() as AppCompatActivity, R.id.contenedorDeFragments)
 
                 }
             } else {
@@ -64,13 +63,13 @@ class FragmentObjetos10Q : Fragment() {
                     Utils().sonidoIncorrecto(requireContext())
                     Utils().alertDialogIncorrectDeterminaResultado(
                         requireContext(), puntaje,
-                        requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
+                        requireActivity() as AppCompatActivity, R.id.contenedorDeFragments)
                 }else {
                     args.putInt("valorp", puntaje)
                     Utils().sonidoIncorrecto(requireContext())
                     Utils().alertDialogIncorrectDeterminaResultado(
                         requireContext(), puntaje,
-                        requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
+                        requireActivity() as AppCompatActivity, R.id.contenedorDeFragments)
                 }
             }
         }

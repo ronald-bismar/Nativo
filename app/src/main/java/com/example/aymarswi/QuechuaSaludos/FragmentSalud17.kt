@@ -21,7 +21,7 @@ class FragmentSalud17 : Fragment() {
         btn.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentSaludo0Q()
             )
         }

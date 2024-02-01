@@ -29,7 +29,7 @@ class HistoriaAdapter(
                 val historia = listaHistorias[adapterPosition]
                 val fragment = FragmentHistoriaPaginas() // Suponiendo que tienes un ID para identificar la historia
                 fragmentManager.beginTransaction()
-                    .replace(R.id.fragmentContainerView3, fragment)
+                    .replace(R.id.contenedorDeFragments, fragment)
                     .addToBackStack(null)
                     .commit()
             }

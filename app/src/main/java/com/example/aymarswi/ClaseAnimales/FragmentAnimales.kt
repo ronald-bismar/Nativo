@@ -42,7 +42,7 @@ class FragmentAnimales : Fragment() {
             txtSuri,
             txtChini, txtContPalabra2,
             "Mallku",
-            btnComprobar, R.id.fragmentContainerView3,FragmentAnimales2(), args,
+            btnComprobar, R.id.contenedorDeFragments,FragmentAnimales2(), args,
             puntaje
         )
 

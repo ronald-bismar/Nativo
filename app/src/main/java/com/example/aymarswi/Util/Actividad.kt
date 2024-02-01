@@ -140,7 +140,7 @@ open class Actividad protected constructor(
     fun pasarDeFragment() {
         val fragmentManager: FragmentManager = instance?.activity!!.supportFragmentManager
         val transaction: FragmentTransaction = fragmentManager.beginTransaction()
-        instance?.nextFragment?.let { transaction.replace(R.id.fragmentContainerView3, it).commit() }
+        instance?.nextFragment?.let { transaction.replace(R.id.contenedorDeFragments, it).commit() }
     }
 
 

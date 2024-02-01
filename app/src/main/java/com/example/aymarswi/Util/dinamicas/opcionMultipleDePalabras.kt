@@ -4,13 +4,14 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
 
 class opcionMultipleDePalabras :
-    Actividad(AppCompatActivity(), AppCompatActivity(), R.id.fragmentContainerView3) {
+    Actividad(AppCompatActivity(), AppCompatActivity(), R.id.contenedorDeFragments) {
 
 
     fun palabraVerdadera(
@@ -107,6 +108,18 @@ class opcionMultipleDePalabras :
                     ignoreCase = true
                 )
             )
+        }
+    }
+    fun palabraVerdadera(
+        palabraCorrecta: String,
+        vararg botones: LinearLayout
+    ) {
+        getInstanceActividad().setPalabraCorrecta(palabraCorrecta)
+        for (palabraBoton in botones) {
+            palabraBoton.setOnClickListener {
+                getInstanceActividad().correcto = (palabraBoton.getChildAt(1) as TextView).text.toString() == palabraCorrecta
+                getInstanceActividad().respuesta()
+            }
         }
     }
 }

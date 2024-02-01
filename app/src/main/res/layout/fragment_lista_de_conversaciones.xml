@@ -136,7 +136,7 @@
                     tools:layout_editor_absoluteY="7dp" />
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/imagenReferencia"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
                     android:layout_marginLeft="14dp"
@@ -156,7 +156,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/linearLayout27"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintStart_toEndOf="@+id/imagenReferencia"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.5" />
 

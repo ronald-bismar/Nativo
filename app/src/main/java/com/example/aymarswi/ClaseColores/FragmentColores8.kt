@@ -38,7 +38,7 @@ class FragmentColores8 : Fragment() {
             btnComprobar,
             requireActivity() as AppCompatActivity,
             FragmentColores9(),
-            R.id.fragmentContainerView3,
+            R.id.contenedorDeFragments,
             args, puntaje,6
         )
         return rootView

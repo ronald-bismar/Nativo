@@ -45,14 +45,14 @@ class FragmentFamilia6Q : Fragment() {
                 args.putInt("valorp", ++puntaje)
                 Utils().respuestaCorrecta(
                     requireContext() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentFamilia9Q(),args)
             }
             else if(txtPalabra.text == "sarañani" || txtPalabra.text == "parlaña") {
                 args.putInt("valorp", puntaje)
                 Utils().respuestaIncorrecta(
                     requireContext() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentFamilia9Q(),args)
             }
         }

@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseAnimales.FragmentAnimales10
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -60,6 +59,6 @@ class FragmentAnimales10Q : Fragment() {
             rootView,palabra1,
             palabra2,palabra3,
             palabra4, btnContinuar, 'u', requireActivity() as
-                    AppCompatActivity, R.id.fragmentContainerView3, FragmentAnimales10Q(), args)
+                    AppCompatActivity, R.id.contenedorDeFragments, FragmentAnimales10Q(), args)
         return rootView  }
 }

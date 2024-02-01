@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseVerbos.FragmentVerbos3
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -33,7 +32,7 @@ class FragmentVerbos2Q : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerbos3Q(),
                 args
             )
@@ -42,7 +41,7 @@ class FragmentVerbos2Q : Fragment() {
             args.putInt("valorp", ++puntaje)
             Utils().respuestaCorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerbos3Q(),
                 args
             )
@@ -51,7 +50,7 @@ class FragmentVerbos2Q : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerbos3Q(),
                 args
             )

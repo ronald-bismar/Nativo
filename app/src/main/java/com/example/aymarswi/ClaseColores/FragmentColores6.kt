@@ -1,21 +1,13 @@
 package com.example.aymarswi.ClaseColores
 
-import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AccelerateInterpolator
-import android.view.animation.Animation
-import android.view.animation.AnimationSet
-import android.view.animation.DecelerateInterpolator
-import android.view.animation.ScaleAnimation
 import android.widget.Button
 import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.util.Util
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -48,7 +40,7 @@ class FragmentColores6 : Fragment() {
             btnComprobar,
             requireActivity() as AppCompatActivity,
             FragmentColores7(),
-            R.id.fragmentContainerView3,
+            R.id.contenedorDeFragments,
             args, puntaje,
             4)
         return rootView

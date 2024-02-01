@@ -1,6 +1,5 @@
 package com.example.aymarswi.PantallasPrincipales
 
-import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.add
@@ -29,27 +28,28 @@ import com.example.aymarswi.QuechuaSaludos.FragmentSaludo0Q
 import com.example.aymarswi.QuechuaVerbos.FragmentVerbos0Q
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
+import com.example.aymarswi.model.lecciones.Lecciones
 
 class ActivityContenedor : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contenedor)
-        Actividad.getInstance(this, this, R.id.fragmentContainerView3)
+        Actividad.getInstance(this, this, R.id.contenedorDeFragments)
 
         when (intent.extras?.getInt("valor")) {
             1 -> {
-
+                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Familia")
                 supportFragmentManager.commit {
-                    add<FragmentFamilia1>(R.id.fragmentContainerView3)
+                    add<FragmentFamilia1>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             2 -> {
-
+                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Naturaleza")
                 supportFragmentManager.commit {
-                    add<FragmentNaturaleza>(R.id.fragmentContainerView3)
+                    add<FragmentNaturaleza>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
 
 
@@ -57,50 +57,56 @@ class ActivityContenedor : AppCompatActivity() {
             }
 
             3 -> {
+                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Saludos")
                 supportFragmentManager.commit {
-                    add<FragmentSaludos>(R.id.fragmentContainerView3)
+                    add<FragmentSaludos>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             4 -> {
+                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Animales")
                 supportFragmentManager.commit {
-                    add<FragmentAnimales>(R.id.fragmentContainerView3)
+                    add<FragmentAnimales>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             5 -> {
+                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Verbos")
                 supportFragmentManager.commit {
-                    add<FragmentVerbos>(R.id.fragmentContainerView3)
+                    add<FragmentVerbos>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             6 -> {
+                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Colores")
                 supportFragmentManager.commit {
-                    add<FragmentColores>(R.id.fragmentContainerView3)
+                    add<FragmentColores>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             7 -> {
+                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Numeros")
                 supportFragmentManager.commit {
-                    add<FragmentNumeros>(R.id.fragmentContainerView3)
+                    add<FragmentNumeros>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             8 -> {
+                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Objetos")
                 supportFragmentManager.commit {
-                    add<FragmentObjetos1>(R.id.fragmentContainerView3)
+                    add<FragmentObjetos1>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             9 -> {
                 supportFragmentManager.commit {
-                    add<FragmentFamilia0Q>(R.id.fragmentContainerView3)
+                    add<FragmentFamilia0Q>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
 
@@ -108,7 +114,7 @@ class ActivityContenedor : AppCompatActivity() {
 
             10 -> {
                 supportFragmentManager.commit {
-                    add<FragmentNaturaleza0Q>(R.id.fragmentContainerView3)
+                    add<FragmentNaturaleza0Q>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
 
@@ -116,7 +122,7 @@ class ActivityContenedor : AppCompatActivity() {
 
             11 -> {
                 supportFragmentManager.commit {
-                    add<FragmentSaludo0Q>(R.id.fragmentContainerView3)
+                    add<FragmentSaludo0Q>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
 
@@ -124,7 +130,7 @@ class ActivityContenedor : AppCompatActivity() {
 
             12 -> {
                 supportFragmentManager.commit {
-                    add<FragmentAnimales0Q>(R.id.fragmentContainerView3)
+                    add<FragmentAnimales0Q>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
 
@@ -132,7 +138,7 @@ class ActivityContenedor : AppCompatActivity() {
 
             13 -> {
                 supportFragmentManager.commit {
-                    add<FragmentVerbos0Q>(R.id.fragmentContainerView3)
+                    add<FragmentVerbos0Q>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
 
@@ -140,7 +146,7 @@ class ActivityContenedor : AppCompatActivity() {
 
             14 -> {
                 supportFragmentManager.commit {
-                    add<FragmentColores0Q>(R.id.fragmentContainerView3)
+                    add<FragmentColores0Q>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
 
@@ -148,7 +154,7 @@ class ActivityContenedor : AppCompatActivity() {
 
             15 -> {
                 supportFragmentManager.commit {
-                    add<FragmentNumeros0Q>(R.id.fragmentContainerView3)
+                    add<FragmentNumeros0Q>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
 
@@ -156,63 +162,63 @@ class ActivityContenedor : AppCompatActivity() {
 
             16 -> {
                 supportFragmentManager.commit {
-                    add<FragmentObjetos0Q>(R.id.fragmentContainerView3)
+                    add<FragmentObjetos0Q>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             93 -> {
                 supportFragmentManager.commit {
-                    add<FragmentGuiaDiccionario>(R.id.fragmentContainerView3)
+                    add<FragmentGuiaDiccionario>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             94 -> {
                 supportFragmentManager.commit {
-                    add<FragmentGuiaLecciones>(R.id.fragmentContainerView3)
+                    add<FragmentGuiaLecciones>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             95 -> {
                 supportFragmentManager.commit {
-                    add<FragmentGuiaBiblioteca>(R.id.fragmentContainerView3)
+                    add<FragmentGuiaBiblioteca>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             96 -> {
                 supportFragmentManager.commit {
-                    add<FragmentAvatar2>(R.id.fragmentContainerView3)
+                    add<FragmentAvatar2>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             97 -> {
                 supportFragmentManager.commit {
-                    add<FragmentClasificacion>(R.id.fragmentContainerView3)
+                    add<FragmentClasificacion>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             98 -> {
                 supportFragmentManager.commit {
-                    add<FragmentGuiaConversacion>(R.id.fragmentContainerView3)
+                    add<FragmentGuiaConversacion>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             99 -> {
                 supportFragmentManager.commit {
-                    add<FragmentGuiaHistorias>(R.id.fragmentContainerView3)
+                    add<FragmentGuiaHistorias>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }
 
             100 -> {
                 supportFragmentManager.commit {
-                    add<FragmentRegistro>(R.id.fragmentContainerView3)
+                    add<FragmentRegistro>(R.id.contenedorDeFragments)
                     setReorderingAllowed(true)
                 }
             }

@@ -37,10 +37,10 @@ class FragmentNumeros10 : Fragment() {
                     .lowercase() == "ka"
             ) {
                 args.putInt("valorp", ++puntaje)
-                Utils().alertDialogCorrectDeterminaResultado(requireContext(), puntaje,requireActivity() as AppCompatActivity,R.id.fragmentContainerView3)
+                Utils().alertDialogCorrectDeterminaResultado(requireContext(), puntaje,requireActivity() as AppCompatActivity,R.id.contenedorDeFragments)
             } else {
                 args.putInt("valorp", puntaje)
-                Utils().alertDialogIncorrectDeterminaResultado(requireContext(), puntaje,requireActivity() as AppCompatActivity,R.id.fragmentContainerView3)
+                Utils().alertDialogIncorrectDeterminaResultado(requireContext(), puntaje,requireActivity() as AppCompatActivity,R.id.contenedorDeFragments)
             }
         }
 

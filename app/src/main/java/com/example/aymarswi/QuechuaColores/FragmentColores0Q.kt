@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.QuechuaVerbos.FragmentVerbos1Q
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -23,7 +22,7 @@ class FragmentColores0Q : Fragment() {
             args
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentColores1Q()
             )
         }

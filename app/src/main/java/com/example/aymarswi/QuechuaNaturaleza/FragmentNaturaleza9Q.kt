@@ -10,7 +10,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza10
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -40,28 +39,28 @@ class FragmentNaturaleza9Q : Fragment() {
         btnChuqi1.setOnClickListener {
             args.putInt("valorp", ++puntaje)
             Utils().respuestaCorrecta(
-                requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+                requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentNaturaleza10Q(), args
             )
         }
         btnPanqa.setOnClickListener {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
-                requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+                requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentNaturaleza10Q(), args
             )
         }
         btnAli.setOnClickListener {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
-                requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+                requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentNaturaleza10Q(), args
             )
         }
         btnKhunu.setOnClickListener {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
-                requireActivity() as AppCompatActivity, R.id.fragmentContainerView3,
+                requireActivity() as AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentNaturaleza10Q(), args
             )
         }

@@ -42,7 +42,7 @@ class FragmentNumeros7 : Fragment() {
                 args.putInt("valorp", ++puntaje)
                 Utils().respuestaCorrecta(
                     requireActivity() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentNumeros8(),
                     args
                 )
@@ -50,7 +50,7 @@ class FragmentNumeros7 : Fragment() {
                 args.putInt("valorp", puntaje)
                 Utils().respuestaIncorrecta(
                     requireActivity() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentNumeros8(),
                     args
                 )

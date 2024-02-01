@@ -8,16 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.QuechuaAnimales.FragmentAnimales1Q
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNatu11
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNatu12
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNatu13
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNatu14
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNatu15
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNatu16
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNatu17
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNatu18
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNatu19
 import com.example.aymarswi.QuechuaNaturaleza.FragmentNaturaleza1Q
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
@@ -46,7 +36,7 @@ class FragmentVerbos0Q : Fragment() {
         btn.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentNaturaleza1Q()
             )
         }
@@ -54,7 +44,7 @@ class FragmentVerbos0Q : Fragment() {
         btn1.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerb11()
             )
         }
@@ -62,42 +52,42 @@ class FragmentVerbos0Q : Fragment() {
         btn2.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerb12()
             )
         }
         btn3.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerb13()
             )
         }
         btn4.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerb14()
             )
         }
         btn5.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerb15()
             )
         }
         btn6.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerb16()
             )
         }
         btn7.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerb17()
             )
         }
@@ -105,28 +95,28 @@ class FragmentVerbos0Q : Fragment() {
         btn8.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerb18()
             )
         }
         btn9.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerb19()
             )
         }
         btn10.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerb20()
             )
         }
         btn11.setOnClickListener {
             Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentVerb10()
             )
         }

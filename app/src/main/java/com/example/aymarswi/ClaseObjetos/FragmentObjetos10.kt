@@ -50,12 +50,12 @@ class FragmentObjetos10 : Fragment() {
                     Utils().sonidoCorrecto(requireContext())
                     Utils().alertDialogCorrectDeterminaResultado(
                         requireContext(), puntaje,
-                        requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
+                        requireActivity() as AppCompatActivity, R.id.contenedorDeFragments)
                 }else {
                     Utils().sonidoCorrecto(requireContext())
                     Utils().alertDialogCorrectDeterminaResultado(
                         requireContext(), puntaje,
-                        requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
+                        requireActivity() as AppCompatActivity, R.id.contenedorDeFragments)
 
                 }
             } else {
@@ -63,13 +63,13 @@ class FragmentObjetos10 : Fragment() {
                     Utils().sonidoIncorrecto(requireContext())
                     Utils().alertDialogIncorrectDeterminaResultado(
                         requireContext(), puntaje,
-                        requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
+                        requireActivity() as AppCompatActivity, R.id.contenedorDeFragments)
                 }else {
                     args.putInt("valorp", puntaje)
                     Utils().sonidoIncorrecto(requireContext())
                     Utils().alertDialogIncorrectDeterminaResultado(
                         requireContext(), puntaje,
-                        requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
+                        requireActivity() as AppCompatActivity, R.id.contenedorDeFragments)
                 }
             }
         }

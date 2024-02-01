@@ -19,7 +19,7 @@ class PalabrasDeLaLeccion : Fragment() {
         val btnContinuar = rootView.findViewById<Button>(R.id.btnEmpezarLecciones)
         btnContinuar.setOnClickListener {
             Utils().pasarDeFragment(requireActivity() as
-                    AppCompatActivity, R.id.fragmentContainerView3,
+                    AppCompatActivity, R.id.contenedorDeFragments,
                 FragmentPalabrasDeLeccion())
 
         }

@@ -10,38 +10,26 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
+import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
 class FragmentNaturaleza3 : Fragment() {
+    private lateinit var btnPanqara1: Button
+    private lateinit var btnJallu: Button
+    private lateinit var rootView: View
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView: View = inflater.inflate(R.layout.fragment_naturaleza3, container, false)
-        var puntaje = requireArguments().getInt("valorp")
-        var contador = requireArguments().getInt("valorc")
-        Log.d("Valor", "Puntaje recibido $puntaje")
-        Log.d("Valor", "Contador recibido $contador")
-        val btnPanqara1 = rootView.findViewById<Button>(R.id.btnPanqara1);
-        val btnJallu = rootView.findViewById<Button>(R.id.btnJallu)
-        val args = Bundle()
-        args.putInt("valorc", ++contador)
-        btnPanqara1.setOnClickListener {
-            args.putInt("valorp", ++puntaje)
-            Utils().respuestaCorrecta(
-                requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
-                FragmentNaturaleza4(),
-                args
-            )
-        }
-        btnJallu.setOnClickListener {
-            args.putInt("valorp", puntaje)
-            Utils().respuestaIncorrecta(
-                requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
-                FragmentNaturaleza4(),
-                args
-            )
-        }
-        return rootView }
+        rootView = inflater.inflate(R.layout.fragment_naturaleza3, container, false)
+       initComponents()
+
+        opcionMultipleDePalabras().palabraVerdadera(btnPanqara1.text.toString(), btnPanqara1, btnJallu)
+        return rootView
+    }
+
+    private fun initComponents() {
+        btnPanqara1 = rootView.findViewById(R.id.btnPanqara1)
+        btnJallu = rootView.findViewById(R.id.btnJallu)
+    }
 }

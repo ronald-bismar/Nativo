@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseVerbos.FragmentVerbos5
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -38,10 +37,10 @@ class FragmentVerbos4Q : Fragment() {
             val oracionObtenida = Utils().obtenerOracionFormada(sentenceContainer)
             if(oracionObtenida == "Mi papá camina"){
                 args.putInt("valorp", ++puntaje)
-                Utils().respuestaCorrecta(requireContext() as AppCompatActivity, R.id.fragmentContainerView3, FragmentVerbos5Q(), args)
+                Utils().respuestaCorrecta(requireContext() as AppCompatActivity, R.id.contenedorDeFragments, FragmentVerbos5Q(), args)
             }else{
                 args.putInt("valorp", puntaje)
-                Utils().respuestaIncorrecta(requireContext() as AppCompatActivity, R.id.fragmentContainerView3, FragmentVerbos5Q(), args)
+                Utils().respuestaIncorrecta(requireContext() as AppCompatActivity, R.id.contenedorDeFragments, FragmentVerbos5Q(), args)
             }
         }
         return rootView

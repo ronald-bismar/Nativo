@@ -28,7 +28,7 @@ class FragmentAnimales3Q : Fragment() {
             args.putInt("valorp", ++puntaje)
             Utils().respuestaCorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentAnimales4Q(),
                 args
             )
@@ -37,7 +37,7 @@ class FragmentAnimales3Q : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentAnimales4(),
                 args
             )

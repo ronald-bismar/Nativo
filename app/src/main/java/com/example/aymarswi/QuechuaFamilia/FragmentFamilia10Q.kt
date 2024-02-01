@@ -51,13 +51,13 @@ class FragmentFamilia10Q : Fragment() {
                     Utils().sonidoCorrecto(requireContext())
                     Utils().alertDialogCorrectDeterminaResultado(
                         requireContext(), ++puntaje,
-                        requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
+                        requireActivity() as AppCompatActivity, R.id.contenedorDeFragments)
                 }
                 else {
                     args.putInt("valorp", puntaje)
                     Utils().alertDialogCorrectDeterminaResultado(
                         requireContext(), puntaje,
-                        requireActivity() as AppCompatActivity, R.id.fragmentContainerView3)
+                        requireActivity() as AppCompatActivity, R.id.contenedorDeFragments)
 
                 }
             }

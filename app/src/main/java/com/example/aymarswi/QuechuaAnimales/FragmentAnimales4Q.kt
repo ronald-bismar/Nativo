@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseAnimales.FragmentAnimales5
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -28,7 +27,7 @@ class FragmentAnimales4Q : Fragment() {
             args.putInt("valorp", puntaje)
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentAnimales5Q(),
                 args
             )
@@ -37,7 +36,7 @@ class FragmentAnimales4Q : Fragment() {
             args.putInt("valorp", ++puntaje)
             Utils().respuestaCorrecta(
                 requireContext() as AppCompatActivity,
-                R.id.fragmentContainerView3,
+                R.id.contenedorDeFragments,
                 FragmentAnimales5Q(),
                 args
             )

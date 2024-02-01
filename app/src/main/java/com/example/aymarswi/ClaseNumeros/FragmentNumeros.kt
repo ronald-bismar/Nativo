@@ -46,7 +46,7 @@ class FragmentNumeros : Fragment() {
             txtPaya.text.toString(),
             txtQimsa.text.toString(),
             txtPusi.text.toString(),
-            R.id.fragmentContainerView3,
+            R.id.contenedorDeFragments,
             FragmentNumeros2(), args, puntaje)
 
             return rootView

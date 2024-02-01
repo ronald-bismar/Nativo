@@ -25,7 +25,7 @@ class FragmentFamilia3 : Fragment() {
     ): View? {
         rootView = inflater.inflate(R.layout.fragment_familia3, container, false)
         iniciarComponentes()
-        Actividad.setContext(requireActivity() as AppCompatActivity, requireContext(), R.id.fragmentContainerView3)
+        Actividad.setContext(requireActivity() as AppCompatActivity, requireContext(), R.id.contenedorDeFragments)
 
         opcionMultipleDePalabras().palabraVerdadera(
             "jila",

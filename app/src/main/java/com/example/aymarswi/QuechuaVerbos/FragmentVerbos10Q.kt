@@ -46,7 +46,7 @@ class FragmentVerbos10Q : Fragment() {
             btnDormir,
             btnHacer,
             btnComer,
-            R.id.fragmentContainerView3,
+            R.id.contenedorDeFragments,
             puntaje
         )
 

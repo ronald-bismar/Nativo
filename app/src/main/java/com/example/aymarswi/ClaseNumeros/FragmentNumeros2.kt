@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aymarswi.ClaseAnimales.FragmentAnimales7
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -47,7 +46,7 @@ class FragmentNumeros2 : Fragment() {
             txtKimsaqallqu,
             txtCKimsa, txtCPhisqa,
             txtCKimsaqallqu,
-            txtKimsa.text.toString(), txtPhisqa.text.toString(), txtKimsaqallqu.text.toString(),R.id.fragmentContainerView3,
+            txtKimsa.text.toString(), txtPhisqa.text.toString(), txtKimsaqallqu.text.toString(),R.id.contenedorDeFragments,
             FragmentNumeros3(),
             args, puntaje
         )

@@ -8,12 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
-import java.lang.StringBuilder
 
 class FragmentColores3 : Fragment() {
     override fun onCreateView(
@@ -48,7 +45,7 @@ class FragmentColores3 : Fragment() {
                 args.putInt("valorp", ++puntaje)
                 Utils().respuestaCorrecta(
                     requireContext() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentColores4(),
                     args
                 )
@@ -56,7 +53,7 @@ class FragmentColores3 : Fragment() {
                 args.putInt("valorp", puntaje)
                 Utils().respuestaIncorrecta(
                     requireContext() as AppCompatActivity,
-                    R.id.fragmentContainerView3,
+                    R.id.contenedorDeFragments,
                     FragmentColores4(),
                     args
                 )
