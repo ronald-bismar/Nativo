@@ -1,0 +1,128 @@
+[
+    {
+        "seccion": "Familia",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["tata"],
+        "enEspanol": ["papá", "padre"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },
+    {
+        "seccion": "Familia",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["mama"],
+        "enEspanol": ["mamá", "madre"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993002/imagenes-nativo/familia/mama_awv64k.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },
+    {
+        "seccion": "Familia",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["jila", "jilata"],
+        "enEspanol": ["hermano"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993000/imagenes-nativo/familia/hermanomayor_jq9vmd.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },
+    {
+        "seccion": "Familia",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Aski urukïpan jilata"],
+        "enEspanol": [
+            "buenos dias hermano",
+            "buenos días hermano",
+            "buen dia hermano",
+            "buen día hermano"
+        ],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993004/imagenes-nativo/familia/saludoshermano_dkhecm.png",
+        "palabraCorrecta": false,
+        "esOracion": true,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },
+    {
+        "seccion": "Familia",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["kullaka"],
+        "enEspanol": ["hermana"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993713/imagenes-nativo/familia/hermanas_dxtsch.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },
+    {
+        "seccion": "Familia",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["jilaku"],
+        "enEspanol": ["primo"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993004/imagenes-nativo/familia/sobrino_ifzomx.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },
+    {
+        "seccion": "Familia",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["achachila"],
+        "enEspanol": ["abuelo"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993000/imagenes-nativo/familia/abuelo_anqqrp.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },
+    {
+        "seccion": "Familia",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["awicha"],
+        "enEspanol": ["abuela"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993000/imagenes-nativo/familia/abuela_sacipy.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },
+    {
+        "seccion": "Familia",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["yuqa"],
+        "enEspanol": ["hijo"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993000/imagenes-nativo/familia/hijo_eatek9.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },
+    {
+        "seccion": "Familia",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["phucha"],
+        "enEspanol": ["hija"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993466/imagenes-nativo/familia/hermana_txs0oj.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },
+    {
+        "seccion": "Familia",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["allchhi"],
+        "enEspanol": ["nieto"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993002/imagenes-nativo/familia/nieto_cgynmy.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    }
+]

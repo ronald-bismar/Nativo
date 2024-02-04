@@ -10,6 +10,7 @@ import android.widget.LinearLayout
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.dinamicas.OrdenarPalabras
 import com.google.android.flexbox.FlexboxLayout
+import java.io.InputStream
 
 class FragmentFamilia9 : Fragment() {
 

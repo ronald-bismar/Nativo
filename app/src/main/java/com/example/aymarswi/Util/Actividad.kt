@@ -58,12 +58,17 @@ open class Actividad protected constructor(
         FragmentFamilia9(),
         FragmentFamilia10()
     )
-    companion object{
+
+    companion object {
         @SuppressLint("StaticFieldLeak")
         var instance: Actividad? = null
 
-        fun getInstance(activity: AppCompatActivity, context: AppCompatActivity, containerFragment: Int): Actividad{
-            if(instance == null){
+        fun getInstance(
+            activity: AppCompatActivity,
+            context: AppCompatActivity,
+            containerFragment: Int
+        ): Actividad {
+            if (instance == null) {
                 instance = Actividad(activity, context, containerFragment)
             }
             return instance as Actividad
@@ -72,7 +77,8 @@ open class Actividad protected constructor(
         fun getInstanceActividad(): Actividad {
             return instance as Actividad
         }
-        fun setContext(activity: AppCompatActivity, context: Context, containerFragment: Int){
+
+        fun setContext(activity: AppCompatActivity, context: Context, containerFragment: Int) {
             instance?.activity = activity
             instance?.context = context
             instance?.containerFragment = containerFragment
@@ -85,9 +91,10 @@ open class Actividad protected constructor(
         this.containerFragment = containerFragment
     }
 
-    fun setPalabraCorrecta(palabraCorrecta: String){
+    fun setPalabraCorrecta(palabraCorrecta: String) {
         this.palabraCorrecta = palabraCorrecta
     }
+
     fun mostrarAlertDialog() {
         sonido()
         showAlertDialog()
@@ -112,19 +119,18 @@ open class Actividad protected constructor(
     }
 
     fun viewInflate(view: View) {
-            val builder = AlertDialog.Builder(instance?.context).setView(view)
-            val dialog = builder.create()
-            dialog.show()
+        val builder = AlertDialog.Builder(instance?.context).setView(view)
+        val dialog = builder.create()
+        dialog.show()
         dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
         dialog.window?.attributes?.windowAnimations = R.style.DialogAnimation
         dialog.setCancelable(false)
         dialog.findViewById<Button>(R.id.btnConfirmar)?.setOnClickListener {
             dialog.dismiss()
-            if (posicionDeLaRutaDeFragments < instance?.rutaDeFragments!!.size){
+            if (posicionDeLaRutaDeFragments < instance?.rutaDeFragments!!.size) {
                 nextFragment = instance!!.rutaDeFragments[posicionDeLaRutaDeFragments]
                 pasarDeFragment()
-            }
-            else determinarPuntajeFinal()
+            } else determinarPuntajeFinal()
         }
     }
 
@@ -140,7 +146,16 @@ open class Actividad protected constructor(
     fun pasarDeFragment() {
         val fragmentManager: FragmentManager = instance?.activity!!.supportFragmentManager
         val transaction: FragmentTransaction = fragmentManager.beginTransaction()
-        instance?.nextFragment?.let { transaction.replace(R.id.contenedorDeFragments, it).commit() }
+        instance?.nextFragment?.let {
+            transaction.replace(R.id.contenedorDeFragments, it).commit()
+            setDataContent(it)
+        }
+
+
+    }
+
+    private fun setDataContent(it: Fragment) {
+      /*  it.requireView().*/
     }
 
 
@@ -159,14 +174,14 @@ open class Actividad protected constructor(
 
     fun respuesta() {
         posicionDeLaRutaDeFragments += 1
-        instance!!.puntaje += if(instance!!.correcto) 1 else 0
+        instance!!.puntaje += if (instance!!.correcto) 1 else 0
         mostrarAlertDialog()
     }
 
     fun respuesta(correcto: Boolean) {
         this.correcto = correcto
         posicionDeLaRutaDeFragments += 1
-        instance!!.puntaje += if(instance!!.correcto) 1 else 0
+        instance!!.puntaje += if (instance!!.correcto) 1 else 0
         mostrarAlertDialog()
     }
 }
