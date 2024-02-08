@@ -13,13 +13,13 @@ import com.example.aymarswi.Util.Utils
 import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
 class FragmentFamilia10 : Fragment() {
-    private lateinit var btnKullaka4: Button
-    private lateinit var btnJila : Button
-    private lateinit var  btnJilaku: Button
-    private lateinit var btnAchachila: Button
-    private lateinit var etPalabra3: TextView
-    private lateinit var btnComprobar: Button
-    private lateinit var rootView: View
+    lateinit var btnKullaka4: Button
+    lateinit var btnJila : Button
+    lateinit var  btnJilaku: Button
+    lateinit var btnAchachila: Button
+    lateinit var etPalabra3: TextView
+    lateinit var btnComprobar: Button
+    lateinit var rootView: View
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,7 +27,7 @@ class FragmentFamilia10 : Fragment() {
 
         rootView = inflater.inflate(R.layout.fragment_familia10, container, false)
         initComponents()
-        opcionMultipleDePalabras().palabraVerdadera(
+        /*opcionMultipleDePalabras().palabraVerdadera(
             btnKullaka4,
             btnJila,
             btnJilaku,
@@ -35,7 +35,7 @@ class FragmentFamilia10 : Fragment() {
             palabraCorrecta = btnJilaku.text.toString(),
             palabraElegida = etPalabra3,
             botonComprobar = btnComprobar
-        )
+        )*/
         return rootView  }
 
     private fun initComponents() {

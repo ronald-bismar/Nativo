@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtTitle3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
@@ -40,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView106" />
 
     <EditText
-        android:id="@+id/txtResp1"
+        android:id="@+id/txtRespuesta3"
         android:layout_width="268dp"
         android:layout_height="46dp"
         android:layout_marginStart="71dp"
@@ -53,10 +53,10 @@
         android:inputType="textNoSuggestions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/imagen3" />
 
     <Button
-        android:id="@+id/btnComp1"
+        android:id="@+id/btnComprobar3"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="102dp"
@@ -71,10 +71,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtResp1" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRespuesta3" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imagen3"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginStart="93dp"
@@ -85,6 +85,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle3"
         app:srcCompat="@mipmap/hermanom" />
 </androidx.constraintlayout.widget.ConstraintLayout>

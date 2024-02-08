@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ClaseFamilia.FragmentFamilia6">
+    tools:context=".ClaseFamilia.FragmentDinamica5">
 
 
     <TextView
@@ -24,26 +24,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5" />
 
-    <ImageButton
-        android:id="@+id/btnsonido4"
-        android:layout_width="77dp"
-        android:layout_height="70dp"
-        android:background="@null"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+    <Button
+        android:id="@+id/btnComprobar5"
+        android:layout_width="218dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#FFC107"
+        android:fontFamily="@font/arista"
+        android:text="COMPROBAR"
+        android:textSize="24sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@mipmap/iconosonido" />
+        app:layout_constraintTop_toBottomOf="@+id/llBotones"
+        app:layout_constraintVertical_bias="0.5" />
 
     <LinearLayout
-        android:id="@+id/linearLayout7"
+        android:id="@+id/llOracionIncompleta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/btnsarañani"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/llBotones"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +64,7 @@
             android:textSize="28sp" />
 
         <TextView
-            android:id="@+id/txtpalabra"
+            android:id="@+id/txtRespuesta5"
             android:layout_width="154dp"
             android:layout_height="40dp"
             android:layout_marginStart="14dp"
@@ -87,91 +91,73 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnurukipan"
-        android:layout_width="175dp"
-        android:layout_height="58dp"
-        android:layout_gravity="center"
-        android:backgroundTint="#ABD9FF"
-        android:fontFamily="@font/arista"
-        android:text="Urukïpan"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnparlaña"
+    <ImageButton
+        android:id="@+id/btnsonido4"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/llOracionIncompleta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnsarañani"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@mipmap/iconosonido" />
 
-    <Button
-        android:id="@+id/btnsarañani"
-        android:layout_width="175dp"
-        android:layout_height="57dp"
-        android:layout_gravity="center"
-        android:backgroundTint="#ABD9FF"
-        android:fontFamily="@font/arista"
-        android:text="Sarañani"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnurukipan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <Button
-        android:id="@+id/btnparlaña"
-        android:layout_width="169dp"
-        android:layout_height="57dp"
-        android:layout_gravity="center"
-        android:backgroundTint="#ABD9FF"
-        android:fontFamily="@font/arista"
-        android:text="Arsuña"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnCmpb"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnurukipan"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <Button
-        android:id="@+id/btnCmpb"
-        android:layout_width="218dp"
-        android:layout_height="57dp"
-        android:layout_gravity="center"
-        android:backgroundTint="#FFC107"
-        android:fontFamily="@font/arista"
-        android:text="COMPROBAR"
-        android:textSize="24sp"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView71"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnparlaña"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <TextView
-        android:id="@+id/textView71"
-        style="@style/estiloTextoAlternativo"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/llBotones"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/yuqa_yoqa_nuruk_pan_urukiipan"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCmpb"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@+id/llOracionIncompleta"
+        app:layout_constraintVertical_bias="0.5">
+
+        <Button
+            android:id="@+id/btnparlaña"
+            android:layout_width="220dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="#ABD9FF"
+            android:fontFamily="@font/arista"
+            android:text="Arsuña"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/btnsarañani"
+            android:layout_width="220dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="#ABD9FF"
+            android:fontFamily="@font/arista"
+            android:text="Sarañani"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/btnurukipan"
+            android:layout_width="220dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="#ABD9FF"
+            android:fontFamily="@font/arista"
+            android:text="Urukïpan"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,67 +2,72 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout3"
+    android:id="@+id/dinamica3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClaseFamilia.FragmentFamilia3">
+    tools:context=".ClaseFamilia.FragmentDinamica3">
 
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtTitle3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="29dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="@font/linotteheavy"
         android:text="COMO SE ESCRIBE HERMANO?"
+        android:textAlignment="center"
         android:textColor="#0C0C0C"
         android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagen3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="273dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="@font/linottebold"
         android:text="ESCRITURA:"
         android:textColor="#2196F3"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTitle3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
     <EditText
-        android:id="@+id/txtResp1"
-        android:layout_width="268dp"
+        android:id="@+id/txtRespuesta3"
+        android:layout_width="match_parent"
         android:layout_height="46dp"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/strokedelgado"
         android:ems="10"
         android:fontFamily="@font/linottesemibold"
-        android:background="@drawable/strokedelgado"
         android:gravity="center"
         android:inputType="textNoSuggestions"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/imagen3"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:id="@+id/btnComp1"
-        android:layout_width="206dp"
+        android:id="@+id/btnComprobar3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="102dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="103dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         android:backgroundTint="#3B6F9A"
         android:fontFamily="@font/linottebold"
         android:text="Comprobar"
@@ -71,18 +76,22 @@
         app:cornerRadius="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtResp1" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRespuesta3"
+        app:layout_constraintVertical_bias="0.5" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="195dp"
+        android:id="@+id/imagen3"
+        android:layout_width="match_parent"
         android:layout_height="204dp"
-        android:layout_marginStart="93dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="93dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtRespuesta3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle3"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@mipmap/hermanom" />
 </androidx.constraintlayout.widget.ConstraintLayout>

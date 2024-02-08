@@ -23,14 +23,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imagen3"
         android:layout_width="195dp"
         android:layout_height="204dp"
         app:layout_constraintBottom_toTopOf="@+id/txtResp2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle3"
         app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@mipmap/arbol" />
 
@@ -65,12 +65,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imagen3"
         app:layout_constraintVertical_bias="0.5"
         tools:text="ali" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtTitle3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"

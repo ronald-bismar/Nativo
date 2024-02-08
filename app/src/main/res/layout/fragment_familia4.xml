@@ -5,81 +5,100 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClaseFamilia.FragmentFamilia4">
+    tools:context=".ClaseFamilia.FragmentDinamica4">
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="91dp"
-        android:layout_marginEnd="37dp"
         android:fontFamily="@font/linotteheavy"
         android:text="TRADUCE ESTA ORACION:"
         android:textColor="#131313"
         android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:id="@+id/btnCpb"
+        android:id="@+id/btnComprobar4"
         android:layout_width="190dp"
         android:layout_height="50dp"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="110dp"
-        android:layout_marginBottom="111dp"
         android:backgroundTint="#2196F3"
         android:fontFamily="@font/arista"
         android:text="COMPROBAR"
-        app:cornerRadius="10dp"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTexto" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRespuesta4"
+        app:layout_constraintVertical_bias="0.5" />
 
     <EditText
-        android:id="@+id/txtTexto"
+        android:id="@+id/txtRespuesta4"
         android:layout_width="287dp"
         android:layout_height="42dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="62dp"
+        android:background="@drawable/strokedelgado"
         android:ems="10"
         android:fontFamily="@font/linottesemibold"
         android:gravity="center"
-        android:background="@drawable/strokedelgado"
         android:inputType="textNoSuggestions"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"
+        app:layout_constraintVertical_bias="0.5" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="383dp"
-        android:layout_height="331dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="25dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtRespuesta4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:srcCompat="@mipmap/saludoshermano" />
+        app:layout_constraintVertical_bias="0.5">
 
-    <ImageButton
-        android:id="@+id/btnsonido3"
-        android:layout_width="74dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginBottom="65dp"
-        android:background="@null"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/txtTexto"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/iconosonido" />
+        <ImageView
+            android:id="@+id/imagen4"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/iconosaludosa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout34"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:id="@+id/txtOracion4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondodialogclaro"
+                android:fontFamily="@font/linottesemibold"
+                android:padding="10dp"
+                android:text="La oracion va aqui"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

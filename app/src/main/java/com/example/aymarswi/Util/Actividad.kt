@@ -10,16 +10,15 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia1
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica1
 import com.example.aymarswi.ClaseFamilia.FragmentFamilia10
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia2
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia3
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia4
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia5
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia6
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica2
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica3
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica4
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica2v1
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica5
 import com.example.aymarswi.ClaseFamilia.FragmentFamilia7
 import com.example.aymarswi.ClaseFamilia.FragmentFamilia8
 import com.example.aymarswi.ClaseFamilia.FragmentFamilia9
@@ -41,18 +40,18 @@ open class Actividad protected constructor(
     var context: Context
     lateinit var rootView: View
     var containerFragment: Int = 0
-    private lateinit var nextFragment: Fragment
+    private lateinit var nextFragment: androidx.fragment.app.Fragment
     var posicionDeLaRutaDeFragments = 0
     var correcto: Boolean = false
     var puntaje = 0
     private var palabraCorrecta = ""
-    var rutaDeFragments: List<Fragment> = listOf(
-        FragmentFamilia1(),
-        FragmentFamilia2(),
-        FragmentFamilia3(),
-        FragmentFamilia4(),
-        FragmentFamilia5(),
-        FragmentFamilia6(),
+    var rutaDeFragments: List<androidx.fragment.app.Fragment> = listOf(
+        FragmentDinamica1(),
+        FragmentDinamica2(),
+        FragmentDinamica3(),
+        FragmentDinamica4(),
+        FragmentDinamica2v1(),
+        FragmentDinamica5(),
         FragmentFamilia7(),
         FragmentFamilia8(),
         FragmentFamilia9(),
@@ -74,9 +73,7 @@ open class Actividad protected constructor(
             return instance as Actividad
         }
 
-        fun getInstanceActividad(): Actividad {
-            return instance as Actividad
-        }
+        fun getInstanceActividad() = instance as Actividad
 
         fun setContext(activity: AppCompatActivity, context: Context, containerFragment: Int) {
             instance?.activity = activity
@@ -148,14 +145,8 @@ open class Actividad protected constructor(
         val transaction: FragmentTransaction = fragmentManager.beginTransaction()
         instance?.nextFragment?.let {
             transaction.replace(R.id.contenedorDeFragments, it).commit()
-            setDataContent(it)
+
         }
-
-
-    }
-
-    private fun setDataContent(it: Fragment) {
-      /*  it.requireView().*/
     }
 
 

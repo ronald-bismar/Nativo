@@ -5,13 +5,13 @@
     android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClaseFamilia.FragmentFamilia5"
+    tools:context=".ClaseFamilia.`FragmentFamilia2.1`"
     android:orientation="vertical"
     android:gravity="center"
     android:paddingHorizontal="10dp">
 
     <TextView
-        android:id="@+id/txtTitulo"
+        android:id="@+id/txtTitle2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="23dp"
@@ -29,14 +29,14 @@
         android:layout_marginHorizontal="40dp">
 
         <ImageView
-            android:id="@+id/imagenReferencia"
+            android:id="@+id/imagen"
             android:layout_width="match_parent"
             android:layout_height="324dp"
             android:src="@mipmap/nuera" />
 
         <ImageButton
             android:id="@+id/btnSonido"
-            android:layout_width="81dp"
+            android:layout_width="0dp"
             android:layout_height="79dp"
             android:layout_marginStart="-60dp"
             android:layout_weight="2"
@@ -45,54 +45,52 @@
             android:src="@mipmap/sonidoactivo" />
     </LinearLayout>
 
-    <com.google.android.flexbox.FlexboxLayout
+    <LinearLayout
+        android:id="@+id/llContenedorOpciones2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        app:flexDirection="column"
-        app:alignItems="center"
         android:layout_marginHorizontal="40dp"
-        app:justifyContent="space_evenly"
-        >
+        android:gravity="center"
+        android:orientation="vertical">
+
         <Button
             android:id="@+id/btnY"
             android:layout_width="match_parent"
             android:layout_height="58dp"
-            android:minWidth="200dp"
+            android:layout_marginVertical="5dp"
             android:backgroundTint="#ABD9FF"
             android:fontFamily="@font/arista"
+            android:minWidth="200dp"
             android:text="Yuxch'a"
             android:textAllCaps="false"
             android:textColor="#2C2B2B"
-            android:layout_marginVertical="5dp"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/btnTull"
             android:layout_width="match_parent"
             android:layout_height="59dp"
+            android:layout_marginVertical="5dp"
             android:backgroundTint="#ABD9FF"
             android:fontFamily="@font/arista"
             android:text="Tullqa"
             android:textAllCaps="false"
             android:textColor="#2C2B2B"
-            android:layout_marginVertical="5dp"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/btnAlch"
             android:layout_width="match_parent"
             android:layout_height="58dp"
+            android:layout_marginVertical="5dp"
             android:backgroundTint="#ABD9FF"
             android:fontFamily="@font/arista"
             android:text="Allchhi"
             android:textAllCaps="false"
             android:textColor="#2C2B2B"
-            android:layout_marginVertical="5dp"
             android:textSize="24sp" />
 
-    </com.google.android.flexbox.FlexboxLayout>
-
+    </LinearLayout>
 
 
 </LinearLayout>

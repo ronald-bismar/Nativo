@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia1
 import com.example.aymarswi.R
 
 class FragmentMenuDeLeccionesA : Fragment() {

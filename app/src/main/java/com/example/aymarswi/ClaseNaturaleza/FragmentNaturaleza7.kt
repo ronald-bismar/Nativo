@@ -26,7 +26,7 @@ class FragmentNaturaleza7 : Fragment() {
         val llKhunu = rootView.findViewById<LinearLayout>(R.id.llKhunu)
         val llKhunuqullu = rootView.findViewById<LinearLayout>(R.id.llKhunuqullu)
 
-        opcionMultipleDePalabras().palabraVerdadera((llPanqara.getChildAt(1) as TextView).text.toString(), llAli, llPanqara, llKhunu, llKhunuqullu)
+//        opcionMultipleDePalabras().palabraVerdadera((llPanqara.getChildAt(1) as TextView).text.toString(), llAli, llPanqara, llKhunu, llKhunuqullu)
 
         return rootView    }
 }

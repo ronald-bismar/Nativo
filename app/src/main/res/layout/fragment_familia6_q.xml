@@ -43,7 +43,7 @@
         android:layout_height="70dp"
         android:background="@null"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintBottom_toTopOf="@+id/llOracionIncompleta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
         app:srcCompat="@mipmap/iconosonido" />
 
     <LinearLayout
-        android:id="@+id/linearLayout7"
+        android:id="@+id/llOracionIncompleta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -73,7 +73,7 @@
             android:textSize="28sp" />
 
         <TextView
-            android:id="@+id/txtpalabra"
+            android:id="@+id/txtRespuesta5"
             android:layout_width="154dp"
             android:layout_height="40dp"
             android:layout_marginStart="14dp"
@@ -135,7 +135,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/llOracionIncompleta"
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
@@ -150,7 +150,7 @@
         android:textColor="@color/white"
         android:textSize="28sp"
         app:cornerRadius="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnCmpb"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -158,7 +158,7 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:id="@+id/btnCmpb"
+        android:id="@+id/btnComprobar5"
         android:layout_width="218dp"
         android:layout_height="57dp"
         android:layout_gravity="center"

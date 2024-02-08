@@ -23,7 +23,7 @@ class FragmentNaturaleza4 : Fragment() {
     ): View? {
         rootView = inflater.inflate(R.layout.fragment_naturaleza4, container, false)
         initComponents()
-        opcionMultipleDePalabras().palabraVerdadera(btnLloviendo.text.toString(), btnLloviendo, btnAmaneciendo)
+//        opcionMultipleDePalabras().palabraVerdadera(btnLloviendo.text.toString(), btnLloviendo, btnAmaneciendo)
         return rootView
     }
 

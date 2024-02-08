@@ -12,12 +12,13 @@ import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
+import com.example.aymarswi.model.textoLecciones.Dinamica3
 
 
-class FragmentFamilia3 : Fragment() {
-    private lateinit var obText: EditText
-    private lateinit var btnComprobar: Button
-    private lateinit var rootView: View
+class FragmentDinamica3 : Fragment() {
+    lateinit var obText: EditText
+    lateinit var btnComprobar: Button
+    lateinit var rootView: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,25 +26,18 @@ class FragmentFamilia3 : Fragment() {
     ): View? {
         rootView = inflater.inflate(R.layout.fragment_familia3, container, false)
         iniciarComponentes()
-        Actividad.setContext(requireActivity() as AppCompatActivity, requireContext(), R.id.contenedorDeFragments)
 
-        opcionMultipleDePalabras().palabraVerdadera(
-            "jila",
-            "jilata",
-            palabraElegida = obText,
-            botonComprobar = btnComprobar,
-        )
         return rootView
     }
 
 
     private fun iniciarComponentes() {
-        btnComprobar = rootView.findViewById(R.id.btnComp1)
-        obText = rootView.findViewById(R.id.txtResp1)
+        btnComprobar = rootView.findViewById(R.id.btnComprobar3)
+        obText = rootView.findViewById(R.id.txtRespuesta3)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.d("Contexto","posicion actual: ${Actividad.getInstanceActividad().posicionDeLaRutaDeFragments}")
+        Dinamica3(this).configurar()
     }
 }

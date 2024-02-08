@@ -40,7 +40,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgBtnHermano"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle1" />
 
     <ImageButton
         android:id="@+id/imgBtnHermano"
@@ -52,14 +52,14 @@
         android:background="@drawable/bordesredondeados"
         android:backgroundTint="@color/color2"
         android:scaleType="fitCenter"
-        android:src="@mipmap/hermano"
+        android:src="@mipmap/hermano1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imgBtnPapa"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle1" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txtTitle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="170dp"

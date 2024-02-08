@@ -16,7 +16,7 @@ class opcionMultipleDePalabras :
 
     fun palabraVerdadera(
         palabraCorrecta: String,
-        vararg botones: Button
+        botones: List<Button>
     ) {
         getInstanceActividad().setPalabraCorrecta(palabraCorrecta)
         for (palabraBoton in botones) {
@@ -63,7 +63,7 @@ class opcionMultipleDePalabras :
     }
 
     fun palabraVerdadera(
-        vararg palabrasCorrectas: String,
+        palabrasCorrectas: List<String>,
         palabraElegida: EditText,
         botonComprobar: Button
     ) {
@@ -92,7 +92,7 @@ class opcionMultipleDePalabras :
     }
 
     fun palabraVerdadera(
-        vararg botones: Button,
+        botones: List<Button>,
         palabraCorrecta: String,
         palabraElegida: TextView,
         botonComprobar: Button
@@ -110,14 +110,14 @@ class opcionMultipleDePalabras :
             )
         }
     }
-    fun palabraVerdadera(
+    fun palabraVerdaderaLL(
         palabraCorrecta: String,
-        vararg botones: LinearLayout
+        llbotones: List<LinearLayout>
     ) {
         getInstanceActividad().setPalabraCorrecta(palabraCorrecta)
-        for (palabraBoton in botones) {
-            palabraBoton.setOnClickListener {
-                getInstanceActividad().correcto = (palabraBoton.getChildAt(1) as TextView).text.toString() == palabraCorrecta
+        for (boton in llbotones) {
+            boton.setOnClickListener {
+                getInstanceActividad().correcto = (boton.getChildAt(1) as TextView).text.toString() == palabraCorrecta
                 getInstanceActividad().respuesta()
             }
         }

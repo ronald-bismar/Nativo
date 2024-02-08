@@ -26,11 +26,11 @@ class FragmentNaturaleza8 : Fragment() {
         rootView = inflater.inflate(R.layout.fragment_naturaleza8, container, false)
         initComponents()
 
-        opcionMultipleDePalabras().palabraVerdadera(
+       /* opcionMultipleDePalabras().palabraVerdadera(
             "ali",
             palabraElegida = obText,
             botonComprobar = btnComprobar,
-        )
+        )*/
         return rootView
     }
 

@@ -21,8 +21,8 @@ class FragmentFamilia3Q : Fragment() {
         var puntaje = requireArguments().getInt("valorp")
         var contador = requireArguments().getInt("valorc")
         Log.d("Fragment2", "Puntaje recibido: $puntaje")
-        val btnComprobar = rootView.findViewById<Button>(R.id.btnComp1)
-        val obText = rootView.findViewById<EditText>(R.id.txtResp1)
+        val btnComprobar = rootView.findViewById<Button>(R.id.btnComprobar3)
+        val obText = rootView.findViewById<EditText>(R.id.txtRespuesta3)
         val args = Bundle()
         args.putInt("valorc", ++contador)
         btnComprobar.setOnClickListener{

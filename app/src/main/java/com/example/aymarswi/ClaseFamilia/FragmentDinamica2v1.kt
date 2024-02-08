@@ -7,13 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
+import com.example.aymarswi.model.textoLecciones.Dinamica2
 
-class FragmentFamilia5 : Fragment() {
-    private lateinit var btnYuxcha: Button
-    private lateinit var btnAllchhi: Button
-    private lateinit var btnTullqa: Button
-    private lateinit var rootView: View
+class FragmentDinamica2v1 : Fragment() {
+    lateinit var btnYuxcha: Button
+    lateinit var btnAllchhi: Button
+    lateinit var btnTullqa: Button
+    lateinit var rootView: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,12 +23,12 @@ class FragmentFamilia5 : Fragment() {
         rootView = inflater.inflate(R.layout.fragment_familia5, container, false)
         iniciarComponentes()
 
-        opcionMultipleDePalabras().palabraVerdadera(
+      /*  opcionMultipleDePalabras().palabraVerdaderaLL(
             palabraCorrecta = btnYuxcha.text.toString(),
             btnYuxcha,
             btnAllchhi,
             btnTullqa,
-        )
+        )*/
 
         return rootView
     }
@@ -37,5 +37,10 @@ class FragmentFamilia5 : Fragment() {
         btnYuxcha = rootView.findViewById(R.id.btnY)
         btnAllchhi = rootView.findViewById(R.id.btnAlch)
         btnTullqa = rootView.findViewById(R.id.btnTull)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        Dinamica2(this).configurar()
     }
 }

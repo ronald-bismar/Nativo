@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnCpb"
+        android:id="@+id/btnComprobar4"
         android:layout_width="190dp"
         android:layout_height="50dp"
         android:layout_marginStart="111dp"
@@ -55,10 +55,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTexto" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRespuesta4" />
 
     <EditText
-        android:id="@+id/txtTexto"
+        android:id="@+id/txtRespuesta4"
         android:layout_width="287dp"
         android:layout_height="42dp"
         android:layout_marginStart="62dp"
@@ -92,7 +92,7 @@
         android:layout_marginBottom="65dp"
         android:background="@null"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/txtTexto"
+        app:layout_constraintBottom_toTopOf="@+id/txtRespuesta4"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/iconosonido" />

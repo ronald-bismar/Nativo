@@ -1,6 +1,5 @@
 package com.example.aymarswi.model.lecciones
 
-import androidx.fragment.app.Fragment
 import com.example.aymarswi.ClaseAnimales.FragmentAnimales
 import com.example.aymarswi.ClaseAnimales.FragmentAnimales10
 import com.example.aymarswi.ClaseAnimales.FragmentAnimales2
@@ -21,13 +20,12 @@ import com.example.aymarswi.ClaseColores.FragmentColores6
 import com.example.aymarswi.ClaseColores.FragmentColores7
 import com.example.aymarswi.ClaseColores.FragmentColores8
 import com.example.aymarswi.ClaseColores.FragmentColores9
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia1
 import com.example.aymarswi.ClaseFamilia.FragmentFamilia10
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia2
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia3
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia4
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia5
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia6
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica2
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica3
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica4
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica2v1
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica5
 import com.example.aymarswi.ClaseFamilia.FragmentFamilia7
 import com.example.aymarswi.ClaseFamilia.FragmentFamilia8
 import com.example.aymarswi.ClaseFamilia.FragmentFamilia9
@@ -86,12 +84,12 @@ class Lecciones {
     private val lecciones: List<DataLeccion> = listOf(
         DataLeccion(
             "Familia", listOf(
-                FragmentFamilia1(),
-                FragmentFamilia2(),
-                FragmentFamilia3(),
-                FragmentFamilia4(),
-                FragmentFamilia5(),
-                FragmentFamilia6(),
+                com.example.aymarswi.ClaseFamilia.FragmentDinamica1(),
+                FragmentDinamica2(),
+                FragmentDinamica3(),
+                FragmentDinamica4(),
+                FragmentDinamica2v1(),
+                FragmentDinamica5(),
                 FragmentFamilia7(),
                 FragmentFamilia8(),
                 FragmentFamilia9(),
@@ -198,8 +196,8 @@ class Lecciones {
         ),
     )
 
-    fun getLesson(nameLesson: String): List<Fragment> {
-        var leccionSolicitada = listOf<Fragment>()
+    fun getLesson(nameLesson: String): List<androidx.fragment.app.Fragment> {
+        var leccionSolicitada = listOf<androidx.fragment.app.Fragment>()
         for (leccion in lecciones) {
             if (nameLesson.equals(leccion.nameLesson, ignoreCase = true))
                 leccionSolicitada = leccion.fragmentsLessons

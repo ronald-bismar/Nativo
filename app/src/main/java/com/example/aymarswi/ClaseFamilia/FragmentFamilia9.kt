@@ -14,10 +14,10 @@ import java.io.InputStream
 
 class FragmentFamilia9 : Fragment() {
 
-    private lateinit var btnComprobar: Button
-    private lateinit var contenedorOracionRespuesta: LinearLayout
-    private lateinit var contenedorPalabras: FlexboxLayout
-    private lateinit var rootView: View
+    lateinit var btnComprobar: Button
+    lateinit var contenedorOracionRespuesta: LinearLayout
+    lateinit var contenedorPalabras: FlexboxLayout
+    lateinit var rootView: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
