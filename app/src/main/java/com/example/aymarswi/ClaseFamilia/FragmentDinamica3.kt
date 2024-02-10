@@ -1,17 +1,13 @@
 package com.example.aymarswi.ClaseFamilia
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
-import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 import com.example.aymarswi.model.textoLecciones.Dinamica3
 
 
@@ -24,7 +20,7 @@ class FragmentDinamica3 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        rootView = inflater.inflate(R.layout.fragment_familia3, container, false)
+        rootView = inflater.inflate(R.layout.fragment_dinamica3, container, false)
         iniciarComponentes()
 
         return rootView

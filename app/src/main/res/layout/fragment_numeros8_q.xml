@@ -89,7 +89,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView117"
+        android:id="@+id/txtTitle6"
         style="@style/textoGuia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView42"
-        app:layout_constraintTop_toBottomOf="@+id/textView117"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle6"
         app:layout_constraintVertical_bias="0.5" />
 
     <ImageView
@@ -146,7 +146,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView41"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView117"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle6"
         app:layout_constraintVertical_bias="0.5" />
 
     <androidx.appcompat.widget.AppCompatButton

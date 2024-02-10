@@ -26,8 +26,8 @@ class FragmentFamilia7Q : Fragment() {
         val btnTiwula = rootView.findViewById<Button>(R.id.btnTiwula)
         val btnIpa = rootView.findViewById<Button>(R.id.btnIpa)
         val btnKullaka = rootView.findViewById<Button>(R.id.btnKullaka)
-        val etPalabra = rootView.findViewById<TextView>(R.id.etPalabra)
-        val btnComprobar = rootView.findViewById<Button>(R.id.appCompatButton8)
+        val etPalabra = rootView.findViewById<TextView>(R.id.campoRespuesta)
+        val btnComprobar = rootView.findViewById<Button>(R.id.btnComprobar6)
         var cont = 0
         val args = Bundle()
         args.putInt("valorc", ++contador)

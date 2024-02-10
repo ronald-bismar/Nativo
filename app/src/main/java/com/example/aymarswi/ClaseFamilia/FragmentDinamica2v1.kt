@@ -20,7 +20,7 @@ class FragmentDinamica2v1 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        rootView = inflater.inflate(R.layout.fragment_familia5, container, false)
+        rootView = inflater.inflate(R.layout.fragment_dinamica2v1, container, false)
         iniciarComponentes()
 
       /*  opcionMultipleDePalabras().palabraVerdaderaLL(

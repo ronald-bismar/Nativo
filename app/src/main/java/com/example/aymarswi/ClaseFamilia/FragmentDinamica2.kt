@@ -6,11 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
-import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 import com.example.aymarswi.model.textoLecciones.Dinamica2
 
 class FragmentDinamica2 : Fragment() {
@@ -23,7 +20,7 @@ class FragmentDinamica2 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        rootView = inflater.inflate(R.layout.fragment_familia2, container, false)
+        rootView = inflater.inflate(R.layout.fragment_dinamica2, container, false)
 
         iniciarComponentes()
 

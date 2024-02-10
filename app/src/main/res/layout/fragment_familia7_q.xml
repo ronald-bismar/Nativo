@@ -15,7 +15,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
-        android:id="@+id/btnPapa"
+        android:id="@+id/imagen6"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_alignParentStart="true"
@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnTayka"
-        app:layout_constraintTop_toBottomOf="@+id/etPalabra"
+        app:layout_constraintTop_toBottomOf="@+id/campoRespuesta"
         app:layout_constraintVertical_bias="0.5"
         tools:ignore="MissingConstraints" />
 
@@ -73,7 +73,7 @@
         android:text="Ipa"
         android:textAlignment="center"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatButton8"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar6"
         app:layout_constraintEnd_toStartOf="@+id/btnKullaka"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,12 +95,12 @@
         app:layout_constraintEnd_toStartOf="@+id/btnTiwula"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPalabra"
+        app:layout_constraintTop_toBottomOf="@+id/campoRespuesta"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton8"
+        android:id="@+id/btnComprobar6"
         style="@style/estiloBotonComprobar"
         android:layout_width="200dp"
         android:layout_height="56dp"
@@ -121,7 +121,7 @@
         android:text="ñana"
         android:textAlignment="center"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatButton8"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnIpa"
@@ -137,11 +137,11 @@
         android:layout_marginEnd="32dp"
         android:src="@android:drawable/ic_lock_silent_mode_off"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnPapa"
+        app:layout_constraintStart_toEndOf="@+id/imagen6"
         app:layout_constraintTop_toBottomOf="@+id/textView111" />
 
     <TextView
-        android:id="@+id/textView117"
+        android:id="@+id/txtTitle6"
         android:layout_width="103dp"
         android:layout_height="27dp"
         android:layout_marginStart="8dp"
@@ -150,13 +150,13 @@
         android:text="Hermana"
         android:textAlignment="center"
         android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/btnPapa"
+        app:layout_constraintEnd_toEndOf="@+id/imagen6"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnPapa"
-        app:layout_constraintTop_toBottomOf="@+id/btnPapa" />
+        app:layout_constraintStart_toStartOf="@+id/imagen6"
+        app:layout_constraintTop_toBottomOf="@+id/imagen6" />
 
     <TextView
-        android:id="@+id/etPalabra"
+        android:id="@+id/campoRespuesta"
         style="@style/textoGuia"
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -167,7 +167,7 @@
         android:textAlignment="center"
         android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/btnTiwula"
-        app:layout_constraintTop_toBottomOf="@+id/textView117"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle6"
         app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

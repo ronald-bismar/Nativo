@@ -16,7 +16,7 @@
         <!-- TODO: Update blank fragment layout -->
 
         <ImageView
-            android:id="@+id/btnPapa"
+            android:id="@+id/imagen6"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_alignParentStart="true"
@@ -28,7 +28,7 @@
             android:backgroundTint="@color/white"
             android:scaleType="centerCrop"
             android:src="@drawable/hermanos"
-            app:layout_constraintBottom_toTopOf="@+id/textView117"
+            app:layout_constraintBottom_toTopOf="@+id/txtTitle6"
             app:layout_constraintEnd_toStartOf="@+id/btnAudio"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -138,12 +138,12 @@
             app:layout_constraintBottom_toTopOf="@+id/etContenPalabra"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnPapa"
+            app:layout_constraintStart_toEndOf="@+id/imagen6"
             app:layout_constraintTop_toBottomOf="@+id/textView111"
             app:layout_constraintVertical_bias="0.5" />
 
         <TextView
-            android:id="@+id/textView117"
+            android:id="@+id/txtTitle6"
             android:layout_width="103dp"
             android:layout_height="27dp"
             android:layout_marginStart="8dp"
@@ -156,7 +156,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnPapa"
+            app:layout_constraintTop_toBottomOf="@+id/imagen6"
             app:layout_constraintVertical_bias="0.5" />
 
         <TextView
@@ -171,7 +171,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView117"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle6"
             app:layout_constraintVertical_bias="0.5"
             android:background="@drawable/strokedelgado"
             android:layout_marginHorizontal="30dp"

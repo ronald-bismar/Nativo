@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
+import com.example.aymarswi.model.textoLecciones.Dinamica6
 
-class FragmentFamilia7 : Fragment() {
+class FragmentDinamica6 : Fragment() {
 
     lateinit var btnTayka: Button
     lateinit var btnTiwula: Button
@@ -29,15 +29,6 @@ class FragmentFamilia7 : Fragment() {
 
         iniciarComponentes()
 
-       /* opcionMultipleDePalabras().palabraVerdadera(
-            btnTayka,
-            btnTiwula,
-            btnIpa,
-            btnKullaka,
-            palabraCorrecta = btnKullaka.text.toString(),
-            palabraElegida = etPalabra,
-            botonComprobar = btnComprobar
-        )*/
 
         return rootView
     }
@@ -47,7 +38,12 @@ class FragmentFamilia7 : Fragment() {
         btnTiwula = rootView.findViewById(R.id.btnTiwula)
         btnIpa = rootView.findViewById(R.id.btnIpa)
         btnKullaka = rootView.findViewById(R.id.btnKullaka)
-        etPalabra = rootView.findViewById(R.id.etPalabra)
-        btnComprobar = rootView.findViewById(R.id.appCompatButton8)
+        etPalabra = rootView.findViewById(R.id.campoRespuesta)
+        btnComprobar = rootView.findViewById(R.id.btnComprobar6)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        Dinamica6(this).configurar()
     }
 }

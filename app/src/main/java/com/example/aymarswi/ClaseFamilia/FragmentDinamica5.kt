@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.EditText
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
@@ -21,7 +20,7 @@ class FragmentDinamica5 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        rootView = inflater.inflate(R.layout.fragment_familia6, container, false)
+        rootView = inflater.inflate(R.layout.fragment_dinamica5, container, false)
         iniciarComponentes()
 
         return rootView
@@ -36,7 +35,7 @@ class FragmentDinamica5 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-       /* Dinamica5(this).configurar()*/
+        Dinamica5(this).configurar()
 
     }
 }

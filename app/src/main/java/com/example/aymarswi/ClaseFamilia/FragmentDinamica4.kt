@@ -20,14 +20,8 @@ class FragmentDinamica4 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        rootView = inflater.inflate(R.layout.fragment_familia4, container, false)
+        rootView = inflater.inflate(R.layout.fragment_dinamica4, container, false)
         iniciarComponentes()
-
-        /*opcionMultipleDePalabras().palabraVerdadera(
-            "buen dia hermano",
-            "buenos dias hermano",
-            palabraElegida = obText, botonComprobar =  btnComprobar
-        )*/
 
         return rootView
     }

@@ -9,9 +9,7 @@ import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
-class Dinamica1 internal constructor(fragment: Fragment) {
-
-
+class Dinamica1 constructor(fragment: Fragment) {
 
     private var fragment: Fragment
     private var title: TextView
@@ -25,7 +23,6 @@ class Dinamica1 internal constructor(fragment: Fragment) {
         this.title = fragment.requireView().findViewById(R.id.txtTitle1)
     }
 
-
     fun configurar() {
 
         obtenerVistasOpciones()
@@ -38,12 +35,12 @@ class Dinamica1 internal constructor(fragment: Fragment) {
     }
 
     private fun obtenerVistasOpciones() {
-        val ViewLayoutOpciones =
+        val viewLayoutOpciones =
             (fragment.requireView().findViewById(R.id.llContenedorOpciones1) as LinearLayout)
 
-        for (i in 0 until ViewLayoutOpciones.childCount) {
-            if (ViewLayoutOpciones.getChildAt(i) is LinearLayout)
-                opciones.add(ViewLayoutOpciones.getChildAt(i) as LinearLayout)
+        for (i in 0 until viewLayoutOpciones.childCount) {
+            if (viewLayoutOpciones.getChildAt(i) is LinearLayout)
+                opciones.add(viewLayoutOpciones.getChildAt(i) as LinearLayout)
         }
     }
 

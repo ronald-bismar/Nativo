@@ -44,7 +44,7 @@
                     android:padding="10dp">
 
                     <ImageView
-                        android:id="@+id/btnPapa"
+                        android:id="@+id/imagen6"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:adjustViewBounds="true"
@@ -53,7 +53,7 @@
                         android:src="@drawable/nieto" />
 
                     <TextView
-                        android:id="@+id/textView117"
+                        android:id="@+id/txtTitle6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Allchhi (Nieto)"

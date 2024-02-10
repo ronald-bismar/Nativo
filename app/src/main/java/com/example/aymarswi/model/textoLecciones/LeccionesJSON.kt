@@ -24,14 +24,14 @@ object LeccionesJSON {
     }
 
 
-
     //Talvez la aplicacion se congela por que no sale rapidamente una oracion
     //(Nota: Añadir mas oraciones)
-    fun getOracionPrincipal(): Palabra{
-        var palabra: Palabra
-        do{
-            palabra = palabras[(palabras.indices).random()]
-        }while (!palabra.esOracion)
-        return palabra
+    fun getOracionPrincipal(): Palabra {
+        var palabra: Palabra = palabras[(palabras.indices).random()]
+        return if (palabra.esOracion)
+            palabra
+        else{
+            getOracionPrincipal()
+        }
     }
 }

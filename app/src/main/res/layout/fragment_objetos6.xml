@@ -18,7 +18,7 @@
 
 
     <ImageView
-        android:id="@+id/btnPapa"
+        android:id="@+id/imagen6"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_alignParentStart="true"
@@ -31,7 +31,7 @@
         android:backgroundTint="@color/color1"
         android:scaleType="centerCrop"
         android:src="@drawable/pizarra"
-        app:layout_constraintBottom_toTopOf="@+id/textView117"
+        app:layout_constraintBottom_toTopOf="@+id/txtTitle6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -123,17 +123,17 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView117"
+        android:id="@+id/txtTitle6"
         android:layout_width="103dp"
         android:layout_height="27dp"
         android:layout_marginTop="8dp"
         android:text="Pizara"
         android:textAlignment="center"
         android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/btnPapa"
+        app:layout_constraintEnd_toEndOf="@+id/imagen6"
         app:layout_constraintHorizontal_bias="0.422"
-        app:layout_constraintStart_toStartOf="@+id/btnPapa"
-        app:layout_constraintTop_toBottomOf="@+id/btnPapa" />
+        app:layout_constraintStart_toStartOf="@+id/imagen6"
+        app:layout_constraintTop_toBottomOf="@+id/imagen6" />
 
     <TextView
         android:id="@+id/etContenPalabra"
@@ -150,7 +150,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView117"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle6"
         app:layout_constraintVertical_bias="0.5" />
 
     <androidx.appcompat.widget.AppCompatButton

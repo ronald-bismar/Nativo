@@ -26,7 +26,7 @@ import com.example.aymarswi.ClaseFamilia.FragmentDinamica3
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica4
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica2v1
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica5
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia7
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica6
 import com.example.aymarswi.ClaseFamilia.FragmentFamilia8
 import com.example.aymarswi.ClaseFamilia.FragmentFamilia9
 import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza
@@ -90,7 +90,7 @@ class Lecciones {
                 FragmentDinamica4(),
                 FragmentDinamica2v1(),
                 FragmentDinamica5(),
-                FragmentFamilia7(),
+                FragmentDinamica6(),
                 FragmentFamilia8(),
                 FragmentFamilia9(),
                 FragmentFamilia10()
