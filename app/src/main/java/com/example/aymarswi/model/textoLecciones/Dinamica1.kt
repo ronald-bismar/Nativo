@@ -9,45 +9,37 @@ import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
-class Dinamica1 constructor(fragment: Fragment) {
+class Dinamica1(fragment: Fragment) {
 
     private var fragment: Fragment
     private var title: TextView
-    private var opciones = mutableListOf<LinearLayout>()
+    private var contOpciones: LinearLayout
 
-    private lateinit var posicionesRandomicas: List<PosicionParaAñadirALaVista>
+    private lateinit var posicionesRandomicas: MutableList<Int>
     private var posicionRespuestaCorrecta: Int = 0
 
     init {
         this.fragment = fragment
         this.title = fragment.requireView().findViewById(R.id.txtTitle1)
+        this.contOpciones = fragment.requireView().findViewById(R.id.llContenedorOpciones1)
     }
 
     fun configurar() {
-
-        obtenerVistasOpciones()
-
         //Generamos numeros randomicos para obtener palabras de la lista en posiciones aleatorias
-        posicionesRandomicas = PosicionesRandomicas(LeccionesJSON.palabras).getPosicionesRandomicasSinRepetir(opciones.size, sinOraciones = true)
+        posicionesRandomicas =
+            PosicionesRandomicas(LeccionesJSON.palabras).getPosicionesRandomicasSinRepetir(
+                contOpciones.childCount,
+                sinOraciones = true
+            )
 
         asignarRespuestaCorrecta()
         colocarDatosEnLaVista()
-    }
-
-    private fun obtenerVistasOpciones() {
-        val viewLayoutOpciones =
-            (fragment.requireView().findViewById(R.id.llContenedorOpciones1) as LinearLayout)
-
-        for (i in 0 until viewLayoutOpciones.childCount) {
-            if (viewLayoutOpciones.getChildAt(i) is LinearLayout)
-                opciones.add(viewLayoutOpciones.getChildAt(i) as LinearLayout)
-        }
+        iniciarDinamica()
     }
 
     private fun asignarRespuestaCorrecta() {
         //Usamos como palabra principal de la dinamica la primera opcion de la lista de opciones que salió
-        posicionRespuestaCorrecta = posicionesRandomicas.first().numero
-        LeccionesJSON.palabras[posicionRespuestaCorrecta].palabraCorrecta = true
+        posicionRespuestaCorrecta = posicionesRandomicas.first()
     }
 
     private fun colocarDatosEnLaVista() {
@@ -56,29 +48,36 @@ class Dinamica1 constructor(fragment: Fragment) {
             LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara[0]
 
         /*Añadimos los datos a la vista de forma que no esten en el mismo orden cada vez (para eso se usan numeros randomicos)*/
-        for (opcion in opciones) {
-            var opcionRandom: PosicionParaAñadirALaVista
-            do {
-                opcionRandom = posicionesRandomicas[(posicionesRandomicas.indices).random()]
-            } while (opcionRandom.fueAñadido)
+        for (i in 0 until  contOpciones.childCount) {
+            val indexRandom = (posicionesRandomicas.indices).random()
+
+            val opcion = contOpciones.getChildAt(i) as LinearLayout
 
             //Colocamos la imagen de la opcion
             Glide.with(Actividad.getInstanceActividad().context)
-                .load(LeccionesJSON.palabras[opcionRandom.numero].imagen)
+                .load(LeccionesJSON.palabras[indexRandom].imagen)
                 .into(opcion.getChildAt(0) as ImageView)
 
             //Colocamos el texto de la opcion
             (opcion.getChildAt(1) as TextView).text =
-                LeccionesJSON.palabras[opcionRandom.numero].enEspanol[0]
+                LeccionesJSON.palabras[indexRandom].enEspanol[0]
 
-            opcionRandom.fueAñadido = true
+            posicionesRandomicas.removeAt(indexRandom)
         }
-        iniciarDinamica()
+
     }
 
     private fun iniciarDinamica() {
         opcionMultipleDePalabras().palabraVerdaderaLL(
-            LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0], opciones
+            LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0], obtenerOpcionesComoLista()
         )
+    }
+    private fun obtenerOpcionesComoLista(): MutableList<LinearLayout>{
+        val listaOpciones = mutableListOf<LinearLayout>()
+        for(i in 0 until contOpciones.childCount){
+            if(contOpciones.getChildAt(i) is LinearLayout)
+                listaOpciones.add(contOpciones.getChildAt(i) as LinearLayout)
+        }
+         return listaOpciones
     }
 }

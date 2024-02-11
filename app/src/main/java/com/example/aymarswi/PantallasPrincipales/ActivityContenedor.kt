@@ -32,13 +32,13 @@ import com.example.aymarswi.model.lecciones.Lecciones
 import com.example.aymarswi.model.textoLecciones.LeccionesJSON
 
 class ActivityContenedor : AppCompatActivity() {
-
+    private lateinit var fragment: Fragment
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contenedor)
         Actividad.getInstance(this, this, R.id.contenedorDeFragments)
 
-        var fragment: Fragment = FragmentDinamica1()
+
         when (intent.extras?.getInt("valor")) {
             1 -> {
                 LeccionesJSON.seccion("Familia")
@@ -47,36 +47,43 @@ class ActivityContenedor : AppCompatActivity() {
             }
 
             2 -> {
+                LeccionesJSON.seccion("Naturaleza")
                 Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Naturaleza")
                 fragment = FragmentNaturaleza()
             }
 
             3 -> {
+                LeccionesJSON.seccion("Saludos")
                 Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Saludos")
                 fragment = FragmentSaludos()
             }
 
             4 -> {
+                LeccionesJSON.seccion("Animales")
                 Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Animales")
                 fragment = FragmentAnimales()
             }
 
             5 -> {
+                LeccionesJSON.seccion("Verbos")
                 Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Verbos")
                 fragment = FragmentVerbos()
             }
 
             6 -> {
+                LeccionesJSON.seccion("Colores")
                 Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Colores")
                 FragmentColores()
             }
 
             7 -> {
+                LeccionesJSON.seccion("Numeros")
                 Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Numeros")
                 fragment = FragmentNumeros()
             }
 
             8 -> {
+                LeccionesJSON.seccion("Objetos")
                 Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Objetos")
                 fragment = FragmentObjetos1()
             }

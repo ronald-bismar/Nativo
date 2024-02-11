@@ -15,34 +15,33 @@ class Dinamica3(fragment: Fragment) {
     private var fragment: Fragment
     private var title: TextView
     private var imagen: ImageView
-    private var respuesta: EditText
+    private var campoRespuesta: EditText
     private var btnComprobar: Button
 
-    private lateinit var posicionesRandomicas: List<PosicionParaAñadirALaVista>
+    private lateinit var posicionesRandomicas: List<Int>
     private var posicionRespuestaCorrecta: Int = 0
 
     init {
         this.fragment = fragment
         this.title = fragment.requireView().findViewById(R.id.txtTitle3)
         this.imagen = fragment.requireView().findViewById(R.id.imagen3)
-        this.respuesta = fragment.requireView().findViewById(R.id.txtRespuesta3)
+        this.campoRespuesta = fragment.requireView().findViewById(R.id.txtRespuesta3)
         this.btnComprobar = fragment.requireView().findViewById(R.id.btnComprobar3)
     }
 
     fun configurar() {
-
-        //Generamos numeros randomicos para obtener palabras de la lista en posiciones aleatorias
+        //Generamos numeros randomicos para que cada vez se coloquen en posiciones diferentes
         posicionesRandomicas =
             PosicionesRandomicas(LeccionesJSON.palabras).getPosicionesRandomicasSinRepetir(1, sinOraciones = false)
 
         asignarRespuestaCorrecta()
         colocarDatosEnLaVista()
+        iniciarDinamica()
     }
 
     private fun asignarRespuestaCorrecta() {
         //Usamos como palabra principal de la dinamica la primera opcion de la lista de opciones que salió
-        posicionRespuestaCorrecta = posicionesRandomicas.first().numero
-        LeccionesJSON.palabras[posicionRespuestaCorrecta].palabraCorrecta = true
+        posicionRespuestaCorrecta = posicionesRandomicas.first()
     }
 
     @SuppressLint("SetTextI18n")
@@ -55,16 +54,12 @@ class Dinamica3(fragment: Fragment) {
         Glide.with(Actividad.getInstanceActividad().context)
             .load(LeccionesJSON.palabras[posicionRespuestaCorrecta].imagen)
             .into(imagen)
-
-
-        iniciarDinamica()
-
     }
 
     private fun iniciarDinamica() {
         opcionMultipleDePalabras().palabraVerdadera(
-            LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara,
-            palabraElegida = respuesta,
+            LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara, // No se da un indice ya que el usuario podrá escribir distintos derivados de la palabra u oracion
+            palabraElegida = campoRespuesta,
             botonComprobar = btnComprobar,
         )
     }

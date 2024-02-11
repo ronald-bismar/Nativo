@@ -91,9 +91,9 @@ class Lecciones {
                 FragmentDinamica2v1(),
                 FragmentDinamica5(),
                 FragmentDinamica6(),
-                FragmentFamilia8(),
+                FragmentDinamica6(),
                 FragmentFamilia9(),
-                FragmentFamilia10()
+                FragmentDinamica6()
             )
         ),
         DataLeccion(
