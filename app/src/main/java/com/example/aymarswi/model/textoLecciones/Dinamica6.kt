@@ -11,45 +11,22 @@ import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 import com.google.android.flexbox.FlexboxLayout
 
-class Dinamica6(fragment: Fragment) {
-    private var fragment: Fragment
-    private var imagen: ImageView
-    private var title: TextView
+class Dinamica6(fragment: Fragment): BaseDinamica(fragment) {
+
     private var campoRespuesta: TextView
-    private var contenedorOpcionesDeBotones: FlexboxLayout
-    private var btnComprobar: Button
-    private var posicionRespuestaCorrecta = 0
+
 
     init {
-        this.fragment = fragment
         this.imagen = fragment.requireView().findViewById(R.id.imagen6)
         this.title = fragment.requireView().findViewById(R.id.txtTitle6)
         this.campoRespuesta = fragment.requireView().findViewById(R.id.campoRespuesta)
-        this.contenedorOpcionesDeBotones = fragment.requireView().findViewById(R.id.flContenedorBotones6)
+        this.contenedorOpciones = fragment.requireView().findViewById(R.id.flContenedorBotones6)
         this.btnComprobar = fragment.requireView().findViewById(R.id.btnComprobar6)
+
+        configurar(sinOraciones = true)
     }
 
-    fun configurar() {
-
-        //Generamos numeros randomicos para obtener palabras de la lista en posiciones aleatorias
-        val posicionesRandomicas =
-            PosicionesRandomicas(LeccionesJSON.palabras).getPosicionesRandomicasSinRepetir(
-                contenedorOpcionesDeBotones.childCount + 1,
-                sinOraciones = true
-            )
-
-        asignarRespuestaCorrecta(posicionesRandomicas)
-        colocarDatosEnLaVista(posicionesRandomicas.toMutableList())
-        iniciarDinamica()
-    }
-
-    private fun asignarRespuestaCorrecta(posicionesRandomicas: List<Int>) {
-        //Usamos como palabra principal de la dinamica la primera opcion de la lista de opciones que salió
-        posicionRespuestaCorrecta = posicionesRandomicas.first()
-        LeccionesJSON.palabras[posicionRespuestaCorrecta].palabraCorrecta = true
-    }
-
-    private fun colocarDatosEnLaVista(posicionesRandomicas: MutableList<Int>) {
+    override fun colocarDatosEnLaVista() {
 
         title.text = LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0]
 
@@ -59,29 +36,21 @@ class Dinamica6(fragment: Fragment) {
             .into(imagen)
 
         /*Añadimos los datos a la vista de forma que no estén en el mismo orden cada vez (para eso se usan números aleatorios)*/
-        for (i in 0 until contenedorOpcionesDeBotones.childCount) {
-            val indexRandom = (posicionesRandomicas.indices).random()
-
-            // Eliminamos el elemento seleccionado de la lista
-            posicionesRandomicas.removeAt(indexRandom)
+        for (i in 0 until contenedorOpciones.childCount) {
+            val indexRandom = (0 until posicionesRandomicas.size).random()
 
             // Colocamos el texto de la opción
-            (contenedorOpcionesDeBotones.getChildAt(i) as Button).text = LeccionesJSON.palabras[indexRandom].enAymara[0]
+            (contenedorOpciones.getChildAt(i) as Button).text = LeccionesJSON.palabras[posicionesRandomicas[indexRandom]].enAymara[0]
+
+            posicionesRandomicas.removeAt(indexRandom)
         }
     }
-    fun iniciarDinamica() {
+    override fun iniciarDinamica() {
       opcionMultipleDePalabras().palabraVerdadera(
             obtenerOpcionesComoLista(),
             palabraCorrecta = LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara[0],
             palabraElegida = campoRespuesta,
             botonComprobar = btnComprobar
         )
-    }
-    private fun obtenerOpcionesComoLista(): MutableList<Button> {
-        val listaBotones = mutableListOf<Button>()
-        for (i in 0 until contenedorOpcionesDeBotones.childCount) {
-            listaBotones.add(contenedorOpcionesDeBotones.getChildAt(i) as Button)
-        }
-        return listaBotones
     }
 }

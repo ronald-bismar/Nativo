@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.LinearLayout
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.dinamicas.OrdenarPalabras
+import com.example.aymarswi.model.textoLecciones.Dinamica7
 import com.google.android.flexbox.FlexboxLayout
 import java.io.InputStream
 
@@ -23,17 +24,13 @@ class FragmentFamilia9 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        rootView = inflater.inflate(R.layout.fragment_familia9, container, false)
+        return inflater.inflate(R.layout.fragment_familia9, container, false)
 
-        initComponents()
-
-        OrdenarPalabras(contenedorPalabras, contenedorOracionRespuesta, btnComprobar).initDynamic("Allchhi", )
-            return rootView
         }
 
-    private fun initComponents() {
-        btnComprobar = rootView.findViewById(R.id.btnComprobar16)
-        contenedorOracionRespuesta = rootView.findViewById(R.id.etContenPalabra)
-        contenedorPalabras = rootView.findViewById(R.id.constraintLayout6)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        Dinamica7(this)
     }
 }

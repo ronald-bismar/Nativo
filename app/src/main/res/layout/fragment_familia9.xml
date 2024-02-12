@@ -44,21 +44,30 @@
                     android:padding="10dp">
 
                     <ImageView
-                        android:id="@+id/imagen6"
-                        android:layout_width="150dp"
+                        android:id="@+id/imagen7"
+                        android:layout_width="wrap_content"
                         android:layout_height="150dp"
                         android:adjustViewBounds="true"
                         android:backgroundTint="@color/white"
-                        android:scaleType="centerCrop"
+                        android:minHeight="150dp"
+                        android:scaleType="fitCenter"
                         android:src="@drawable/nieto" />
 
                     <TextView
-                        android:id="@+id/txtTitle6"
+                        android:id="@+id/txtTitle7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Allchhi (Nieto)"
+                        android:text="Allchhi"
                         android:textAlignment="center"
                         android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/txtTitleE7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="(Nieto)"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
                 </LinearLayout>
 
                 <ImageButton
@@ -85,7 +94,7 @@
                 android:orientation="horizontal" />
 
             <com.google.android.flexbox.FlexboxLayout
-                android:id="@+id/constraintLayout6"
+                android:id="@+id/flContenedorOpciones7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"

@@ -23,13 +23,6 @@ class FragmentDinamica2v1 : Fragment() {
         rootView = inflater.inflate(R.layout.fragment_dinamica2v1, container, false)
         iniciarComponentes()
 
-      /*  opcionMultipleDePalabras().palabraVerdaderaLL(
-            palabraCorrecta = btnYuxcha.text.toString(),
-            btnYuxcha,
-            btnAllchhi,
-            btnTullqa,
-        )*/
-
         return rootView
     }
 
@@ -41,6 +34,6 @@ class FragmentDinamica2v1 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Dinamica2(this).configurar()
+        Dinamica2(this)
     }
 }

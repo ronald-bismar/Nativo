@@ -11,6 +11,8 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="@font/linotteheavy"
         android:text="TRADUCE ESTA ORACION:"
         android:textColor="#131313"
@@ -26,6 +28,8 @@
         android:id="@+id/btnComprobar4"
         android:layout_width="190dp"
         android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#2196F3"
         android:fontFamily="@font/arista"
         android:text="COMPROBAR"
@@ -36,31 +40,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRespuesta4"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <EditText
-        android:id="@+id/txtRespuesta4"
-        android:layout_width="287dp"
-        android:layout_height="42dp"
-        android:background="@drawable/strokedelgado"
-        android:ems="10"
-        android:fontFamily="@font/linottesemibold"
-        android:gravity="center"
-        android:inputType="textNoSuggestions"
-        app:layout_constraintBottom_toTopOf="@+id/btnComprobar4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/llContenedorOpciones4"
         app:layout_constraintVertical_bias="0.5" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout7"
         android:layout_width="match_parent"
         android:layout_height="280dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtRespuesta4"
+        app:layout_constraintBottom_toTopOf="@+id/llContenedorOpciones4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,5 +90,30 @@
                 android:textSize="24sp" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/llContenedorOpciones4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"
+        app:layout_constraintVertical_bias="0.5">
+
+        <EditText
+            android:id="@+id/txtRespuesta4"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/strokedelgado"
+            android:ems="10"
+            android:fontFamily="@font/linottesemibold"
+            android:gravity="center"
+            android:inputType="textNoSuggestions" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

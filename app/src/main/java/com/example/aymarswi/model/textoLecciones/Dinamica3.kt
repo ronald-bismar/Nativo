@@ -1,51 +1,29 @@
 package com.example.aymarswi.model.textoLecciones
 
 import android.annotation.SuppressLint
-import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 
-class Dinamica3(fragment: Fragment) {
-    private var fragment: Fragment
-    private var title: TextView
-    private var imagen: ImageView
-    private var campoRespuesta: EditText
-    private var btnComprobar: Button
+class Dinamica3(fragment: Fragment): BaseDinamica(fragment) {
 
-    private lateinit var posicionesRandomicas: List<Int>
-    private var posicionRespuestaCorrecta: Int = 0
+   private var respuestaUsuario: EditText
 
     init {
-        this.fragment = fragment
         this.title = fragment.requireView().findViewById(R.id.txtTitle3)
         this.imagen = fragment.requireView().findViewById(R.id.imagen3)
-        this.campoRespuesta = fragment.requireView().findViewById(R.id.txtRespuesta3)
+        this.respuestaUsuario = fragment.requireView().findViewById(R.id.txtRespuesta3)
         this.btnComprobar = fragment.requireView().findViewById(R.id.btnComprobar3)
-    }
+        this.contenedorOpciones = fragment.requireView().findViewById(R.id.llContenedorOpciones3)
 
-    fun configurar() {
-        //Generamos numeros randomicos para que cada vez se coloquen en posiciones diferentes
-        posicionesRandomicas =
-            PosicionesRandomicas(LeccionesJSON.palabras).getPosicionesRandomicasSinRepetir(1, sinOraciones = false)
-
-        asignarRespuestaCorrecta()
-        colocarDatosEnLaVista()
-        iniciarDinamica()
-    }
-
-    private fun asignarRespuestaCorrecta() {
-        //Usamos como palabra principal de la dinamica la primera opcion de la lista de opciones que salió
-        posicionRespuestaCorrecta = posicionesRandomicas.first()
+        configurar(sinOraciones = false)
     }
 
     @SuppressLint("SetTextI18n")
-    private fun colocarDatosEnLaVista() {
+    override fun colocarDatosEnLaVista() {
         //Colocamos como titulo la palabra principal en español que servirá de guia para el usuario para traducirla al español
         title.text =
             "COMO SE ESCRIBE ${LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0].uppercase()}?"
@@ -56,10 +34,10 @@ class Dinamica3(fragment: Fragment) {
             .into(imagen)
     }
 
-    private fun iniciarDinamica() {
+    override fun iniciarDinamica() {
         opcionMultipleDePalabras().palabraVerdadera(
             LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara, // No se da un indice ya que el usuario podrá escribir distintos derivados de la palabra u oracion
-            palabraElegida = campoRespuesta,
+            palabraElegida = respuestaUsuario as EditText,
             botonComprobar = btnComprobar,
         )
     }

@@ -34,6 +34,6 @@ class FragmentDinamica2 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Dinamica2(this).configurar()
+        Dinamica2(this)
     }
 }

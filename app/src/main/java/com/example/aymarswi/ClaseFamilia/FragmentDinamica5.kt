@@ -34,8 +34,6 @@ class FragmentDinamica5 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        Dinamica5(this).configurar()
-
+        Dinamica5(this)
     }
 }
