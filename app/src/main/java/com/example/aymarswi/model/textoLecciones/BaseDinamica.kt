@@ -35,10 +35,11 @@ abstract class BaseDinamica(fragment: Fragment) {
         //Generamos numeros randomicos para obtener palabras de la lista en posiciones aleatorias
         posicionesRandomicas =
             PosicionesRandomicas(LeccionesJSON.palabras).getPosicionesRandomicasSinRepetir(
-                if(contenedorOpciones.childCount == 0) 1 else contenedorOpciones.childCount,
+                if (contenedorOpciones.childCount == 0) 1 else contenedorOpciones.childCount,
                 sinOraciones = sinOraciones
             )
     }
+
     private fun asignarRespuestaCorrecta() {
         //Usamos como palabra principal de la dinamica la primera opcion de la lista de opciones que salió
         posicionRespuestaCorrecta = posicionesRandomicas.first()

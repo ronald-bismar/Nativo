@@ -20,18 +20,29 @@ object LeccionesJSON {
         val jsonString = reader.readText()
         reader.close()
 
-        palabras = Gson().fromJson(jsonString, Array<Palabra>::class.java).toList()
+        palabras = get10PalabrasLeccion(
+            Gson().fromJson(jsonString, Array<Palabra>::class.java).toMutableList()
+        )
     }
 
+    //Solo obtenemos 20 palabras para que la aplicacion no sea pesada al cargar la imagen que se guardara en bits
+    private fun get10PalabrasLeccion(listaCompletaPalabras: MutableList<Palabra>): List<Palabra> {
+        val palabrasAleatorias = mutableListOf<Palabra>()
+        for (i in 0 until 10) {
+            val indexRandom = (listaCompletaPalabras.indices).random()
 
-    //Talvez la aplicacion se congela por que no sale rapidamente una oracion
-    //(Nota: Añadir mas oraciones)
+            palabrasAleatorias.add(listaCompletaPalabras[indexRandom])
+            listaCompletaPalabras.removeAt(indexRandom)
+        }
+        return palabrasAleatorias
+    }
+
+    //Obtenemos una oracion si la dinamica seleccionada requiere si o si una oracion
     fun getUnaOracion(): Palabra {
-        var palabra: Palabra = palabras[(palabras.indices).random()]
+        val palabra: Palabra = palabras[(palabras.indices).random()]
         return if (palabra.esOracion)
             palabra
-        else{
+        else
             getUnaOracion()
-        }
     }
 }

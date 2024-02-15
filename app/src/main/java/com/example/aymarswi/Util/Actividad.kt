@@ -13,15 +13,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica1
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia10
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica2
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica3
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica4
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica2v1
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica5
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica6
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia8
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia9
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica7
 import com.example.aymarswi.PantallasPrincipales.FragmentBien
 import com.example.aymarswi.PantallasPrincipales.FragmentMalo
 import com.example.aymarswi.PantallasPrincipales.FragmentRegular
@@ -53,9 +51,9 @@ open class Actividad protected constructor(
         FragmentDinamica2v1(),
         FragmentDinamica5(),
         FragmentDinamica6(),
-        FragmentFamilia8(),
-        FragmentFamilia9(),
-        FragmentFamilia10()
+        FragmentDinamica4(),
+        FragmentDinamica7(),
+        FragmentDinamica5()
     )
 
     companion object {

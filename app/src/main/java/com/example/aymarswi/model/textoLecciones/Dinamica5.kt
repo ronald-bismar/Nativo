@@ -9,8 +9,9 @@ import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
 import com.example.aymarswi.model.textoLecciones.LeccionesJSON.getUnaOracion
+import com.example.aymarswi.model.textoLecciones.LeccionesJSON.palabras
 
-class Dinamica5(fragment: FragmentDinamica5): BaseDinamica(fragment) {
+class Dinamica5(fragment: FragmentDinamica5) : BaseDinamica(fragment) {
 
     private var contOracionIncompleta: LinearLayout
     private var posicionPalabraFaltante: Int = 0
@@ -43,8 +44,7 @@ class Dinamica5(fragment: FragmentDinamica5): BaseDinamica(fragment) {
 
 
     private fun agregarTextViewAlContenedor(
-        palabrasDivididas: List<String>,
-        posicionPalabraFaltante: Int
+        palabrasDivididas: List<String>, posicionPalabraFaltante: Int
     ) {
         for (i in palabrasDivididas.indices) {
             val texto = crearTextView(palabrasDivididas[i])
@@ -57,19 +57,27 @@ class Dinamica5(fragment: FragmentDinamica5): BaseDinamica(fragment) {
                 textView.gravity = Gravity.CENTER
                 // Medir el ancho de la palabra faltante y agregar un espacio adicional para los márgenes, el padding, etc.
                 val anchoTexto =
-                    textView.paint.measureText(palabrasDivididas[posicionPalabraFaltante])
+                    textView.paint.measureText(searchTextLargeInAymara())
                 val espacioAdicional = 30 // Puedes ajustar este valor según tus necesidades
 
                 // Establecer el ancho con el valor de la palabra faltante más el espacio adicional
                 val layoutParams = LinearLayout.LayoutParams(
-                    (anchoTexto + espacioAdicional).toInt(),
-                    LinearLayout.LayoutParams.WRAP_CONTENT
+                    (anchoTexto + espacioAdicional).toInt(), LinearLayout.LayoutParams.WRAP_CONTENT
                 )
                 textView.layoutParams = layoutParams
             } else {
                 contOracionIncompleta.addView(texto)
             }
         }
+    }
+
+    fun searchTextLargeInAymara(): String {
+        var palabraMasLarga = palabrasDivididas[posicionPalabraFaltante]
+        for (i in 1 until posicionesRandomicas.size) {
+            if (palabraMasLarga.length < palabras[posicionesRandomicas[i]].enAymara[0].length)
+                palabraMasLarga = palabras[posicionesRandomicas[i]].enAymara[0]
+        }
+        return palabraMasLarga
     }
 
     private fun crearTextView(palabra: String): TextView {

@@ -1,5 +1,6 @@
 package com.example.aymarswi.Util.dinamicas
 
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
@@ -30,6 +31,7 @@ class OrdenarPalabras(
 
     fun initDynamic(oracion: String) {
         this.oracion = oracion.trim()
+        Actividad.getInstanceActividad().setPalabraCorrecta(this.oracion)
         colocarOnClicks()
         clickBotonComprobar()
     }
@@ -66,16 +68,18 @@ class OrdenarPalabras(
             contenedorOracionRespuesta.addView(textCreado)
             buttonTexto.visibility = View.INVISIBLE
         }
+        Log.d("LETRA", "${buttonTexto.text}")
     }
 
     private fun verifyResponse() {
         getInstanceActividad().respuesta(joinText().equals(oracion, ignoreCase = true))
+        Log.d("LETRA", "${joinText()}, ${oracion}")
     }
 
     private fun joinText(): String {
         var oracionUnida = ""
         for (i in 0 until contenedorOracionRespuesta.childCount)
-            oracionUnida += (contenedorPalabras.getChildAt(i) as TextView).text.toString() + if (esOracion()) " " else ""
+            oracionUnida += (contenedorOracionRespuesta.getChildAt(i) as TextView).text.toString() + if (esOracion()) " " else ""
 
         return oracionUnida.trim()
     }

@@ -25,7 +25,7 @@ class FragmentDinamica6 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        rootView = inflater.inflate(R.layout.fragment_familia7, container, false)
+        rootView = inflater.inflate(R.layout.fragment_dinamica6, container, false)
 
         iniciarComponentes()
 

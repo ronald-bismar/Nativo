@@ -12,24 +12,12 @@ import com.example.aymarswi.model.textoLecciones.Dinamica3
 
 
 class FragmentDinamica3 : Fragment() {
-    lateinit var obText: EditText
-    lateinit var btnComprobar: Button
-    lateinit var rootView: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        rootView = inflater.inflate(R.layout.fragment_dinamica3, container, false)
-        iniciarComponentes()
-
-        return rootView
-    }
-
-
-    private fun iniciarComponentes() {
-        btnComprobar = rootView.findViewById(R.id.btnComprobar3)
-        obText = rootView.findViewById(R.id.txtRespuesta3)
+        return inflater.inflate(R.layout.fragment_dinamica3, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

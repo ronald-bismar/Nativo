@@ -20,25 +20,15 @@ import com.example.aymarswi.ClaseColores.FragmentColores6
 import com.example.aymarswi.ClaseColores.FragmentColores7
 import com.example.aymarswi.ClaseColores.FragmentColores8
 import com.example.aymarswi.ClaseColores.FragmentColores9
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia10
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica1v1
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica2
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica3
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica4
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica2v1
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica5
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica6
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia8
-import com.example.aymarswi.ClaseFamilia.FragmentFamilia9
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza10
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza2
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza3
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza4
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza5
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza6
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza7
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza8
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza9
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica7
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica2v2
 import com.example.aymarswi.ClaseNumeros.FragmentNumeros
 import com.example.aymarswi.ClaseNumeros.FragmentNumeros10
 import com.example.aymarswi.ClaseNumeros.FragmentNumeros2
@@ -92,22 +82,22 @@ class Lecciones {
                 FragmentDinamica5(),
                 FragmentDinamica6(),
                 FragmentDinamica6(),
-                FragmentFamilia9(),
+                FragmentDinamica7(),
                 FragmentDinamica6()
             )
         ),
         DataLeccion(
             "Naturaleza", listOf(
-                FragmentNaturaleza(),
-                FragmentNaturaleza2(),
-                FragmentNaturaleza3(),
-                FragmentNaturaleza4(),
-                FragmentNaturaleza5(),
-                FragmentNaturaleza6(),
-                FragmentNaturaleza7(),
-                FragmentNaturaleza8(),
-                FragmentNaturaleza9(),
-                FragmentNaturaleza10()
+                FragmentDinamica2v2(),
+                FragmentDinamica3(),
+                FragmentDinamica2v2(),
+                FragmentDinamica1v1(),
+                FragmentDinamica6(),
+                FragmentDinamica5(),
+                FragmentDinamica6(),
+                FragmentDinamica2v1(),
+                FragmentDinamica7(),
+                FragmentDinamica6()
             )
         ),
         DataLeccion(

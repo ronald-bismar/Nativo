@@ -1,0 +1,73 @@
+[
+    {
+        "seccion": "Verbos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Yatiqaña"],
+        "enEspanol": ["Aprender"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Verbos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Saraña"],
+        "enEspanol": ["Ir"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Verbos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Jutaña"],
+        "enEspanol": ["Venir"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Verbos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Qillqaña"],
+        "enEspanol": ["Escribir"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Verbos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Ullaña"],
+        "enEspanol": ["Leer"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Verbos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Ist'aña"],
+        "enEspanol": ["Escuchar"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Verbos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Churaña"],
+        "enEspanol": ["Dar"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    }
+]

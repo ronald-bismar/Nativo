@@ -1,0 +1,103 @@
+[
+    {
+        "seccion": "Saludos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Kamisaki"],
+        "enEspanol": ["Como estas"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Saludos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Waliki"],
+        "enEspanol": ["Bien", "cerro"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Saludos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Kunjamasktasa"],
+        "enEspanol": ["Walikisktwa"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Saludos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Aski urukipan"],
+        "enEspanol": ["Buen dia", "Buen día", "Buenos dias", "Buenos días"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Saludos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Aski jayp'ukipan"],
+        "enEspanol": ["Buenas tardes"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Saludos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Aski arumakipan"],
+        "enEspanol": ["Buenas noches"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Saludos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Jikisiñkama"],
+        "enEspanol": ["Hasta luego"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Saludos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Jikisiñkamaya"],
+        "enEspanol": ["Hasta luego"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Saludos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Qharürkama"],
+        "enEspanol": ["Hasta mañana"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    },{
+        "seccion": "Saludos",
+        "nivelDeAprendizaje": 1,
+        "enAymara": ["Qharürkamaya"],
+        "enEspanol": ["Hasta mañana"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+        "palabraCorrecta": false,
+        "esOracion": false,
+        "fueAcertada": false,
+        "pronunciacion": null
+    }
+]

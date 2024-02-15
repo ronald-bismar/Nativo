@@ -26,13 +26,6 @@ class FragmentNaturaleza2 : Fragment() {
     ): View? {
        rootView = inflater.inflate(R.layout.fragment_naturaleza2, container, false)
         initComponents()
-        /*opcionMultipleDePalabras().palabraVerdadera(
-            btnCebada,
-            btnPapa1,
-            palabraCorrecta = btnPapa1.text.toString(),
-            palabraElegida = etPapa,
-            botonComprobar = btnComp,
-        )*/
 
         return rootView
     }

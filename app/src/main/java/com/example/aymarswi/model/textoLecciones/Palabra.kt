@@ -1,5 +1,7 @@
 package com.example.aymarswi.model.textoLecciones
 
+import android.graphics.Bitmap
+
 data class Palabra(
  val seccion: String,
  val nivelDeAprendizaje: Int,
@@ -9,5 +11,6 @@ data class Palabra(
  var palabraCorrecta: Boolean,
  var esOracion: Boolean,
  var fueAcertada: Boolean,
- val pronunciacion: String? // Puedes ajustar el tipo de datos según tus necesidades
+ val pronunciacion: String?,
+ var imagenBitmap: Bitmap? = null
 )

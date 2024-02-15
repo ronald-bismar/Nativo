@@ -1,6 +1,7 @@
 package com.example.aymarswi.PantallasPrincipales
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
@@ -38,18 +39,20 @@ class ActivityContenedor : AppCompatActivity() {
         setContentView(R.layout.activity_contenedor)
         Actividad.getInstance(this, this, R.id.contenedorDeFragments)
 
+        Log.d("Hola", "VALOR: ${intent.extras?.getInt("valor")}")
+
 
         when (intent.extras?.getInt("valor")) {
             1 -> {
                 LeccionesJSON.seccion("Familia")
                 Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Familia")
-                fragment = FragmentDinamica1()
+                fragment = Lecciones().getLesson("Familia").first()
             }
 
             2 -> {
                 LeccionesJSON.seccion("Naturaleza")
                 Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Naturaleza")
-                fragment = FragmentNaturaleza()
+                fragment = Lecciones().getLesson("Naturaleza").first()
             }
 
             3 -> {
