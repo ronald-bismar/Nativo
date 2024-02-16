@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
 
-class opcionMultipleDePalabras :
+class OpcionMultipleDePalabras :
     Actividad(AppCompatActivity(), AppCompatActivity(), R.id.contenedorDeFragments) {
 
 

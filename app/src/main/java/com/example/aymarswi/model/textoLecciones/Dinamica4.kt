@@ -4,7 +4,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
+import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
 
 class Dinamica4(fragment: Fragment): BaseDinamica(fragment) {
 
@@ -28,7 +28,7 @@ class Dinamica4(fragment: Fragment): BaseDinamica(fragment) {
     }
 
     override fun iniciarDinamica() {
-        opcionMultipleDePalabras().palabraVerdadera(
+        OpcionMultipleDePalabras().palabraVerdadera(
             LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol,
             palabraElegida = respuestaUsuario,
             botonComprobar = btnComprobar,

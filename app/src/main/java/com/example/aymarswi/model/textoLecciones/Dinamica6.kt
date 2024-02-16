@@ -1,15 +1,12 @@
 package com.example.aymarswi.model.textoLecciones
 
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.view.size
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
-import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
-import com.google.android.flexbox.FlexboxLayout
+import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
 
 class Dinamica6(fragment: Fragment): BaseDinamica(fragment) {
 
@@ -46,7 +43,7 @@ class Dinamica6(fragment: Fragment): BaseDinamica(fragment) {
         }
     }
     override fun iniciarDinamica() {
-      opcionMultipleDePalabras().palabraVerdadera(
+      OpcionMultipleDePalabras().palabraVerdadera(
             obtenerOpcionesComoLista(),
             palabraCorrecta = LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara[0],
             palabraElegida = campoRespuesta,

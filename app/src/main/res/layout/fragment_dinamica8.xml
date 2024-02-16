@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout61"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaseNumeros.FragmentNumeros9">
+
+    <TextView
+        android:id="@+id/textView114"
+        style="@style/textoGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona la respuesta"
+        app:layout_constraintBottom_toTopOf="@+id/imgVSonido8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imgVSonido8"
+        android:layout_width="180dp"
+        android:layout_height="189dp"
+        android:clickable="true"
+        android:src="@mipmap/sonidoactivo"
+        app:layout_constraintBottom_toTopOf="@+id/contenedorOpcionesD8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView114"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contenedorOpcionesD8"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgVSonido8"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPanqa"
+            style="@style/textoGuia"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_yellow"
+            android:backgroundTint="#FFBB57"
+            android:text="panqara"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/btnChuqi1"
+            app:layout_constraintEnd_toStartOf="@+id/btnAli1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnKhunu1"
+            style="@style/textoGuia"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_yellow"
+            android:backgroundTint="#FFBB57"
+            android:text="khunu"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnChuqi1"
+            app:layout_constraintTop_toBottomOf="@+id/btnAli1"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChuqi1"
+            style="@style/textoGuia"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_yellow"
+            android:backgroundTint="#FFBB57"
+            android:text="ch'uqi"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnKhunu1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPanqa"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAli1"
+            style="@style/textoGuia"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_yellow"
+            android:backgroundTint="#FFBB57"
+            android:text="ali"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/btnKhunu1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnPanqa"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

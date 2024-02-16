@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
+import com.example.aymarswi.model.textoLecciones.Dinamica9
 
 class FragmentNumeros : Fragment() {
     override fun onCreateView(
@@ -47,8 +48,13 @@ class FragmentNumeros : Fragment() {
             txtQimsa.text.toString(),
             txtPusi.text.toString(),
             R.id.contenedorDeFragments,
-            FragmentNumeros2(), args, puntaje)
+            FragmentNumeros2(), args, puntaje
+        )
+        return rootView
+    }
 
-            return rootView
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        Dinamica9(this)
     }
 }

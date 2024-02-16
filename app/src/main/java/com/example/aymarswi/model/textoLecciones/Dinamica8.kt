@@ -1,28 +1,21 @@
 package com.example.aymarswi.model.textoLecciones
 
 import android.widget.Button
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.Glide
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
 
-class Dinamica2 constructor(fragment: Fragment): BaseDinamica(fragment){
-    init {
-        this.title = fragment.requireView().findViewById(R.id.txtTitle2)
-        this.imagen = fragment.requireView().findViewById(R.id.imagen)
-        this.contenedorOpciones = fragment.requireView().findViewById(R.id.llContenedorOpciones2)
+class Dinamica8(fragment: Fragment): BaseDinamica(fragment){
 
+    private var iconoSonido: ImageView
+
+    init {
+        iconoSonido = fragment.requireView().findViewById(R.id.imgVSonido)
+        contenedorOpciones = fragment.requireView().findViewById(R.id.contenedorOpcionesD8)
         configurar(true)
     }
     override fun colocarDatosEnLaVista() {
-        //Colocamos como titulo la palabra principal en español que servirá de guia para el usuario para traducirla al español
-        title.text =
-            LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0]
-
-        Glide.with(Actividad.getInstanceActividad().context)
-            .load(LeccionesJSON.palabras[posicionRespuestaCorrecta].imagen)
-            .into(imagen)
 
         /*Añadimos los datos a la vista de forma que no esten en el mismo orden cada vez (para eso se usan numeros randomicos)*/
         for (i in 0 until contenedorOpciones.childCount) {

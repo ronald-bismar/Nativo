@@ -8,7 +8,6 @@ import androidx.fragment.app.commit
 import com.example.aymarswi.ClaseAnimales.FragmentAnimales
 import com.example.aymarswi.ClaseColores.FragmentColores
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica1
-import com.example.aymarswi.ClaseNaturaleza.FragmentNaturaleza
 import com.example.aymarswi.ClaseNumeros.FragmentNumeros
 import com.example.aymarswi.ClaseVerbos.FragmentVerbos
 import com.example.aymarswi.Clasificacion.FragmentClasificacion
@@ -80,7 +79,7 @@ class ActivityContenedor : AppCompatActivity() {
             }
 
             7 -> {
-                LeccionesJSON.seccion("Numeros")
+                LeccionesJSON.seccion("Familia")
                 Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Numeros")
                 fragment = FragmentNumeros()
             }

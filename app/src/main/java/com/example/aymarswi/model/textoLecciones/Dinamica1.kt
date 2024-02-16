@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
-import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
+import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
 
 class Dinamica1(fragment: Fragment) : BaseDinamica(fragment) {
 
@@ -46,7 +46,7 @@ class Dinamica1(fragment: Fragment) : BaseDinamica(fragment) {
     }
 
     override fun iniciarDinamica() {
-        opcionMultipleDePalabras().palabraVerdaderaLL(
+        OpcionMultipleDePalabras().palabraVerdaderaLL(
             LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0],
             obtenerOpcionesComoLista()
         )

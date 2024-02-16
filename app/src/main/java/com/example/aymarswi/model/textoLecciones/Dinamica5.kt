@@ -7,7 +7,7 @@ import androidx.core.view.setPadding
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica5
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
-import com.example.aymarswi.Util.dinamicas.opcionMultipleDePalabras
+import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
 import com.example.aymarswi.model.textoLecciones.LeccionesJSON.getUnaOracion
 import com.example.aymarswi.model.textoLecciones.LeccionesJSON.palabras
 
@@ -106,7 +106,7 @@ class Dinamica5(fragment: FragmentDinamica5) : BaseDinamica(fragment) {
     }
 
     override fun iniciarDinamica() {
-        opcionMultipleDePalabras().palabraVerdadera(
+        OpcionMultipleDePalabras().palabraVerdadera(
             obtenerOpcionesComoLista(),
             palabraCorrecta = palabrasDivididas[posicionPalabraFaltante],
             palabraElegida = contOracionIncompleta.getChildAt(posicionPalabraFaltante) as TextView,
