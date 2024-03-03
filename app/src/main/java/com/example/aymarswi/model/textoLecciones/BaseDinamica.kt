@@ -9,12 +9,12 @@ import androidx.fragment.app.Fragment
 
 abstract class BaseDinamica(fragment: Fragment) {
     protected var fragment: Fragment
-    protected lateinit var title: TextView
-    protected lateinit var imagen: ImageView
+    protected var title: TextView? = null
+    protected var imagen: ImageView? = null
     protected lateinit var contenedorOpciones: ViewGroup
     protected lateinit var btnComprobar: Button
 
-    protected lateinit var posicionesRandomicas: MutableList<Int>
+    protected lateinit var posicionesAleatorias: MutableList<Int>
     protected var posicionRespuestaCorrecta: Int = 0
 
     init {
@@ -33,7 +33,7 @@ abstract class BaseDinamica(fragment: Fragment) {
 
     fun generatePosicionesAleatorias(sinOraciones: Boolean) {
         //Generamos numeros randomicos para obtener palabras de la lista en posiciones aleatorias
-        posicionesRandomicas =
+        posicionesAleatorias =
             PosicionesRandomicas(LeccionesJSON.palabras).getPosicionesRandomicasSinRepetir(
                 if (contenedorOpciones.childCount == 0) 1 else contenedorOpciones.childCount,
                 sinOraciones = sinOraciones
@@ -42,7 +42,7 @@ abstract class BaseDinamica(fragment: Fragment) {
 
     private fun asignarRespuestaCorrecta() {
         //Usamos como palabra principal de la dinamica la primera opcion de la lista de opciones que salió
-        posicionRespuestaCorrecta = posicionesRandomicas.first()
+        posicionRespuestaCorrecta = posicionesAleatorias.first()
     }
 
     protected inline fun <reified T : View> obtenerOpcionesComoLista(): MutableList<T> {

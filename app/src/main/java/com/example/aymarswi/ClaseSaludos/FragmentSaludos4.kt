@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica5v1
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -27,7 +28,7 @@ class FragmentSaludos4 : Fragment() {
             Utils().respuestaCorrecta(
                 requireContext() as AppCompatActivity,
                 R.id.contenedorDeFragments,
-                FragmentSaludos5(),
+                FragmentDinamica5v1(),
                 args
             )
         }
@@ -36,7 +37,7 @@ class FragmentSaludos4 : Fragment() {
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
                 R.id.contenedorDeFragments,
-                FragmentSaludos5(),
+                FragmentDinamica5v1(),
                 args
             )
         }

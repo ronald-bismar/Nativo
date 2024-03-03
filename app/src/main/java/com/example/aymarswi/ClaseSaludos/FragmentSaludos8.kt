@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica2v3
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Utils
 
@@ -32,7 +33,7 @@ class FragmentSaludos8 : Fragment() {
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
                 R.id.contenedorDeFragments,
-                FragmentSaludos9(),
+                FragmentDinamica2v3(),
                 args
             )
         }
@@ -41,7 +42,7 @@ class FragmentSaludos8 : Fragment() {
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
                 R.id.contenedorDeFragments,
-                FragmentSaludos9(),
+                FragmentDinamica2v3(),
                 args
             )
         }
@@ -50,7 +51,7 @@ class FragmentSaludos8 : Fragment() {
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
                 R.id.contenedorDeFragments,
-                FragmentSaludos9(),
+                FragmentDinamica2v3(),
                 args
             )
         }
@@ -59,7 +60,7 @@ class FragmentSaludos8 : Fragment() {
             Utils().respuestaCorrecta(
                 requireContext() as AppCompatActivity,
                 R.id.contenedorDeFragments,
-                FragmentSaludos9(),
+                FragmentDinamica2v3(),
                 args
             )
         }

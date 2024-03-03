@@ -5,12 +5,12 @@
     android:id="@+id/frameLayout11"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClaseSaludos.FragmentSaludos5">
+    tools:context=".ClaseFamilia.FragmentDinamica5v1">
 
     <!-- TODO: Update blank fragment layout -->
 
     <Button
-        android:id="@+id/btnrespuesta"
+        android:id="@+id/btnComprobar5"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#09AF10"
@@ -22,33 +22,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAroma"
+        app:layout_constraintTop_toBottomOf="@+id/contenedorOpcionesD5"
         app:layout_constraintVertical_bias="0.5" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/imagenD5"
         android:layout_width="351dp"
         android:layout_height="223dp"
         android:background="@drawable/bordesredondeados"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintBottom_toTopOf="@+id/llOracionIncompleta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleD5"
         app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@mipmap/tarde" />
 
     <LinearLayout
-        android:id="@+id/linearLayout8"
+        android:id="@+id/llOracionIncompleta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/btnJaypu"
+        app:layout_constraintBottom_toTopOf="@+id/contenedorOpcionesD5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/imagenD5"
         app:layout_constraintVertical_bias="0.5">
 
         <TextView
@@ -80,7 +80,7 @@
         android:text="ESCRITURA:"
         android:textColor="#2196F3"
         android:textSize="26sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintBottom_toTopOf="@+id/txtTitleD5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,52 +88,62 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
-        android:id="@+id/textView28"
+        android:id="@+id/txtTitleD5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/linottebold"
         android:text="Como se escribe buenas tardes?"
         android:textColor="#0C0C0C"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintBottom_toTopOf="@+id/imagenD5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView29"
         app:layout_constraintVertical_bias="0.5" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnJaypu"
-        android:layout_width="156dp"
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/contenedorOpcionesD5"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_background_yellow"
-        android:fontFamily="@font/linottesemibold"
-        android:gravity="center"
-        android:text="jayp'ukipan"
-        android:textAllCaps="false"
-        android:textColor="#202D73"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnrespuesta"
-        app:layout_constraintEnd_toStartOf="@+id/btnAroma"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnAroma"
-        android:layout_width="156dp"
-        android:layout_height="50dp"
-        android:background="@drawable/button_background_yellow"
-        android:fontFamily="@font/linottesemibold"
-        android:gravity="center"
-        android:text="aromakipan"
-        android:textAllCaps="false"
-        android:textColor="#202D73"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnrespuesta"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:alignItems="center"
+        app:flexWrap="wrap"
+        app:justifyContent="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnJaypu"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llOracionIncompleta"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnJaypu"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background_yellow"
+            android:fontFamily="@font/linottesemibold"
+            android:text="jayp'ukipan"
+            android:textAllCaps="false"
+            android:textColor="#202D73"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="549dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAroma"
+            android:layout_width="156dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background_yellow"
+            android:fontFamily="@font/linottesemibold"
+            android:text="aromakipan"
+            android:textAllCaps="false"
+            android:textColor="#202D73"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="222dp"
+            tools:layout_editor_absoluteY="548dp" />
+    </com.google.android.flexbox.FlexboxLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

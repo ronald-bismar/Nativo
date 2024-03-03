@@ -1,13 +1,14 @@
 package com.example.aymarswi.model.lecciones
 
-import com.example.aymarswi.ClaseAnimales.FragmentAnimales
+import androidx.fragment.app.Fragment
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica10
 import com.example.aymarswi.ClaseAnimales.FragmentAnimales10
 import com.example.aymarswi.ClaseAnimales.FragmentAnimales2
 import com.example.aymarswi.ClaseAnimales.FragmentAnimales3
 import com.example.aymarswi.ClaseAnimales.FragmentAnimales4
 import com.example.aymarswi.ClaseAnimales.FragmentAnimales5
 import com.example.aymarswi.ClaseAnimales.FragmentAnimales6
-import com.example.aymarswi.ClaseAnimales.FragmentAnimales7
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica11
 import com.example.aymarswi.ClaseAnimales.FragmentAnimales8
 import com.example.aymarswi.ClaseAnimales.FragmentAnimales9
 import com.example.aymarswi.ClaseColores.FragmentColores
@@ -29,11 +30,8 @@ import com.example.aymarswi.ClaseFamilia.FragmentDinamica5
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica6
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica7
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica2v2
-import com.example.aymarswi.ClaseNumeros.FragmentNumeros
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica8
 import com.example.aymarswi.ClaseNumeros.FragmentNumeros10
-import com.example.aymarswi.ClaseNumeros.FragmentNumeros2
-import com.example.aymarswi.ClaseNumeros.FragmentNumeros3
-import com.example.aymarswi.ClaseNumeros.FragmentNumeros4
 import com.example.aymarswi.ClaseNumeros.FragmentNumeros5
 import com.example.aymarswi.ClaseNumeros.FragmentNumeros6
 import com.example.aymarswi.ClaseNumeros.FragmentNumeros7
@@ -42,7 +40,7 @@ import com.example.aymarswi.ClaseNumeros.FragmentNumeros9
 import com.example.aymarswi.ClaseSaludos.FragmentSaludos2
 import com.example.aymarswi.ClaseSaludos.FragmentSaludos3
 import com.example.aymarswi.ClaseSaludos.FragmentSaludos4
-import com.example.aymarswi.ClaseSaludos.FragmentSaludos5
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica5v1
 import com.example.aymarswi.ClaseSaludos.FragmentSaludos6
 import com.example.aymarswi.ClaseVerbos.FragmentVerbos
 import com.example.aymarswi.ClaseVerbos.FragmentVerbos10
@@ -68,7 +66,7 @@ import com.example.aymarswi.Objetos.FragmentObjetos9
 import com.example.aymarswi.Saludos.FragmentSaludos10
 import com.example.aymarswi.Saludos.FragmentSaludos7
 import com.example.aymarswi.Saludos.FragmentSaludos8
-import com.example.aymarswi.Saludos.FragmentSaludos9
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica2v3
 
 class Lecciones {
     private val lecciones: List<DataLeccion> = listOf(
@@ -106,23 +104,23 @@ class Lecciones {
                 FragmentSaludos2(),
                 FragmentSaludos3(),
                 FragmentSaludos4(),
-                FragmentSaludos5(),
+                FragmentDinamica5v1(),
                 FragmentSaludos6(),
                 FragmentSaludos7(),
                 FragmentSaludos8(),
-                FragmentSaludos9(),
+                FragmentDinamica2v3(),
                 FragmentSaludos10()
             )
         ),
         DataLeccion(
             "Animales", listOf(
-                FragmentAnimales(),
+                FragmentDinamica10(),
                 FragmentAnimales2(),
                 FragmentAnimales3(),
                 FragmentAnimales4(),
                 FragmentAnimales5(),
                 FragmentAnimales6(),
-                FragmentAnimales7(),
+                FragmentDinamica11(),
                 FragmentAnimales8(),
                 FragmentAnimales9(),
                 FragmentAnimales10()
@@ -158,10 +156,10 @@ class Lecciones {
         ),
         DataLeccion(
             "Numeros", listOf(
-                FragmentNumeros(),
-                FragmentNumeros2(),
-                FragmentNumeros3(),
-                FragmentNumeros4(),
+                FragmentDinamica11(),
+                FragmentDinamica7(),
+                FragmentDinamica8(),
+                FragmentDinamica10(),
                 FragmentNumeros5(),
                 FragmentNumeros6(),
                 FragmentNumeros7(),
@@ -186,8 +184,8 @@ class Lecciones {
         ),
     )
 
-    fun getLesson(nameLesson: String): List<androidx.fragment.app.Fragment> {
-        var leccionSolicitada = listOf<androidx.fragment.app.Fragment>()
+    fun getLesson(nameLesson: String): List<Fragment> {
+        var leccionSolicitada = listOf<Fragment>()
         for (leccion in lecciones) {
             if (nameLesson.equals(leccion.nameLesson, ignoreCase = true))
                 leccionSolicitada = leccion.fragmentsLessons

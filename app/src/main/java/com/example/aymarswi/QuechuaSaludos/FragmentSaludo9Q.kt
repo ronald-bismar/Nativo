@@ -24,7 +24,7 @@ class FragmentSaludo9Q : Fragment() {
         val btnBien = rootView.findViewById<Button>(R.id.btnBien)
         val btnMal = rootView.findViewById<Button>(R.id.btnMal)
         val btnCEstas = rootView.findViewById<Button>(R.id.btnCEstas)
-        val imgVSonido = rootView.findViewById<TextView>(R.id.txtWaliki)
+        val imgVSonido = rootView.findViewById<TextView>(R.id.txtTitle10)
         var puntaje = requireArguments().getInt("valorp")
         var contador = requireArguments().getInt("valorc")
         Log.d("Valor", "Puntaje recibido $puntaje")

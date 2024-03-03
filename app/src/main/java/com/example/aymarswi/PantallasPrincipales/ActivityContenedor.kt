@@ -5,10 +5,10 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
-import com.example.aymarswi.ClaseAnimales.FragmentAnimales
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica10
 import com.example.aymarswi.ClaseColores.FragmentColores
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica1
-import com.example.aymarswi.ClaseNumeros.FragmentNumeros
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica9
 import com.example.aymarswi.ClaseVerbos.FragmentVerbos
 import com.example.aymarswi.Clasificacion.FragmentClasificacion
 import com.example.aymarswi.FragmentSaludos
@@ -63,7 +63,7 @@ class ActivityContenedor : AppCompatActivity() {
             4 -> {
                 LeccionesJSON.seccion("Animales")
                 Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Animales")
-                fragment = FragmentAnimales()
+                fragment = FragmentDinamica10()
             }
 
             5 -> {
@@ -81,7 +81,7 @@ class ActivityContenedor : AppCompatActivity() {
             7 -> {
                 LeccionesJSON.seccion("Familia")
                 Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Numeros")
-                fragment = FragmentNumeros()
+                fragment = Lecciones().getLesson("Numeros").first()
             }
 
             8 -> {

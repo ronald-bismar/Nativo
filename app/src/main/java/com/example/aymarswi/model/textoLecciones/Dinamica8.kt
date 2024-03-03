@@ -11,7 +11,7 @@ class Dinamica8(fragment: Fragment): BaseDinamica(fragment){
     private var iconoSonido: ImageView
 
     init {
-        iconoSonido = fragment.requireView().findViewById(R.id.imgVSonido)
+        iconoSonido = fragment.requireView().findViewById(R.id.imgSonido)
         contenedorOpciones = fragment.requireView().findViewById(R.id.contenedorOpcionesD8)
         configurar(true)
     }
@@ -20,13 +20,13 @@ class Dinamica8(fragment: Fragment): BaseDinamica(fragment){
         /*Añadimos los datos a la vista de forma que no esten en el mismo orden cada vez (para eso se usan numeros randomicos)*/
         for (i in 0 until contenedorOpciones.childCount) {
 
-            val indexRandom = (0 until posicionesRandomicas.size).random()
+            val indexRandom = (0 until posicionesAleatorias.size).random()
 
             //Colocamos el texto del boton que sera la opcion
             (contenedorOpciones.getChildAt(i) as Button).text =
-                LeccionesJSON.palabras[posicionesRandomicas[indexRandom]].enAymara[0]
+                LeccionesJSON.palabras[posicionesAleatorias[indexRandom]].enAymara[0]
 
-            posicionesRandomicas.removeAt(indexRandom)
+            posicionesAleatorias.removeAt(indexRandom)
         }
     }
 

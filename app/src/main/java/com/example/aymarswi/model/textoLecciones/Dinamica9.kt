@@ -1,7 +1,6 @@
 package com.example.aymarswi.model.textoLecciones
 
 import DeslizarPalabras
-import android.util.TypedValue
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -19,7 +18,7 @@ class Dinamica9(fragment: Fragment): BaseDinamica (fragment){
         configurar(sinOraciones = true)
     }
     override fun colocarDatosEnLaVista() {
-        posicionesRandomicasBotones = posicionesRandomicas.toMutableList()
+        posicionesRandomicasBotones = posicionesAleatorias.toMutableList()
         colocarPalabrasEnEspanol()
         colocarOpcionesEnAymara()
     }
@@ -36,15 +35,15 @@ class Dinamica9(fragment: Fragment): BaseDinamica (fragment){
     }
     fun colocarPalabrasEnEspanol(){
         for (i in 0 until contenedorPalabrasEnEspanol.childCount){
-            val indexRandom = (0 until posicionesRandomicas.size).random()
+            val indexRandom = (0 until posicionesAleatorias.size).random()
             val campoEspanol = contenedorPalabrasEnEspanol.getChildAt(i) as LinearLayout
-            ( campoEspanol.getChildAt(0) as TextView ).text = LeccionesJSON.palabras[posicionesRandomicas[indexRandom]].enEspanol[0]
+            ( campoEspanol.getChildAt(0) as TextView ).text = LeccionesJSON.palabras[posicionesAleatorias[indexRandom]].enEspanol[0]
 
-            colocarTag( campoEspanol.getChildAt(1) as TextView, indexRandom )
+            ( campoEspanol.getChildAt(1) as TextView ).tag = LeccionesJSON.palabras[posicionesAleatorias[indexRandom]].enAymara[0]
 
             determinarAltoDeLaPalabraEnEspañol(campoEspanol.getChildAt(0) as TextView)
 
-            posicionesRandomicas.removeAt(indexRandom)
+            posicionesAleatorias.removeAt(indexRandom)
         }
     }
 
@@ -52,15 +51,9 @@ class Dinamica9(fragment: Fragment): BaseDinamica (fragment){
         for (i in 0 until contenedorPalabrasEnEspanol.childCount){
             val indexRandom = (0 until posicionesRandomicasBotones.size).random()
             ( contenedorOpciones.getChildAt(i) as TextView ).text = LeccionesJSON.palabras[posicionesRandomicasBotones[indexRandom]].enAymara[0]
-
-            colocarTag(contenedorOpciones.getChildAt(i) as TextView, indexRandom)
+            (contenedorOpciones.getChildAt(i) as TextView).tag = LeccionesJSON.palabras[posicionesRandomicasBotones[indexRandom]].enAymara[0]
 
             posicionesRandomicasBotones.removeAt(indexRandom)
         }
     }
-
-    private fun colocarTag(textView: TextView, indexRandom: Int) {
-        textView.tag = LeccionesJSON.palabras[posicionesRandomicasBotones[indexRandom]].enAymara[0]
-    }
-
 }

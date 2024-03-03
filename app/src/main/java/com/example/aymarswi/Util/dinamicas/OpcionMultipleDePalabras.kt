@@ -70,15 +70,6 @@ class OpcionMultipleDePalabras :
         getInstanceActividad().setPalabraCorrecta(palabrasCorrectas[0])
         botonComprobar.setOnClickListener {
             for (palabra in palabrasCorrectas) {
-                Log.d(
-                    "fragment3",
-                    "palabras comparadas ${palabra.trim()}, ${
-                        palabraElegida.text.toString().trim()
-                    } respuesta: ${
-                        palabra.trim()
-                            .equals(palabraElegida.text.toString().trim(), ignoreCase = true)
-                    }"
-                )
                 if (palabra.trim()
                         .equals(palabraElegida.text.toString().trim(), ignoreCase = true)
                 ) {

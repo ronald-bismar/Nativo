@@ -21,26 +21,26 @@ class Dinamica1(fragment: Fragment) : BaseDinamica(fragment) {
 
     override fun colocarDatosEnLaVista() {
         //Colocamos como titulo la palabra principal en aymara que servirá de guia para el usuario para traducirla al español
-        title.text =
+        title?.text =
             LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara[0]
 
         /*Añadimos los datos a la vista de forma que no esten en el mismo orden cada vez (para eso se usan numeros randomicos)*/
         for (i in 0 until contenedorOpciones.childCount) {
 
             if (contenedorOpciones.getChildAt(i) is LinearLayout) {
-                val indexRandom = (0 until posicionesRandomicas.size).random()
+                val indexRandom = (0 until posicionesAleatorias.size).random()
                 val opcion = contenedorOpciones.getChildAt(i) as LinearLayout
 
                 //Colocamos la imagen de la opcion
                 Glide.with(Actividad.getInstanceActividad().context)
-                    .load(LeccionesJSON.palabras[posicionesRandomicas[indexRandom]].imagen)
+                    .load(LeccionesJSON.palabras[posicionesAleatorias[indexRandom]].imagen)
                     .into(opcion.getChildAt(0) as ImageView)
 
                 //Colocamos el texto de la opcion
                 (opcion.getChildAt(1) as TextView).text =
-                    LeccionesJSON.palabras[posicionesRandomicas[indexRandom]].enEspanol[0]
+                    LeccionesJSON.palabras[posicionesAleatorias[indexRandom]].enEspanol[0]
 
-                posicionesRandomicas.removeAt(indexRandom)
+                posicionesAleatorias.removeAt(indexRandom)
             }
         }
     }

@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
-import com.example.aymarswi.Saludos.FragmentSaludos9
+import com.example.aymarswi.ClaseFamilia.FragmentDinamica2v3
 import com.example.aymarswi.Util.Utils
 
 class FragmentSaludo8Q : Fragment() {
@@ -33,7 +33,7 @@ class FragmentSaludo8Q : Fragment() {
             Utils().respuestaIncorrecta(
                 requireContext() as AppCompatActivity,
                 R.id.contenedorDeFragments,
-                FragmentSaludos9(),
+                FragmentDinamica2v3(),
                 args
             )
         }

@@ -21,22 +21,8 @@ class FragmentDinamica8 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
-        rootView = inflater.inflate(R.layout.fragment_dinamica8, container, false)
-        initComponents()
-
-        return rootView
-    }
-
-    private fun initComponents() {
-        btnPanqa = rootView.findViewById(R.id.btnPanqa)
-        btnAli = rootView.findViewById(R.id.btnAli1)
-        btnChuqi1 = rootView.findViewById(R.id.btnChuqi1)
-        btnKhunu = rootView.findViewById(R.id.btnKhunu1)
-        imgVSonido = rootView.findViewById(R.id.imgVSonido)
-    }
-
+    ) =
+        inflater.inflate(R.layout.fragment_dinamica8, container, false)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Dinamica8(this)

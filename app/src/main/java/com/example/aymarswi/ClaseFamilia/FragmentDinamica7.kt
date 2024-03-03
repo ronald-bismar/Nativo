@@ -22,7 +22,7 @@ class FragmentDinamica7 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_familia9, container, false)
+        return inflater.inflate(R.layout.fragment_dinamica7, container, false)
 
         }
 

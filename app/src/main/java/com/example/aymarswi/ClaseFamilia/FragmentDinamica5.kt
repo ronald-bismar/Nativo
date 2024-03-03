@@ -20,18 +20,8 @@ class FragmentDinamica5 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        rootView = inflater.inflate(R.layout.fragment_dinamica5, container, false)
-        iniciarComponentes()
-
-        return rootView
+        return inflater.inflate(R.layout.fragment_dinamica5, container, false)
     }
-
-    private fun iniciarComponentes() {
-        contOracionIncompleta = rootView.findViewById(R.id.llOracionIncompleta)
-        opciones = rootView.findViewById(R.id.llBotones)
-        btnComprobar5 = rootView.findViewById(R.id.btnComprobar5)
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Dinamica5(this)

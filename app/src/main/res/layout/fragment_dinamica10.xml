@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaseFamilia.FragmentDinamica10">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/txtTitleD10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/linottebold"
+        android:text="Condor"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/contenedorOpcionesD10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView36"
+        style="@style/textoGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completa la opcion correcta"
+        app:layout_constraintBottom_toTopOf="@+id/txtTitleD10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnComprobarD10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1597FF"
+        android:fontFamily="@font/linottebold"
+        android:text="COMPROBAR"
+        android:textSize="20dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenedorOpcionesD10"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contenedorOpcionesD10"
+        android:layout_width="match_parent"
+        android:layout_height="515dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobarD10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleD10"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/txtKatari"
+            style="@style/estiloBotonDeslizar"
+            android:layout_width="121dp"
+            android:layout_height="42dp"
+            android:text="Katari"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout38"
+            app:layout_constraintEnd_toStartOf="@+id/txtMallku"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.509" />
+
+        <TextView
+            android:id="@+id/txtMallku"
+            style="@style/estiloBotonDeslizar"
+            android:layout_width="121dp"
+            android:layout_height="42dp"
+            android:text="Mallku"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout38"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtKatari"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/txtSuri"
+            style="@style/estiloBotonDeslizar"
+            android:layout_width="121dp"
+            android:layout_height="42dp"
+            android:text="suri"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtChiñi"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout38"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/txtChiñi"
+            style="@style/estiloBotonDeslizar"
+            android:layout_width="121dp"
+            android:layout_height="42dp"
+            android:text="chiñi"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtSuri"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout38"
+            app:layout_constraintVertical_bias="0.509" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/txtSuri"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMallku"
+            app:layout_constraintVertical_bias="0.5">
+
+            <ImageView
+                android:id="@+id/imagenD10"
+                android:layout_width="252dp"
+                android:layout_height="236dp"
+                android:src="@mipmap/condor" />
+
+            <TextView
+                android:id="@+id/txtContPalabraD10"
+                style="@style/textoGuia"
+                android:layout_width="189dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/strokedelgado"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

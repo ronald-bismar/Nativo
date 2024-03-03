@@ -25,21 +25,21 @@ class Dinamica6(fragment: Fragment): BaseDinamica(fragment) {
 
     override fun colocarDatosEnLaVista() {
 
-        title.text = LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0]
+        title?.text = LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0]
 
         // Colocamos la imagen de la opción
         Glide.with(Actividad.getInstanceActividad().context)
             .load(LeccionesJSON.palabras[posicionRespuestaCorrecta].imagen)
-            .into(imagen)
+            .into(imagen!!)
 
         /*Añadimos los datos a la vista de forma que no estén en el mismo orden cada vez (para eso se usan números aleatorios)*/
         for (i in 0 until contenedorOpciones.childCount) {
-            val indexRandom = (0 until posicionesRandomicas.size).random()
+            val indexRandom = (0 until posicionesAleatorias.size).random()
 
             // Colocamos el texto de la opción
-            (contenedorOpciones.getChildAt(i) as Button).text = LeccionesJSON.palabras[posicionesRandomicas[indexRandom]].enAymara[0]
+            (contenedorOpciones.getChildAt(i) as Button).text = LeccionesJSON.palabras[posicionesAleatorias[indexRandom]].enAymara[0]
 
-            posicionesRandomicas.removeAt(indexRandom)
+            posicionesAleatorias.removeAt(indexRandom)
         }
     }
     override fun iniciarDinamica() {

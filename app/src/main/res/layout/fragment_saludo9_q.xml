@@ -30,10 +30,10 @@
         android:textAllCaps="false"
 
         app:layout_constraintBottom_toTopOf="@+id/btnCEstas"
-        app:layout_constraintEnd_toEndOf="@+id/txtWaliki"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitle10"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnBuenDia"
-        app:layout_constraintTop_toBottomOf="@+id/txtWaliki"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle10"
         app:layout_constraintVertical_bias="0.5" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -48,8 +48,8 @@
         app:layout_constraintBottom_toTopOf="@+id/btnMal"
         app:layout_constraintEnd_toStartOf="@+id/btnBien"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/txtWaliki"
-        app:layout_constraintTop_toBottomOf="@+id/txtWaliki"
+        app:layout_constraintStart_toStartOf="@+id/txtTitle10"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle10"
         app:layout_constraintVertical_bias="0.5" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -85,7 +85,7 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
-        android:id="@+id/txtWaliki"
+        android:id="@+id/txtTitle10"
         android:layout_width="244dp"
         android:layout_height="106dp"
         android:background="@drawable/bordesredondeadosamarillos"

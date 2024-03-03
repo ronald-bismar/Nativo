@@ -168,7 +168,7 @@ open class Actividad protected constructor(
     }
 
     fun respuesta(correcto: Boolean) {
-        this.correcto = correcto
+        instance!!.correcto = correcto
         posicionDeLaRutaDeFragments += 1
         instance!!.puntaje += if (instance!!.correcto) 1 else 0
         mostrarAlertDialog()

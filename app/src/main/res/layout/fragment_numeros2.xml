@@ -105,7 +105,7 @@
             android:fontFamily="@font/linotteheavy"
             android:gravity="center"
             android:text="3"
-            android:textColor="#109715"
+            android:textColor="#148A18"
             android:textSize="110sp" />
 
         <TextView

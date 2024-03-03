@@ -25,13 +25,13 @@ class Dinamica3(fragment: Fragment): BaseDinamica(fragment) {
     @SuppressLint("SetTextI18n")
     override fun colocarDatosEnLaVista() {
         //Colocamos como titulo la palabra principal en español que servirá de guia para el usuario para traducirla al español
-        title.text =
+        title?.text =
             "COMO SE ESCRIBE ${LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0].uppercase()}?"
 
         //Colocamos la imagen de la opcion
         Glide.with(Actividad.getInstanceActividad().context)
             .load(LeccionesJSON.palabras[posicionRespuestaCorrecta].imagen)
-            .into(imagen)
+            .into(imagen!!)
     }
 
     override fun iniciarDinamica() {

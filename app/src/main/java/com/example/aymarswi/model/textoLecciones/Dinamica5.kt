@@ -4,6 +4,8 @@ import android.view.Gravity
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.setPadding
+import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.example.aymarswi.ClaseFamilia.FragmentDinamica5
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
@@ -11,7 +13,7 @@ import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
 import com.example.aymarswi.model.textoLecciones.LeccionesJSON.getUnaOracion
 import com.example.aymarswi.model.textoLecciones.LeccionesJSON.palabras
 
-class Dinamica5(fragment: FragmentDinamica5) : BaseDinamica(fragment) {
+class Dinamica5(fragment: Fragment) : BaseDinamica(fragment) {
 
     private var contOracionIncompleta: LinearLayout
     private var posicionPalabraFaltante: Int = 0
@@ -20,8 +22,10 @@ class Dinamica5(fragment: FragmentDinamica5) : BaseDinamica(fragment) {
 
     init {
         this.fragment = fragment
+        this.title = fragment.requireView().findViewById(R.id.txtTitleD5)
+        this.imagen = fragment.requireView().findViewById(R.id.imagenD5)
         this.contOracionIncompleta = fragment.requireView().findViewById(R.id.llOracionIncompleta)
-        this.contenedorOpciones = fragment.requireView().findViewById(R.id.llBotones)
+        this.contenedorOpciones = fragment.requireView().findViewById(R.id.contenedorOpcionesD5)
         this.btnComprobar = fragment.requireView().findViewById(R.id.btnComprobar5)
 
         configurar(sinOraciones = true)
@@ -31,12 +35,21 @@ class Dinamica5(fragment: FragmentDinamica5) : BaseDinamica(fragment) {
 
         //Para remover todas las vistas de el contenedor linearlayout
         contOracionIncompleta.removeAllViews()
-
-        this.oracionCompleta = getUnaOracion().enAymara[0]
+        val oracionBase = getUnaOracion()
+        this.oracionCompleta = oracionBase.enAymara[0]
 
         palabrasDivididas = dividirOracionPrincipal()
 
         posicionPalabraFaltante = (palabrasDivididas.indices).random()
+
+        title?.text = oracionBase.enEspanol[0]
+
+        if(imagen != null){
+            Glide.with(Actividad.getInstanceActividad().context)
+                .load(oracionBase.imagen)
+                .into(imagen!!)
+        }
+
 
         agregarTextViewAlContenedor(palabrasDivididas, posicionPalabraFaltante)
         colocarOpciones()
@@ -58,7 +71,7 @@ class Dinamica5(fragment: FragmentDinamica5) : BaseDinamica(fragment) {
                 // Medir el ancho de la palabra faltante y agregar un espacio adicional para los márgenes, el padding, etc.
                 val anchoTexto =
                     textView.paint.measureText(searchTextLargeInAymara())
-                val espacioAdicional = 30 // Puedes ajustar este valor según tus necesidades
+                val espacioAdicional = 30
 
                 // Establecer el ancho con el valor de la palabra faltante más el espacio adicional
                 val layoutParams = LinearLayout.LayoutParams(
@@ -73,9 +86,9 @@ class Dinamica5(fragment: FragmentDinamica5) : BaseDinamica(fragment) {
 
     fun searchTextLargeInAymara(): String {
         var palabraMasLarga = palabrasDivididas[posicionPalabraFaltante]
-        for (i in 1 until posicionesRandomicas.size) {
-            if (palabraMasLarga.length < palabras[posicionesRandomicas[i]].enAymara[0].length)
-                palabraMasLarga = palabras[posicionesRandomicas[i]].enAymara[0]
+        for (i in 1 until posicionesAleatorias.size) {
+            if (palabraMasLarga.length < palabras[posicionesAleatorias[i]].enAymara[0].length)
+                palabraMasLarga = palabras[posicionesAleatorias[i]].enAymara[0]
         }
         return palabraMasLarga
     }
@@ -96,12 +109,12 @@ class Dinamica5(fragment: FragmentDinamica5) : BaseDinamica(fragment) {
 
         /*Añadimos los datos a la vista de forma que no esten en el mismo orden cada vez (para eso se usan numeros randomicos)*/
         for (i in 0 until contenedorOpciones.childCount) {
-            val indexRandom = (0 until posicionesRandomicas.size).random()
+            val indexRandom = (0 until posicionesAleatorias.size).random()
             //Colocamos el texto de la opcion
             (contenedorOpciones.getChildAt(i) as TextView).text =
-                if (i == posicionPalabraFaltante) palabrasDivididas[posicionPalabraFaltante] else LeccionesJSON.palabras[posicionesRandomicas[indexRandom]].enAymara[0]
+                if (i == posicionPalabraFaltante) palabrasDivididas[posicionPalabraFaltante] else LeccionesJSON.palabras[posicionesAleatorias[indexRandom]].enAymara[0]
 
-            posicionesRandomicas.removeAt(indexRandom)
+            posicionesAleatorias.removeAt(indexRandom)
         }
     }
 

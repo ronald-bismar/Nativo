@@ -34,9 +34,9 @@ class Dinamica7(fragment: Fragment) : BaseDinamica(fragment) {
 
         Glide.with(Actividad.getInstanceActividad().context)
             .load(LeccionesJSON.palabras[posicionRespuestaCorrecta].imagen)
-            .into(imagen)
+            .into(imagen!!)
 
-        title.text = LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara[0]
+        title?.text = LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara[0]
         title2.text = "(${LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0]})"
         crearBotonesEnContenedor(
             (this.texto.enAymara[0].trim().split(if (texto.esOracion) " " else "").toMutableList())
