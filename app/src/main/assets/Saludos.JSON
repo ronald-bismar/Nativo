@@ -3,30 +3,30 @@
         "seccion": "Saludos",
         "nivelDeAprendizaje": 1,
         "enAymara": ["Kamisaki"],
-        "enEspanol": ["Como estas"],
-        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
-        "palabraCorrecta": false,
-        "esOracion": false,
+        "enEspanol": ["Hola como estas"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709516321/imagenes-nativo/saludos/saludo2_wnm6fm.webp",
+        "esAbstracta": true,
+        "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
     },{
         "seccion": "Saludos",
         "nivelDeAprendizaje": 1,
-        "enAymara": ["Waliki"],
-        "enEspanol": ["Bien", "cerro"],
-        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
-        "palabraCorrecta": false,
-        "esOracion": false,
+        "enAymara": ["Walikistwa"],
+        "enEspanol": ["Bien", "Estar bien"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709516280/imagenes-nativo/saludos/saludo2waliki_ywqvhl.webp",
+        "esAbstracta": true,
+        "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
     },{
         "seccion": "Saludos",
         "nivelDeAprendizaje": 1,
         "enAymara": ["Kunjamasktasa"],
-        "enEspanol": ["Walikisktwa"],
-        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
-        "palabraCorrecta": false,
-        "esOracion": false,
+        "enEspanol": ["Como estas"],
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709516790/imagenes-nativo/saludos/Group_2_ztwlsv.webp",
+        "esAbstracta": true,
+        "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
     },{
@@ -35,8 +35,8 @@
         "enAymara": ["Aski urukipan"],
         "enEspanol": ["Buen dia", "Buen día", "Buenos dias", "Buenos días"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
-        "palabraCorrecta": false,
-        "esOracion": false,
+        "esAbstracta": true,
+        "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
     },{
@@ -44,9 +44,9 @@
         "nivelDeAprendizaje": 1,
         "enAymara": ["Aski jayp'ukipan"],
         "enEspanol": ["Buenas tardes"],
-        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
-        "palabraCorrecta": false,
-        "esOracion": false,
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709517820/imagenes-nativo/saludos/pm_agq1te.webp",
+        "esAbstracta": true,
+        "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
     },{
@@ -54,9 +54,9 @@
         "nivelDeAprendizaje": 1,
         "enAymara": ["Aski arumakipan"],
         "enEspanol": ["Buenas noches"],
-        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
-        "palabraCorrecta": false,
-        "esOracion": false,
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709518095/imagenes-nativo/saludos/askiaromakipan_u2pxgl.webp",
+        "esAbstracta": true,
+        "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
     },{
@@ -65,8 +65,8 @@
         "enAymara": ["Jikisiñkama"],
         "enEspanol": ["Hasta luego"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
-        "palabraCorrecta": false,
-        "esOracion": false,
+        "esAbstracta": true,
+        "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
     },{
@@ -75,8 +75,8 @@
         "enAymara": ["Jikisiñkamaya"],
         "enEspanol": ["Hasta luego"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
-        "palabraCorrecta": false,
-        "esOracion": false,
+        "esAbstracta": true,
+        "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
     },{
@@ -85,8 +85,8 @@
         "enAymara": ["Qharürkama"],
         "enEspanol": ["Hasta mañana"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
-        "palabraCorrecta": false,
-        "esOracion": false,
+        "esAbstracta": true,
+        "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
     },{
@@ -95,8 +95,8 @@
         "enAymara": ["Qharürkamaya"],
         "enEspanol": ["Hasta mañana"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
-        "palabraCorrecta": false,
-        "esOracion": false,
+        "esAbstracta": true,
+        "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
     }

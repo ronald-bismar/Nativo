@@ -5,7 +5,7 @@
         "enAymara": ["Yatiqaña"],
         "enEspanol": ["Aprender"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977766/imagenes-nativo/verbos/historias_aoajvb.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -15,7 +15,7 @@
         "enAymara": ["Sarañani"],
         "enEspanol": ["Ir"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977636/imagenes-nativo/verbos/caminando_plcasm.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -25,7 +25,7 @@
         "enAymara": ["Aljaña ", "Alxaña "],
         "enEspanol": ["Vender"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709433608/imagenes-nativo/verbos/vender_taexjq.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -35,7 +35,7 @@
         "enAymara": ["Qillqaña"],
         "enEspanol": ["Escribir"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709434001/imagenes-nativo/verbos/woman-cute-aymara-with-black-hat-and-pollera-sitti_nizism.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -45,7 +45,7 @@
         "enAymara": ["Ullaña"],
         "enEspanol": ["Leer"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977766/imagenes-nativo/verbos/historias_aoajvb.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -55,19 +55,17 @@
         "enAymara": ["Ist'aña"],
         "enEspanol": ["Escuchar"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709435367/imagenes-nativo/verbos/escuchando_vtqttr.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
-    },
-
-    {
+    },{
         "seccion": "Verbos",
         "nivelDeAprendizaje": 1,
         "enAymara": ["Churaña"],
         "enEspanol": ["Dar"],
-        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
-        "palabraCorrecta": false,
+        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709514737/imagenes-nativo/verbos/dar_bngpzk.webp",
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null

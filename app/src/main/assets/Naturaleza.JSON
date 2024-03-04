@@ -5,7 +5,7 @@
         "enAymara": ["kokha"],
         "enEspanol": ["arbol"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949167/imagenes-nativo/naturaleza/arbol_tuyu1u.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -15,7 +15,7 @@
         "enAymara": ["khollo"],
         "enEspanol": ["montaña", "cerro"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949412/imagenes-nativo/naturaleza/montana_cyn5ki.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -25,7 +25,7 @@
         "enAymara": ["chiji"],
         "enEspanol": ["pasto"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707950911/imagenes-nativo/naturaleza/cesped_mztabq.png",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -35,7 +35,7 @@
         "enAymara": ["jawira"],
         "enEspanol": ["rio"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949821/imagenes-nativo/naturaleza/rio_ew1xxn.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -45,7 +45,7 @@
         "enAymara": ["uma"],
         "enEspanol": ["agua"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949160/imagenes-nativo/naturaleza/agua_huo8zm.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -55,7 +55,7 @@
         "enAymara": ["panqara"],
         "enEspanol": ["flor"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949276/imagenes-nativo/naturaleza/flor_hozfym.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -65,7 +65,7 @@
         "enAymara": ["chuqui"],
         "enEspanol": ["papa"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707951019/imagenes-nativo/naturaleza/papa_tpvako.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -75,7 +75,7 @@
         "enAymara": ["qhenaya"],
         "enEspanol": ["nube"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707951182/imagenes-nativo/naturaleza/nube_zusd5m.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -85,7 +85,7 @@
         "enAymara": ["Pacha"],
         "enEspanol": ["Naturaleza", "Madre tierra"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707951286/imagenes-nativo/naturaleza/el-planeta-tierra_fug7ip.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -95,7 +95,7 @@
         "enAymara": ["Llaqa"],
         "enEspanol": ["Hoja"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949352/imagenes-nativo/naturaleza/hoja_rxxp7z.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -105,7 +105,7 @@
         "enAymara": ["Ali"],
         "enEspanol": ["Planta"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949808/imagenes-nativo/naturaleza/planta_gdsaii.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -115,7 +115,7 @@
         "enAymara": ["Kürmi"],
         "enEspanol": ["Arco Iris"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707951497/imagenes-nativo/naturaleza/arco-iris_x5awtz.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -125,7 +125,7 @@
         "enAymara": ["Inti"],
         "enEspanol": ["Sol"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949846/imagenes-nativo/naturaleza/sol_seiyox.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -135,7 +135,7 @@
         "enAymara": ["Nina"],
         "enEspanol": ["Fuego"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949658/imagenes-nativo/naturaleza/hoguera_bc8nkf.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -145,7 +145,7 @@
         "enAymara": ["Kkuta"],
         "enEspanol": ["Lago", "Laguna"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707951635/imagenes-nativo/naturaleza/lago_l4goci.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -155,7 +155,7 @@
         "enAymara": ["Alaxpacha", "Alajgpacha"],
         "enEspanol": ["Espacio eterno", "Cielo"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707952322/imagenes-nativo/naturaleza/nublado_epota8.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -165,7 +165,7 @@
         "enAymara": ["Urpuntata"],
         "enEspanol": ["Nublado"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707952548/imagenes-nativo/naturaleza/nublado_oscuro_kjqpwh.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -175,7 +175,7 @@
         "enAymara": ["Paxsi"],
         "enEspanol": ["Luna"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949754/imagenes-nativo/naturaleza/luna_d3tice.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -185,7 +185,7 @@
         "enAymara": ["Laq'a"],
         "enEspanol": ["Tierra"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707952729/imagenes-nativo/naturaleza/suelo_h0uktz.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -195,7 +195,7 @@
         "enAymara": ["Wara"],
         "enEspanol": ["Estrella"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707952855/imagenes-nativo/naturaleza/estrella_hlgqjf.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -205,7 +205,7 @@
         "enAymara": ["jallux purinxiwa"],
         "enEspanol": ["Esta lloviendo"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949738/imagenes-nativo/naturaleza/lluviamuyfuerte_z03ged.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
@@ -215,7 +215,7 @@
         "enAymara": ["Wayra"],
         "enEspanol": ["Viento"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": false,
         "fueAcertada": false,
         "pronunciacion": null
@@ -225,7 +225,7 @@
         "enAymara": ["Umampi waraña"],
         "enEspanol": ["Regar planta"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949481/imagenes-nativo/naturaleza/regandoplanta_alsejo.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
@@ -235,7 +235,7 @@
         "enAymara": ["ch'uqi llamayusiptha"],
         "enEspanol": ["Escarbando papa"],
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949272/imagenes-nativo/naturaleza/escarbandopapa_l5pmmj.webp",
-        "palabraCorrecta": false,
+        "esAbstracta": false,
         "esOracion": true,
         "fueAcertada": false,
         "pronunciacion": null
