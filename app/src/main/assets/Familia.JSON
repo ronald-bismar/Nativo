@@ -7,7 +7,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
         "esAbstracta": false,
         "esOracion": false,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -19,7 +18,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993002/imagenes-nativo/familia/mama_awv64k.png",
         "esAbstracta": false,
         "esOracion": false,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -31,7 +29,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993000/imagenes-nativo/familia/hermanomayor_jq9vmd.png",
         "esAbstracta": false,
         "esOracion": false,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -48,7 +45,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993004/imagenes-nativo/familia/saludoshermano_dkhecm.png",
         "esAbstracta": true,
         "esOracion": true,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -60,7 +56,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993713/imagenes-nativo/familia/hermanas_dxtsch.png",
         "esAbstracta": false,
         "esOracion": false,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -72,7 +67,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993004/imagenes-nativo/familia/sobrino_ifzomx.png",
         "esAbstracta": false,
         "esOracion": false,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -84,7 +78,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993000/imagenes-nativo/familia/abuelo_anqqrp.png",
         "esAbstracta": false,
         "esOracion": false,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -96,7 +89,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993000/imagenes-nativo/familia/abuela_sacipy.png",
         "esAbstracta": false,
         "esOracion": false,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -108,7 +100,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993000/imagenes-nativo/familia/hijo_eatek9.png",
         "esAbstracta": false,
         "esOracion": false,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -120,7 +111,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993466/imagenes-nativo/familia/hermana_txs0oj.png",
         "esAbstracta": false,
         "esOracion": false,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -132,7 +122,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993002/imagenes-nativo/familia/nieto_cgynmy.png",
         "esAbstracta": false,
         "esOracion": false,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -144,7 +133,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709425368/imagenes-nativo/familia/aski_jaypukipan_j9qrnx.webp",
         "esAbstracta": true,
         "esOracion": true,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -156,7 +144,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709425372/imagenes-nativo/familia/aski_aromakipan_phucha_g8xfdv.webp",
         "esAbstracta": true,
         "esOracion": true,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -168,7 +155,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993002/imagenes-nativo/familia/mama_awv64k.png",
         "esAbstracta": true,
         "esOracion": true,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
@@ -180,11 +166,11 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709432467/imagenes-nativo/familia/papa_comiendo_htbg0l.webp",
         "esAbstracta": false,
         "esOracion": true,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     },
     {
+
         "seccion": "Familia",
         "nivelDeAprendizaje": 1,
         "enAymara": ["mamajaxa"],
@@ -192,7 +178,6 @@
         "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993002/imagenes-nativo/familia/mama_awv64k.png",
         "esAbstracta": false,
         "esOracion": false,
-        "fueAcertada": false,
         "pronunciacion": null,
         "imagenBitmap": null
     }

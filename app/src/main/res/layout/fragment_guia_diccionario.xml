@@ -58,7 +58,7 @@
         android:layout_height="307dp"
         android:layout_marginTop="100dp"
         android:elevation="20dp"
-        android:src="@drawable/gatito"
+        android:src="@drawable/gatitoconcapa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout5" />
 

@@ -50,7 +50,7 @@ class Dinamica2 (fragment: Fragment) : BaseDinamica(fragment) {
     override fun iniciarDinamica() {
         OpcionMultipleDePalabras().palabraVerdadera(
             if (fragment is FragmentDinamica2v3) palabraPrincipal.enEspanol[0]
-            else palabraPrincipal.enEspanol[0],
+            else palabraPrincipal.enAymara[0],
             obtenerOpcionesComoLista()
         )
     }

@@ -28,69 +28,29 @@ import com.example.aymarswi.QuechuaSaludos.FragmentSaludo0Q
 import com.example.aymarswi.QuechuaVerbos.FragmentVerbos0Q
 import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
+import com.example.aymarswi.Util.Actividad.Companion.getInstanceActividad
 import com.example.aymarswi.model.lecciones.Lecciones
 import com.example.aymarswi.model.textoLecciones.LeccionesJSON
 
 class ActivityContenedor : AppCompatActivity() {
     private lateinit var fragment: Fragment
+    private lateinit var nombreLeccion: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contenedor)
         Actividad.getInstance(this, this, R.id.contenedorDeFragments)
 
-        Log.d("Hola", "VALOR: ${intent.extras?.getInt("valor")}")
+        nombreLeccion = when (intent.extras?.getInt("valor")) {
+            1 -> "Familia"
+            2 -> "Naturaleza"
+            3 -> "Saludos"
+            4 -> "Animales"
+            5 -> "Verbos"
+            6 -> "Colores"
+            7 -> "Numeros"
+            8 -> "Objetos"
 
-
-        when (intent.extras?.getInt("valor")) {
-            1 -> {
-                LeccionesJSON.seccion("Familia")
-                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Familia")
-                fragment = Lecciones().getLesson("Familia").first()
-            }
-
-            2 -> {
-                LeccionesJSON.seccion("Naturaleza")
-                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Naturaleza")
-                fragment = Lecciones().getLesson("Naturaleza").first()
-            }
-
-            3 -> {
-                LeccionesJSON.seccion("Saludos")
-                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Saludos")
-                fragment = FragmentSaludos()
-            }
-
-            4 -> {
-                LeccionesJSON.seccion("Animales")
-                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Animales")
-                fragment = FragmentDinamica10()
-            }
-
-            5 -> {
-                LeccionesJSON.seccion("Verbos")
-                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Verbos")
-                fragment = FragmentVerbos()
-            }
-
-            6 -> {
-                LeccionesJSON.seccion("Colores")
-                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Colores")
-                FragmentColores()
-            }
-
-            7 -> {
-                LeccionesJSON.seccion("Familia")
-                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Numeros")
-                fragment = Lecciones().getLesson("Numeros").first()
-            }
-
-            8 -> {
-                LeccionesJSON.seccion("Objetos")
-                Actividad.getInstanceActividad().rutaDeFragments = Lecciones().getLesson("Objetos")
-                fragment = FragmentObjetos1()
-            }
-
-            9 -> FragmentFamilia0Q()
+            /*9 -> FragmentFamilia0Q()
             10 -> FragmentNaturaleza0Q()
             11 -> FragmentSaludo0Q()
             12 -> FragmentAnimales0Q()
@@ -105,10 +65,14 @@ class ActivityContenedor : AppCompatActivity() {
             97 -> FragmentClasificacion()
             98 -> FragmentGuiaConversacion()
             99 -> FragmentGuiaHistorias()
-            100 -> FragmentRegistro()
-            else -> FragmentDinamica1()
+            100 -> FragmentRegistro()*/
+            else -> "Familia"
         }
 
+        LeccionesJSON.seccion(nombreLeccion)
+        getInstanceActividad().rutaDeFragments = Lecciones().getLesson(nombreLeccion)
+
+        fragment = getInstanceActividad().rutaDeFragments.first()
         supportFragmentManager.commit {
             add(R.id.contenedorDeFragments, fragment)
             setReorderingAllowed(true)

@@ -100,86 +100,86 @@ class Lecciones {
         ),
         DataLeccion(
             "Saludos", listOf(
-                FragmentSaludos(),
-                FragmentSaludos2(),
-                FragmentSaludos3(),
-                FragmentSaludos4(),
-                FragmentDinamica5v1(),
-                FragmentSaludos6(),
-                FragmentSaludos7(),
-                FragmentSaludos8(),
-                FragmentDinamica2v3(),
-                FragmentSaludos10()
+                com.example.aymarswi.ClaseFamilia.FragmentDinamica1(),
+                FragmentDinamica2(),
+                FragmentDinamica3(),
+                FragmentDinamica4(),
+                FragmentDinamica2v1(),
+                FragmentDinamica5(),
+                FragmentDinamica6(),
+                FragmentDinamica6(),
+                FragmentDinamica7(),
+                FragmentDinamica6()
             )
         ),
         DataLeccion(
             "Animales", listOf(
-                FragmentDinamica10(),
-                FragmentAnimales2(),
-                FragmentAnimales3(),
-                FragmentAnimales4(),
-                FragmentAnimales5(),
-                FragmentAnimales6(),
-                FragmentDinamica11(),
-                FragmentAnimales8(),
-                FragmentAnimales9(),
-                FragmentAnimales10()
+                com.example.aymarswi.ClaseFamilia.FragmentDinamica1(),
+                FragmentDinamica2(),
+                FragmentDinamica3(),
+                FragmentDinamica4(),
+                FragmentDinamica2v1(),
+                FragmentDinamica5(),
+                FragmentDinamica6(),
+                FragmentDinamica6(),
+                FragmentDinamica7(),
+                FragmentDinamica6()
             )
         ),
         DataLeccion(
             "Verbos", listOf(
-                FragmentVerbos(),
-                FragmentVerbos2(),
-                FragmentVerbos3(),
-                FragmentVerbos4(),
-                FragmentVerbos5(),
-                FragmentVerbos6(),
-                FragmentVerbos7(),
-                FragmentVerbos8(),
-                FragmentVerbos9(),
-                FragmentVerbos10()
+                com.example.aymarswi.ClaseFamilia.FragmentDinamica1(),
+                FragmentDinamica2(),
+                FragmentDinamica3(),
+                FragmentDinamica4(),
+                FragmentDinamica2v1(),
+                FragmentDinamica5(),
+                FragmentDinamica6(),
+                FragmentDinamica6(),
+                FragmentDinamica7(),
+                FragmentDinamica6()
             )
         ),
         DataLeccion(
             "Colores", listOf(
-                FragmentColores(),
-                FragmentColores2(),
-                FragmentColores3(),
-                FragmentColores4(),
-                FragmentColores5(),
-                FragmentColores6(),
-                FragmentColores7(),
-                FragmentColores8(),
-                FragmentColores9(),
-                FragmentColores10()
+                com.example.aymarswi.ClaseFamilia.FragmentDinamica1(),
+                FragmentDinamica2(),
+                FragmentDinamica3(),
+                FragmentDinamica4(),
+                FragmentDinamica2v1(),
+                FragmentDinamica5(),
+                FragmentDinamica6(),
+                FragmentDinamica6(),
+                FragmentDinamica7(),
+                FragmentDinamica6()
             )
         ),
         DataLeccion(
             "Numeros", listOf(
-                FragmentDinamica11(),
+                com.example.aymarswi.ClaseFamilia.FragmentDinamica1(),
+                FragmentDinamica2(),
+                FragmentDinamica3(),
+                FragmentDinamica4(),
+                FragmentDinamica2v1(),
+                FragmentDinamica5(),
+                FragmentDinamica6(),
+                FragmentDinamica6(),
                 FragmentDinamica7(),
-                FragmentDinamica8(),
-                FragmentDinamica10(),
-                FragmentNumeros5(),
-                FragmentNumeros6(),
-                FragmentNumeros7(),
-                FragmentNumeros8(),
-                FragmentNumeros9(),
-                FragmentNumeros10()
+                FragmentDinamica6()
             )
         ),
         DataLeccion(
             "Objetos", listOf(
-                FragmentObjetos1(),
-                FragmentObjetos2(),
-                FragmentObjetos3(),
-                FragmentObjetos4(),
-                FragmentObjetos5(),
-                FragmentObjetos6(),
-                FragmentObjetos7(),
-                FragmentObjetos8(),
-                FragmentObjetos9(),
-                FragmentObjetos10()
+                com.example.aymarswi.ClaseFamilia.FragmentDinamica1(),
+                FragmentDinamica2(),
+                FragmentDinamica3(),
+                FragmentDinamica4(),
+                FragmentDinamica2v1(),
+                FragmentDinamica5(),
+                FragmentDinamica6(),
+                FragmentDinamica6(),
+                FragmentDinamica7(),
+                FragmentDinamica6()
             )
         ),
     )
