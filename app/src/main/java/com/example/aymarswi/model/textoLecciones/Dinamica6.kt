@@ -8,8 +8,9 @@ import com.example.aymarswi.R
 import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
 
-class Dinamica6(fragment: Fragment): BaseDinamica(fragment) {
+class Dinamica6(fragment: Fragment) : BaseDinamica(fragment) {
 
+    private lateinit var palabraPrincipal: Palabra
     private var campoRespuesta: TextView
 
 
@@ -25,27 +26,27 @@ class Dinamica6(fragment: Fragment): BaseDinamica(fragment) {
 
     override fun colocarDatosEnLaVista() {
 
-        title?.text = LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0]
+        palabraPrincipal = LeccionesJSON.palabras[posicionRespuestaCorrecta]
 
-        // Colocamos la imagen de la opción
-        Glide.with(Actividad.getInstanceActividad().context)
-            .load(LeccionesJSON.palabras[posicionRespuestaCorrecta].imagen)
-            .into(imagen!!)
+        setTitle(palabraPrincipal.enEspanol[0])
+
+        imagen?.let { LoadImage.loadInto(imagen!!, palabraPrincipal.imagen) }
+
+        mezclarPosicionesAleatorias()
 
         /*Añadimos los datos a la vista de forma que no estén en el mismo orden cada vez (para eso se usan números aleatorios)*/
-        for (i in 0 until contenedorOpciones.childCount) {
-            val indexRandom = (0 until posicionesAleatorias.size).random()
-
+        for (opcionIndex in 0 until contenedorOpciones.childCount) {
             // Colocamos el texto de la opción
-            (contenedorOpciones.getChildAt(i) as Button).text = LeccionesJSON.palabras[posicionesAleatorias[indexRandom]].enAymara[0]
-
-            posicionesAleatorias.removeAt(indexRandom)
+            val opcion = contenedorOpciones.getChildAt(opcionIndex)
+            if (opcion is Button)
+                opcion.text = LeccionesJSON.palabras[posicionesAleatorias[opcionIndex]].enAymara[0]
         }
     }
+
     override fun iniciarDinamica() {
-      OpcionMultipleDePalabras().palabraVerdadera(
-            obtenerOpcionesComoLista(),
-            palabraCorrecta = LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara[0],
+        OpcionMultipleDePalabras().palabraVerdadera(
+            getOptionsAsList(),
+            palabraCorrecta = palabraPrincipal.enAymara[0],
             palabraElegida = campoRespuesta,
             botonComprobar = btnComprobar
         )

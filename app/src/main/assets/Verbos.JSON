@@ -125,5 +125,32 @@
     "esAbstracta": false,
     "esOracion": true,
     "pronunciacion": null
-  }
+  },
+  {
+    "seccion": "Verbos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Waynax anatt’i"
+    ],
+    "enEspanol": [
+      "El niño juega"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1710104265/imagenes-nativo/verbos/boy-playing-soccer-removebg-preview_tupc9w.webp",
+    "esAbstracta": false,
+    "esOracion": true,
+    "pronunciacion": null
+  },{
+  "seccion": "Verbos",
+  "nivelDeAprendizaje": 1,
+  "enAymara": [
+    "antaña"
+  ],
+  "enEspanol": [
+    "jugar"
+  ],
+  "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1710104265/imagenes-nativo/verbos/boy-playing-soccer-removebg-preview_tupc9w.webp",
+  "esAbstracta": false,
+  "esOracion": false,
+  "pronunciacion": null
+}
 ]

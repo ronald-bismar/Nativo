@@ -25,7 +25,7 @@ object LeccionesJSON {
         )
     }
 
-    //Solo obtenemos 20 palabras para que la aplicacion no sea pesada al cargar la imagen que se guardara en bits
+    //Solo obtenemos 10 palabras para que la aplicacion no sea pesada al cargar la imagen que se guardara en bits
     private fun get10PalabrasLeccion(listaCompletaPalabras: MutableList<Palabra>): List<Palabra> {
         val palabrasAleatorias = mutableListOf<Palabra>()
         for (i in 0 until 10) {
@@ -38,11 +38,11 @@ object LeccionesJSON {
     }
 
     //Obtenemos una oracion si la dinamica seleccionada requiere si o si una oracion
-    fun getUnaOracion(): Palabra {
-        val palabra: Palabra = palabras[(palabras.indices).random()]
-        return if (palabra.esOracion)
-            palabra
+    fun getUnaOracion(): Palabra? {
+        val oracionesEncontradas = palabras.filter { it.esOracion }
+        return if (oracionesEncontradas.isNotEmpty())
+            oracionesEncontradas.random()
         else
-            getUnaOracion()
+            null
     }
 }

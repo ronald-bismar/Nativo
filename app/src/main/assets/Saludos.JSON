@@ -1,93 +1,160 @@
 [
-    {
-        "seccion": "Saludos",
-        "nivelDeAprendizaje": 1,
-        "enAymara": ["Kamisaki"],
-        "enEspanol": ["Hola como estas"],
-        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709516321/imagenes-nativo/saludos/saludo2_wnm6fm.webp",
-        "esAbstracta": true,
-        "esOracion": true,
-        "pronunciacion": null
-    },{
-        "seccion": "Saludos",
-        "nivelDeAprendizaje": 1,
-        "enAymara": ["Walikistwa"],
-        "enEspanol": ["Bien", "Estar bien"],
-        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709516280/imagenes-nativo/saludos/saludo2waliki_ywqvhl.webp",
-        "esAbstracta": true,
-        "esOracion": true,
-        "pronunciacion": null
-    },{
-        "seccion": "Saludos",
-        "nivelDeAprendizaje": 1,
-        "enAymara": ["Kunjamasktasa"],
-        "enEspanol": ["Como estas"],
-        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709516790/imagenes-nativo/saludos/Group_2_ztwlsv.webp",
-        "esAbstracta": true,
-        "esOracion": true,
-        "pronunciacion": null
-    },{
-        "seccion": "Saludos",
-        "nivelDeAprendizaje": 1,
-        "enAymara": ["Aski urukipan"],
-        "enEspanol": ["Buen dia", "Buen día", "Buenos dias", "Buenos días"],
-        "imagen": null,
-        "esAbstracta": true,
-        "esOracion": true,
-        "pronunciacion": null
-    },{
-        "seccion": "Saludos",
-        "nivelDeAprendizaje": 1,
-        "enAymara": ["Aski jayp'ukipan"],
-        "enEspanol": ["Buenas tardes"],
-        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709517820/imagenes-nativo/saludos/pm_agq1te.webp",
-        "esAbstracta": true,
-        "esOracion": true,
-        "pronunciacion": null
-    },{
-        "seccion": "Saludos",
-        "nivelDeAprendizaje": 1,
-        "enAymara": ["Aski arumakipan"],
-        "enEspanol": ["Buenas noches"],
-        "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709518095/imagenes-nativo/saludos/askiaromakipan_u2pxgl.webp",
-        "esAbstracta": true,
-        "esOracion": true,
-        "pronunciacion": null
-    },{
-        "seccion": "Saludos",
-        "nivelDeAprendizaje": 1,
-        "enAymara": ["Jikisiñkama"],
-        "enEspanol": ["Hasta luego"],
-        "imagen": null,
-        "esAbstracta": true,
-        "esOracion": true,
-        "pronunciacion": null
-    },{
-        "seccion": "Saludos",
-        "nivelDeAprendizaje": 1,
-        "enAymara": ["Jikisiñkamaya"],
-        "enEspanol": ["Hasta luego"],
-        "imagen": null,
-        "esAbstracta": true,
-        "esOracion": true,
-        "pronunciacion": null
-    },{
-        "seccion": "Saludos",
-        "nivelDeAprendizaje": 1,
-        "enAymara": ["Qharürkama"],
-        "enEspanol": ["Hasta mañana"],
-        "imagen": null,
-        "esAbstracta": true,
-        "esOracion": true,
-        "pronunciacion": null
-    },{
-        "seccion": "Saludos",
-        "nivelDeAprendizaje": 1,
-        "enAymara": ["Qharürkamaya"],
-        "enEspanol": ["Hasta mañana"],
-        "imagen": null,
-        "esAbstracta": true,
-        "esOracion": true,
-        "pronunciacion": null
-    }
+  {
+    "seccion": "Saludos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Kamisaki"
+    ],
+    "enEspanol": [
+      "Hola como estas"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709516321/imagenes-nativo/saludos/saludo2_wnm6fm.webp",
+    "esAbstracta": true,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Saludos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Walikistwa"
+    ],
+    "enEspanol": [
+      "Bien",
+      "Estar bien"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709516280/imagenes-nativo/saludos/saludo2waliki_ywqvhl.webp",
+    "esAbstracta": true,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Saludos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Kunjamasktasa"
+    ],
+    "enEspanol": [
+      "Como estas"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709516790/imagenes-nativo/saludos/Group_2_ztwlsv.webp",
+    "esAbstracta": true,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Saludos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Aski urukipan"
+    ],
+    "enEspanol": [
+      "Buen dia",
+      "Buen día",
+      "Buenos dias",
+      "Buenos días"
+    ],
+    "imagen": null,
+    "esAbstracta": true,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Saludos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Aski jayp'ukipan"
+    ],
+    "enEspanol": [
+      "Buenas tardes"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709517820/imagenes-nativo/saludos/pm_agq1te.webp",
+    "esAbstracta": true,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Saludos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Aski arumakipan"
+    ],
+    "enEspanol": [
+      "Buenas noches"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709518095/imagenes-nativo/saludos/askiaromakipan_u2pxgl.webp",
+    "esAbstracta": true,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Saludos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Jikisiñkama"
+    ],
+    "enEspanol": [
+      "Hasta luego"
+    ],
+    "imagen": null,
+    "esAbstracta": true,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Saludos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Jikisiñkamaya"
+    ],
+    "enEspanol": [
+      "Hasta luego"
+    ],
+    "imagen": null,
+    "esAbstracta": true,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Saludos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Qharürkama"
+    ],
+    "enEspanol": [
+      "Hasta mañana"
+    ],
+    "imagen": null,
+    "esAbstracta": true,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Saludos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Qharürkamaya"
+    ],
+    "enEspanol": [
+      "Hasta mañana"
+    ],
+    "imagen": null,
+    "esAbstracta": true,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Saludos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Arumtaña"
+    ],
+    "enEspanol": [
+      "Saludar"
+    ],
+    "imagen": null,
+    "esAbstracta": true,
+    "esOracion": false,
+    "pronunciacion": null
+  }
 ]

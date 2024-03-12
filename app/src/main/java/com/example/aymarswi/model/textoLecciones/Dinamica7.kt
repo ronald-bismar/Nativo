@@ -1,20 +1,19 @@
 package com.example.aymarswi.model.textoLecciones
 
 import android.annotation.SuppressLint
+import android.util.Log
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.Glide
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.OrdenarPalabras
 import com.google.android.flexbox.FlexboxLayout
 
 class Dinamica7(fragment: Fragment) : BaseDinamica(fragment) {
 
     private var contenedorOracionRespuesta: LinearLayout
-    private var title2: TextView
-    private lateinit var texto: Palabra
+    private var txtPalabraPrincipalTraducida: TextView
+    private lateinit var palabraPrincipal: Palabra
 
 
     init {
@@ -22,7 +21,7 @@ class Dinamica7(fragment: Fragment) : BaseDinamica(fragment) {
         this.contenedorOpciones = fragment.requireView().findViewById(R.id.flContenedorOpciones7)
         this.imagen = fragment.requireView().findViewById(R.id.imagen7)
         this.title = fragment.requireView().findViewById(R.id.txtTitle7)
-        this.title2 = fragment.requireView().findViewById(R.id.txtTitleE7)
+        this.txtPalabraPrincipalTraducida = fragment.requireView().findViewById(R.id.txtTitleE7)
         this.btnComprobar = fragment.requireView().findViewById(R.id.btnComprobar16)
 
         configurar(sinOraciones = false)
@@ -30,36 +29,37 @@ class Dinamica7(fragment: Fragment) : BaseDinamica(fragment) {
 
     @SuppressLint("SetTextI18n")
     override fun colocarDatosEnLaVista() {
-        texto = LeccionesJSON.palabras[posicionRespuestaCorrecta]
+        palabraPrincipal = LeccionesJSON.palabras[posicionRespuestaCorrecta]
 
-        Glide.with(Actividad.getInstanceActividad().context)
-            .load(LeccionesJSON.palabras[posicionRespuestaCorrecta].imagen)
-            .into(imagen!!)
+        imagen?.let { LoadImage.loadInto(imagen!!, palabraPrincipal.imagen) }
 
-        title?.text = LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara[0]
-        title2.text = "(${LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0]})"
-        crearBotonesEnContenedor(
-            (this.texto.enAymara[0].trim().split(if (texto.esOracion) " " else "").toMutableList())
+        setTitle(palabraPrincipal.enAymara[0])
+        txtPalabraPrincipalTraducida.text = "(${palabraPrincipal.enEspanol[0]})"
+
+        crearBotonesEnContenedorDeOpciones(
+            (this.palabraPrincipal.enAymara[0].split(if (palabraPrincipal.esOracion) " " else "")
+                .toMutableList())
         )
     }
 
-    private fun crearBotonesEnContenedor(oracionDividida: MutableList<String>) {
+    private fun crearBotonesEnContenedorDeOpciones(oracionDividida: MutableList<String>) {
 
-        var rangoDePalabras =
-            if (texto.esOracion) oracionDividida.indices else 1 until oracionDividida.size - 1
-        for (i in rangoDePalabras) {
-            val indexRandom = (rangoDePalabras).random()
-            contenedorOpciones.addView(CrearBoton().crearButtonTexto(oracionDividida[indexRandom]))
-            oracionDividida.removeAt(indexRandom)
-            rangoDePalabras =
-                if (texto.esOracion) oracionDividida.indices else 1 until oracionDividida.size - 1
+        val palabrasFiltradas = deleteSpaceBlankAndEmpty(oracionDividida)
+
+        palabrasFiltradas.shuffle()
+
+        for (opcionIndex in 0 until palabrasFiltradas.size) {
+            contenedorOpciones.addView(CrearBoton().crearButtonTexto(palabrasFiltradas[opcionIndex]))
         }
     }
+
+    private fun deleteSpaceBlankAndEmpty(oracionDividida: MutableList<String>) =
+        oracionDividida.filter { it.trim().isNotEmpty() }.toMutableList()
+
 
     override fun iniciarDinamica() {
         OrdenarPalabras(
             contenedorOpciones as FlexboxLayout, contenedorOracionRespuesta, btnComprobar
-        ).initDynamic(LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara[0])
+        ).initDynamic(palabraPrincipal.enAymara[0])
     }
-
 }

@@ -8,7 +8,7 @@
     tools:context=".ClaseNumeros.FragmentNumeros9">
 
     <TextView
-        android:id="@+id/textView114"
+        android:id="@+id/titleD8"
         style="@style/textoGuia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView114"
+        app:layout_constraintTop_toBottomOf="@+id/titleD8"
         app:layout_constraintVertical_bias="0.5" />
 
     <androidx.constraintlayout.widget.ConstraintLayout

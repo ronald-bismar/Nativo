@@ -25,32 +25,27 @@ class Dinamica11(fragment: Fragment) : BaseDinamica(fragment) {
 
         palabraPrincipal = LeccionesJSON.palabras[posicionRespuestaCorrecta]
 
-        if (imagen != null) {
-            Glide.with(Actividad.getInstanceActividad().context)
-                .load(palabraPrincipal.imagen)
-                .into(imagen!!)
-        }
+        imagen?.let { LoadImage.loadInto(imagen!!, palabraPrincipal.imagen) }
 
-        /*Añadimos los datos a la vista de forma que no esten en el mismo orden cada vez (para eso se usan numeros randomicos)*/
+        mezclarPosicionesAleatorias()
+
+        val indexOpcion = 0
+
         contenedorOpciones.children.filterIsInstance<LinearLayout>().forEach { view ->
             val opcionConTextoEnAymara: View = view.getChildAt(0)
             val opcionConTextoEnEspanol: View = view.getChildAt(1)
             if (opcionConTextoEnAymara is TextView && opcionConTextoEnEspanol is TextView) {
-                val indexRandom = (0 until posicionesAleatorias.size).random()
-
                 opcionConTextoEnAymara.text =
-                    LeccionesJSON.palabras[posicionesAleatorias[indexRandom]].enAymara[0]
+                    LeccionesJSON.palabras[posicionesAleatorias[indexOpcion]].enAymara[0]
                 opcionConTextoEnEspanol.text =
-                    LeccionesJSON.palabras[posicionesAleatorias[indexRandom]].enEspanol[0]
-                posicionesAleatorias.removeAt(indexRandom)
+                    LeccionesJSON.palabras[posicionesAleatorias[indexOpcion]].enEspanol[0]
             }
         }
     }
 
     override fun iniciarDinamica() {
         OpcionMultipleDePalabras().palabraVerdaderaLL(
-            palabraPrincipal.enEspanol[0],
-            obtenerOpcionesComoLista()
+            palabraPrincipal.enEspanol[0], getOptionsAsList()
         )
     }
 }

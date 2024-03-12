@@ -11,12 +11,6 @@ import com.example.aymarswi.R
 import com.example.aymarswi.model.textoLecciones.Dinamica8
 
 class FragmentDinamica8 : Fragment() {
-    private lateinit var btnPanqa: Button
-    private lateinit var btnAli: Button
-    private lateinit var btnChuqi1: Button
-    private lateinit var btnKhunu: Button
-    private lateinit var imgVSonido: ImageView
-    private lateinit var rootView: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

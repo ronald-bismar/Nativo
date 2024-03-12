@@ -4,9 +4,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.Glide
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
 import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
 
 class Dinamica1(fragment: Fragment) : BaseDinamica(fragment) {
@@ -20,35 +18,35 @@ class Dinamica1(fragment: Fragment) : BaseDinamica(fragment) {
     }
 
     override fun colocarDatosEnLaVista() {
-        //Colocamos como titulo la palabra principal en aymara que servirá de guia para el usuario para traducirla al español
-        title?.text =
-            LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara[0]
+        // Colocamos como título la palabra principal en aymara que servirá de guía para el usuario para traducirla al español
+        setTitle(LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara.firstOrNull())
 
-        /*Añadimos los datos a la vista de forma que no esten en el mismo orden cada vez (para eso se usan numeros randomicos)*/
-        for (i in 0 until contenedorOpciones.childCount) {
+        // Mezclamos los índices para que no salgan siempre en el mismo orden
+        mezclarPosicionesAleatorias()
 
-            if (contenedorOpciones.getChildAt(i) is LinearLayout) {
-                val indexRandom = (0 until posicionesAleatorias.size).random()
-                val opcion = contenedorOpciones.getChildAt(i) as LinearLayout
-
-                //Colocamos la imagen de la opcion
-                Glide.with(Actividad.getInstanceActividad().context)
-                    .load(LeccionesJSON.palabras[posicionesAleatorias[indexRandom]].imagen)
-                    .into(opcion.getChildAt(0) as ImageView)
-
-                //Colocamos el texto de la opcion
-                (opcion.getChildAt(1) as TextView).text =
-                    LeccionesJSON.palabras[posicionesAleatorias[indexRandom]].enEspanol[0]
-
-                posicionesAleatorias.removeAt(indexRandom)
-            }
+        for (opcionIndex in 0 until contenedorOpciones.childCount) {
+            val opcion = contenedorOpciones.getChildAt(opcionIndex)
+            if (opcion is LinearLayout)
+                colocarOpcionEnVista(opcion, posicionesAleatorias[opcionIndex])
         }
     }
-
+    private fun colocarOpcionEnVista(opcionLayout: LinearLayout, posicionAleatoria: Int) {
+        setImageOption(opcionLayout, posicionAleatoria)
+        setTextOption(opcionLayout, posicionAleatoria)
+    }
+    private fun setTextOption(opcionLayout: LinearLayout, posicionAleatoria: Int) {
+        val textView: TextView = opcionLayout.getChildAt(1) as TextView
+        textView.text = LeccionesJSON.palabras[posicionAleatoria].enEspanol.firstOrNull()
+    }
+    private fun setImageOption(opcionLayout: LinearLayout, posicionAleatoria: Int) {
+        val imageView: ImageView = opcionLayout.getChildAt(0) as ImageView
+        val directionImagen: String = LeccionesJSON.palabras[posicionAleatoria].imagen
+        LoadImage.loadInto(imageView, directionImagen)
+    }
     override fun iniciarDinamica() {
         OpcionMultipleDePalabras().palabraVerdaderaLL(
             LeccionesJSON.palabras[posicionRespuestaCorrecta].enEspanol[0],
-            obtenerOpcionesComoLista()
+            getOptionsAsList()
         )
     }
 }

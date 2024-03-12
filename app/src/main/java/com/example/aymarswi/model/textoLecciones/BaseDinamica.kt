@@ -1,5 +1,6 @@
 package com.example.aymarswi.model.textoLecciones
 
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
@@ -45,7 +46,7 @@ abstract class BaseDinamica(fragment: Fragment) {
         posicionRespuestaCorrecta = posicionesAleatorias.first()
     }
 
-    protected inline fun <reified T : View> obtenerOpcionesComoLista(): MutableList<T> {
+    protected inline fun <reified T : View> getOptionsAsList(): MutableList<T> {
         val listaOpciones = mutableListOf<T>()
         for (i in 0 until contenedorOpciones.childCount) {
             val opcion = contenedorOpciones.getChildAt(i)
@@ -54,5 +55,13 @@ abstract class BaseDinamica(fragment: Fragment) {
             }
         }
         return listaOpciones
+    }
+    protected fun setTitle(title: String?){
+        this.title?.text = title
+    }
+
+    protected fun mezclarPosicionesAleatorias() {
+        posicionesAleatorias.shuffle()
+        Log.d("Posiciones", "Posiciones aleatorias mezcladas: $posicionesAleatorias")
     }
 }

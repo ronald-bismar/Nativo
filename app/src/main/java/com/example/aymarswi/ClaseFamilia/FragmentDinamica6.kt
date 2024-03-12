@@ -11,36 +11,10 @@ import com.example.aymarswi.R
 import com.example.aymarswi.model.textoLecciones.Dinamica6
 
 class FragmentDinamica6 : Fragment() {
-
-    lateinit var btnTayka: Button
-    lateinit var btnTiwula: Button
-    lateinit var btnIpa: Button
-    lateinit var btnKullaka: Button
-    lateinit var btnComprobar: Button
-    lateinit var etPalabra: TextView
-    lateinit var rootView: View
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        rootView = inflater.inflate(R.layout.fragment_dinamica6, container, false)
-
-        iniciarComponentes()
-
-
-        return rootView
-    }
-
-    private fun iniciarComponentes() {
-        btnTayka = rootView.findViewById(R.id.btnTayka)
-        btnTiwula = rootView.findViewById(R.id.btnTiwula)
-        btnIpa = rootView.findViewById(R.id.btnIpa)
-        btnKullaka = rootView.findViewById(R.id.btnKullaka)
-        etPalabra = rootView.findViewById(R.id.campoRespuesta)
-        btnComprobar = rootView.findViewById(R.id.btnComprobar6)
-    }
+    ): View? = inflater.inflate(R.layout.fragment_dinamica6, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

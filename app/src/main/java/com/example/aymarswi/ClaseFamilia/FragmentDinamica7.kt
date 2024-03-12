@@ -13,22 +13,13 @@ import com.google.android.flexbox.FlexboxLayout
 
 class FragmentDinamica7 : Fragment() {
 
-    lateinit var btnComprobar: Button
-    lateinit var contenedorOracionRespuesta: LinearLayout
-    lateinit var contenedorPalabras: FlexboxLayout
-    lateinit var rootView: View
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_dinamica7, container, false)
-
-        }
+    ): View? = inflater.inflate(R.layout.fragment_dinamica7, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         Dinamica7(this)
     }
 }
