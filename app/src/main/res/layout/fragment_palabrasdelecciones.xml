@@ -7,7 +7,7 @@
     android:background="#A52C23"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".ClaseFamilia.FragmentPalabrasDeLeccion">
+    tools:context=".GuiasDeLeccionUI.FragmentPalabrasDeLeccion">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSiguiente2"

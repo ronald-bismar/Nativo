@@ -1,0 +1,226 @@
+[
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "wallpa"
+    ],
+    "enEspanol": [
+      "ventana"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417467/imagenes-nativo/objetos/ventana_dtck5m.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "wankara"
+    ],
+    "enEspanol": [
+      "bombo"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417458/imagenes-nativo/objetos/tambor_xqklkt.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "silla"
+    ],
+    "enEspanol": [
+      "silla"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417452/imagenes-nativo/objetos/silla_tt0wfl.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "tiraq"
+    ],
+    "enEspanol": [
+      "regla"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417416/imagenes-nativo/objetos/regla_kgqnyo.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "q'awa"
+    ],
+    "enEspanol": [
+      "plato"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417394/imagenes-nativo/objetos/plato_knexun.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "uka q'awachaki llump'i"
+    ],
+    "enEspanol": [
+      "el plato está sucio"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709847983/imagenes-nativo/objetos/platosucio_uspwiz.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "allp'iq"
+    ],
+    "enEspanol": [
+      "peine"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417391/imagenes-nativo/objetos/peine_mdafye.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "pusu"
+    ],
+    "enEspanol": [
+      "olla"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417378/imagenes-nativo/objetos/olla_bdckft.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "phistu"
+    ],
+    "enEspanol": [
+      "goma"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417271/imagenes-nativo/objetos/goma_whyhps.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "laphi"
+    ],
+    "enEspanol": [
+      "papel"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417251/imagenes-nativo/objetos/documento_db9bd4.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "pampay"
+    ],
+    "enEspanol": [
+      "libro"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417244/imagenes-nativo/objetos/diccio_zo33ds.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "kichu"
+    ],
+    "enEspanol": [
+      "cuchara"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417241/imagenes-nativo/objetos/cuchara_iquwqh.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "wiksu"
+    ],
+    "enEspanol": [
+      "biblioteca"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417118/imagenes-nativo/objetos/biblio_gyadfz.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "ichu"
+    ],
+    "enEspanol": [
+      "bastón"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709417111/imagenes-nativo/objetos/baston_udad7p.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "q'api"
+    ],
+    "enEspanol": [
+      "hilo"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416965/imagenes-nativo/objetos/aguja_py2uld.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Objetos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "tata achachilapi ichuy"
+    ],
+    "enEspanol": [
+      "el abuelo usa baston"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709845368/imagenes-nativo/objetos/abueloconbaston_arhoya.webp",
+    "esAbstracta": false,
+    "esOracion": true,
+    "pronunciacion": null
+  }
+]

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout42"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentsDinamicas.FragmentNumeros6">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView67"
+        style="@style/estiloDeTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encuentra los pares correctos"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/llContenedorAymara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llContenedorEspanol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/llContenedorAymara"
+        app:layout_constraintTop_toBottomOf="@+id/textView67"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPusi2"
+            style="@style/estiloDeTexto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background_lightblue"
+            android:text="cuatro"
+            android:textColor="#454242"
+            android:textSize="25dp"
+            app:cornerRadius="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPaya2"
+            style="@style/estiloDeTexto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background_lightblue"
+            android:text="dos"
+            android:textColor="#454242"
+            android:textSize="25dp"
+            app:cornerRadius="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btbMaya2"
+            style="@style/estiloDeTexto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background_lightblue"
+            android:text="uno"
+            android:textColor="#454242"
+            android:textSize="25dp"
+            app:cornerRadius="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnKimsa2"
+            style="@style/estiloDeTexto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background_lightblue"
+            android:text="tres"
+            android:textColor="#454242"
+            android:textSize="25dp"
+            app:cornerRadius="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPhisqa2"
+            style="@style/estiloDeTexto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background_lightblue"
+            android:text="cinco"
+            android:textColor="#454242"
+            android:textSize="25dp"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llContenedorAymara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/llContenedorEspanol"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView67"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPusi1"
+            style="@style/estiloDeTexto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background_lightblue"
+            android:text="pusi"
+            android:textColor="#454242"
+            android:textSize="25dp"
+            app:cornerRadius="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPaya1"
+            style="@style/estiloDeTexto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background_lightblue"
+            android:text="paya"
+            android:textColor="#454242"
+            android:textSize="25dp"
+            app:cornerRadius="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnKimsa1"
+            style="@style/estiloDeTexto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background_lightblue"
+            android:text="kimsa"
+            android:textColor="#454242"
+            android:textSize="25dp"
+            app:cornerRadius="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPhisqa1"
+            style="@style/estiloDeTexto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background_lightblue"
+            android:text="phisqa"
+            android:textColor="#454242"
+            android:textSize="25dp"
+            app:cornerRadius="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btbMaya1"
+            style="@style/estiloDeTexto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background_lightblue"
+            android:text="maya"
+            android:textColor="#454242"
+            android:textSize="25dp"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

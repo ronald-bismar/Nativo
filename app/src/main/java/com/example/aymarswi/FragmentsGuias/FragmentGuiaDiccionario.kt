@@ -9,7 +9,6 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.PantallasPrincipales.FragmentDiccionario
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Utils
 
 class FragmentGuiaDiccionario : Fragment() {
     override fun onCreateView(
@@ -21,7 +20,7 @@ class FragmentGuiaDiccionario : Fragment() {
         val botonEmpezar = rootView.findViewById<Button>(R.id.btnEmpezarDiccionario)
 
         botonEmpezar.setOnClickListener {
-            Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, FragmentDiccionario())
+//            Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, FragmentDiccionario())
         }
 
         return rootView

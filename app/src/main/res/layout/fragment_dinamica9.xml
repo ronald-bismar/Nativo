@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout37"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClaseFamilia.FragmentDinamica9">
+    tools:context=".FragmentsDinamicas.FragmentDinamica9">
 
 
     <TextView

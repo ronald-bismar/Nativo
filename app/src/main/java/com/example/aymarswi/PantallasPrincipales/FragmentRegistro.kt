@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.ApiRest.RetrofitCliente
 import com.example.aymarswi.ApiRest.Usuario
-import com.example.aymarswi.Util.Utils
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -166,11 +165,11 @@ class FragmentRegistro : Fragment() {
     }
 
     private fun elegirPersonaje() {
-        Utils().pasarDeFragment(
+        /*Utils().pasarDeFragment(
             requireActivity() as AppCompatActivity,
             R.id.ContenedorP_Principales,
             FragmentAvatar2()
-        )
+        )*/
     }
 
     private fun actualizarUsuario() {

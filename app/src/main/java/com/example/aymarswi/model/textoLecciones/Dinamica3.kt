@@ -3,7 +3,7 @@ package com.example.aymarswi.model.textoLecciones
 import android.widget.EditText
 import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
+import com.example.aymarswi.util.dinamicas.OpcionMultipleDePalabras
 
 class Dinamica3(fragment: Fragment) : BaseDinamica(fragment) {
 

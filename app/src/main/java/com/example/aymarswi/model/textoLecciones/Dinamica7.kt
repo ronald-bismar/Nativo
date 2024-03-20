@@ -1,12 +1,11 @@
 package com.example.aymarswi.model.textoLecciones
 
 import android.annotation.SuppressLint
-import android.util.Log
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.dinamicas.OrdenarPalabras
+import com.example.aymarswi.util.dinamicas.OrdenarPalabras
 import com.google.android.flexbox.FlexboxLayout
 
 class Dinamica7(fragment: Fragment) : BaseDinamica(fragment) {

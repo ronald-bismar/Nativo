@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
-import com.example.aymarswi.ClaseFamilia.PalabrasDeLaLeccion
 import com.example.aymarswi.FragmentsGuias.FragmentGuiaBiblioteca
 import com.example.aymarswi.FragmentsGuias.FragmentGuiaConversacion
 import com.example.aymarswi.FragmentsGuias.FragmentGuiaDiccionario
@@ -13,87 +12,30 @@ import com.example.aymarswi.FragmentsGuias.FragmentGuiaLecciones
 import com.example.aymarswi.R
 
 class ContenedorPantallasPrincipales : AppCompatActivity() {
+    private lateinit var fragment: Fragment
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contenedor_pantallas_principales)
 
-        when (intent.extras?.getInt("valor")) {
-            1 -> {
-                supportFragmentManager.commit {
-                    add<FragmentPrimeraPantalla>(R.id.ContenedorP_Principales)
-                    setReorderingAllowed(true)
-                }
-            }
+        fragment = when (intent.extras?.getInt("valor")) {
+            1 -> FragmentPrimeraPantalla()
+            10 -> FragmentGaleriaDeTrofeos()
+            11 -> FragmentPrimeraPantalla()
+            20 -> FragmentConfiguracion()
+            30 -> FragmentMenuDeLeccionesA()
+            31 -> FragmentGuiaDiccionario()
+            32 -> FragmentGuiaConversacion()
+            33 -> FragmentGuiaBiblioteca()
+            40 -> FragmentMenuDeLeccionesQ()
+            41 -> FragmentGuiaDiccionario()
+            42 -> FragmentGuiaConversacion()
+            43 -> FragmentGuiaBiblioteca()
+            else -> FragmentPrimeraPantalla()
+        }
 
-            10 -> {
-                supportFragmentManager.commit {
-                    add<FragmentGaleriaDeTrofeos>(R.id.ContenedorP_Principales)
-                    setReorderingAllowed(true)
-                }
-            }
-
-            11 -> {
-                supportFragmentManager.commit {
-                    add<FragmentPrimeraPantalla>(R.id.ContenedorP_Principales)
-                    setReorderingAllowed(true)
-                }
-            }
-
-            20->{
-                supportFragmentManager.commit {
-                    add<FragmentConfiguracion>(R.id.ContenedorP_Principales)
-                    setReorderingAllowed(true)
-                }
-            }
-            30-> {
-                supportFragmentManager.commit {
-                    val fragment = FragmentMenuDeLeccionesA()
-                    add(R.id.ContenedorP_Principales, fragment)
-                    setReorderingAllowed(true)
-                }
-            }
-            31-> {
-                supportFragmentManager.commit {
-                    add<FragmentGuiaDiccionario>(R.id.ContenedorP_Principales)
-                    setReorderingAllowed(true)
-                }
-            }
-            32-> {
-                supportFragmentManager.commit {
-                    add<FragmentGuiaConversacion>(R.id.ContenedorP_Principales)
-                    setReorderingAllowed(true)
-                }
-            }
-            33-> {
-                supportFragmentManager.commit {
-                    add<FragmentGuiaBiblioteca>(R.id.ContenedorP_Principales)
-                    setReorderingAllowed(true)
-                }
-            }
-            40-> {
-                supportFragmentManager.commit {
-                    add<FragmentGuiaLecciones>(R.id.ContenedorP_Principales)
-                    setReorderingAllowed(true)
-                }
-            }
-            41-> {
-                supportFragmentManager.commit {
-                    add<FragmentGuiaDiccionario>(R.id.ContenedorP_Principales)
-                    setReorderingAllowed(true)
-                }
-            }
-            42-> {
-                supportFragmentManager.commit {
-                    add<FragmentGuiaConversacion>(R.id.ContenedorP_Principales)
-                    setReorderingAllowed(true)
-                }
-            }
-            43-> {
-                supportFragmentManager.commit {
-                    add<FragmentGuiaBiblioteca>(R.id.ContenedorP_Principales)
-                    setReorderingAllowed(true)
-                }
-            }
+        supportFragmentManager.commit {
+            add(R.id.ContenedorP_Principales, fragment)
+            setReorderingAllowed(true)
         }
     }
 }

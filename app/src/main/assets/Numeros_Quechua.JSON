@@ -1,0 +1,170 @@
+[
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "huk"
+    ],
+    "enEspanol": [
+      "uno"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416575/imagenes-nativo/numeros/1_dnxmod.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "chunka isqun"
+    ],
+    "enEspanol": [
+      "son las diez"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416575/imagenes-nativo/numeros/10_cqba0k.webp",
+    "esAbstracta": false,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "iskay"
+    ],
+    "enEspanol": [
+      "dos"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416575/imagenes-nativo/numeros/2_nahymw.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "kimsa"
+    ],
+    "enEspanol": [
+      "tres"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416575/imagenes-nativo/numeros/3_ktawsu.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "tawa"
+    ],
+    "enEspanol": [
+      "cuatro"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416575/imagenes-nativo/numeros/4_gznken.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "pisqa"
+    ],
+    "enEspanol": [
+      "cinco"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416575/imagenes-nativo/numeros/5_r1wbrj.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "suyaq"
+    ],
+    "enEspanol": [
+      "seis"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416575/imagenes-nativo/numeros/6_yvoaa3.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "qanchis"
+    ],
+    "enEspanol": [
+      "siete"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416575/imagenes-nativo/numeros/7_yj1uwm.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "pusaq"
+    ],
+    "enEspanol": [
+      "ocho"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416575/imagenes-nativo/numeros/8_acvxqe.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "isqonqan"
+    ],
+    "enEspanol": [
+      "nueve"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416575/imagenes-nativo/numeros/9_fx4kpa.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "chunka"
+    ],
+    "enEspanol": [
+      "diez"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416575/imagenes-nativo/numeros/10_cqba0k.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "tawa jayp’u tuqichu"
+    ],
+    "enEspanol": [
+      "cuatro de la tarde"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709416575/imagenes-nativo/numeros/4_gznken.webp",
+    "esAbstracta": false,
+    "esOracion": true,
+    "pronunciacion": null
+  }
+]

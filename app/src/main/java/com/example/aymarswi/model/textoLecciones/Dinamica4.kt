@@ -1,10 +1,12 @@
 package com.example.aymarswi.model.textoLecciones
 
+import android.os.Build
 import android.widget.EditText
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
+import com.example.aymarswi.util.dinamicas.OpcionMultipleDePalabras
 
 class Dinamica4(fragment: Fragment): BaseDinamica(fragment) {
 
@@ -22,6 +24,7 @@ class Dinamica4(fragment: Fragment): BaseDinamica(fragment) {
     }
 
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun colocarDatosEnLaVista() {
         //Colocamos como titulo la palabra principal en aymara que servirá de guia para el usuario para traducirla al español
         oracion.text = LeccionesJSON.palabras[posicionRespuestaCorrecta].enAymara[0]

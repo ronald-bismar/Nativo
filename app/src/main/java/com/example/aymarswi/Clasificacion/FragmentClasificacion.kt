@@ -9,10 +9,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Datos
+import com.example.aymarswi.util.Datos
 import com.example.aymarswi.databinding.FragmentClasificacionBinding
-import com.example.aymarswi.databinding.FragmentConversacionBinding
-import com.example.prueba.RecyclerNombre
 import com.google.firebase.firestore.FirebaseFirestore
 
 class FragmentClasificacion : Fragment() {

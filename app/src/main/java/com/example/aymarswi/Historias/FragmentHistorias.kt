@@ -37,12 +37,8 @@ class FragmentHistorias : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         listaHistorias.add(Historia(R.drawable.tupakkatari, "Tupak Katari", "Historia"))
-        listaHistorias.add(Historia(R.drawable.imagenmontana, "Inas Ukhamächi", "Relatos"))
         listaHistorias.add(Historia(R.drawable.tupakkatari, "Tupak Katari", "Historia"))
-        listaHistorias.add(Historia(R.drawable.imagenmontana, "Inas Ukhamächi", "Relatos"))
         listaHistorias.add(Historia(R.drawable.tupakkatari, "Tupak Katari", "Historia"))
-        listaHistorias.add(Historia(R.drawable.imagenmontana, "Inas Ukhamächi", "Relatos"))
         listaHistorias.add(Historia(R.drawable.tupakkatari, "Tupak Katari", "Historia"))
-        listaHistorias.add(Historia(R.drawable.imagenmontana, "Inas Ukhamächi", "Relatos"))
     }
 }

@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Utils
 
 class FragmentPrimeraPantalla : Fragment() {
     override fun onCreateView(
@@ -21,11 +20,11 @@ class FragmentPrimeraPantalla : Fragment() {
         val btnRegistrarse = rootView.findViewById<Button>(R.id.botonRegistrarse)
 
         btnIngresar.setOnClickListener {
-            Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, Fragment_Ingresar())
+//            Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, Fragment_Ingresar())
         }
 
         btnRegistrarse.setOnClickListener {
-            Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, FragmentRegistro())
+//            Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, FragmentRegistro())
         }
 
         return rootView

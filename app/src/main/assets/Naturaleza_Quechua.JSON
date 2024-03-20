@@ -1,0 +1,343 @@
+[
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "mallki"
+    ],
+    "enEspanol": [
+      "árbol"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949167/imagenes-nativo/naturaleza/arbol_tuyu1u.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "apu"
+    ],
+    "enEspanol": [
+      "montaña",
+      "cerro"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949412/imagenes-nativo/naturaleza/montana_cyn5ki.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "qura"
+    ],
+    "enEspanol": [
+      "pasto"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707950911/imagenes-nativo/naturaleza/cesped_mztabq.png",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "mayu"
+    ],
+    "enEspanol": [
+      "río"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949821/imagenes-nativo/naturaleza/rio_ew1xxn.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "jallupay p'uyan"
+    ],
+    "enEspanol": [
+      "Está lloviendo"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949738/imagenes-nativo/naturaleza/lluviamuyfuerte_z03ged.webp",
+    "esAbstracta": false,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "yaku"
+    ],
+    "enEspanol": [
+      "agua"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949160/imagenes-nativo/naturaleza/agua_huo8zm.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "wiraqocha"
+    ],
+    "enEspanol": [
+      "flor"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949276/imagenes-nativo/naturaleza/flor_hozfym.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "papa"
+    ],
+    "enEspanol": [
+      "papa"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707951019/imagenes-nativo/naturaleza/papa_tpvako.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "ñawi"
+    ],
+    "enEspanol": [
+      "nube"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707951182/imagenes-nativo/naturaleza/nube_zusd5m.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Pachamama"
+    ],
+    "enEspanol": [
+      "Naturaleza",
+      "Madre tierra"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707951286/imagenes-nativo/naturaleza/el-planeta-tierra_fug7ip.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "llipha"
+    ],
+    "enEspanol": [
+      "hoja"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949352/imagenes-nativo/naturaleza/hoja_rxxp7z.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Alyu"
+    ],
+    "enEspanol": [
+      "Planta"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949808/imagenes-nativo/naturaleza/planta_gdsaii.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "K'irum"
+    ],
+    "enEspanol": [
+      "Arco Iris"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707951497/imagenes-nativo/naturaleza/arco-iris_x5awtz.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Inti"
+    ],
+    "enEspanol": [
+      "Sol"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949846/imagenes-nativo/naturaleza/sol_seiyox.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Nina"
+    ],
+    "enEspanol": [
+      "Fuego"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949658/imagenes-nativo/naturaleza/hoguera_bc8nkf.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Kota"
+    ],
+    "enEspanol": [
+      "Lago",
+      "Laguna"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707951635/imagenes-nativo/naturaleza/lago_l4goci.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Alyax Pacha",
+      "Alyaj Pacha"
+    ],
+    "enEspanol": [
+      "Espacio eterno",
+      "Cielo"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707952322/imagenes-nativo/naturaleza/nublado_epota8.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Urpunta"
+    ],
+    "enEspanol": [
+      "Nublado"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707952548/imagenes-nativo/naturaleza/nublado_oscuro_kjqpwh.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Paksi"
+    ],
+    "enEspanol": [
+      "Luna"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949754/imagenes-nativo/naturaleza/luna_d3tice.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Llak'a"
+    ],
+    "enEspanol": [
+      "Tierra"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707952729/imagenes-nativo/naturaleza/suelo_h0uktz.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Waraw"
+    ],
+    "enEspanol": [
+      "Estrella"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707952855/imagenes-nativo/naturaleza/estrella_hlgqjf.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Wayra"
+    ],
+    "enEspanol": [
+      "Viento"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1706993003/imagenes-nativo/familia/papa1_nkfcca.png",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Uma mpi waraña"
+    ],
+    "enEspanol": [
+      "Regar planta"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949481/imagenes-nativo/naturaleza/regandoplanta_alsejo.webp",
+    "esAbstracta": false,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Naturaleza",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Ch'uqi llamayusiptha"
+    ],
+    "enEspanol": [
+      "Escarbando papa"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1707949272/imagenes-nativo/naturaleza/escarbandopapa_l5pmmj.webp",
+    "esAbstracta": false,
+    "esOracion": true,
+    "pronunciacion": null
+  }
+]

@@ -8,9 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.Biblioteca.FragmentBiblioteca
-import com.example.aymarswi.Historias.FragmentHistorias
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Utils
 
 class FragmentGuiaBiblioteca : Fragment() {
 
@@ -23,7 +21,7 @@ class FragmentGuiaBiblioteca : Fragment() {
         val botonEmpezar = rootView.findViewById<Button>(R.id.btnAbrirBiblioteca)
 
         botonEmpezar.setOnClickListener {
-            Utils().pasarDeFragment(requireActivity() as AppCompatActivity,R.id.ContenedorP_Principales, FragmentBiblioteca())
+//            Utils().pasarDeFragment(requireActivity() as AppCompatActivity,R.id.ContenedorP_Principales, FragmentBiblioteca())
         }
         return rootView
     }

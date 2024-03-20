@@ -1,13 +1,10 @@
 package com.example.aymarswi.model.textoLecciones
 
 import DeslizarUnaPalabra
-import android.util.Log
 import android.widget.TextView
 import androidx.core.view.children
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.Glide
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
 
 class Dinamica10(fragment: Fragment) : BaseDinamica(fragment) {
 

@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
@@ -14,9 +13,9 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.aymarswi.NuevosArchivos.PerfilEmergente.FragmentoPersonaje
+import com.example.aymarswi.PantallasPrincipales.FragmentSeleccionarIdioma.Companion.Idioma
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Datos
-import com.facebook.login.LoginManager
+import com.example.aymarswi.util.Datos
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -29,14 +28,6 @@ class MenuEleccionQ : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_eleccion_q)
         val bundle = intent.extras
-        val nombre = bundle?.getString("nombreusuario")
-        val correoU = bundle?.getString("correousuario")
-        val contr = bundle?.getString("contrusuario")
-
-        Log.d("datos recibidos", "El nombre es $nombre")
-        Log.d("datos recibidos", "El correo es $correoU")
-        Log.d("datos recibidos", "La contraseña es $contr")
-
 
         val prefsR = getSharedPreferences(
             getString(R.string.prefs_file),
@@ -49,16 +40,12 @@ class MenuEleccionQ : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         val imgPersonaje = findViewById<ImageView>(R.id.imgPersonaje)
         imgPersonaje.setImageResource(imgPersonajeR)
 
-        //perfil historial (fragmento personaje invocado)
-
-        // Obtén una referencia al FragmentManager
-        val fragmentManager = supportFragmentManager
 
         // Obtén una referencia al Fragmento
         // Acceder a la ImageView en el fragmento
         val fragmentoPersonaje = FragmentoPersonaje()
 
-// Acceder a la imagen del fragmento
+        // Acceder a la imagen del fragmento
         val iPersonaje = fragmentoPersonaje.view?.findViewById<ImageView>(R.id.imgPersonaje1)
         iPersonaje?.setImageResource(imgPersonajeR)
 
@@ -87,21 +74,14 @@ class MenuEleccionQ : AppCompatActivity(), NavigationView.OnNavigationItemSelect
             drawer.openDrawer(GravityCompat.START)
         }
 
-        // Datos recibidos desde el activity MainPrincipalActivity
-        val datosEnviados = intent.extras
-        val correo = datosEnviados?.getString("correousuario")
-
         // Recuperar imagen guardada de SharedPreferences
         val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
         correoGuardado = prefs.getString("correo", null).toString()
 
-        //Funciones de los botones de la pantalla principal
 
-
-
-        val boton = findViewById<Button>(R.id.btnLecciones)
+        val btnLecciones = findViewById<Button>(R.id.btnLecciones)
         funcionImagenPerfil(imgPersonaje, imgPersonajeR, nomPersonaje)
-        boton.setOnClickListener {
+        btnLecciones.setOnClickListener {
             val intent: Intent = (Intent(this, ContenedorPantallasPrincipales::class.java))
             intent.putExtra("valor", 40)
             startActivity(intent)
@@ -167,18 +147,11 @@ class MenuEleccionQ : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         }
     }
 
-
-    /* Puedes acceder a la imagen del encabezado de navegación utilizando 'imageView'
-     Por ejemplo, puedes cambiar la imagen con otra usando:
-
-     imageView.setImageResource(R.drawable.otra_imagen)*/
-
-
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.itemAymara->{
-                val intent = Intent(this, MenuEleccion::class.java)
-                startActivity(intent)
+                Idioma = "Aymara"
+                startActivity(Intent(this, MenuEleccion::class.java))
             }
             R.id.itemRanking -> {
                 val intent = Intent(this, ActivityContenedor::class.java)
@@ -211,13 +184,6 @@ class MenuEleccionQ : AppCompatActivity(), NavigationView.OnNavigationItemSelect
                 val intent = Intent(this, ContenedorPantallasPrincipales::class.java)
                 intent.putExtra("valor", 11)
                 startActivity(intent)
-                val prefsFacebook =
-                    getSharedPreferences(getString(R.string.prefFacebook_file), Context.MODE_PRIVATE).edit()
-                if (prefsFacebook != null) {
-                    LoginManager.getInstance().logOut()
-                    prefsFacebook.clear()
-                    prefsFacebook.apply()
-                }
             }
         }
         drawer.closeDrawer(GravityCompat.START)

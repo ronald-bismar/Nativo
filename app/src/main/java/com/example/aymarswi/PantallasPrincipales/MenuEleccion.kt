@@ -1,22 +1,21 @@
 package com.example.aymarswi.PantallasPrincipales
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.aymarswi.NuevosArchivos.PerfilEmergente.FragmentoPersonaje
+import com.example.aymarswi.PantallasPrincipales.FragmentSeleccionarIdioma.Companion.Idioma
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Datos
-import com.facebook.login.LoginManager
+import com.example.aymarswi.util.Datos
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -25,49 +24,38 @@ class MenuEleccion : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private lateinit var drawer: DrawerLayout
     private var db = FirebaseFirestore.getInstance()
     private lateinit var correoGuardado: String
+    private lateinit var nomPersonaje: String
+    private var imgPersonajeC: Int = 0
+    private var imgPersonajeR: Int = 0
+
+
+    private lateinit var prefs: SharedPreferences
+    private lateinit var btnHistorias: Button
+    private lateinit var btnOpenDrawer: ImageView
+    private lateinit var btnLecciones: Button
+    private lateinit var btnDiccionario: Button
+    private lateinit var btnChat: Button
+    private lateinit var imgProfile: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_eleccion)
 
-        val bundle = intent.extras
-        val nombre = bundle?.getString("nombreusuario")
-        val correoU = bundle?.getString("correousuario")
-        val contr = bundle?.getString("contrusuario")
+        initComponents()
+        setOnClickButtons()
+        getShPreferences()
 
-        Log.d("datos recibidos", "El nombre es $nombre")
-        Log.d("datos recibidos", "El correo es $correoU")
-        Log.d("datos recibidos", "La contraseña es $contr")
+        setMainImageProfile()
 
+        btnOpenDrawer.setOnClickListener {
+            drawer.openDrawer(GravityCompat.START)
+        }
+        // Recuperar imagen guardada de SharedPreferences
+        correoGuardado = prefs.getString("correo", null).toString()
 
-        val prefsR = getSharedPreferences(
-            getString(R.string.prefs_file),
-            Context.MODE_PRIVATE
-        )
+    }
 
-        val imgPersonajeR = prefsR.getInt("idImagenCirculo", 0)
-        val imgPersonajeC = prefsR.getInt("idImagenRectangular", 0)
-        val nomPersonaje = prefsR.getString("nombrePersonaje", null)?:""
-        val imgPersonaje = findViewById<ImageView>(R.id.imgPersonaje)
-        imgPersonaje.setImageResource(imgPersonajeR)
-
-        //perfil historial (fragmento personaje invocado)
-
-        // Obtén una referencia al FragmentManager
-        val fragmentManager = supportFragmentManager
-
-        // Obtén una referencia al Fragmento
-        // Acceder a la ImageView en el fragmento
-        val fragmentoPersonaje = FragmentoPersonaje()
-
-// Acceder a la imagen del fragmento
-        val iPersonaje = fragmentoPersonaje.view?.findViewById<ImageView>(R.id.imgPersonaje1)
-        iPersonaje?.setImageResource(imgPersonajeR)
-
-        //navigation drawer
-
-        drawer = findViewById(R.id.drawer_layout)
-
+    private fun setMainImageProfile() {
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
 
@@ -75,56 +63,49 @@ class MenuEleccion : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val imageView: ImageView = headerView.findViewById(R.id.nav_header_imageView)
 
         imageView.setImageResource(imgPersonajeC)
+        //Imagen de perfil de la cabecera del navigation drawer
+        imgProfile.setImageResource(imgPersonajeR)
+    }
 
-        // Boton Historias
-        val btnHistorias = findViewById<Button>(R.id.btnHistorias)
-        btnHistorias.setOnClickListener {
-            val intent = Intent(this, ActivityContenedor::class.java)
-            intent.putExtra("valor", 99)
-            startActivity(intent)
-        }
+    private fun getShPreferences() {
+        prefs = getSharedPreferences(
+            getString(R.string.prefs_file),
+            Context.MODE_PRIVATE
+        )
+        imgPersonajeR = prefs.getInt("idImagenCirculo", 0)
+        imgPersonajeC = prefs.getInt("idImagenRectangular", 0)
+        nomPersonaje = prefs.getString("nombrePersonaje", null)?:""
+    }
 
-        val btnAbrirDrawer = findViewById<ImageView>(R.id.btnBurger)
-        btnAbrirDrawer.setOnClickListener {
-            drawer.openDrawer(GravityCompat.START)
-        }
-
-        // Datos recibidos desde el activity MainPrincipalActivity
-        val datosEnviados = intent.extras
-        val correo = datosEnviados?.getString("correousuario")
-
-        // Recuperar imagen guardada de SharedPreferences
-        val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
-        correoGuardado = prefs.getString("correo", null).toString()
-
-        //Funciones de los botones de la pantalla principal
-
-
-
-        val boton = findViewById<Button>(R.id.btnLecciones)
-        funcionImagenPerfil(imgPersonaje, imgPersonajeR, nomPersonaje)
-
-        boton.setOnClickListener {
+    private fun setOnClickButtons() {
+        btnLecciones.setOnClickListener {
             val intent: Intent = (Intent(this, ContenedorPantallasPrincipales::class.java))
             intent.putExtra("valor", 30)
             startActivity(intent)
         }
-        val btnDiccionario = findViewById<Button>(R.id.btnDiccionario)
         btnDiccionario.setOnClickListener {
             val intent: Intent = (Intent(this, ContenedorPantallasPrincipales::class.java))
             intent.putExtra("valor", 31)
             startActivity(intent)
         }
-        val btnChat = findViewById<Button>(R.id.btnChat)
         btnChat.setOnClickListener {
             val intent: Intent = (Intent(this, ContenedorPantallasPrincipales::class.java))
             intent.putExtra("valor", 32)
             startActivity(intent)
         }
+        btnHistorias.setOnClickListener {
+            val intent = Intent(this, ActivityContenedor::class.java)
+            intent.putExtra("valor", 99)
+            startActivity(intent)
+        }
+        imgProfile.setOnClickListener {
+            showPerfilAlertDialog(imgPersonajeR, nomPersonaje)
+        }
     }
 
-    fun funcionImagenPerfil(img: ImageView, idImagen: Int, nombre: String) {
-        img.setOnClickListener {
+    fun showPerfilAlertDialog(idImagen: Int, nombre: String) {
+
+            setImageAlertDialog()
             val view = View.inflate(this, R.layout.fragmento_personaje, null)
             val imagen = view.findViewById<ImageView>(R.id.imgPersonaje1)
             val pNombre = view.findViewById<TextView>(R.id.txtNombrePersonaje)
@@ -168,17 +149,22 @@ class MenuEleccion : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     dialog.dismiss()
                 }
             }
-        }
     }
 
-    // Puedes acceder a la imagen del encabezado de navegación utilizando 'imageView'
-// Por ejemplo, puedes cambiar la imagen con otra usando:
-// imageView.setImageResource(R.drawable.otra_imagen)
+    private fun setImageAlertDialog() {
+        // Obtén una referencia al Fragmento
+        val fragmentoPersonaje = FragmentoPersonaje()
+
+        // Acceder a la imagen del fragmento
+        val iPersonaje = fragmentoPersonaje.view?.findViewById<ImageView>(R.id.imgPersonaje1)
+        iPersonaje?.setImageResource(imgPersonajeR)
+    }
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.itemQuechua->{
-                val intent = Intent(this, MenuEleccionQ::class.java)
-                startActivity(intent)
+                Idioma = "Quechua"
+                startActivity(Intent(this, MenuEleccionQ::class.java))
             }
             R.id.itemRanking -> {
                 val intent = Intent(this, ActivityContenedor::class.java)
@@ -212,16 +198,18 @@ class MenuEleccion : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 val intent = Intent(this, ContenedorPantallasPrincipales::class.java)
                 intent.putExtra("valor", 11)
                 startActivity(intent)
-                val prefsFacebook =
-                    getSharedPreferences(getString(R.string.prefFacebook_file), Context.MODE_PRIVATE).edit()
-                if (prefsFacebook != null) {
-                    LoginManager.getInstance().logOut()
-                    prefsFacebook.clear()
-                    prefsFacebook.apply()
-                }
             }
         }
         drawer.closeDrawer(GravityCompat.START)
         return true
+    }
+    fun initComponents(){
+        btnHistorias = findViewById(R.id.btnHistorias)
+        btnOpenDrawer = findViewById(R.id.btnBurger)
+        btnLecciones = findViewById(R.id.btnLecciones)
+        btnDiccionario = findViewById(R.id.btnDiccionario)
+        btnChat = findViewById(R.id.btnChat)
+        imgProfile = findViewById(R.id.imgPersonaje)
+        drawer = findViewById(R.id.drawer_layout)
     }
 }

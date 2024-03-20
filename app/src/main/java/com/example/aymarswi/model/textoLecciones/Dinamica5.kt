@@ -6,8 +6,8 @@ import android.widget.TextView
 import androidx.core.view.setPadding
 import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
-import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
+import com.example.aymarswi.util.Actividad
+import com.example.aymarswi.util.dinamicas.OpcionMultipleDePalabras
 import com.example.aymarswi.model.textoLecciones.LeccionesJSON.getUnaOracion
 import com.example.aymarswi.model.textoLecciones.LeccionesJSON.palabras
 

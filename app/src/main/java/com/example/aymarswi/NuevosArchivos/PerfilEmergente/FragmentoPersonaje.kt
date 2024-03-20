@@ -18,7 +18,6 @@ class FragmentoPersonaje : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val rootView: View = inflater.inflate(R.layout.fragmento_personaje, container, false)
         val imagenDrawer = rootView.findViewById<ImageView>(R.id.imgPersonaje1)
 

@@ -1,6 +1,6 @@
 package com.example.aymarswi.model.textoLecciones
 
-import com.example.aymarswi.Util.Actividad
+import com.example.aymarswi.util.Actividad
 import com.google.gson.Gson
 import java.io.BufferedReader
 import java.io.InputStream

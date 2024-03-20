@@ -8,8 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
-import com.example.aymarswi.Util.Datos
+import com.example.aymarswi.util.Actividad
+import com.example.aymarswi.util.Datos
 
 
 class FragmentRegular3 : Fragment() {

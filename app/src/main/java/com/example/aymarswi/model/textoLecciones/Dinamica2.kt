@@ -3,8 +3,8 @@ package com.example.aymarswi.model.textoLecciones
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
-import com.example.aymarswi.ClaseFamilia.FragmentDinamica2v3
-import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
+import com.example.aymarswi.FragmentsDinamicas.FragmentDinamica2v3
+import com.example.aymarswi.util.dinamicas.OpcionMultipleDePalabras
 
 class Dinamica2(fragment: Fragment) : BaseDinamica(fragment) {
 
@@ -19,7 +19,6 @@ class Dinamica2(fragment: Fragment) : BaseDinamica(fragment) {
     }
 
     override fun colocarDatosEnLaVista() {
-        //Colocamos como titulo la palabra principal en español que servirá de guia para el usuario para traducirla al español
         palabraPrincipal = LeccionesJSON.palabras[posicionRespuestaCorrecta]
 
         setTitle(if (fragment is FragmentDinamica2v3) palabraPrincipal.enAymara[0] else palabraPrincipal.enEspanol[0])

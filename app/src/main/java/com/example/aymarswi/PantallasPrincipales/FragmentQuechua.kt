@@ -18,12 +18,7 @@ class FragmentQuechua : Fragment() {
 
         val btnEmpezar = rootView.findViewById<Button>(R.id.empezar)
 
-        btnEmpezar.setOnClickListener {
-
-            val intent = Intent(requireContext(), MenuEleccionQ::class.java)
-            startActivity(intent)
-
-        }
+        btnEmpezar.setOnClickListener { startActivity(Intent(requireContext(), MenuEleccionQ::class.java)) }
 
         return rootView
     }

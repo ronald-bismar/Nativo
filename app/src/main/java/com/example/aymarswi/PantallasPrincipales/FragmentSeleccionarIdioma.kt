@@ -8,9 +8,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Utils
 
 class FragmentSeleccionarIdioma : Fragment() {
+
+    companion object{
+        lateinit var Idioma: String
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -22,20 +25,21 @@ class FragmentSeleccionarIdioma : Fragment() {
         val btnIQuechua = rootView.findViewById<Button>(R.id.btnIQuechua)
 
         btnIAymara.setOnClickListener {
-            Utils().pasarDeFragment(
+            Idioma = "Aymara"
+            /*Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
                 R.id.ContenedorP_Principales,
                 FragmentAimara()
-            )
+            )*/
         }
 
         btnIQuechua.setOnClickListener {
-
-            Utils().pasarDeFragment(
+            Idioma = "Quechua"
+            /*Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
                 R.id.ContenedorP_Principales,
                 FragmentQuechua()
-            )
+            )*/
         }
 
         return rootView

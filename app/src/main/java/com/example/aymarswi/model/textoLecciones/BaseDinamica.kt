@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 abstract class BaseDinamica(fragment: Fragment) {
     protected var fragment: Fragment
     protected var title: TextView? = null
-    protected var imagen: ImageView? = null
+    var imagen: ImageView? = null
     protected lateinit var contenedorOpciones: ViewGroup
     protected lateinit var btnComprobar: Button
 
@@ -35,7 +35,7 @@ abstract class BaseDinamica(fragment: Fragment) {
     fun generatePosicionesAleatorias(sinOraciones: Boolean) {
         //Generamos numeros randomicos para obtener palabras de la lista en posiciones aleatorias
         posicionesAleatorias =
-            PosicionesRandomicas(LeccionesJSON.palabras).getPosicionesRandomicasSinRepetir(
+            PosicionesRandomicas(LeccionesJSON.palabras).getPosicionesAleatoriasSinRepetir(
                 if (contenedorOpciones.childCount == 0) 1 else contenedorOpciones.childCount,
                 sinOraciones = sinOraciones
             )

@@ -11,20 +11,12 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Handler
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.example.aymarswi.Util.Utils
-import com.facebook.CallbackManager
-import com.facebook.FacebookCallback
-import com.facebook.FacebookException
-import com.facebook.login.LoginManager
-import com.facebook.login.LoginResult
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
@@ -36,7 +28,7 @@ import com.google.firebase.auth.GoogleAuthProvider
 class Fragment_Ingresar : Fragment() {
 
     private val GOOGLE_SIGN_IN = 100
-    private val callbackManager = CallbackManager.Factory.create()
+//    private val callbackManager = CallbackManager.Factory.create()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -69,17 +61,17 @@ class Fragment_Ingresar : Fragment() {
 
         iBtnGoogle.setOnClickListener {
             //Autenticacion con google
-            val googleConf = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build()
+//            val googleConf = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+//                .requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build()
 
-            val googleClient = GoogleSignIn.getClient(requireContext(), googleConf)
+            /*val googleClient = GoogleSignIn.getClient(requireContext(), googleConf)
             googleClient.signOut()
-            startActivityForResult(googleClient.signInIntent, GOOGLE_SIGN_IN)
+            startActivityForResult(googleClient.signInIntent, GOOGLE_SIGN_IN)*/
         }
 
         //Login con Facebook
         val iBtnFacebook = rootView.findViewById<ImageButton>(R.id.ibtnfacebook)
-        iBtnFacebook.setOnClickListener {
+        /*iBtnFacebook.setOnClickListener {
             LoginManager.getInstance().logInWithReadPermissions(this, listOf("email"))
             LoginManager.getInstance().registerCallback(callbackManager,
                 object : FacebookCallback<LoginResult> {
@@ -112,7 +104,7 @@ class Fragment_Ingresar : Fragment() {
                         mostrarError()
                     }
                 })
-        }
+        }*/
 
         return rootView
     }
@@ -178,7 +170,7 @@ class Fragment_Ingresar : Fragment() {
         }, 3000)
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        callbackManager.onActivityResult(requestCode, resultCode, data)
+        /*callbackManager.onActivityResult(requestCode, resultCode, data)*/
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == GOOGLE_SIGN_IN) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
@@ -197,7 +189,7 @@ class Fragment_Ingresar : Fragment() {
         }
     }
     fun irASeleccioDePersonaje(){
-        Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, FragmentAvatar2())
+//        Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, FragmentAvatar2())
         Toast.makeText(requireContext(), "Bienvenido", Toast.LENGTH_SHORT).show()
     }
 }

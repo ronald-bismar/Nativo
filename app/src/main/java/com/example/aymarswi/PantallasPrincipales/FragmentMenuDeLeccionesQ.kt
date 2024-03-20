@@ -13,59 +13,57 @@ class FragmentMenuDeLeccionesQ : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val rootView = inflater.inflate(R.layout.fragment_menu_de_lecciones_q, container, false)
 
-        val imgBoton8 = rootView.findViewById<ImageButton>(R.id.imgBtnFamilia);
-        val imgBoton9 = rootView.findViewById<ImageButton>(R.id.imgBtnNaturaleza);
-        val imgBoton10 = rootView.findViewById<ImageButton>(R.id.imgBtnSaludos);
-        val imgBoton11 = rootView.findViewById<ImageButton>(R.id.imgBtnAnimales);
-        val imgBoton12 = rootView.findViewById<ImageButton>(R.id.imgBtnVerbos);
-        val imgBoton13 = rootView.findViewById<ImageButton>(R.id.imgBtnColores);
-        val imgBoton14 = rootView.findViewById<ImageButton>(R.id.imgBtnNumeros);
-        val imgBoton15 = rootView.findViewById<ImageButton>(R.id.imgBtnObjetos);
-        imgBoton8.setOnClickListener{
+        val imgBtnFamilia = rootView.findViewById<ImageButton>(R.id.imgBtnFamilia)
+        val imgBtnNaturaleza = rootView.findViewById<ImageButton>(R.id.imgBtnNaturaleza)
+        val imgSaludos = rootView.findViewById<ImageButton>(R.id.imgBtnSaludos)
+        val imgBtnAnimales = rootView.findViewById<ImageButton>(R.id.imgBtnAnimales)
+        val imgBtnVerbos = rootView.findViewById<ImageButton>(R.id.imgBtnVerbos)
+        val imgBtnColores = rootView.findViewById<ImageButton>(R.id.imgBtnColores)
+        val imgBtnNumeros = rootView.findViewById<ImageButton>(R.id.imgBtnNumeros)
+        val imgBtnObjetos = rootView.findViewById<ImageButton>(R.id.imgBtnObjetos)
+        imgBtnFamilia.setOnClickListener{
             val intent = Intent(requireContext(), ActivityContenedor::class.java)
-            intent.putExtra("valor", 9)
+            intent.putExtra("valor", 1)
             startActivity(intent)
         }
-        imgBoton9.setOnClickListener{
+        imgBtnNaturaleza.setOnClickListener{
             val intent = Intent(requireContext(),ActivityContenedor::class.java)
-            intent.putExtra("valor", 10)
+            intent.putExtra("valor", 2)
             startActivity(intent)
         }
-        imgBoton10.setOnClickListener{
+        imgSaludos.setOnClickListener{
             val intent = Intent(requireContext(),ActivityContenedor::class.java)
-            intent.putExtra("valor", 11)
+            intent.putExtra("valor", 3)
             startActivity(intent)
         }
-        imgBoton11.setOnClickListener{
+        imgBtnAnimales.setOnClickListener{
             val intent = Intent(requireContext(),ActivityContenedor::class.java)
-            intent.putExtra("valor", 12)
+            intent.putExtra("valor", 4)
             startActivity(intent)
         }
-        imgBoton12.setOnClickListener{
+        imgBtnVerbos.setOnClickListener{
             val intent = Intent(requireContext(),ActivityContenedor::class.java)
-            intent.putExtra("valor", 13)
+            intent.putExtra("valor", 5)
             startActivity(intent)
         }
-        imgBoton13.setOnClickListener{
+        imgBtnColores.setOnClickListener{
             val intent = Intent(requireContext(),ActivityContenedor::class.java)
-            intent.putExtra("valor", 14)
+            intent.putExtra("valor", 6)
             startActivity(intent)
         }
-        imgBoton14.setOnClickListener{
+        imgBtnNumeros.setOnClickListener{
             val intent = Intent(requireContext(),ActivityContenedor::class.java)
-            intent.putExtra("valor", 15)
+            intent.putExtra("valor", 7)
             startActivity(intent)
         }
-        imgBoton15.setOnClickListener{
+        imgBtnObjetos.setOnClickListener{
             val intent = Intent(requireContext(),ActivityContenedor::class.java)
-            intent.putExtra("valor", 16)
+            intent.putExtra("valor", 8)
             startActivity(intent)
         }
 
         return rootView
-
     }
 }

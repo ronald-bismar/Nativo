@@ -1,0 +1,152 @@
+[
+  {
+    "seccion": "Colores",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "q'illu"
+    ],
+    "enEspanol": [
+      "café"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708981801/imagenes-nativo/colores/cafe_nwlust.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Colores",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "q'illu"
+    ],
+    "enEspanol": [
+      "amarillo"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708981799/imagenes-nativo/colores/amarillo_jmgurk.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Colores",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "pacha"
+    ],
+    "enEspanol": [
+      "verde"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708981796/imagenes-nativo/colores/verde_zkxjkj.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Colores",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "puka"
+    ],
+    "enEspanol": [
+      "rojo"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708981771/imagenes-nativo/colores/rojo_u2ah4a.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Colores",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "yawar"
+    ],
+    "enEspanol": [
+      "negro"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708981771/imagenes-nativo/colores/rojo_u2ah4a.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Colores",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "llank'ay"
+    ],
+    "enEspanol": [
+      "naranja"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708981767/imagenes-nativo/colores/naranja_b2eylw.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Colores",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "yuraq"
+    ],
+    "enEspanol": [
+      "blanco"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708981765/imagenes-nativo/colores/gris_evvxhi.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Colores",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "kapu"
+    ],
+    "enEspanol": [
+      "azul"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708981763/imagenes-nativo/colores/cuadrado_gw8sts.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Colores",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "yuraq kapu"
+    ],
+    "enEspanol": [
+      "celeste"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708981761/imagenes-nativo/colores/celeste_vyzhqj.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Colores",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "puka misha"
+    ],
+    "enEspanol": [
+      "manzana roja"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708978693/imagenes-nativo/colores/manzanaroja_vhso3r.webp",
+    "esAbstracta": false,
+    "esOracion": true,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  }
+]

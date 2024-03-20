@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClaseFamilia.`FragmentFamilia2.1`"
+    tools:context=".FragmentsDinamicas.`FragmentFamilia2.1`"
     android:orientation="vertical"
     android:gravity="center"
     android:paddingHorizontal="10dp">

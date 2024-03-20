@@ -1,36 +1,19 @@
 package com.example.aymarswi.PantallasPrincipales
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
-import com.example.aymarswi.ClaseFamilia.FragmentDinamica10
-import com.example.aymarswi.ClaseColores.FragmentColores
-import com.example.aymarswi.ClaseFamilia.FragmentDinamica1
-import com.example.aymarswi.ClaseFamilia.FragmentDinamica9
-import com.example.aymarswi.ClaseVerbos.FragmentVerbos
-import com.example.aymarswi.Clasificacion.FragmentClasificacion
-import com.example.aymarswi.FragmentSaludos
-import com.example.aymarswi.FragmentsGuias.FragmentGuiaBiblioteca
-import com.example.aymarswi.FragmentsGuias.FragmentGuiaConversacion
-import com.example.aymarswi.FragmentsGuias.FragmentGuiaDiccionario
-import com.example.aymarswi.FragmentsGuias.FragmentGuiaHistorias
-import com.example.aymarswi.FragmentsGuias.FragmentGuiaLecciones
-import com.example.aymarswi.Objetos.FragmentObjetos1
-import com.example.aymarswi.QuechuaAnimales.FragmentAnimales0Q
-import com.example.aymarswi.QuechuaColores.FragmentColores0Q
-import com.example.aymarswi.QuechuaFamilia.FragmentFamilia0Q
-import com.example.aymarswi.QuechuaNaturaleza.FragmentNaturaleza0Q
-import com.example.aymarswi.QuechuaNumeros.FragmentNumeros0Q
-import com.example.aymarswi.QuechuaObejetos.FragmentObjetos0Q
-import com.example.aymarswi.QuechuaSaludos.FragmentSaludo0Q
-import com.example.aymarswi.QuechuaVerbos.FragmentVerbos0Q
+import com.bumptech.glide.Glide
+import com.example.aymarswi.PantallasPrincipales.FragmentSeleccionarIdioma.Companion.Idioma
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
-import com.example.aymarswi.Util.Actividad.Companion.getInstanceActividad
 import com.example.aymarswi.model.lecciones.Lecciones
+import com.example.aymarswi.model.textoLecciones.BaseDinamica
+import com.example.aymarswi.model.textoLecciones.Dinamica1
 import com.example.aymarswi.model.textoLecciones.LeccionesJSON
+import com.example.aymarswi.model.textoLecciones.LoadImage
+import com.example.aymarswi.util.Actividad
+import com.example.aymarswi.util.Actividad.Companion.getInstanceActividad
 
 class ActivityContenedor : AppCompatActivity() {
     private lateinit var fragment: Fragment
@@ -49,16 +32,7 @@ class ActivityContenedor : AppCompatActivity() {
             6 -> "Colores"
             7 -> "Numeros"
             8 -> "Objetos"
-
-            /*9 -> FragmentFamilia0Q()
-            10 -> FragmentNaturaleza0Q()
-            11 -> FragmentSaludo0Q()
-            12 -> FragmentAnimales0Q()
-            13 -> FragmentVerbos0Q()
-            14 -> FragmentColores0Q()
-            15 -> FragmentNumeros0Q()
-            16 -> FragmentObjetos0Q()
-            93 -> FragmentGuiaDiccionario()
+            /*93 -> FragmentGuiaDiccionario()
             94 -> FragmentGuiaLecciones()
             95 -> FragmentGuiaBiblioteca()
             96 -> FragmentAvatar2()
@@ -69,8 +43,8 @@ class ActivityContenedor : AppCompatActivity() {
             else -> "Familia"
         }
 
-        LeccionesJSON.seccion(nombreLeccion)
-        getInstanceActividad().rutaDeFragments = Lecciones().getLesson(nombreLeccion)
+        LeccionesJSON.seccion("${ nombreLeccion }_$Idioma")
+        getInstanceActividad().rutaDeFragments = Lecciones().getLesson( nombreLeccion )
 
         fragment = getInstanceActividad().rutaDeFragments.first()
         supportFragmentManager.commit {

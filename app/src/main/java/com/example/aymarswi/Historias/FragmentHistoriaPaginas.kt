@@ -1,5 +1,6 @@
 package com.example.aymarswi.Historias
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.MotionEvent
@@ -15,12 +16,13 @@ class FragmentHistoriaPaginas : Fragment() {
     private lateinit var scrollView2: ScrollView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_blank2, container, false)
+        val view = inflater.inflate(R.layout.fragment_lectura_traducida, container, false)
         scrollView1 = view.findViewById(R.id.ScrollView1)
         scrollView2 = view.findViewById(R.id.ScrollView2)
         return view
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

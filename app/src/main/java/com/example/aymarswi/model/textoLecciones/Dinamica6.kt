@@ -3,10 +3,8 @@ package com.example.aymarswi.model.textoLecciones
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.Glide
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
-import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
+import com.example.aymarswi.util.dinamicas.OpcionMultipleDePalabras
 
 class Dinamica6(fragment: Fragment) : BaseDinamica(fragment) {
 

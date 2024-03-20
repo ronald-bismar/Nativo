@@ -1,0 +1,152 @@
+[
+  {
+    "seccion": "Animales",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "kuntur"
+    ],
+    "enEspanol": [
+      "condor"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977224/imagenes-nativo/animales/condor_y2suze.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Animales",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "waka"
+    ],
+    "enEspanol": [
+      "vaca"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708978767/imagenes-nativo/animales/vaca_hcasfj.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Animales",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "amaru"
+    ],
+    "enEspanol": [
+      "serpiente"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977337/imagenes-nativo/animales/serpiente_m3rge7.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Animales",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "tuta"
+    ],
+    "enEspanol": [
+      "gallina"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977336/imagenes-nativo/animales/pollo_hilccu.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Animales",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "allqu"
+    ],
+    "enEspanol": [
+      "perro"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977336/imagenes-nativo/animales/perro_jvvtyg.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Animales",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "unku"
+    ],
+    "enEspanol": [
+      "oveja"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977335/imagenes-nativo/animales/oveja_uiwgh8.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Animales",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "pishku"
+    ],
+    "enEspanol": [
+      "ñandu"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977334/imagenes-nativo/animales/suri_n3upvh.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Animales",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "wasay"
+    ],
+    "enEspanol": [
+      "mariposa"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977298/imagenes-nativo/animales/mariposa_vgvnov.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Animales",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "michi"
+    ],
+    "enEspanol": [
+      "gato"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977235/imagenes-nativo/animales/gato2_asp2wy.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  },
+  {
+    "seccion": "Animales",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "ulluku"
+    ],
+    "enEspanol": [
+      "buho"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977124/imagenes-nativo/animales/buho_kqainw.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null,
+    "imagenBitmap": null
+  }
+]

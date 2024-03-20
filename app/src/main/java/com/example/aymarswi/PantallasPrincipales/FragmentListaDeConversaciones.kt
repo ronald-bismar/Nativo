@@ -5,12 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.aymarswi.Chat.FragmentConversacion
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Utils
 
 class FragmentListaDeConversaciones : Fragment() {
     override fun onCreateView(
@@ -21,7 +19,7 @@ class FragmentListaDeConversaciones : Fragment() {
 
         val btnSaludos = rootView.findViewById<ConstraintLayout>(R.id.btnAruntanaka)
         btnSaludos.setOnClickListener {
-            Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, FragmentConversacion())
+//            Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, FragmentConversacion())
         }
     return rootView
     }

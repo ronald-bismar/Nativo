@@ -4,7 +4,7 @@ import android.widget.Button
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.dinamicas.OpcionMultipleDePalabras
+import com.example.aymarswi.util.dinamicas.OpcionMultipleDePalabras
 
 class Dinamica8(fragment: Fragment) : BaseDinamica(fragment) {
 

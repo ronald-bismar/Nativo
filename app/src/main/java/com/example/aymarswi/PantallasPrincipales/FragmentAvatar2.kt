@@ -1,7 +1,6 @@
 package com.example.aymarswi.PantallasPrincipales
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -14,7 +13,6 @@ import androidx.viewpager.widget.ViewPager
 import com.example.aymarswi.Avatars.FragmentA1
 import com.example.aymarswi.PagerAdapter.MyPagerAdapter
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Utils
 import com.google.firebase.firestore.FirebaseFirestore
 
 class FragmentAvatar2 : Fragment() {
@@ -131,11 +129,11 @@ class FragmentAvatar2 : Fragment() {
                 hashMapOf("Imagen de personaje" to idImagen) as Map<String, Any>
             )*/
 
-            Utils().pasarDeFragment(
+            /*Utils().pasarDeFragment(
                 requireActivity() as AppCompatActivity,
                 R.id.ContenedorP_Principales,
                 FragmentSeleccionarIdioma()
-            )
+            )*/
         }
 
         return rootView

@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout11"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClaseFamilia.FragmentDinamica5v1">
+    tools:context=".FragmentsDinamicas.FragmentDinamica5v1">
 
     <!-- TODO: Update blank fragment layout -->
 

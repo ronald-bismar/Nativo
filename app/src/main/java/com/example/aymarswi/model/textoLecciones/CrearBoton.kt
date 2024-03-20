@@ -1,6 +1,5 @@
 package com.example.aymarswi.model.textoLecciones
 
-import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
@@ -8,8 +7,7 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.setMargins
 import androidx.core.view.setPadding
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Actividad
-import com.google.android.flexbox.FlexboxLayout
+import com.example.aymarswi.util.Actividad
 
 class CrearBoton{
 

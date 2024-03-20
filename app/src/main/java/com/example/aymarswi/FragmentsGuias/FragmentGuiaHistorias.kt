@@ -10,7 +10,6 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.Historias.FragmentHistorias
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Utils
 
 class FragmentGuiaHistorias : Fragment() {
     override fun onCreateView(
@@ -21,8 +20,8 @@ class FragmentGuiaHistorias : Fragment() {
         val botonEmpezar = rootView.findViewById<Button>(R.id.btnEmpezarHistorias)
 
         botonEmpezar.setOnClickListener {
-            Utils().pasarDeFragment(requireActivity() as
-                    AppCompatActivity,R.id.contenedorDeFragments, FragmentHistorias())
+            /*Utils().pasarDeFragment(requireActivity() as
+                    AppCompatActivity,R.id.contenedorDeFragments, FragmentHistorias())*/
         }
         return rootView
     }

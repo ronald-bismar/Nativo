@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.PantallasPrincipales.FragmentMenuDeLeccionesA
 import com.example.aymarswi.PantallasPrincipales.FragmentMenuDeLeccionesQ
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Utils
 
 class FragmentGuiaLecciones : Fragment() {
     override fun onCreateView(
@@ -24,10 +23,10 @@ class FragmentGuiaLecciones : Fragment() {
         val valorRecibido = arguments?.getInt("clave_valor",0)
         botonEmpezar.setOnClickListener {
             if(valorRecibido == 30){
-                Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales,FragmentMenuDeLeccionesA())
+//                Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales,FragmentMenuDeLeccionesA())
             }
             else{
-                Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales,FragmentMenuDeLeccionesQ())
+//                Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales,FragmentMenuDeLeccionesQ())
             }
         }
 

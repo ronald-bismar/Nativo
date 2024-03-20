@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout15"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClaseFamilia.FragmentDinamica2v2">
+    tools:context=".FragmentsDinamicas.FragmentDinamica2v2">
 
     <ImageView
         android:id="@+id/imagen"

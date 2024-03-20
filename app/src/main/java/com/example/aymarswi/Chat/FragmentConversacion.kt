@@ -2,8 +2,6 @@ package com.example.aymarswi.Chat
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
-import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,12 +13,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.aymarswi.PantallasPrincipales.FragmentDiccionario
 import com.example.aymarswi.R
-import com.example.aymarswi.Util.Utils
 import com.example.aymarswi.databinding.FragmentConversacionBinding
+import com.example.aymarswi.util.Actividad
 import com.example.prueba.Mensaje
 import com.example.prueba.RecyclerNombre
 
@@ -54,11 +53,10 @@ class FragmentConversacion : Fragment() {
         gridLayoutBotones = binding.llNuevosBotones
 
         btnDiccionario.setOnClickListener {
-            Utils().pasarDeFragment(
-                requireActivity() as AppCompatActivity,
-                R.id.ContenedorP_Principales,
-                FragmentDiccionario()
-            )
+            childFragmentManager.commit {
+                add(R.id.contenedorDeFragments, FragmentDiccionario())
+                setReorderingAllowed(true)
+            }
         }
 
         establecerAdaptador()
@@ -75,7 +73,7 @@ class FragmentConversacion : Fragment() {
                 binding.etMensaje.clearFocus() // Restablecer el enfoque en el EditText
 
                 if (listaMensajes[cont].toString().lowercase()
-                        .equals(listaAuxiliarRespuestas[cont])
+                        .equals(listaAuxiliarRespuestas[cont], ignoreCase = true)
                 ) {
                     doSomething {
                         recycler.postDelayed({
@@ -119,7 +117,6 @@ class FragmentConversacion : Fragment() {
         }
 
         //Texto de los botones al hacer click
-
 
 
         return binding.root
@@ -176,20 +173,20 @@ class FragmentConversacion : Fragment() {
 
     fun doSomething(callback: () -> Unit) {
         recycler.postDelayed({
-            Utils().sonidoCorrecto(requireContext())
-            Utils().showAlertDialogCorrect(requireContext()) {
-                callback()
-            }
+            /*Utils().sonidoCorrecto(requireContext())
+            Utils().showAlertDialogCorrect(requireContext())*/ {
+            callback()
+        }
         }, 1000)
 
     }
 
     fun doSomethingError(callback: () -> Unit) {
         recycler.postDelayed({
-            Utils().sonidoIncorrecto(requireContext())
-            Utils().showAlertDialogIncorrect(requireContext()) {
-                callback()
-            }
+            /*Utils().sonidoIncorrecto(requireContext())
+            Utils().showAlertDialogIncorrect(requireContext()) */{
+            callback()
+        }
         }, 1000)
 
     }
@@ -241,12 +238,13 @@ class FragmentConversacion : Fragment() {
         }
 
         // Llenar los botones en el linear layout
-        for ((_,boton) in listaDeBotones) {
+        for ((_, boton) in listaDeBotones) {
             gridLayoutBotones.addView(boton)
         }
         listaDeBotones.clear()
     }
-    private fun hacerClickBoton(boton: Button){
+
+    private fun hacerClickBoton(boton: Button) {
         etMensaje.append("${boton.text} ")
     }
 }

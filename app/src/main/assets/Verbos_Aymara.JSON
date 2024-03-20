@@ -1,0 +1,157 @@
+[
+  {
+    "seccion": "Verbos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Yatiqaña"
+    ],
+    "enEspanol": [
+      "Aprender"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977766/imagenes-nativo/verbos/historias_aoajvb.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Verbos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Imilla wawaxa qillqi"
+    ],
+    "enEspanol": [
+      "La niña escribe"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709434001/imagenes-nativo/verbos/woman-cute-aymara-with-black-hat-and-pollera-sitti_nizism.webp",
+    "esAbstracta": false,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Verbos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Sarañani"
+    ],
+    "enEspanol": [
+      "Ir"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977636/imagenes-nativo/verbos/caminando_plcasm.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Verbos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Aljaña ",
+      "Alxaña "
+    ],
+    "enEspanol": [
+      "Vender"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709433608/imagenes-nativo/verbos/vender_taexjq.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Verbos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Qillqaña"
+    ],
+    "enEspanol": [
+      "Escribir"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709434001/imagenes-nativo/verbos/woman-cute-aymara-with-black-hat-and-pollera-sitti_nizism.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Verbos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Ullaña"
+    ],
+    "enEspanol": [
+      "Leer"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1708977766/imagenes-nativo/verbos/historias_aoajvb.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Verbos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Ist'aña"
+    ],
+    "enEspanol": [
+      "Escuchar"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709435367/imagenes-nativo/verbos/escuchando_vtqttr.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Verbos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Churaña"
+    ],
+    "enEspanol": [
+      "Dar"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709514737/imagenes-nativo/verbos/dar_bngpzk.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Verbos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Wawaxa liyt’i"
+    ],
+    "enEspanol": [
+      "El niño lee"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1709844931/imagenes-nativo/verbos/leyendo_epotv2.webp",
+    "esAbstracta": false,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Verbos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "Waynax anatt’i"
+    ],
+    "enEspanol": [
+      "El niño juega"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1710104265/imagenes-nativo/verbos/boy-playing-soccer-removebg-preview_tupc9w.webp",
+    "esAbstracta": false,
+    "esOracion": true,
+    "pronunciacion": null
+  },
+  {
+    "seccion": "Verbos",
+    "nivelDeAprendizaje": 1,
+    "enAymara": [
+      "antaña"
+    ],
+    "enEspanol": [
+      "jugar"
+    ],
+    "imagen": "https://res.cloudinary.com/dt5rqpa84/image/upload/v1710104265/imagenes-nativo/verbos/boy-playing-soccer-removebg-preview_tupc9w.webp",
+    "esAbstracta": false,
+    "esOracion": false,
+    "pronunciacion": null
+  }
+]

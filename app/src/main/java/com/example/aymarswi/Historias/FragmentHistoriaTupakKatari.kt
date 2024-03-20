@@ -8,7 +8,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.FragmentTransaction
-import com.example.aymarswi.ClaseFamilia.FragmentDinamica1
+import com.example.aymarswi.FragmentsDinamicas.FragmentDinamica1
 import com.example.aymarswi.R
 class FragmentHistoriaTupakKatari : FragmentDinamica1() {
 
