@@ -8,11 +8,13 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
+import com.example.aymarswi.model.TransactionFragment
+import com.example.aymarswi.model.profileUser.SharedPreferencesUsers
 
 class FragmentSeleccionarIdioma : Fragment() {
 
     companion object{
-        lateinit var Idioma: String
+        var Idioma: String = "Quechua"
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -21,25 +23,20 @@ class FragmentSeleccionarIdioma : Fragment() {
 
         val rootView = inflater.inflate(R.layout.fragment_seleccionar_idioma, container, false)
 
+        /*SharedPreferencesUsers.updatePreferences(requireContext(), )*/
+
         val btnIAymara = rootView.findViewById<Button>(R.id.btnIAymara)
         val btnIQuechua = rootView.findViewById<Button>(R.id.btnIQuechua)
 
         btnIAymara.setOnClickListener {
             Idioma = "Aymara"
-            /*Utils().pasarDeFragment(
-                requireActivity() as AppCompatActivity,
-                R.id.ContenedorP_Principales,
-                FragmentAimara()
-            )*/
+            TransactionFragment.changeFragment(requireActivity() as AppCompatActivity, FragmentAimara(), R.id.ContenedorP_Principales)
         }
 
         btnIQuechua.setOnClickListener {
             Idioma = "Quechua"
-            /*Utils().pasarDeFragment(
-                requireActivity() as AppCompatActivity,
-                R.id.ContenedorP_Principales,
-                FragmentQuechua()
-            )*/
+            TransactionFragment.changeFragment(requireActivity() as AppCompatActivity, FragmentQuechua(), R.id.ContenedorP_Principales)
+
         }
 
         return rootView

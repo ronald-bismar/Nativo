@@ -23,7 +23,7 @@ interface ServiciosWeb {
     @GET("/usuario/{id}")
     suspend fun obtenerUsuario(
         @Path("id") idUsuario: Int
-    ): Response<Usuario>
+    ): Response<User>
 
     @GET("/usuario/existe/{correo}")
     suspend fun verificarCorreoExistente(
@@ -32,13 +32,13 @@ interface ServiciosWeb {
 
     @POST("/usuario/add")
     suspend fun agregarUsuario(
-        @Body usuario: Usuario
+        @Body user: User
     ): Response<String>
 
     @PUT("/usuario/update/{id}")
     suspend fun actualizarUsuario(
         @Path("id") idUsuario: Int,
-        @Body usuario: Usuario
+        @Body user: User
     ): Response<String>
 
     @DELETE("/usuario/delete/{id}")

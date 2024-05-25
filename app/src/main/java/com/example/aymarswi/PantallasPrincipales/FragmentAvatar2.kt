@@ -1,7 +1,9 @@
 package com.example.aymarswi.PantallasPrincipales
 
 import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +15,8 @@ import androidx.viewpager.widget.ViewPager
 import com.example.aymarswi.Avatars.FragmentA1
 import com.example.aymarswi.PagerAdapter.MyPagerAdapter
 import com.example.aymarswi.R
+import com.example.aymarswi.model.TransactionFragment
+import com.example.aymarswi.model.profileUser.SharedPreferencesUsers
 import com.google.firebase.firestore.FirebaseFirestore
 
 class FragmentAvatar2 : Fragment() {
@@ -114,26 +118,19 @@ class FragmentAvatar2 : Fragment() {
                     nombrePersonaje = "Wila"
                 }
             }
-            val prefs = requireActivity().getSharedPreferences(
-                getString(R.string.prefs_file),
-                Context.MODE_PRIVATE
-            )
-            val editor = prefs.edit()
-            editor.putInt("idImagenCirculo", idImagen)
-            editor.putInt("idImagenRectangular", idImagenRectangular)
-            editor.putString("nombrePersonaje", nombrePersonaje)
-            editor.apply()
+            SharedPreferencesUsers.updateOneDataOfPreferences(requireContext(), "imageProfileRound", idImagen.toString())
+            SharedPreferencesUsers.updateOneDataOfPreferences(requireContext(), "imageProfileSquare", idImagenRectangular.toString())
+            SharedPreferencesUsers.updateOneDataOfPreferences(requireContext(), "nombre", nombrePersonaje)
 
+            Log.d("Imagenes", "Id: ${ SharedPreferencesUsers.getProfileOfPreferences(requireContext()) }")
+            /*Log.d("Imagenes", "Id: ${ SharedPreferencesUsers.getOneData(requireContext(), "imageProfileRound", 0) }")
+            Log.d("Imagenes", "Id: ${ SharedPreferencesUsers.getOneData(requireContext(), "imageProfileSquare", 0) }")*/
 
             /*db.collection("usuarios").document(correo.toString()).update(
                 hashMapOf("Imagen de personaje" to idImagen) as Map<String, Any>
             )*/
 
-            /*Utils().pasarDeFragment(
-                requireActivity() as AppCompatActivity,
-                R.id.ContenedorP_Principales,
-                FragmentSeleccionarIdioma()
-            )*/
+            TransactionFragment.changeFragment(requireActivity() as AppCompatActivity, FragmentSeleccionarIdioma(), R.id.ContenedorP_Principales)
         }
 
         return rootView

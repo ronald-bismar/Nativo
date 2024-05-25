@@ -8,25 +8,31 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
+import com.example.aymarswi.model.TransactionFragment
 
 class FragmentPrimeraPantalla : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val rootView = inflater.inflate(R.layout.fragment_primera_pantalla, container, false)
 
-        val rootView =  inflater.inflate(R.layout.fragment_primera_pantalla, container, false)
-        val btnIngresar = rootView.findViewById<Button>(R.id.botonIngresar)
-        val btnRegistrarse = rootView.findViewById<Button>(R.id.botonRegistrarse)
-
-        btnIngresar.setOnClickListener {
-//            Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, Fragment_Ingresar())
+        rootView.findViewById<Button>(R.id.botonIngresar).setOnClickListener {
+            pasarAFragment(Fragment_Ingresar())
         }
 
-        btnRegistrarse.setOnClickListener {
-//            Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, FragmentRegistro())
+        rootView.findViewById<Button>(R.id.botonRegistrarse).setOnClickListener {
+            pasarAFragment(FragmentRegistro())
         }
 
         return rootView
+    }
+
+    private fun pasarAFragment(fragment: Fragment) {
+        TransactionFragment.changeFragment(
+            requireActivity() as AppCompatActivity,
+            fragment,
+            R.id.ContenedorP_Principales
+        )
     }
 }

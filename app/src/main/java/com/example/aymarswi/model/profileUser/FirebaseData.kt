@@ -1,15 +1,14 @@
 package com.example.aymarswi.model.profileUser
 
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
 
-class Profile {
-    private lateinit var nivel: String
-    private var estrellas: Long = 0
-    private var trofeos: Long = 0
-    private var medallasDoradas: Long = 0
-    private var medallasPlateadas: Long = 0
+object FirebaseData {
 
+    fun logOutAccount(){
+        FirebaseAuth.getInstance().signOut()
+    }
     fun getDataUserFromFirebase(correoUsuario: String): DocumentSnapshot? {
         val instanceFirebase = getInstanceFirebase()
         return getDates(instanceFirebase, correoUsuario)

@@ -1,6 +1,5 @@
 package com.example.aymarswi.PantallasPrincipales
 
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,7 +11,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aymarswi.R
 import com.example.aymarswi.ApiRest.RetrofitCliente
-import com.example.aymarswi.ApiRest.Usuario
+import com.example.aymarswi.ApiRest.User
+import com.example.aymarswi.model.TransactionFragment
+import com.example.aymarswi.model.profileUser.SharedPreferencesUsers
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -28,39 +29,50 @@ class FragmentRegistro : Fragment() {
      val intermedioAlto = "Intermedio Alto"
      val avanzado = "Avanzado"
      val competente = "Competente"*/
-    var usuario = Usuario(-1, "", "", "")
+    var user = User (-1, "", "", "")
     private lateinit var nombreUsuario: EditText
     private lateinit var correoUsuario: EditText
     private lateinit var contrUsuario: EditText
     private lateinit var confContrUsuario: EditText
     private lateinit var btnRegistro: Button
+    private lateinit var rootView: View
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView: View = inflater.inflate(R.layout.fragment_registro, container, false)
-        nombreUsuario = rootView.findViewById(R.id.etNombre)
-        correoUsuario = rootView.findViewById(R.id.et_correo)
-        contrUsuario = rootView.findViewById(R.id.et_contrasena)
-        confContrUsuario = rootView.findViewById(R.id.etConfContraseña)
-        btnRegistro = rootView.findViewById(R.id.btnRegistrarse)
+        rootView = inflater.inflate(R.layout.fragment_registro, container, false)
+        initComponents()
 
         btnRegistro.setOnClickListener {
             if (verificarCampos()) {
                 CoroutineScope(Dispatchers.Main).launch {
-                    if (!verificarCorreoExistente() && agregarUsuario() && agregarUsuarioFireBase()) {
-                        guardarPreferencias()
-                        limpiarCampos()
-                        limpiarObjeto()
+                    if (/*!verificarCorreoExistente() && agregarUsuario() &&*/ agregarUsuarioFireBase()) {
+                        savePreferences()
+                        clearFields()
+                        clearObjectUser()
+                        newUser()
                         elegirPersonaje()
                     }
                 }
             }
         }
-
         return rootView
+    }
+
+    private fun newUser() {
+       user.name = nombreUsuario.text.toString()
+       user.email = correoUsuario.text.toString()
+       user.password = contrUsuario.text.toString()
+    }
+
+    private fun initComponents() {
+        nombreUsuario = rootView.findViewById(R.id.etNombre)
+        correoUsuario = rootView.findViewById(R.id.et_correo)
+        contrUsuario = rootView.findViewById(R.id.et_contrasena)
+        confContrUsuario = rootView.findViewById(R.id.etConfContraseña)
+        btnRegistro = rootView.findViewById(R.id.btnRegistrarse)
     }
 
     private fun verificarCampos(): Boolean {
@@ -92,23 +104,31 @@ class FragmentRegistro : Fragment() {
     private suspend fun verificarCorreoExistente(): Boolean {
         return suspendCoroutine { continuation ->
             CoroutineScope(Dispatchers.IO).launch {
-                val response = RetrofitCliente.servicioWeb.verificarCorreoExistente(correoUsuario.text.toString())
+                val response =
+                    RetrofitCliente.servicioWeb.verificarCorreoExistente(correoUsuario.text.toString())
                 CoroutineScope(Dispatchers.Main).launch {
                     if (response.isSuccessful) {
                         val correoExiste = response.body() ?: true
-                        if(correoExiste)
-                            Toast.makeText(requireContext(), "El correo electronico ya existe", Toast.LENGTH_SHORT).show()
+                        if (correoExiste)
+                            Toast.makeText(
+                                requireContext(),
+                                "El correo electronico ya existe",
+                                Toast.LENGTH_SHORT
+                            ).show()
                         continuation.resume(correoExiste)
                     } else {
                         // Manejar el error de la solicitud Retrofit aquí
-                        Toast.makeText(requireContext(), "Error al verificar el correo", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            requireContext(),
+                            "Error al verificar el correo",
+                            Toast.LENGTH_SHORT
+                        ).show()
                         continuation.resume(false)
                     }
                 }
             }
         }
     }
-
 
     private suspend fun agregarUsuarioFireBase(): Boolean {
         return suspendCoroutine { continuation ->
@@ -118,7 +138,7 @@ class FragmentRegistro : Fragment() {
                 if (it.isSuccessful) {
                     Toast.makeText(
                         requireContext(),
-                        "Confirmacion FireBase exitosa",
+                        "Registro FireBase exitosa",
                         Toast.LENGTH_SHORT
                     )
                         .show()
@@ -130,59 +150,52 @@ class FragmentRegistro : Fragment() {
         }
     }
 
-    private suspend fun agregarUsuario(): Boolean {
-        return suspendCoroutine { continuation ->
-            this.usuario.nombre = nombreUsuario.text.toString()
-            this.usuario.correo = correoUsuario.text.toString()
-            this.usuario.contrasena = contrUsuario.text.toString()
-            CoroutineScope(Dispatchers.IO).launch {
-                val call = RetrofitCliente.servicioWeb.agregarUsuario(usuario)
-                CoroutineScope(Dispatchers.Main).launch {
-                    if (call.isSuccessful) {
-                        continuation.resume(true)
-                    } else {
-                        Toast.makeText(
-                            requireContext(),
-                            "Fallo en la conexion SQL",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                        continuation.resume(false)
-                    }
-                }
-            }
-        }
-    }
+//    private suspend fun agregarUsuario(): Boolean {
+//        return suspendCoroutine { continuation ->
+//            this.usuario.nombre = nombreUsuario.text.toString()
+//            this.usuario.correo = correoUsuario.text.toString()
+//            this.usuario.contrasena = contrUsuario.text.toString()
+//            CoroutineScope(Dispatchers.IO).launch {
+//                val call = RetrofitCliente.servicioWeb.agregarUsuario(usuario)
+//                CoroutineScope(Dispatchers.Main).launch {
+//                    if (call.isSuccessful) {
+//                        continuation.resume(true)
+//                    } else {
+//                        Toast.makeText(
+//                            requireContext(),
+//                            "Fallo en la conexion SQL",
+//                            Toast.LENGTH_SHORT
+//                        ).show()
+//                        continuation.resume(false)
+//                    }
+//                }
+//            }
+//        }
+//    }
 
-    private fun guardarPreferencias() {
-        val prefs = requireContext().getSharedPreferences(
-            getString(R.string.prefs_file),
-            Context.MODE_PRIVATE
-        ).edit()
-        prefs.putString("nombre", nombreUsuario.text.toString())
-        prefs.putString("correo", correoUsuario.text.toString())
-        prefs.putString("contraseña", contrUsuario.text.toString())
-        prefs.apply()
+    private fun savePreferences() {
+        SharedPreferencesUsers.updatePreferences(requireContext(), user)
     }
 
     private fun elegirPersonaje() {
-        /*Utils().pasarDeFragment(
+        TransactionFragment.changeFragment(
             requireActivity() as AppCompatActivity,
-            R.id.ContenedorP_Principales,
-            FragmentAvatar2()
-        )*/
+            FragmentAvatar2(),
+            R.id.ContenedorP_Principales
+        )
     }
 
     private fun actualizarUsuario() {
-        this.usuario.nombre = nombreUsuario.text.toString()
-        this.usuario.correo = correoUsuario.text.toString()
+        this.user.name = nombreUsuario.text.toString()
+        this.user.email = correoUsuario.text.toString()
         CoroutineScope(Dispatchers.IO).launch {
-            val call = RetrofitCliente.servicioWeb.actualizarUsuario(usuario.idUsuario, usuario)
+            val call = RetrofitCliente.servicioWeb.actualizarUsuario(user.idUser, user)
             CoroutineScope(Dispatchers.Main).launch {
                 if (call.isSuccessful) {
                     Toast.makeText(requireContext(), call.body().toString(), Toast.LENGTH_SHORT)
                         .show()
-                    limpiarCampos()
-                    limpiarObjeto()
+                    clearFields()
+                    clearObjectUser()
                 } else {
                     Toast.makeText(requireContext(), call.body().toString(), Toast.LENGTH_SHORT)
                         .show()
@@ -191,17 +204,17 @@ class FragmentRegistro : Fragment() {
         }
     }
 
-    private fun limpiarCampos() {
+    private fun clearFields() {
         nombreUsuario.setText("")
         correoUsuario.setText("")
         contrUsuario.setText("")
         confContrUsuario.setText("")
     }
 
-    private fun limpiarObjeto() {
-        this.usuario.idUsuario = -1
-        this.usuario.nombre = ""
-        this.usuario.correo = ""
-        this.usuario.contrasena = ""
+    private fun clearObjectUser() {
+        this.user.idUser = -1
+        this.user.name = ""
+        this.user.email = ""
+        this.user.password = ""
     }
 }

@@ -197,13 +197,13 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view_q"
+        android:id="@+id/nav_view"
        android:background="#E9F1F3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header_mainq"
-        app:menu="@menu/activity_main_drawer_q"
+        app:menu="@menu/activity_main_drawer"
        app:itemTextAppearance="@style/AppTheme.DrawerArrowStyle"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
