@@ -31,15 +31,15 @@ class Datos {
 
             Log.d("Puntaje", "Puntaje y puntaje Acumulado: $puntajeAcumulado")
 
-            if (puntajeAcumulado >= 0 && puntajeAcumulado <= 49) {
+            if (puntajeAcumulado in 0..49) {
                 nivelUsuario = "Principiante"
-            } else if (puntajeAcumulado >= 50 && puntajeAcumulado <= 99) {
+            } else if (puntajeAcumulado in 50..99) {
                 nivelUsuario = "Elemental"
-            } else if (puntajeAcumulado >= 100 && puntajeAcumulado <= 149) {
+            } else if (puntajeAcumulado in 100..149) {
                 nivelUsuario = "Intermedio"
-            } else if (puntajeAcumulado >= 150 && puntajeAcumulado <= 199) {
+            } else if (puntajeAcumulado in 150..199) {
                 nivelUsuario = "Intermedio Alto"
-            } else if (puntajeAcumulado >= 200 && puntajeAcumulado <= 249) {
+            } else if (puntajeAcumulado in 200..249) {
                 nivelUsuario = "Avanzado"
             } else if (puntajeAcumulado >= 250) {
                 nivelUsuario = "Competente"

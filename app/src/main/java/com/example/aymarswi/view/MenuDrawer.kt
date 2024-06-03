@@ -1,7 +1,6 @@
 package com.example.aymarswi.view
 
 import android.content.Intent
-import android.util.Log
 import android.view.MenuItem
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
@@ -25,24 +24,31 @@ class MenuDrawer(private val activity: AppCompatActivity) :
         navigationView.setNavigationItemSelectedListener(this)
         setImageMenuDrawer()
         setOnClickBtnOpenDrawer()
+        val menuItem = navigationView.menu.findItem(R.id.itemChangeLanguage)
+        menuItem.title = if (Idioma == "Aymara") "Cambiar a Quechua" else "Cambiar a Aymara"
+        val idioma = if (Idioma == "Aymara") "Quechua" else "Aymara"
+        Idioma = idioma
     }
 
     private fun setOnClickBtnOpenDrawer() {
         btnOpenDrawer.setOnClickListener { drawer.openDrawer(GravityCompat.START) }
     }
 
-    fun cambiarActivityIdioma(){
-        val idioma = if (Idioma == "Aymara") "Quechua" else "Aymara"
+    fun cambiarActivityIdioma() {
+
         val menuIdioma = if (Idioma == "Aymara") MenuEleccion() else MenuEleccionQ()
-        Idioma = idioma
-        val menuItem = navigationView.menu.findItem(R.id.itemQuechua)
-        menuItem.title = if (Idioma == "Aymara") "Cambiar a Quechua" else "Cambiar a Aymara"
-        activity.startActivity(Intent(activity, menuIdioma::class.java))
+
+
+        val intent = Intent(activity, menuIdioma::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+        }
+        activity.startActivity(intent)
+        activity.finish()
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.itemQuechua -> cambiarActivityIdioma()
+            R.id.itemChangeLanguage -> cambiarActivityIdioma()
             R.id.itemRanking -> startNewActivity<ActivityContenedor>(97)
             R.id.nav_item_two -> startNewActivity<ContenedorPantallasPrincipales>(10)
             R.id.nav_item_three -> startNewActivity<ContenedorPantallasPrincipales>(33)
@@ -54,15 +60,12 @@ class MenuDrawer(private val activity: AppCompatActivity) :
     }
 
     private inline fun <reified T : AppCompatActivity> startNewActivity(value: Int) {
-        val intent = Intent(activity, T::class.java)
-        intent.putExtra("valor", value)
+        val intent = Intent(activity, T::class.java).apply {
+            putExtra("valor", value)
+            flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+        }
         activity.startActivity(intent)
-    }
-
-    private inline fun <reified T : AppCompatActivity> startNewActivity(value: String) {
-        val intent = Intent(activity, T::class.java)
-        intent.putExtra("valor", value)
-        activity.startActivity(intent)
+        activity.finish()
     }
 
     private inline fun <reified T : AppCompatActivity> logoutAndStartNewActivity(value: Int) {

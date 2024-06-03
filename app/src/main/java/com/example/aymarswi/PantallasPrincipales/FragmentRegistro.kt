@@ -1,6 +1,7 @@
 package com.example.aymarswi.PantallasPrincipales
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -29,7 +30,7 @@ class FragmentRegistro : Fragment() {
      val intermedioAlto = "Intermedio Alto"
      val avanzado = "Avanzado"
      val competente = "Competente"*/
-    var user = User (-1, "", "", "")
+    private lateinit var user: User
     private lateinit var nombreUsuario: EditText
     private lateinit var correoUsuario: EditText
     private lateinit var contrUsuario: EditText
@@ -48,11 +49,10 @@ class FragmentRegistro : Fragment() {
         btnRegistro.setOnClickListener {
             if (verificarCampos()) {
                 CoroutineScope(Dispatchers.Main).launch {
-                    if (/*!verificarCorreoExistente() && agregarUsuario() &&*/ agregarUsuarioFireBase()) {
+                    if (registrarUsuarioFireBase()) {
+                        newUser()
                         savePreferences()
                         clearFields()
-                        clearObjectUser()
-                        newUser()
                         elegirPersonaje()
                     }
                 }
@@ -62,9 +62,13 @@ class FragmentRegistro : Fragment() {
     }
 
     private fun newUser() {
-       user.name = nombreUsuario.text.toString()
-       user.email = correoUsuario.text.toString()
-       user.password = contrUsuario.text.toString()
+        user = User(
+            -1,
+            name = nombreUsuario.text.toString(),
+            email = correoUsuario.text.toString(),
+            password = contrUsuario.text.toString(),
+            level = "Principiante"
+        )
     }
 
     private fun initComponents() {
@@ -101,6 +105,97 @@ class FragmentRegistro : Fragment() {
         return confirmacion
     }
 
+
+    private suspend fun registrarUsuarioFireBase(): Boolean {
+        return suspendCoroutine { continuation ->
+            FirebaseAuth.getInstance().createUserWithEmailAndPassword(
+                correoUsuario.text.toString(), contrUsuario.text.toString()
+            ).addOnCompleteListener {
+                if (it.isSuccessful) {
+                    Toast.makeText(
+                        requireContext(),
+                        "Registro FireBase exitosa",
+                        Toast.LENGTH_SHORT
+                    )
+                        .show()
+                    continuation.resume(true)
+                } else {
+                    Toast.makeText(
+                        requireContext(),
+                        "Error en el registro",
+                        Toast.LENGTH_SHORT
+                    )
+                        .show()
+                    continuation.resume(false)
+                }
+            }
+        }
+    }
+
+    private fun clearFields() {
+        nombreUsuario.setText("")
+        correoUsuario.setText("")
+        contrUsuario.setText("")
+        confContrUsuario.setText("")
+    }
+
+    private fun savePreferences() {
+        Log.d("Usuario", "Usuario: ${user}")
+        SharedPreferencesUsers.updatePreferences(requireContext(), user)
+    }
+
+    private fun elegirPersonaje() {
+        TransactionFragment.changeFragment(
+            requireActivity() as AppCompatActivity,
+            FragmentSeleccionarPersonaje(),
+            R.id.ContenedorP_Principales
+        )
+    }
+
+
+//    private suspend fun agregarUsuario(): Boolean {
+//        return suspendCoroutine { continuation ->
+//            this.usuario.nombre = nombreUsuario.text.toString()
+//            this.usuario.correo = correoUsuario.text.toString()
+//            this.usuario.contrasena = contrUsuario.text.toString()
+//            CoroutineScope(Dispatchers.IO).launch {
+//                val call = RetrofitCliente.servicioWeb.agregarUsuario(usuario)
+//                CoroutineScope(Dispatchers.Main).launch {
+//                    if (call.isSuccessful) {
+//                        continuation.resume(true)
+//                    } else {
+//                        Toast.makeText(
+//                            requireContext(),
+//                            "Fallo en la conexion SQL",
+//                            Toast.LENGTH_SHORT
+//                        ).show()
+//                        continuation.resume(false)
+//                    }
+//                }
+//            }
+//        }
+//    }
+
+
+    private fun actualizarUsuario() {
+        this.user.name = nombreUsuario.text.toString()
+        this.user.email = correoUsuario.text.toString()
+        CoroutineScope(Dispatchers.IO).launch {
+            val call = RetrofitCliente.servicioWeb.actualizarUsuario(user.idUser, user)
+            CoroutineScope(Dispatchers.Main).launch {
+                if (call.isSuccessful) {
+                    Toast.makeText(requireContext(), call.body().toString(), Toast.LENGTH_SHORT)
+                        .show()
+                    clearFields()
+                    clearObjectUser()
+                } else {
+                    Toast.makeText(requireContext(), call.body().toString(), Toast.LENGTH_SHORT)
+                        .show()
+                }
+            }
+        }
+    }
+
     private suspend fun verificarCorreoExistente(): Boolean {
         return suspendCoroutine { continuation ->
             CoroutineScope(Dispatchers.IO).launch {
@@ -130,86 +225,6 @@ class FragmentRegistro : Fragment() {
         }
     }
 
-    private suspend fun agregarUsuarioFireBase(): Boolean {
-        return suspendCoroutine { continuation ->
-            FirebaseAuth.getInstance().createUserWithEmailAndPassword(
-                correoUsuario.text.toString(), contrUsuario.text.toString()
-            ).addOnCompleteListener {
-                if (it.isSuccessful) {
-                    Toast.makeText(
-                        requireContext(),
-                        "Registro FireBase exitosa",
-                        Toast.LENGTH_SHORT
-                    )
-                        .show()
-                    continuation.resume(true)
-                } else {
-                    continuation.resume(false)
-                }
-            }
-        }
-    }
-
-//    private suspend fun agregarUsuario(): Boolean {
-//        return suspendCoroutine { continuation ->
-//            this.usuario.nombre = nombreUsuario.text.toString()
-//            this.usuario.correo = correoUsuario.text.toString()
-//            this.usuario.contrasena = contrUsuario.text.toString()
-//            CoroutineScope(Dispatchers.IO).launch {
-//                val call = RetrofitCliente.servicioWeb.agregarUsuario(usuario)
-//                CoroutineScope(Dispatchers.Main).launch {
-//                    if (call.isSuccessful) {
-//                        continuation.resume(true)
-//                    } else {
-//                        Toast.makeText(
-//                            requireContext(),
-//                            "Fallo en la conexion SQL",
-//                            Toast.LENGTH_SHORT
-//                        ).show()
-//                        continuation.resume(false)
-//                    }
-//                }
-//            }
-//        }
-//    }
-
-    private fun savePreferences() {
-        SharedPreferencesUsers.updatePreferences(requireContext(), user)
-    }
-
-    private fun elegirPersonaje() {
-        TransactionFragment.changeFragment(
-            requireActivity() as AppCompatActivity,
-            FragmentAvatar2(),
-            R.id.ContenedorP_Principales
-        )
-    }
-
-    private fun actualizarUsuario() {
-        this.user.name = nombreUsuario.text.toString()
-        this.user.email = correoUsuario.text.toString()
-        CoroutineScope(Dispatchers.IO).launch {
-            val call = RetrofitCliente.servicioWeb.actualizarUsuario(user.idUser, user)
-            CoroutineScope(Dispatchers.Main).launch {
-                if (call.isSuccessful) {
-                    Toast.makeText(requireContext(), call.body().toString(), Toast.LENGTH_SHORT)
-                        .show()
-                    clearFields()
-                    clearObjectUser()
-                } else {
-                    Toast.makeText(requireContext(), call.body().toString(), Toast.LENGTH_SHORT)
-                        .show()
-                }
-            }
-        }
-    }
-
-    private fun clearFields() {
-        nombreUsuario.setText("")
-        correoUsuario.setText("")
-        contrUsuario.setText("")
-        confContrUsuario.setText("")
-    }
 
     private fun clearObjectUser() {
         this.user.idUser = -1

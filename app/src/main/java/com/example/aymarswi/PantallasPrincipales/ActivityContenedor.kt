@@ -4,14 +4,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
-import com.bumptech.glide.Glide
 import com.example.aymarswi.PantallasPrincipales.FragmentSeleccionarIdioma.Companion.Idioma
 import com.example.aymarswi.R
 import com.example.aymarswi.model.lecciones.Lecciones
-import com.example.aymarswi.model.textoLecciones.BaseDinamica
-import com.example.aymarswi.model.textoLecciones.Dinamica1
 import com.example.aymarswi.model.textoLecciones.LeccionesJSON
-import com.example.aymarswi.model.textoLecciones.LoadImage
 import com.example.aymarswi.util.Actividad
 import com.example.aymarswi.util.Actividad.Companion.getInstanceActividad
 

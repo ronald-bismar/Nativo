@@ -1,7 +1,5 @@
 package com.example.aymarswi.PantallasPrincipales
 
-import android.content.Context
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -19,7 +17,7 @@ import com.example.aymarswi.model.TransactionFragment
 import com.example.aymarswi.model.profileUser.SharedPreferencesUsers
 import com.google.firebase.firestore.FirebaseFirestore
 
-class FragmentAvatar2 : Fragment() {
+class FragmentSeleccionarPersonaje : Fragment() {
     private lateinit var btnAnterior: Button
     private lateinit var btnSiguiente: Button
     private lateinit var viewPager: ViewPager
