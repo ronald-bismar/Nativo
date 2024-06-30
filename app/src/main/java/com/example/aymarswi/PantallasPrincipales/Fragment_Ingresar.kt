@@ -1,56 +1,46 @@
 package com.example.aymarswi.PantallasPrincipales
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import com.example.aymarswi.R
 import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
+import android.os.Bundle
 import android.os.Handler
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.api.ApiException
-import com.google.firebase.analytics.FirebaseAnalytics
-import com.google.firebase.auth.FacebookAuthProvider
+import androidx.fragment.app.Fragment
+import com.example.aymarswi.ApiRest.User
+import com.example.aymarswi.PantallasPrincipales.FragmentSeleccionarIdioma.Companion.Idioma
+import com.example.aymarswi.R
+import com.example.aymarswi.model.profileUser.SharedPreferencesUsers
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.firestore.FirebaseFirestore
 
 class Fragment_Ingresar : Fragment() {
 
-    private val GOOGLE_SIGN_IN = 100
-//    private val callbackManager = CallbackManager.Factory.create()
+    private lateinit var db: FirebaseFirestore
+    private lateinit var user: User
+    private lateinit var btnIngresar: Button
+    private lateinit var btnRegistrar: TextView
+    private lateinit var correo: EditText
+    private lateinit var contr: EditText
+    private lateinit var txtMensaje: TextView
+    private lateinit var iBtnGoogle: ImageButton
+    private lateinit var rootView: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView:View =  inflater.inflate(R.layout.fragment__ingresar, container, false)
-
-        val btnIngresar = rootView.findViewById<Button>(R.id.btnIngresar)
-        val btnRegistrar = rootView.findViewById<TextView>(R.id.txtBtnRegistro)
-        val correo = rootView.findViewById<EditText>(R.id.idEmail)
-        val contr = rootView.findViewById<EditText>(R.id.idPass)
-        val txtMensaje = rootView.findViewById<TextView>(R.id.txtMensaje)
-        val iBtnGoogle = rootView.findViewById<ImageButton>(R.id.iBtnGoogle)
-
-       /* session()*/
-
-        //GoogleAnalytics(Evento)
-        val analytics: FirebaseAnalytics = FirebaseAnalytics.getInstance(requireContext())
-        val bundle = Bundle()
-        bundle.putString("message", "Integracion de firebase completo")
-        analytics.logEvent("InitScreen", bundle)
-
+        rootView = inflater.inflate(R.layout.fragment__ingresar, container, false)
+        initComponents()
         setup(btnIngresar, correo, contr)
 
         btnRegistrar.setOnClickListener {
@@ -60,76 +50,30 @@ class Fragment_Ingresar : Fragment() {
         }
 
         iBtnGoogle.setOnClickListener {
-            //Autenticacion con google
-//            val googleConf = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-//                .requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build()
-
-            /*val googleClient = GoogleSignIn.getClient(requireContext(), googleConf)
-            googleClient.signOut()
-            startActivityForResult(googleClient.signInIntent, GOOGLE_SIGN_IN)*/
+            // Autenticación con Google
         }
 
-        //Login con Facebook
+        // Login con Facebook
         val iBtnFacebook = rootView.findViewById<ImageButton>(R.id.ibtnfacebook)
-        /*iBtnFacebook.setOnClickListener {
-            LoginManager.getInstance().logInWithReadPermissions(this, listOf("email"))
-            LoginManager.getInstance().registerCallback(callbackManager,
-                object : FacebookCallback<LoginResult> {
-                    override fun onSuccess(result: LoginResult?) {
-                        result?.let {
-                            val token = it.accessToken
-                            val credential = FacebookAuthProvider.getCredential(token.token)
-                            FirebaseAuth.getInstance().signInWithCredential(credential)
-                                .addOnCompleteListener { task ->
-                                    if (task.isSuccessful) {
-                                        irASeleccioDePersonaje()
-                                        val PrefsFacebook = requireContext().getSharedPreferences(
-                                            getString(R.string.prefFacebook_file),
-                                            Context.MODE_PRIVATE
-                                        ).edit()
-                                        PrefsFacebook.putString("correo", "facebook")
-                                        PrefsFacebook.apply()
-                                    } else {
-                                        mostrarError()
-                                    }
-                                }
-                        }
-                    }
-
-                    override fun onCancel() {
-
-                    }
-
-                    override fun onError(error: FacebookException?) {
-                        mostrarError()
-                    }
-                })
-        }*/
 
         return rootView
     }
-    override fun onStart() {
-        super.onStart()
-        val authLayout = requireView().findViewById<ConstraintLayout>(R.id.authLayout)
-        authLayout.visibility = View.VISIBLE
+
+    private fun initComponents() {
+        btnIngresar = rootView.findViewById(R.id.btnIngresar)
+        btnRegistrar = rootView.findViewById(R.id.txtBtnRegistro)
+        correo = rootView.findViewById(R.id.idEmail)
+        contr = rootView.findViewById(R.id.idPass)
+        txtMensaje = rootView.findViewById(R.id.txtMensaje)
+        iBtnGoogle = rootView.findViewById(R.id.iBtnGoogle)
     }
 
-   /* private fun session() {
-        val authLayout = requireView().findViewById<ConstraintLayout>(R.id.authLayout)
-        authLayout.visibility = View.INVISIBLE
-        val prefs = requireContext().getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
-        val correo = prefs.getString("correo", null)
-        Log.d("correo", "correo es $correo")
-        if (correo != null) {
-            val intent = Intent(requireContext(), MainActivitySelecct::class.java)
-            startActivity(intent)
-        }
-    }*/
+
 
     private fun setup(
         btnIngresar: Button,
         correo: EditText,
-        contr: EditText,
+        contr: EditText
     ) {
         btnIngresar.setOnClickListener {
             if (correo.text.isNotEmpty() && contr.text.isNotEmpty()) {
@@ -140,20 +84,35 @@ class Fragment_Ingresar : Fragment() {
                     if (it.isSuccessful) {
                         startActivity(Intent(requireContext(), MenuEleccion::class.java))
                         Toast.makeText(requireContext(), "BIENVENIDO", Toast.LENGTH_SHORT).show()
-                        val prefs = requireContext().getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
-                        prefs.putString("correo", correo.text.toString())
-                        prefs.apply()
+                        getDataUserFromFirestoreDatabase(correo.text.toString())
+                        savePreferencesUser(user)
                     } else {
                         mostrarError()
                     }
                 }
             } else {
-                if (correo.text.isEmpty())
-                    correo.error = "Completa este campo"
-                else if (contr.text.isEmpty())
-                    contr.error = "Completa este campo"
+                if (correo.text.isEmpty()) correo.error = "Completa este campo"
+                else if (contr.text.isEmpty()) contr.error = "Completa este campo"
             }
         }
+    }
+
+    private fun savePreferencesUser(user: User) {
+        SharedPreferencesUsers.updatePreferences(requireContext(), user)
+    }
+
+    private fun getDataUserFromFirestoreDatabase(correo: String): User {
+        db.collection("usuarios").document(correo).get().addOnSuccessListener {
+            user.name = it.get("name") as String
+            user.estrellas = it.get("estrellas") as Long
+            user.imageProfileC = it.get("imageProfileC") as String
+            user.imageProfileR = it.get("imageProfileR") as String
+            user.level = it.get("level") as String
+            user.medallasDoradas = it.get("medallasDoradas") as Long
+            user.medallasPlateadas = it.get("medallasPlateadas") as Long
+            user.trofeos = it.get("trofeos") as Long
+        }
+        return user
     }
 
     private fun mostrarError() {
@@ -168,28 +127,5 @@ class Fragment_Ingresar : Fragment() {
             btnRegistrar.setTextColor(colorOriginal)
             btnRegistrar.setTypeface(tipoLetra)
         }, 3000)
-    }
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        /*callbackManager.onActivityResult(requestCode, resultCode, data)*/
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == GOOGLE_SIGN_IN) {
-            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
-            try{
-                val account = task.getResult(ApiException::class.java)
-                if (account != null) {
-                    val credential = GoogleAuthProvider.getCredential(account.idToken, null)
-                    FirebaseAuth.getInstance().signInWithCredential(credential)
-                    irASeleccioDePersonaje()
-                } else {
-                    mostrarError()
-                }
-            }catch (e: ApiException){
-                mostrarError()
-            }
-        }
-    }
-    fun irASeleccioDePersonaje(){
-//        Utils().pasarDeFragment(requireActivity() as AppCompatActivity, R.id.ContenedorP_Principales, FragmentAvatar2())
-        Toast.makeText(requireContext(), "Bienvenido", Toast.LENGTH_SHORT).show()
     }
 }

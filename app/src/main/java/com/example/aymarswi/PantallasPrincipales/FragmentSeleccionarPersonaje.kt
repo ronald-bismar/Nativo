@@ -38,7 +38,6 @@ class FragmentSeleccionarPersonaje : Fragment() {
 
         var idImagen = 0
         var idImagenRectangular = 0
-        var nombrePersonaje = ""
         val btnAvatar = rootView.findViewById<Button>(R.id.btnAvatar)
 
         //Ir a la siguiente vista
@@ -53,80 +52,60 @@ class FragmentSeleccionarPersonaje : Fragment() {
                 0 -> {
                     idImagen = R.drawable.allqur
                     idImagenRectangular = R.mipmap.allqu_modified
-                    nombrePersonaje = "Allqu"
                 }
 
                 1 -> {
                     idImagen = R.drawable.illarir
                     idImagenRectangular = R.mipmap.illari_modified
-                    nombrePersonaje = "Illari"
                 }
 
                 2 -> {
                     idImagen = R.drawable.intir
                     idImagenRectangular = R.mipmap.inti_modified
-                    nombrePersonaje = "Inti"
                 }
 
                 3 -> {
                     idImagen = R.drawable.jasyr
                     idImagenRectangular = R.mipmap.jasy_modified
-                    nombrePersonaje = "Jasyr"
                 }
 
                 4 -> {
                     idImagen = R.drawable.killar
                     idImagenRectangular = R.drawable.killac
-                    nombrePersonaje = "Killa"
                 }
 
                 5 -> {
                     idImagen = R.drawable.krausr
                     idImagenRectangular = R.mipmap.kraus_modified
-                    nombrePersonaje = "Kraus"
                 }
 
                 6 -> {
                     idImagen = R.drawable.makir
                     idImagenRectangular = R.mipmap.maki_modified
-                    nombrePersonaje = "Maki"
                 }
 
                 7 -> {
                     idImagen = R.drawable.munayr
                     idImagenRectangular = R.mipmap.munay_modified
-                    nombrePersonaje = "Munay"
                 }
 
                 8 -> {
                     idImagen = R.drawable.qoriankar
                     idImagenRectangular = R.mipmap.qorianka_modified
-                    nombrePersonaje = "Qorianka"
                 }
 
                 9 -> {
                     idImagen = R.drawable.waytar
                     idImagenRectangular = R.mipmap.wayta_modified
-                    nombrePersonaje = "Wayta"
                 }
 
                 10 -> {
                     idImagen = R.drawable.wilar
                     idImagenRectangular = R.mipmap.wila_modified
-                    nombrePersonaje = "Wila"
                 }
             }
             SharedPreferencesUsers.updateOneDataOfPreferences(requireContext(), "imageProfileRound", idImagen.toString())
             SharedPreferencesUsers.updateOneDataOfPreferences(requireContext(), "imageProfileSquare", idImagenRectangular.toString())
-            SharedPreferencesUsers.updateOneDataOfPreferences(requireContext(), "nombre", nombrePersonaje)
-
-            Log.d("Imagenes", "Id: ${ SharedPreferencesUsers.getProfileOfPreferences(requireContext()) }")
-            /*Log.d("Imagenes", "Id: ${ SharedPreferencesUsers.getOneData(requireContext(), "imageProfileRound", 0) }")
-            Log.d("Imagenes", "Id: ${ SharedPreferencesUsers.getOneData(requireContext(), "imageProfileSquare", 0) }")*/
-
-            /*db.collection("usuarios").document(correo.toString()).update(
-                hashMapOf("Imagen de personaje" to idImagen) as Map<String, Any>
-            )*/
 
             TransactionFragment.changeFragment(requireActivity() as AppCompatActivity, FragmentSeleccionarIdioma(), R.id.ContenedorP_Principales)
         }

@@ -140,7 +140,6 @@ class FragmentRegistro : Fragment() {
     }
 
     private fun savePreferences() {
-        Log.d("Usuario", "Usuario: ${user}")
         SharedPreferencesUsers.updatePreferences(requireContext(), user)
     }
 

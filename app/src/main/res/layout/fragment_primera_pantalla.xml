@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FB9F00"
+    android:id="@+id/authLayout"
     tools:context=".PantallasPrincipales.FragmentPrimeraPantalla">
     <Button
         android:id="@+id/botonIngresar"
